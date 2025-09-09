@@ -12,7 +12,6 @@ ACharacterController::ACharacterController()
 
 	SpringArmComp->SetupAttachment(RootComponent);
 	CameraComp->SetupAttachment(SpringArmComp, USpringArmComponent::SocketName);
-
 	SpringArmComp->bUsePawnControlRotation = true;
 
 	GetCharacterMovement()->bOrientRotationToMovement = true;
@@ -38,8 +37,14 @@ void ACharacterController::Move(const FInputActionValue& Value)
 
 	if (Controller)
 	{
-		AddMovementInput(GetActorRightVector(), MovementValue.X);
-		AddMovementInput(GetActorForwardVector(), MovementValue.Y);
+		const FRotator Rotation = Controller->GetControlRotation();
+		const FRotator YawRotation(0, Rotation.Yaw, 0);
+
+		const FVector DirectionX = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
+		const FVector DirectionY = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
+		
+		AddMovementInput(DirectionX, MovementValue.X);
+		AddMovementInput(DirectionY, MovementValue.Y);
 	}
 }
 
