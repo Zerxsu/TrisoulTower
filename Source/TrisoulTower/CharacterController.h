@@ -8,7 +8,6 @@
 #include "GameFramework/Character.h"
 #include "CharacterController.generated.h"
 
-
 UCLASS()
 class TRISOULTOWER_API ACharacterController : public ACharacter
 {
@@ -35,7 +34,10 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	UInputAction* LookAction;
 
-	void BeginPlay() override;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UInputAction* JumpAction;
+
+	virtual void BeginPlay() override;
 	
 	UFUNCTION()
 	void Move(const FInputActionValue& Value);
