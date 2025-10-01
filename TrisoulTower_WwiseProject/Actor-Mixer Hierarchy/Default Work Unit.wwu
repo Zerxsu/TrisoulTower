@@ -1,6 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}" SchemaVersion="123">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Test_Coin" ID="{23CD2E6B-7571-4329-9732-A856960C6506}" ShortID="807441032">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="coin" ID="{C5D7260F-26F7-42F4-A8E8-C324FAFDD4D8}">
+							<PropertyList>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.670944570429328"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.027"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>coin.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="252246478"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="coin" ID="{C5D7260F-26F7-42F4-A8E8-C324FAFDD4D8}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Test_Gem" ID="{A4D568D9-C611-4F1B-AB8E-F01560A79DAF}" ShortID="1007238592">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="gem collect" ID="{B6ACFCEB-859A-4290-A2F6-944E3B3D462E}">
+							<PropertyList>
+								<Property Name="FadeOutDuration" Type="Real64" Value="1.53803009228688"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.146"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>gem collect.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="339665840"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="gem collect" ID="{B6ACFCEB-859A-4290-A2F6-944E3B3D462E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

@@ -1,0 +1,69 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3161908922",
+    "Type": "User",
+    "GUID": "{879ED1C6-7157-4890-992E-2BBE2CD3E8E1}",
+    "Language": "SFX",
+    "Hash": "{E8C9F7BF-8F70-E5C5-C045-B0112A2DECBB}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
+    "ShortName": "Main",
+    "Path": "Main.bnk",
+    "Media": [
+     {
+      "Id": "252246478",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "coin.wav",
+      "CachePath": "F2/{F2B73565-5757-2E64-7E1D-68BB1CCDCE78}.wem"
+     },
+     {
+      "Id": "339665840",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "gem collect.wav",
+      "CachePath": "5D/{5D9F5425-752F-A90E-9169-24DAB07696A7}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "4213119059",
+      "Name": "Test_Coin",
+      "ObjectPath": "\\Events\\Default Work Unit\\Test_Coin",
+      "GUID": "{14888F90-1B79-41A1-81A6-9F7A722AF9C0}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.85891837",
+      "DurationMax": "0.85891837",
+      "MediaRefs": [
+       {
+        "Id": "252246478"
+       }
+      ]
+     },
+     {
+      "Id": "2858866177",
+      "Name": "Test_Gem",
+      "ObjectPath": "\\Events\\Default Work Unit\\Test_Gem",
+      "GUID": "{866B64A4-761C-4EAA-A96A-A0D450EC4099}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.0180209",
+      "DurationMax": "2.0180209",
+      "MediaRefs": [
+       {
+        "Id": "339665840"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{673988B3-32BA-BC4C-CB90-EB41036742A5}"
+ }
+}

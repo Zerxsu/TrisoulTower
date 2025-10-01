@@ -1,0 +1,8 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2858866177	Test_Gem			\Default Work Unit\Test_Gem	
+	4213119059	Test_Coin			\Default Work Unit\Test_Coin	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	252246478	Test_Coin	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\F2\{F2B73565-5757-2E64-7E1D-68BB1CCDCE78}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test_Coin		151608
+	339665840	Test_Gem	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\5D\{5D9F5425-752F-A90E-9169-24DAB07696A7}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test_Gem		387556
+
