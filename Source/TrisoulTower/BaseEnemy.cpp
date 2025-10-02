@@ -1,0 +1,137 @@
+// Fill out your copyright notice in the Description page of Project Settings.
+
+
+#include "Containers/UnrealString.h"
+#include "GameFramework/PawnMovementComponent.h"
+#include "NavigationPath.h"
+#include "Blueprint/AIBlueprintHelperLibrary.h"
+#include "Kismet/GameplayStatics.h"
+#include "BaseEnemy.h"
+
+// Sets default values
+ABaseEnemy::ABaseEnemy()
+{
+ 	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	PrimaryActorTick.bCanEverTick = true;
+	
+
+}
+
+// Called when the game starts or when spawned
+void ABaseEnemy::BeginPlay()
+{
+	Super::BeginPlay();
+	
+	NavSystem = FNavigationSystem::GetCurrent<UNavigationSystemV1>(GetWorld());
+	NavSystem->RegisterNavigationInvoker(this);
+
+	TArray<AActor*> FoundActors;
+	UGameplayStatics::GetAllActorsWithTag(GetWorld(), FName(TEXT("Target")), FoundActors);
+	if (FoundActors.Num() > 0) PlayerActor = FoundActors[0];
+
+	Destination = GetActorLocation();
+	MakePath();
+}
+
+// Called every frame
+void ABaseEnemy::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+	
+	FindTarget();
+
+	if (NavPath) {//Crash when scene closes
+
+		if (NavPath->GetLength() > 1 && !isAtTarget) {//If path is unfinished
+
+			FVector Dir;//Direction to next point
+			Dir = NavPath->GetPathPointLocation(1).Position - GetActorLocation();
+			Dir.Normalize();
+			SetActorLocation(GetActorLocation() + Dir * Speed * DeltaTime);//Move actor towards next point
+
+			if ((Destination - GetActorLocation()).Length() <= StopDist) {//Close to target destination
+
+				isAtTarget = true;
+
+				FString DebugMessage = FString::Printf(TEXT("At Target"));
+				GEngine->AddOnScreenDebugMessage(
+					-1,            // A unique key. -1 means a new entry each time.
+					5.0f,          // How long the message will display (in seconds).
+					FColor::Green, // The color of the debug text.
+					DebugMessage   // The FString containing the message to print.
+				);
+
+			}
+
+			MakePath();//Recalculate path to target
+		}
+	}
+
+}
+
+// Called to bind functionality to input
+void ABaseEnemy::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+{
+	Super::SetupPlayerInputComponent(PlayerInputComponent);
+	//return;
+}
+
+void ABaseEnemy::FindTarget()
+{
+
+	if (TargetType == ETargetType::Direct || TargetType == ETargetType::Near) {
+		SetDestination(PlayerActor->GetActorLocation(), true);
+		
+	} else if (TargetType == ETargetType::Front)
+	{
+		FVector Dist = PlayerActor->GetActorLocation();
+		Dist += PlayerActor->GetActorForwardVector() * StopDist;
+		SetDestination(Dist, true);
+	}
+
+}
+
+/** 
+ * Set the pathing destination of this actor
+ * @param To New destination
+ * @param path Recalculate a new path
+ */
+void ABaseEnemy::SetDestination(FVector To, bool path = true)
+{
+	Destination = To;
+	isAtTarget = false;
+	if (path) MakePath();
+}
+
+//Generate a path to the actor's destination
+void ABaseEnemy::MakePath()
+{
+    UNavigationPath* NavP = UNavigationSystemV1::FindPathToLocationSynchronously(GetWorld(), GetActorLocation(), Destination, this);
+
+	if (NavP && NavP->IsValid() && NavP->GetPath()) {
+		FNavPathSharedPtr NewPath = NavP->GetPath();
+		const TArray<FNavPathPoint>& Points = NewPath->GetPathPoints();
+		NavPath = NewPath.Get();
+	}
+}
+
+TArray<FVector> ABaseEnemy::GetPath(){
+
+	TArray<FVector> points;
+
+	if (NavPath) {
+		for (int i = 0; i < NavPath->GetPathPoints().Num(); i++) {
+			points.Add(NavPath->GetPathPoints()[i].Location);
+		}
+	} else {
+		FString DebugMessage = FString::Printf(TEXT("No NavPath"));
+		GEngine->AddOnScreenDebugMessage(
+			-1,            // A unique key. -1 means a new entry each time.
+			5.0f,          // How long the message will display (in seconds).
+			FColor::Green, // The color of the debug text.
+			DebugMessage   // The FString containing the message to print.
+		);
+	}
+
+	return points;
+}
