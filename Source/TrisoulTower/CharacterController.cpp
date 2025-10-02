@@ -1,3 +1,5 @@
+#include "EnhancedInputComponent.h"
+
 #include "CharacterController.h"
 #include "Camera/CameraComponent.h"
 #include "GameFramework/SpringArmComponent.h"
@@ -25,6 +27,8 @@ ACharacterController::ACharacterController()
 void ACharacterController::BeginPlay()
 {
 	Super::BeginPlay();
+
+	// Setup input
 	if (APlayerController* PC = Cast<APlayerController>(Controller))
 	{
 		if (UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PC->GetLocalPlayer()))
@@ -32,6 +36,9 @@ void ACharacterController::BeginPlay()
 			Subsystem->AddMappingContext(InputContext, 0);
 		}
 	}
+
+	// Cache max walk speed value
+	OriginalWalkSpeed = GetCharacterMovement()->MaxWalkSpeed;
 }
 
 void ACharacterController::Move(const FInputActionValue& Value)
@@ -65,14 +72,34 @@ void ACharacterController::Look(const FInputActionValue& Value)
 	}
 }
 
+void ACharacterController::StartSprint()
+{
+	GetCharacterMovement()->MaxWalkSpeed *= SprintMultiplier;
+}
+
+void ACharacterController::StopSprint()
+{
+	GetCharacterMovement()->MaxWalkSpeed = OriginalWalkSpeed;
+}
+
+void ACharacterController::Dash()
+{
+	
+}
+
 void ACharacterController::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	if (UEnhancedInputComponent* EnhancedInputComp = Cast<UEnhancedInputComponent>(PlayerInputComponent))
 	{
-		// Movement and Looking bound to each respective action
+		// Binding actions to their respective method
 		EnhancedInputComp->BindAction(MoveAction, ETriggerEvent::Triggered, this, &ACharacterController::Move);
 		EnhancedInputComp->BindAction(LookAction, ETriggerEvent::Triggered, this, &ACharacterController::Look);
+		
+		EnhancedInputComp->BindAction(SprintAction, ETriggerEvent::Started,this, &ACharacterController::StartSprint);
+		EnhancedInputComp->BindAction(SprintAction, ETriggerEvent::Completed, this, &ACharacterController::StopSprint);
 
+		EnhancedInputComp->BindAction(DashAction, ETriggerEvent::Started, this, &ACharacterController::Dash);
+		
 		// Binding JumpAction to default CharacterMovementComponent jump function
 		EnhancedInputComp->BindAction(JumpAction, ETriggerEvent::Started, this, &ACharacter::Jump);
 		EnhancedInputComp->BindAction(JumpAction, ETriggerEvent::Completed, this, &ACharacter::StopJumping);
