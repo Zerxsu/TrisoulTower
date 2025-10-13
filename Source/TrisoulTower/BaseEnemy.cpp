@@ -30,8 +30,9 @@ void ABaseEnemy::BeginPlay()
 	if (FoundActors.Num() > 0) PlayerActor = FoundActors[0];
 
 	Destination = GetActorLocation();
-	//MakePath();
+	
 	FindTarget();
+	MakePath();
 }
 
 // Called every frame
@@ -43,7 +44,10 @@ void ABaseEnemy::Tick(float DeltaTime)
 
 	if (!isAttacking && stunTime <= 0) FindTarget();
 
-	if (!isAtTarget && stunTime <= 0) {//If path is unfinished, //Removed NavPath check because it kept crashing
+	if (!isAtTarget && stunTime <= 0 && NavPath != nullptr) {//If path is unfinished, //Removed NavPath check because it kept crashing
+
+		if (NavPath->GetLength() <= TargetDist) bool m = true;
+		if (CanSeeTarget()) bool m = false;
 
 		if (NavPath->GetLength() <= TargetDist && CanSeeTarget()) {
 			ReachedTarget();
@@ -79,6 +83,7 @@ void ABaseEnemy::FindTarget()
 	{
 		FVector Dist = PlayerActor->GetActorLocation();
 		Dist += PlayerActor->GetActorForwardVector() * TargetDist;
+		Dist.Z = PlayerActor->GetActorLocation().Z;
 		SetDestination(Dist, true);
 	}
 
