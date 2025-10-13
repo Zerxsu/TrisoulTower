@@ -32,6 +32,11 @@ public:
 	float Speed = 256.0f;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
 	float StopDist = 32.0f;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+	float TargetDist = 512.0f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
+	float Health = 3.0f;
 
 protected:
 	// Called when the game starts or when spawned
@@ -39,7 +44,9 @@ protected:
 
 	UNavigationSystemV1* NavSystem;
 	FVector Destination = FVector(0, 0, 0);
+	float stunTime = 0.0f;
 	bool isAtTarget = false;
+	bool isAttacking = false;
 
 	AActor* PlayerActor;
 
@@ -61,6 +68,21 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Navigation")
 	virtual TArray<FVector> GetPath();
+
+	UFUNCTION(BlueprintCallable, Category = "Navigation")
+	virtual void ReachedTarget();
+
+	UFUNCTION(BlueprintCallable, Category = "Navigation")
+	virtual bool CanSeeTarget();
+
+	UFUNCTION(BlueprintCallable, Category = "Behaviour")
+	virtual void StartAttack();
+
+	UFUNCTION(BlueprintCallable, Category = "Behaviour")
+	virtual void EndAttack();
+
+	UFUNCTION(BlueprintCallable, Category = "Behaviour")
+	virtual void TakeDamage(float damage, bool parry);
 
 	FNavigationPath* NavPath;
 
