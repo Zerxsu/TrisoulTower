@@ -1,5 +1,3 @@
-#include "EnhancedInputComponent.h"
-
 #include "CharacterController.h"
 #include "Camera/CameraComponent.h"
 #include "GameFramework/SpringArmComponent.h"
@@ -7,13 +5,18 @@
 
 ACharacterController::ACharacterController()
 {
-	SpringArmComp = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArmComp"));
-	CameraComp = CreateDefaultSubobject<UCameraComponent>(TEXT("CameraComp"));
+	// setup gameplay ability system component
+	AbilitySystemComponent = CreateDefaultSubobject<UAbilitySystemComponent>(TEXT("AbilitySystemComponent"));
 
+	// add basic attribute set
+	BasicAttributeSet = CreateDefaultSubobject<UBasicAttributeSet>(TEXT("BasicAttributeSet"));
+	
 	// sets default mesh transformations
 	GetMesh()->SetRelativeLocationAndRotation(FVector(0.0f, 0.0f, -90.0f), FQuat(FRotator(0.0f, -90.0f, 0.0f)));
 
 	// camera setup
+	SpringArmComp = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArmComp"));
+	CameraComp = CreateDefaultSubobject<UCameraComponent>(TEXT("CameraComp"));
 	SpringArmComp->SetupAttachment(RootComponent);
 	CameraComp->SetupAttachment(SpringArmComp, USpringArmComponent::SocketName);
 	SpringArmComp->bUsePawnControlRotation = true;
@@ -39,6 +42,16 @@ void ACharacterController::BeginPlay()
 
 	// Cache max walk speed value
 	OriginalWalkSpeed = GetCharacterMovement()->MaxWalkSpeed;
+}
+
+void ACharacterController::PossessedBy(AController* NewController)
+{
+	Super::PossessedBy(NewController);
+
+	if (AbilitySystemComponent)
+	{
+		AbilitySystemComponent->InitAbilityActorInfo(this, this);
+	}
 }
 
 void ACharacterController::Move(const FInputActionValue& Value)
@@ -104,4 +117,9 @@ void ACharacterController::SetupPlayerInputComponent(UInputComponent* PlayerInpu
 		EnhancedInputComp->BindAction(JumpAction, ETriggerEvent::Started, this, &ACharacter::Jump);
 		EnhancedInputComp->BindAction(JumpAction, ETriggerEvent::Completed, this, &ACharacter::StopJumping);
 	}
+}
+
+UAbilitySystemComponent* ACharacterController::GetAbilitySystemComponent() const
+{
+	return AbilitySystemComponent;
 }

@@ -1,14 +1,19 @@
 #pragma once
 
 #include "EnhancedInputSubsystems.h"
+#include "EnhancedInputComponent.h"
 #include "InputActionValue.h"
+
+#include "AbilitySystemInterface.h"
+#include "AbilitySystemComponent.h"
+#include "TrisoulTower/GameplayAbilitySystem/AttributeSets/BasicAttributeSet.h"
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "CharacterController.generated.h"
 
 UCLASS()
-class TRISOULTOWER_API ACharacterController : public ACharacter
+class TRISOULTOWER_API ACharacterController : public ACharacter, public IAbilitySystemInterface
 {
 	GENERATED_BODY()
 
@@ -16,6 +21,15 @@ public:
 	ACharacterController();
 
 	virtual void SetupPlayerInputComponent(UInputComponent* InputComponent) override;
+	
+	// GameplayAbilitySystem components
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "GameplayAbilitySystem")
+	UAbilitySystemComponent* AbilitySystemComponent;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "GameplayAbilitySystem")
+	UBasicAttributeSet* BasicAttributeSet;
+
+	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override;
 
 protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "PlayerController")
@@ -49,6 +63,8 @@ protected:
 	float DashForce;
 
 	virtual void BeginPlay() override;
+
+	virtual void PossessedBy(AController* NewController) override;
 	
 	UFUNCTION()
 	void Move(const FInputActionValue& Value);
