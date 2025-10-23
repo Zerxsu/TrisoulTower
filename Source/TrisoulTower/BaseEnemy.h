@@ -22,36 +22,16 @@ class TRISOULTOWER_API ABaseEnemy : public APawn
 	GENERATED_BODY()
 
 public:
-	// Sets default values for this pawn's properties
-	ABaseEnemy();
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Behaviour")
 	ETargetType TargetType = ETargetType::Direct;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
-	float Speed = 256.0f;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
-	float StopDist = 32.0f;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
-	float TargetDist = 512.0f;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
-	float Health = 3.0f;
-
-protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
-
-	UNavigationSystemV1* NavSystem;
-	FVector Destination = FVector(0, 0, 0);
-	float stunTime = 0.0f;
-	bool isAtTarget = false;
-	bool isAttacking = false;
-
-	AActor* PlayerActor;
+	FNavigationPath* NavPath;
 
 
-public:	
+	// Sets default values for this pawn's properties
+	ABaseEnemy();
+
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
@@ -59,6 +39,10 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 	virtual void FindTarget();
+
+	virtual void FindPackTarget();
+
+	virtual FVector GetPackPoint();
 
 	UFUNCTION(BlueprintCallable, Category = "Navigation")
 	virtual void SetDestination(FVector To, bool path);
@@ -82,8 +66,40 @@ public:
 	virtual void EndAttack();
 
 	UFUNCTION(BlueprintCallable, Category = "Behaviour")
-	virtual void TakeDamage(float damage, bool parry);
+	virtual void TakeAttack(float damage, bool parry);
 
-	FNavigationPath* NavPath;
+
+protected:
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
+
+	UNavigationSystemV1* NavSystem;
+
+	FVector Destination = FVector(0, 0, 0);
+
+	float stunTime = 0.0f;
+
+	bool isAtTarget = false;
+	bool isAttacking = false;
+
+	AActor* PlayerActor;
+
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+	float Speed = 256.0f;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+	float StopDist = 32.0f;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+	float TargetDist = 512.0f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
+	float Health = 3.0f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Behaviour")
+	bool IsPackLeader = false;//Is this the pack leader
+	ABaseEnemy* PackLeader = nullptr;
+
+public:	
+	
 
 };

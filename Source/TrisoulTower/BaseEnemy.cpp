@@ -44,7 +44,7 @@ void ABaseEnemy::Tick(float DeltaTime)
 
 	if (!isAttacking && stunTime <= 0) FindTarget();
 
-	if (!isAtTarget && stunTime <= 0 && NavPath != nullptr) {//If path is unfinished, //Removed NavPath check because it kept crashing
+	if (!isAtTarget && stunTime <= 0 && NavPath != nullptr) {//If path is unfinished
 
 		if (NavPath->GetLength() <= TargetDist) bool m = true;
 		if (CanSeeTarget()) bool m = false;
@@ -85,6 +85,71 @@ void ABaseEnemy::FindTarget()
 		Dist += PlayerActor->GetActorForwardVector() * TargetDist;
 		Dist.Z = PlayerActor->GetActorLocation().Z;
 		SetDestination(Dist, true);
+	} else if (TargetType == ETargetType::Pack) {
+		FindPackTarget();
+	}
+
+}
+
+void ABaseEnemy::FindPackTarget()
+{
+
+	if (FVector::Distance(GetActorLocation(), PlayerActor->GetActorLocation()) <= TargetDist) {
+		SetDestination(PlayerActor->GetActorLocation(), true);
+	} else {
+
+		TArray<AActor*> OverlappingActors;
+		
+		TArray<TEnumAsByte<EObjectTypeQuery>> ObjectTypes;
+		ObjectTypes.Add(UEngineTypes::ConvertToObjectType(ECollisionChannel::ECC_WorldDynamic));
+
+		UClass* ThisClass = ABaseEnemy::StaticClass();
+
+		TArray<AActor*> Ignore;
+		Ignore.Add(this);
+
+		bool Found = UKismetSystemLibrary::SphereOverlapActors(
+			GetWorld(),
+			GetActorLocation(),
+			512.0f,
+			ObjectTypes,
+			ThisClass,
+			Ignore,
+			OverlappingActors
+		);
+
+		IsPackLeader = true;
+		if (Found) {
+			for (AActor* Actor: OverlappingActors) {
+				ABaseEnemy* Other = Cast<ABaseEnemy>(Actor);
+				if (Other->IsPackLeader) {
+					IsPackLeader = false;
+					PackLeader = Other;
+					break;
+				}
+			}
+
+			if (IsPackLeader) SetDestination(PlayerActor->GetActorLocation(), true);
+			else SetDestination(PackLeader->GetPackPoint(), true);
+
+		} else {
+			PackLeader = this;
+			SetDestination(PlayerActor->GetActorLocation(), true);
+		}
+
+		
+	}
+
+}
+
+FVector ABaseEnemy::GetPackPoint() {
+
+	if (NavPath == nullptr) {
+		return GetActorLocation();
+	} else if (NavPath->GetLength() <= TargetDist * 2.0f || NavPath->GetPathPoints().Num() <= 1) {
+		return PlayerActor->GetActorLocation();
+	} else {
+		return NavPath->GetPathPointLocation(1).Position;
 	}
 
 }
@@ -104,7 +169,12 @@ void ABaseEnemy::SetDestination(FVector To, bool path = true)
 //Generate a path to the actor's destination
 void ABaseEnemy::MakePath()
 {
-    UNavigationPath* NavP = UNavigationSystemV1::FindPathToLocationSynchronously(GetWorld(), GetActorLocation(), Destination, this);
+    UNavigationPath* NavP = UNavigationSystemV1::FindPathToLocationSynchronously(
+		GetWorld(), 
+		GetActorLocation(), 
+		Destination, 
+		this
+	);
 
 	if (NavP && NavP->IsValid() && NavP->GetPath()) {
 		FNavPathSharedPtr NewPath = NavP->GetPath();
@@ -220,7 +290,7 @@ void ABaseEnemy::EndAttack() {
 
 }
 
-void ABaseEnemy::TakeDamage(float damage, bool parry) {
+void ABaseEnemy::TakeAttack(float damage, bool parry) {
 
 	if (parry) {
 		stunTime += 2.5f;
