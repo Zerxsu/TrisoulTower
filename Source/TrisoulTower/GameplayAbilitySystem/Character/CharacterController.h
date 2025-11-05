@@ -59,9 +59,6 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|Variables")
 	float SprintMultiplier = 1.5f;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|Variables")
-	float DashForce;
-
 	virtual void BeginPlay() override;
 
 	virtual void PossessedBy(AController* NewController) override;

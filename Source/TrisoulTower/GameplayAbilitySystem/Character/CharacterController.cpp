@@ -2,6 +2,7 @@
 #include "Camera/CameraComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include "TrisoulTower/GameplayAbilitySystem/Abilities/GA_Dash.h"
 
 ACharacterController::ACharacterController()
 {
@@ -42,6 +43,9 @@ void ACharacterController::BeginPlay()
 
 	// Cache max walk speed value
 	OriginalWalkSpeed = GetCharacterMovement()->MaxWalkSpeed;
+
+	// TEMP: giving player dash ability for testing purposes
+	AbilitySystemComponent->GiveAbility(FGameplayAbilitySpec(UGA_Dash::StaticClass(), 1));
 }
 
 void ACharacterController::PossessedBy(AController* NewController)
@@ -97,7 +101,7 @@ void ACharacterController::StopSprint()
 
 void ACharacterController::Dash()
 {
-	
+	AbilitySystemComponent->TryActivateAbilityByClass(UGA_Dash::StaticClass());
 }
 
 void ACharacterController::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
