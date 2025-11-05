@@ -38,26 +38,26 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
-	virtual void FindTarget();
+	void FindTarget();
 
-	virtual void FindPackTarget();
+	void FindPackTarget();
 
-	virtual FVector GetPackPoint();
-
-	UFUNCTION(BlueprintCallable, Category = "Navigation")
-	virtual void SetDestination(FVector To, bool path);
+	FVector GetPackPoint();
 
 	UFUNCTION(BlueprintCallable, Category = "Navigation")
-	virtual void MakePath();
+	void SetDestination(FVector To, bool path);
 
 	UFUNCTION(BlueprintCallable, Category = "Navigation")
-	virtual TArray<FVector> GetPath();
+	void MakePath();
 
 	UFUNCTION(BlueprintCallable, Category = "Navigation")
-	virtual void ReachedTarget();
+	TArray<FVector> GetPath();
 
 	UFUNCTION(BlueprintCallable, Category = "Navigation")
-	virtual bool CanSeeTarget();
+	void ReachedTarget();
+
+	UFUNCTION(BlueprintCallable, Category = "Navigation")
+	bool CanSeeTarget();
 
 	UFUNCTION(BlueprintCallable, Category = "Behaviour")
 	virtual void StartAttack();
@@ -67,7 +67,6 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Behaviour")
 	virtual void TakeAttack(float damage, bool parry);
-
 
 protected:
 	// Called when the game starts or when spawned
