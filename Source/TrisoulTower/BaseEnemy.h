@@ -4,7 +4,9 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
+#include "AIController.h"
 #include "NavigationSystem.h"
+#include "NavigationPath.h"
 #include "BaseEnemy.generated.h"
 
 UENUM(BlueprintType)
@@ -28,6 +30,14 @@ public:
 
 	FNavigationPath* NavPath;
 
+	USkeletalMeshComponent* Body;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Animation")
+	bool isMoving = false;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Animation")
+	bool isAttacking = false;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Animation")
+	bool takeHit = false;
 
 	// Sets default values for this pawn's properties
 	ABaseEnemy();
@@ -79,7 +89,6 @@ protected:
 	float stunTime = 0.0f;
 
 	bool isAtTarget = false;
-	bool isAttacking = false;
 
 	AActor* PlayerActor;
 

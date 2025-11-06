@@ -29,6 +29,9 @@ void ABaseEnemy::BeginPlay()
 	UGameplayStatics::GetAllActorsWithTag(GetWorld(), FName(TEXT("Target")), FoundActors);
 	if (FoundActors.Num() > 0) PlayerActor = FoundActors[0];
 
+	Body = FindComponentByClass<USkeletalMeshComponent>();
+	UAnimInstance* AnimInst = Body->GetAnimInstance();
+
 	Destination = GetActorLocation();
 	
 	FindTarget();
@@ -45,16 +48,18 @@ void ABaseEnemy::Tick(float DeltaTime)
 	if (!isAttacking && stunTime <= 0) FindTarget();
 
 	if (!isAtTarget && stunTime <= 0 && NavPath != nullptr) {//If path is unfinished
-
+		
 		if (NavPath->GetLength() <= TargetDist) bool m = true;
 		if (CanSeeTarget()) bool m = false;
 
 		if (NavPath->GetLength() <= TargetDist && CanSeeTarget()) {
 			ReachedTarget();
+			isMoving = false;
 		}
 		else 
 		{
 			MakePath();//Recalculate path to target
+			isMoving = true;
 
 			FVector Dir;//Direction to next point
 			Dir = NavPath->GetPathPointLocation(1).Position - GetActorLocation();
@@ -272,9 +277,9 @@ void ABaseEnemy::StartAttack() {
 	);
 
 	//Wait for attack animation to happen
-	FTimerHandle UnusedHandle;
-	GetWorldTimerManager().SetTimer(
-		UnusedHandle, this, &ABaseEnemy::EndAttack, 2.0f, false);
+	//FTimerHandle UnusedHandle;
+	//GetWorldTimerManager().SetTimer(
+	//	UnusedHandle, this, &ABaseEnemy::EndAttack, 2.0f, false);
 }
 
 void ABaseEnemy::EndAttack() {
@@ -296,6 +301,7 @@ void ABaseEnemy::TakeAttack(float damage, bool parry) {
 		stunTime += 2.5f;
 		isAttacking = false;
 		isAtTarget = false;
+		takeHit = true;
 	}
 
 	Health -= damage;
