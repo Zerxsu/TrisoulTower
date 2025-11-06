@@ -2,7 +2,6 @@
 
 #include "CoreMinimal.h"
 #include "GameplayCueNotify_Static.h"
-#include "NiagaraSystem.h"
 #include "GC_Dash.generated.h"
 
 UCLASS()
@@ -12,8 +11,4 @@ class TRISOULTOWER_API UGC_Dash : public UGameplayCueNotify_Static
 
 public:
 	virtual void HandleGameplayCue(AActor* MyTarget, EGameplayCueEvent::Type EventType, const FGameplayCueParameters& Parameters) override;
-
-	protected:
-	UPROPERTY(EditDefaultsOnly)
-	UNiagaraSystem* DashVFX;
 };
