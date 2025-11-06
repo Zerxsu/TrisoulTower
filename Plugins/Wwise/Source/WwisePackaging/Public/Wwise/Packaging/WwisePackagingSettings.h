@@ -68,9 +68,8 @@ protected:
 	virtual void PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent) override;
 	virtual void PostInitProperties() override;
 
-	virtual void OnPostEngineInit();
+	virtual void OnPostEngineInit() {}
 	virtual bool EnsurePostEngineInit();
-	virtual void CreateInitialAssetLibrary();
 
 	bool SaveConfigFile();
 #endif

@@ -39,21 +39,21 @@ public abstract class WwiseSoundEngineVersionBase
 		var TargetAkLibs = new List<string>(AkLibs);
 		var ModuleName = "WwiseSoundEngine_" + VersionNumber;
 		var ModuleDirectory = Path.Combine(SE.ModuleDirectory, "../" + ModuleName);
+		string ThirdPartyFolder = Path.Combine(SE.PluginDirectory, "ThirdParty");
 
-		if (!WwiseSoundEngineVersion.IsSoundEngineVersionSupported(SE.PluginDirectory, ModuleName))
+		if (!WwiseSoundEngineVersion.IsSoundEngineVersionSupported(ThirdPartyFolder, ModuleName))
 		{
 			// We are skipping this version since this Wwise Sound Engine is for a particular version only.
 			return;
 		}
 
-		SE.PublicDefinitions.AddRange(WwiseSoundEngineVersion.GetVersionDefinesFromPluginDirectory(SE.PluginDirectory));
+		SE.PublicDefinitions.AddRange(WwiseSoundEngineVersion.GetVersionDefinesFromPluginDirectory(ThirdPartyFolder));
 
 		// If packaging as an Engine plugin, the UBT expects to already have a precompiled plugin available
 		// This can be set to true so long as plugin was already precompiled
 		SE.bUsePrecompiled = false;
 		SE.bPrecompile = false;
 
-		string ThirdPartyFolder = Path.Combine(SE.ModuleDirectory, "../../ThirdParty");
 		var WwiseUEPlatformInstance = WwiseUEPlatform.GetWwiseUEPlatformInstance(Target, VersionNumber, ThirdPartyFolder);
 		SE.PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
 		SE.bAllowConfidentialPlatformDefines = true;
@@ -169,21 +169,21 @@ public abstract class WwiseSoundEngineVersionBase
 		var TargetAkLibs = new List<string>();
 		var ModuleName = "WwiseSoundEngine_" + VersionNumber;
 		var ModuleDirectory = Path.Combine(SE.ModuleDirectory, "../" + ModuleName);
+		string ThirdPartyFolder = Path.Combine(SE.PluginDirectory, "ThirdParty");
 
-		if (!WwiseSoundEngineVersion.IsSoundEngineVersionSupported(SE.PluginDirectory, ModuleName))
+		if (!WwiseSoundEngineVersion.IsSoundEngineVersionSupported(ThirdPartyFolder, ModuleName))
 		{
 			// We are skipping this version since this Wwise Sound Engine is for a particular version only.
 			return;
 		}
 
-		SE.PublicDefinitions.AddRange(WwiseSoundEngineVersion.GetVersionDefinesFromPluginDirectory(SE.PluginDirectory));
+		SE.PublicDefinitions.AddRange(WwiseSoundEngineVersion.GetVersionDefinesFromPluginDirectory(ThirdPartyFolder));
 
 		// If packaging as an Engine plugin, the UBT expects to already have a precompiled plugin available
 		// This can be set to true so long as plugin was already precompiled
 		SE.bUsePrecompiled = false;
 		SE.bPrecompile = false;
 
-		string ThirdPartyFolder = Path.Combine(SE.ModuleDirectory, "../../ThirdParty");
 		var WwiseUEPlatformInstance = WwiseUEPlatform.GetWwiseUEPlatformInstance(Target, VersionNumber, ThirdPartyFolder);
 		SE.PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
 		SE.bAllowConfidentialPlatformDefines = true;

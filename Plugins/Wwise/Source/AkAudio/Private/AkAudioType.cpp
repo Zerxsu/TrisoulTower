@@ -27,6 +27,10 @@ Copyright (c) 2025 Audiokinetic Inc.
 #include "UObject/AssetRegistryTagsContext.h"
 #endif
 
+#if UE_5_7_OR_LATER
+#include "Cooker/CookDependencyContext.h"
+#endif
+
 #if WITH_EDITORONLY_DATA
 #include "Wwise/WwiseResourceCooker.h"
 #endif
