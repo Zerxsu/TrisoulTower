@@ -14,6 +14,10 @@
   <component name="ChangeListManager">
     <list default="true" id="8e881ff7-db9b-43e6-80db-eb420dbd244d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TrisoulTower/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TrisoulTower/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Levels/PlayerControllerTest.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/PlayerControllerTest.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Cues/GC_Dash.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Cues/GC_Dash.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Cues/GC_Dash.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Cues/GC_Dash.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TrisoulTower/TrisoulTower.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TrisoulTower/TrisoulTower.Build.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,6 +166,8 @@
       <updated>1759340399934</updated>
       <workItem from="1759340413594" duration="538000" />
       <workItem from="1762395450419" duration="266000" />
+      <workItem from="1762395810693" duration="582000" />
+      <workItem from="1762396526858" duration="2887000" />
     </task>
     <servers />
   </component>
