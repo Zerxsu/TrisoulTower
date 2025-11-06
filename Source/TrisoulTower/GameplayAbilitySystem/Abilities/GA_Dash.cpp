@@ -12,7 +12,7 @@ UGA_Dash::UGA_Dash()
 	InstancingPolicy = EGameplayAbilityInstancingPolicy::InstancedPerActor;
 
 	// sets the gameplay cost and cooldown classes
-	CostGameplayEffectClass = UGE_DashCost::StaticClass();
+	//CostGameplayEffectClass = UGE_DashCost::StaticClass();
 	CooldownGameplayEffectClass = UGE_DashCooldown::StaticClass();
 	
 	DashCueTag = FGameplayTag::RequestGameplayTag(FName("GameplayCue.Dash.Active"));
