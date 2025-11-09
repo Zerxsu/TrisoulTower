@@ -43,9 +43,6 @@ void ACharacterController::BeginPlay()
 
 	// Cache max walk speed value
 	OriginalWalkSpeed = GetCharacterMovement()->MaxWalkSpeed;
-
-	// TEMP: giving player dash ability for testing purposes
-	AbilitySystemComponent->GiveAbility(FGameplayAbilitySpec(UGA_Dash::StaticClass(), 1));
 }
 
 void ACharacterController::PossessedBy(AController* NewController)
@@ -55,6 +52,7 @@ void ACharacterController::PossessedBy(AController* NewController)
 	if (AbilitySystemComponent)
 	{
 		AbilitySystemComponent->InitAbilityActorInfo(this, this);
+		GrantAbilities(StartingAbilities);
 	}
 }
 
@@ -126,4 +124,34 @@ void ACharacterController::SetupPlayerInputComponent(UInputComponent* PlayerInpu
 UAbilitySystemComponent* ACharacterController::GetAbilitySystemComponent() const
 {
 	return AbilitySystemComponent;
+}
+
+TArray<FGameplayAbilitySpecHandle> ACharacterController::GrantAbilities(TArray<TSubclassOf<UGameplayAbility>> AbilitiesToGrant)
+{
+	if (!AbilitySystemComponent)
+	{
+		return TArray<FGameplayAbilitySpecHandle>();
+	}
+
+	TArray<FGameplayAbilitySpecHandle> AbilityHandles;
+	for (TSubclassOf<UGameplayAbility> Ability : AbilitiesToGrant)
+	{
+		FGameplayAbilitySpecHandle SpecHandle = AbilitySystemComponent->GiveAbility(FGameplayAbilitySpec(Ability, 1, -1, this));
+		AbilityHandles.Add(SpecHandle);
+	}
+	
+	return AbilityHandles;
+}
+
+void ACharacterController::RemoveAbilities(TArray<FGameplayAbilitySpecHandle> AbilitiesToRemove)
+{
+	if (!AbilitySystemComponent)
+	{
+		return;
+	}
+	
+	for (FGameplayAbilitySpecHandle AbilityHandle : AbilitiesToRemove)
+	{
+		AbilitySystemComponent->ClearAbility(AbilityHandle);
+	}
 }

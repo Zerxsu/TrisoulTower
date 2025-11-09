@@ -31,7 +31,16 @@ public:
 
 	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override;
 
+	UFUNCTION(BlueprintCallable, Category = "GameplayAbilitySystem")
+	TArray<FGameplayAbilitySpecHandle> GrantAbilities(TArray<TSubclassOf<UGameplayAbility>> AbilitiesToGrant);
+
+	UFUNCTION(BlueprintCallable, Category = "GameplayAbilitySystem")
+	void RemoveAbilities(TArray<FGameplayAbilitySpecHandle> AbilitiesToRemove);
+
 protected:
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "GameplayAbilitySystem")
+	TArray<TSubclassOf<UGameplayAbility>> StartingAbilities;
+	
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "PlayerController")
 	class USpringArmComponent* SpringArmComp;
 	
