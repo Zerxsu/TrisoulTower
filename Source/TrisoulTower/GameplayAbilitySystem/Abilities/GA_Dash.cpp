@@ -35,7 +35,7 @@ void UGA_Dash::ActivateAbility(
 			this,
 			FName("DashAbilityTask"),
 			GetDashDirection(),
-			2000.f,
+			1750.f,
 			0.2f,
 			false,
 			nullptr,

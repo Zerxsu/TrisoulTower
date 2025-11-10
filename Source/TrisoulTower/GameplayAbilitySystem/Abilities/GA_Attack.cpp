@@ -13,7 +13,7 @@ void UGA_Attack::ActivateAbility(
 	const FGameplayAbilityActivationInfo ActivationInfo,
 	const FGameplayEventData* TriggerEventData)
 {
-	
+	GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Yellow, "Attack Ability");
 }
 
 void UGA_Attack::EndAbility(

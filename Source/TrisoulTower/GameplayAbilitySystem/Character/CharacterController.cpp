@@ -2,12 +2,17 @@
 #include "Camera/CameraComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include "TrisoulTower/Player/Weapon/WeaponManagerComponent.h"
+#include "TrisoulTower/GameplayAbilitySystem/Abilities/GA_Attack.h"
 #include "TrisoulTower/GameplayAbilitySystem/Abilities/GA_Dash.h"
 
 ACharacterController::ACharacterController()
 {
 	// setup gameplay ability system component
 	AbilitySystemComponent = CreateDefaultSubobject<UAbilitySystemComponent>(TEXT("AbilitySystemComponent"));
+
+	// setup weapon manager component
+	WeaponManager = CreateDefaultSubobject<UWeaponManagerComponent>(TEXT("WeaponManager"));
 
 	// add basic attribute set
 	BasicAttributeSet = CreateDefaultSubobject<UBasicAttributeSet>(TEXT("BasicAttributeSet"));
@@ -32,7 +37,7 @@ void ACharacterController::BeginPlay()
 {
 	Super::BeginPlay();
 
-	// Setup input
+	// setup input
 	if (APlayerController* PC = Cast<APlayerController>(Controller))
 	{
 		if (UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PC->GetLocalPlayer()))
@@ -41,7 +46,7 @@ void ACharacterController::BeginPlay()
 		}
 	}
 
-	// Cache max walk speed value
+	// cache max walk speed value
 	OriginalWalkSpeed = GetCharacterMovement()->MaxWalkSpeed;
 }
 
@@ -102,22 +107,62 @@ void ACharacterController::Dash()
 	AbilitySystemComponent->TryActivateAbilityByClass(UGA_Dash::StaticClass());
 }
 
+void ACharacterController::LightAttack()
+{
+	AbilitySystemComponent->TryActivateAbilityByClass(UGA_Attack::StaticClass());
+}
+
+void ACharacterController::HeavyAttack()
+{
+	// will be implemented later
+}
+
+void ACharacterController::UltimateAttack()
+{
+	// will be implemented later
+}
+
+void ACharacterController::EquipWeapon1()
+{
+	UClass* WeaponBP = LoadClass<AWeapon_Base>(nullptr, TEXT("/Game/Blueprints/BP_Weapon_Base.BP_Weapon_Base_C"));
+	WeaponManager->EquipWeapon(WeaponBP);
+}
+
+void ACharacterController::EquipWeapon2()
+{
+	
+}
+
+void ACharacterController::EquipWeapon3()
+{
+	
+}
+
 void ACharacterController::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	if (UEnhancedInputComponent* EnhancedInputComp = Cast<UEnhancedInputComponent>(PlayerInputComponent))
 	{
-		// Binding actions to their respective method
+		// binding actions to their respective method
 		EnhancedInputComp->BindAction(MoveAction, ETriggerEvent::Triggered, this, &ACharacterController::Move);
 		EnhancedInputComp->BindAction(LookAction, ETriggerEvent::Triggered, this, &ACharacterController::Look);
 		
 		EnhancedInputComp->BindAction(SprintAction, ETriggerEvent::Started,this, &ACharacterController::StartSprint);
 		EnhancedInputComp->BindAction(SprintAction, ETriggerEvent::Completed, this, &ACharacterController::StopSprint);
-
-		EnhancedInputComp->BindAction(DashAction, ETriggerEvent::Started, this, &ACharacterController::Dash);
 		
-		// Binding JumpAction to default CharacterMovementComponent jump function
+		// binding JumpAction to default CharacterMovementComponent jump function
 		EnhancedInputComp->BindAction(JumpAction, ETriggerEvent::Started, this, &ACharacter::Jump);
 		EnhancedInputComp->BindAction(JumpAction, ETriggerEvent::Completed, this, &ACharacter::StopJumping);
+
+		// binding abilities
+		EnhancedInputComp->BindAction(DashAction, ETriggerEvent::Started, this, &ACharacterController::Dash);
+		EnhancedInputComp->BindAction(LightAttackAction, ETriggerEvent::Started, this, &ACharacterController::LightAttack);
+		EnhancedInputComp->BindAction(HeavyAttackAction, ETriggerEvent::Started, this, &ACharacterController::HeavyAttack);
+		EnhancedInputComp->BindAction(UltimateAttackAction, ETriggerEvent::Started, this, &ACharacterController::UltimateAttack);
+
+		// binding weapon slots
+		EnhancedInputComp->BindAction(EquipWeapon1Action, ETriggerEvent::Started, this, &ACharacterController::EquipWeapon1);
+		EnhancedInputComp->BindAction(EquipWeapon2Action, ETriggerEvent::Started, this, &ACharacterController::EquipWeapon2);
+		EnhancedInputComp->BindAction(EquipWeapon3Action, ETriggerEvent::Started, this, &ACharacterController::EquipWeapon3);
 	}
 }
 

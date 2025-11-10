@@ -14,10 +14,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8e881ff7-db9b-43e6-80db-eb420dbd244d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TrisoulTower/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TrisoulTower/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_CharacterController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_CharacterController.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Weapons/BP_Weapon_Sword2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Weapons/BP_Weapon_Sword2.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Weapons/WeaponManagerComponent.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Weapons/WeaponManagerComponent.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Character/CharacterController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Character/CharacterController.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Character/CharacterController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Character/CharacterController.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -167,6 +163,7 @@
       <workItem from="1759340413594" duration="538000" />
       <workItem from="1762638762501" duration="9091000" />
       <workItem from="1762673753503" duration="206000" />
+      <workItem from="1762723689670" duration="847000" />
     </task>
     <servers />
   </component>

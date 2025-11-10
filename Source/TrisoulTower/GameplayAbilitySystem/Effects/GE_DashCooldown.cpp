@@ -6,7 +6,7 @@ void UGE_DashCooldown::PostInitProperties()
 	Super::PostInitProperties();
 
 	DurationPolicy = EGameplayEffectDurationType::HasDuration;
-	DurationMagnitude = FGameplayEffectModifierMagnitude(FScalableFloat(0.2f));
+	DurationMagnitude = FGameplayEffectModifierMagnitude(FScalableFloat(1.f));
 
 	FGameplayTag CooldownTag = FGameplayTag::RequestGameplayTag(TEXT("Cooldown.Dash"));
 
