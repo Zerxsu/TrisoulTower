@@ -124,18 +124,17 @@ void ACharacterController::UltimateAttack()
 
 void ACharacterController::EquipWeapon1()
 {
-	UClass* WeaponBP = LoadClass<AWeapon_Base>(nullptr, TEXT("/Game/Blueprints/BP_Weapon_Base.BP_Weapon_Base_C"));
-	WeaponManager->EquipWeapon(WeaponBP);
+	if (WeaponSlot1) WeaponManager->EquipWeapon(WeaponSlot1);
 }
 
 void ACharacterController::EquipWeapon2()
 {
-	
+	if (WeaponSlot2) WeaponManager->EquipWeapon(WeaponSlot2);
 }
 
 void ACharacterController::EquipWeapon3()
 {
-	
+	if (WeaponSlot3) WeaponManager->EquipWeapon(WeaponSlot3);
 }
 
 void ACharacterController::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
@@ -173,10 +172,7 @@ UAbilitySystemComponent* ACharacterController::GetAbilitySystemComponent() const
 
 TArray<FGameplayAbilitySpecHandle> ACharacterController::GrantAbilities(TArray<TSubclassOf<UGameplayAbility>> AbilitiesToGrant)
 {
-	if (!AbilitySystemComponent)
-	{
-		return TArray<FGameplayAbilitySpecHandle>();
-	}
+	if (!AbilitySystemComponent) return TArray<FGameplayAbilitySpecHandle>();
 
 	TArray<FGameplayAbilitySpecHandle> AbilityHandles;
 	for (TSubclassOf<UGameplayAbility> Ability : AbilitiesToGrant)
@@ -190,10 +186,7 @@ TArray<FGameplayAbilitySpecHandle> ACharacterController::GrantAbilities(TArray<T
 
 void ACharacterController::RemoveAbilities(TArray<FGameplayAbilitySpecHandle> AbilitiesToRemove)
 {
-	if (!AbilitySystemComponent)
-	{
-		return;
-	}
+	if (!AbilitySystemComponent) return;
 	
 	for (FGameplayAbilitySpecHandle AbilityHandle : AbilitiesToRemove)
 	{

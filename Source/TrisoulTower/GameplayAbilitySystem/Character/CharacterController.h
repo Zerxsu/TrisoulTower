@@ -10,6 +10,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "TrisoulTower/Player/Weapon/Weapon_Base.h"
 #include "CharacterController.generated.h"
 
 class UWeaponManagerComponent;
@@ -130,4 +131,13 @@ private:
 
 	UPROPERTY()
 	UWeaponManagerComponent* WeaponManager;
+	
+	UPROPERTY(EditAnywhere, Category = "PlayerController|Weapon")
+	TSubclassOf<AWeapon_Base> WeaponSlot1;
+
+	UPROPERTY(EditAnywhere, Category = "PlayerController|Weapon")
+	TSubclassOf<AWeapon_Base> WeaponSlot2;
+
+	UPROPERTY(EditAnywhere, Category = "PlayerController|Weapon")
+	TSubclassOf<AWeapon_Base> WeaponSlot3;
 };
