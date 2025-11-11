@@ -409,7 +409,7 @@ enum class EAkCallbackType : uint8
 	MusicSyncGrid = 12			UMETA(ToolTip = "Enable notifications on Music Grid. AkCallbackInfo can be cast to AkMusicSyncCallbackInfo."),
 	MusicSyncUserCue = 13		UMETA(ToolTip = "Enable notifications on Music Custom Cue. AkCallbackInfo can be cast to AkMusicSyncCallbackInfo."),
 	MusicSyncPoint = 14			UMETA(ToolTip = "Enable notifications on Music switch transition synchronization point. AkCallbackInfo can be cast to AkMusicSyncCallbackInfo."),
-	MIDIEvent = MIDI_BITMASK	UMETA(ToolTip = "Enable notifications for MIDI events. AkCallbackInfo can be cast to AkMIDIEventCallbackInfo."),
+	MIDIEvent = MIDI_BITMASK	UMETA(DisplayName = "MIDI Event", ToolTip = "Enable notifications for MIDI events. AkCallbackInfo can be cast to AkMIDIEventCallbackInfo."),
 
 	Last						UMETA(Hidden)
 };

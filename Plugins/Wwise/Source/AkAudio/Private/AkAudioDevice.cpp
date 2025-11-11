@@ -620,8 +620,19 @@ bool FAkAudioDevice::Init()
 				ConnectionLostHandle.Reset();
 			}
 		});
+		
 	}
 #endif // AK_SUPPORT_WAAPI
+
+#if UE_EDITOR
+	if (auto* akSettingsPerUser = GetDefault<UAkSettingsPerUser>())
+	{
+		AutoConnectToWAAPIHandler = akSettingsPerUser->OnAutoConnectToWaapiChanged.AddLambda([this]()
+		{
+			SetLocalOutput();
+		});
+	}
+#endif
 
 	FWorldDelegates::OnPreWorldInitialization.AddLambda(
 		[&](UWorld* World, const UWorld::InitializationValues IVS)
@@ -1041,6 +1052,19 @@ void FAkAudioDevice::Teardown()
 			waapiClient->OnClientBeginDestroy.Remove(ClientBeginDestroyHandle);
 			ClientBeginDestroyHandle.Reset();
 		}
+
+#if UE_EDITOR
+		if (AutoConnectToWAAPIHandler.IsValid())
+		{
+			const UAkSettingsPerUser* AkSettingsPerUser = GetDefault<UAkSettingsPerUser>();
+			if (AkSettingsPerUser)
+			{
+				AkSettingsPerUser->OnAutoConnectToWaapiChanged.Remove(AutoConnectToWAAPIHandler);
+			}
+			
+			AutoConnectToWAAPIHandler.Reset();
+		}
+#endif
 
 		OnWwiseProjectModification.Clear();
 	}
@@ -4169,7 +4193,7 @@ void FAkAudioDevice::SetLocalOutput()
 #if WITH_EDITORONLY_DATA && !defined(AK_OPTIMIZED)
 	const UAkSettingsPerUser* AkSettingsPerUser = GetDefault<UAkSettingsPerUser>();
 
-	if (AkSettingsPerUser->WaapiTranslatorTimeout > 0)
+	if (AkSettingsPerUser->WaapiTranslatorTimeout > 0 && AkSettingsPerUser->bAutoConnectToWAAPI)
 	{
 #if AK_SUPPORT_WAAPI
 		auto* WAAPI = IWAAPI::Get();

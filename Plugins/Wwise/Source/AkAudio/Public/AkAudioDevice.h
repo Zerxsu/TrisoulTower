@@ -31,6 +31,7 @@ Copyright (c) 2025 Audiokinetic Inc.
 #include "AkInclude.h"
 #include "WwiseUnrealDefines.h"
 #include "AkJobWorkerScheduler.h"
+#include "AkSettingsPerUser.h"
 #include "Wwise/WwiseSharedLanguageId.h"
 #include "Engine/EngineTypes.h"
 
@@ -70,7 +71,6 @@ class UAkAudioType;
 class UAkAudioEvent;
 class UAkEffectShareSet;
 class AkXMLErrorMessageTranslator;
-class AkWAAPIErrorMessageTranslator;
 class AkUnrealErrorTranslator;
 
 // Set for holding UAkComponents
@@ -1601,6 +1601,11 @@ private:
 	FDelegateHandle ProjectLoadedHandle;
 	FDelegateHandle ConnectionLostHandle;
 	FDelegateHandle ClientBeginDestroyHandle;
+	
+#if UE_EDITOR
+	 /* WAAPI AutoConnect Handle */
+	FDelegateHandle AutoConnectToWAAPIHandler;
+#endif
 
 	struct FWaapiSubscriptionIds
 	{

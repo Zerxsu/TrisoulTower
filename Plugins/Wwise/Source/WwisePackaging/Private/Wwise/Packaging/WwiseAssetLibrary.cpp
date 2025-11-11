@@ -36,6 +36,10 @@ Copyright (c) 2025 Audiokinetic Inc.
 #include "Serialization/CompactBinaryWriter.h"
 #endif
 
+#if UE_5_7_OR_LATER
+#include "Cooker/CookDependencyContext.h"
+#endif
+
 UWwiseAssetLibrary::~UWwiseAssetLibrary()
 {
 	SCOPED_WWISEPACKAGING_EVENT_3(TEXT("UWwiseAssetLibrary Dtor"));

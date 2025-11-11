@@ -462,7 +462,7 @@ void UAkComponent::OnRegister()
 #if WITH_EDITORONLY_DATA
 void UAkComponent::UpdateSpriteTexture()
 {
-	if (SpriteComponent)
+	if (!IsRunningCommandlet() && SpriteComponent)
 	{
 		SpriteComponent->SetSprite(LoadObject<UTexture2D>(NULL, TEXT("/Wwise/S_AkComponent.S_AkComponent")));
 	}
@@ -487,6 +487,10 @@ void UAkComponent::OnUnregister()
 
 void UAkComponent::OnComponentDestroyed( bool bDestroyingHierarchy )
 {
+	if (StopWhenOwnerDestroyed)
+	{
+		Stop();
+	}
 	UnregisterGameObject();
 	Super::OnComponentDestroyed(bDestroyingHierarchy);
 }

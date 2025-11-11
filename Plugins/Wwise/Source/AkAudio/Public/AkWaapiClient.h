@@ -60,7 +60,7 @@ struct KeyValueArgs
 class FAkWaapiClientConnectionHandler : public FRunnable
 {
 public:
-    FAkWaapiClientConnectionHandler(FAkWaapiClient& in_Client);
+    FAkWaapiClientConnectionHandler();
     ~FAkWaapiClientConnectionHandler();
     // FRunnable interface.
     virtual bool   Init() override;
@@ -79,7 +79,6 @@ private:
     int m_iMaxReconnectDelay = 32;
     FEvent* WaitEvent;
     FCriticalSection AkSettingsSection;
-    FAkWaapiClient& m_Client;
     bool hadConnection = false;
     bool AttemptReconnect();
     FDelegateHandle AutoConnectChangedHandle;
