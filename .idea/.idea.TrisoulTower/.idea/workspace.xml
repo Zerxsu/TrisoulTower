@@ -15,11 +15,11 @@
     <list default="true" id="8e881ff7-db9b-43e6-80db-eb420dbd244d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TrisoulTower/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TrisoulTower/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_CharacterController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_CharacterController.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Levels/PlayerControllerTest.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/PlayerControllerTest.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Abilities/GA_Attack.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Abilities/GA_Attack.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Character/CharacterController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Character/CharacterController.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Character/CharacterController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Character/CharacterController.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Effects/GE_DashCooldown.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Effects/GE_DashCooldown.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Materials/Player/M_Accessories.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Materials/Player/M_Accessories.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Materials/Shaders/M_CelShader.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Materials/Shaders/M_CelShader.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Final_Character_Model.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Final_Character_Model_PhysicsAsset.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Final_Character_Model_Skeleton.uasset" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,6 +174,8 @@
       <workItem from="1762723689670" duration="847000" />
       <workItem from="1762811027028" duration="3926000" />
       <workItem from="1762831171594" duration="5000000" />
+      <workItem from="1763262758261" duration="1013000" />
+      <workItem from="1763421922219" duration="631000" />
     </task>
     <servers />
   </component>
