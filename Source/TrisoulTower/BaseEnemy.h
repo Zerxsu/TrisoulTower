@@ -70,10 +70,13 @@ public:
 	bool CanSeeTarget();
 
 	UFUNCTION(BlueprintCallable, Category = "Behaviour")
-	virtual void StartAttack();
+	void StartAttack();
 
 	UFUNCTION(BlueprintCallable, Category = "Behaviour")
-	virtual void EndAttack();
+	void EndAttack();
+
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = "Behaviour")
+	void RunAttack();
 
 	UFUNCTION(BlueprintCallable, Category = "Behaviour")
 	virtual void TakeAttack(float damage, bool parry);
@@ -90,6 +93,7 @@ protected:
 
 	bool isAtTarget = false;
 
+	UPROPERTY(BlueprintReadOnly)
 	AActor* PlayerActor;
 
 

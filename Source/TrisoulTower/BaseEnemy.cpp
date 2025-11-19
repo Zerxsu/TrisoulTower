@@ -65,6 +65,10 @@ void ABaseEnemy::Tick(float DeltaTime)
 			Dir = NavPath->GetPathPointLocation(1).Position - GetActorLocation();
 			Dir.Normalize();
 			SetActorLocation(GetActorLocation() + Dir * Speed * DeltaTime);//Move actor towards next point
+			
+			FRotator Rot = GetActorRotation();
+			SetActorRotation(FRotator(Rot.Pitch, Dir.Rotation().Yaw, Rot.Roll));
+			
 		}
 		
 	}
@@ -192,7 +196,7 @@ TArray<FVector> ABaseEnemy::GetPath(){
 
 	TArray<FVector> points;
 
-	if (NavPath) {
+	if (NavPath->GetPathPoints().Num() > 0) {
 		for (int i = 0; i < NavPath->GetPathPoints().Num(); i++) {
 			points.Add(NavPath->GetPathPoints()[i].Location);
 		}
@@ -221,7 +225,7 @@ void ABaseEnemy::ReachedTarget() {
 	);
 
 	//Check of target is at the right position
-	StartAttack();
+	if (!isAttacking) StartAttack();
 }
 
 bool ABaseEnemy::CanSeeTarget() {
@@ -289,10 +293,21 @@ void ABaseEnemy::EndAttack() {
 	GEngine->AddOnScreenDebugMessage(
 		-1,            // A unique key. -1 means a new entry each time.
 		5.0f,          // How long the message will display (in seconds).
-		FColor::Green, // The color of the debug text.
+		FColor::Purple, // The color of the debug text.
 		DebugMessage   // The FString containing the message to print.
 	);
 
+}
+
+/**/
+void ABaseEnemy::RunAttack_Implementation() {
+	FString DebugMessage = FString::Printf(TEXT("Strike"));
+	GEngine->AddOnScreenDebugMessage(
+		-1,            // A unique key. -1 means a new entry each time.
+		5.0f,          // How long the message will display (in seconds).
+		FColor::Orange, // The color of the debug text.
+		DebugMessage   // The FString containing the message to print.
+	);
 }
 
 void ABaseEnemy::TakeAttack(float damage, bool parry) {
