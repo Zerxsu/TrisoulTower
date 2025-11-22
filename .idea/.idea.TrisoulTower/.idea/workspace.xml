@@ -14,31 +14,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8e881ff7-db9b-43e6-80db-eb420dbd244d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TrisoulTower/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TrisoulTower/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Character_Model_Official_Anim_Character_Rig_002_Idle.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Character_Model_Official_Anim_Character_Rig_002_Walk.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_CharacterController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_CharacterController.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_Weapon_Base.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_Weapon_Test.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Levels/PlayerControllerTest.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/PlayerControllerTest.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/ABP_Player.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/ABP_Player.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Character_Model_Official.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Character/Player/Character_Model_Official.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Character_Model_Official_Skeleton.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Character/Player/Character_Model_Official_Skeleton.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Animation/ABP_Wompus.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Animation/Character_Anim_Armature_Attack.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Animation/Character_Anim_Armature_Crouch.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Animation/Character_Anim_Armature_Fall.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Animation/Character_Anim_Armature_Idle.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Animation/Character_Anim_Armature_Jump.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Animation/Character_Anim_Armature_Landing.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Animation/Character_Anim_Armature_Roll.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Animation/Character_Anim_Armature_Run.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Animation/Wompus_Blendspace1D.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Mesh/Character.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Mesh/Character_Anim_Armature_Static_Pose.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Mesh/Character_PhysicsAsset.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Mesh/Character_Skeleton.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Mesh/Player.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TrisoulTower/Player/Weapon/WeaponManagerComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TrisoulTower/Player/Weapon/WeaponManagerComponent.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,6 +172,7 @@
       <workItem from="1762831171594" duration="5000000" />
       <workItem from="1763262758261" duration="1013000" />
       <workItem from="1763421922219" duration="3787000" />
+      <workItem from="1763767251964" duration="1228000" />
     </task>
     <servers />
   </component>
