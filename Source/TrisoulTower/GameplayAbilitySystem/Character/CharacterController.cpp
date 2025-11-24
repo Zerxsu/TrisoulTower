@@ -65,6 +65,11 @@ void ACharacterController::Move(const FInputActionValue& Value)
 {
 	const FVector2D MovementValue = Value.Get<FVector2D>();
 
+	if (GetLastMovementInputVector().IsNearlyZero())
+	{
+		GetCharacterMovement()->MaxWalkSpeed = OriginalWalkSpeed;
+	}
+	
 	if (Controller)
 	{
 		// gets the camera orientation
@@ -94,17 +99,20 @@ void ACharacterController::Look(const FInputActionValue& Value)
 
 void ACharacterController::StartSprint()
 {
-	GetCharacterMovement()->MaxWalkSpeed *= SprintMultiplier;
+	GetCharacterMovement()->MaxWalkSpeed = SprintSpeed;
 }
 
 void ACharacterController::StopSprint()
 {
-	GetCharacterMovement()->MaxWalkSpeed = OriginalWalkSpeed;
+	//GetCharacterMovement()->MaxWalkSpeed = OriginalWalkSpeed;
 }
 
 void ACharacterController::Dash()
 {
-	AbilitySystemComponent->TryActivateAbilityByClass(UGA_Dash::StaticClass());
+	if (!GetMovementComponent()->IsFalling())
+	{
+		AbilitySystemComponent->TryActivateAbilityByClass(UGA_Dash::StaticClass());
+	}
 }
 
 void ACharacterController::LightAttack()

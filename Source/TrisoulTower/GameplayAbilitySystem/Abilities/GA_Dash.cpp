@@ -4,6 +4,7 @@
 #include "GameFramework/PawnMovementComponent.h"
 #include "GameFramework/RootMotionSource.h"
 #include "TrisoulTower/GameplayAbilitySystem/AttributeSets/BasicAttributeSet.h"
+#include "TrisoulTower/GameplayAbilitySystem/Character/CharacterController.h"
 #include "TrisoulTower/GameplayAbilitySystem/Effects/GE_DashCooldown.h"
 #include "TrisoulTower/GameplayAbilitySystem/Effects/GE_DashCost.h"
 
@@ -29,17 +30,19 @@ void UGA_Dash::ActivateAbility(
 		EndAbility(Handle, ActorInfo, ActivationInfo, false, true);
 		return;
 	}
+
+	SetDashing(true);
 	
 	UAbilityTask_ApplyRootMotionConstantForce* DashAbilityTask =
 		UAbilityTask_ApplyRootMotionConstantForce::ApplyRootMotionConstantForce(
 			this,
 			FName("DashAbilityTask"),
 			GetDashDirection(),
-			1750.f,
-			0.2f,
+			2500.f,
+			0.18f,
 			false,
 			nullptr,
-			ERootMotionFinishVelocityMode::ClampVelocity,
+			ERootMotionFinishVelocityMode::MaintainLastRootMotionVelocity,
 			FVector::ZeroVector,
 			GetMaxSpeed(),
 			true);
@@ -90,12 +93,26 @@ float UGA_Dash::GetMaxSpeed() const
 	{
 		return PlayerPawn->GetMovementComponent()->GetMaxSpeed();
 	}
-	// TEMP: hard coded max speed return
-	return 500.f;
+
+	// hard coded return
+	return 700.f;
 }
 
 void UGA_Dash::OnDashFinished()
 {
+	SetDashing(false);
+	
 	CommitAbilityCooldown(CurrentSpecHandle, CurrentActorInfo, CurrentActivationInfo, false);
 	EndAbility(CurrentSpecHandle, CurrentActorInfo, CurrentActivationInfo, false, false);
+}
+
+void UGA_Dash::SetDashing(bool bIsDashing)
+{
+	AActor* Player = GetAvatarActorFromActorInfo();
+	ACharacterController* PlayerController = Cast<ACharacterController>(Player);
+
+	if (PlayerController)
+	{
+		PlayerController->bIsDashing = bIsDashing;
+	}
 }

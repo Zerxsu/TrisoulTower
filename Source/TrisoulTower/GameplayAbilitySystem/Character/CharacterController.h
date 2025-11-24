@@ -40,6 +40,9 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "PlayerController|GameplayAbilitySystem")
 	void RemoveAbilities(TArray<FGameplayAbilitySpecHandle> AbilitiesToRemove);
 
+	UPROPERTY(BlueprintReadOnly, Category = "PlayerController|Variables")
+	bool bIsDashing;
+
 protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|GameplayAbilitySystem")
 	TArray<TSubclassOf<UGameplayAbility>> StartingAbilities;
@@ -87,7 +90,7 @@ protected:
 	UInputAction* EquipWeapon3Action;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|Variables")
-	float SprintMultiplier = 1.5f;
+	float SprintSpeed = 700.f;
 
 	virtual void BeginPlay() override;
 

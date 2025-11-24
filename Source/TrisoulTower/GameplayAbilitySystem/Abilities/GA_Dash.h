@@ -38,6 +38,9 @@ private:
 
 	UFUNCTION()
 	void OnDashFinished();
+
+	UFUNCTION()
+	void SetDashing(bool bIsDashing);
 	
 	FGameplayTag DashCueTag;
 };
