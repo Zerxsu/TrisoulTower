@@ -1,0 +1,30 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1942692385	Dash			\Default Work Unit\Dash	
+	2385628198	Footsteps			\Default Work Unit\Footsteps	
+	2386519981	Swing			\Default Work Unit\Swing	
+	2858866177	Test_Gem			\Default Work Unit\Test_Gem	
+	3826569560	Music_State			\Default Work Unit\Music_State	
+	3833651337	Jump			\Default Work Unit\Jump	
+	3991942870	Music			\Default Work Unit\Music	
+	4213119059	Test_Coin			\Default Work Unit\Test_Coin	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	3873482650	Tower_Theme			\Default Work Unit\Tower_Theme	
+
+State	ID	Name	State Group			Notes
+	168610243	Fighting	Tower_Theme			
+	748895195	None	Tower_Theme			
+	1823678183	Exploring	Tower_Theme			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	190679874	Trisoul_DodgeRoll_SFX_1	C:\Users\xoesm\Documents\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\FE\{FE798C17-21EF-6820-2945-F9C79FA27EB6}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dash\Trisoul_DodgeRoll_SFX_1		237180
+	252246478	Test_Coin	C:\Users\xoesm\Documents\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\E7\{E72CDE35-16F8-BF4E-EDD2-C16C71168F50}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test_Coin		151608
+	339665840	Test_Gem	C:\Users\xoesm\Documents\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\5D\{5D9F5425-752F-A90E-9169-24DAB07696A7}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test_Gem		387556
+	433824418	Trisoul_DodgeRoll_SFX_0	C:\Users\xoesm\Documents\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\68\{68DB5E93-CC34-67D0-4E3B-E8BC8C87035F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dash\Trisoul_DodgeRoll_SFX_0		237180
+	738341883	Trisoul_TowerTheme_Default_145bpm	C:\Users\xoesm\Documents\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\3B\{3BDD4168-3A62-923B-7A6B-7B57FE61F2DA}.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Tower\Trisoul_TowerTheme_Default_145bpm		8175372
+	752048971	Jump_Temp	C:\Users\xoesm\Documents\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\C5\{C5F6DA6D-2813-1215-C0BB-D7B1EB9C423C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jump\Jump_Temp		206504
+	764992986	Trisoul_DodgeRoll_SFX_2	C:\Users\xoesm\Documents\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\41\{417336A1-8C0C-0458-30AB-039C42980F6B}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dash\Trisoul_DodgeRoll_SFX_2		237180
+	911417253	Trisoul_TowerTheme_Battle_145bpm	C:\Users\xoesm\Documents\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\A2\{A2AFD8CF-1741-C306-F879-0F8DAF1C9129}.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Tower\Trisoul_TowerTheme_Battle_145bpm		8175372
+	938206191	Trisoul_DodgeRoll_SFX_4	C:\Users\xoesm\Documents\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\37\{3706CE7A-D0A9-4449-DC59-4D4D79769D31}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dash\Trisoul_DodgeRoll_SFX_4		237180
+	983562577	Trisoul_DodgeRoll_SFX_3	C:\Users\xoesm\Documents\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\F3\{F366AF4A-267A-FF43-94E7-5328D3F4B575}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dash\Trisoul_DodgeRoll_SFX_3		237180
+

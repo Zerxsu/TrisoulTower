@@ -72,3 +72,6 @@ Plugins/**/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+# making sure wwise plugin files are included
+!Plugins/WwiseSoundEngine/ThirdParty/**

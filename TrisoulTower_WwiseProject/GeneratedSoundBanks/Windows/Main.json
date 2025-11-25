@@ -1,0 +1,260 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3161908922",
+    "Type": "User",
+    "GUID": "{879ED1C6-7157-4890-992E-2BBE2CD3E8E1}",
+    "Language": "SFX",
+    "Hash": "{955EBF83-2E33-29C6-FE75-0F05B231C801}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
+    "ShortName": "Main",
+    "Path": "Main.bnk",
+    "Media": [
+     {
+      "Id": "190679874",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Trisoul_DodgeRoll_SFX_1.wav",
+      "CachePath": "FE/{FE798C17-21EF-6820-2945-F9C79FA27EB6}.wem"
+     },
+     {
+      "Id": "252246478",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "coin.wav",
+      "CachePath": "E7/{E72CDE35-16F8-BF4E-EDD2-C16C71168F50}.wem"
+     },
+     {
+      "Id": "339665840",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "gem collect.wav",
+      "CachePath": "5D/{5D9F5425-752F-A90E-9169-24DAB07696A7}.wem"
+     },
+     {
+      "Id": "433824418",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Trisoul_DodgeRoll_SFX_0.wav",
+      "CachePath": "68/{68DB5E93-CC34-67D0-4E3B-E8BC8C87035F}.wem"
+     },
+     {
+      "Id": "738341883",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Trisoul_TowerTheme_Default_145bpm.wav",
+      "CachePath": "3B/{3BDD4168-3A62-923B-7A6B-7B57FE61F2DA}.wem"
+     },
+     {
+      "Id": "752048971",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Jumping 1.wav",
+      "CachePath": "C5/{C5F6DA6D-2813-1215-C0BB-D7B1EB9C423C}.wem"
+     },
+     {
+      "Id": "764992986",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Trisoul_DodgeRoll_SFX_2.wav",
+      "CachePath": "41/{417336A1-8C0C-0458-30AB-039C42980F6B}.wem"
+     },
+     {
+      "Id": "911417253",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Trisoul_TowerTheme_Battle_145bpm.wav",
+      "CachePath": "A2/{A2AFD8CF-1741-C306-F879-0F8DAF1C9129}.wem"
+     },
+     {
+      "Id": "938206191",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Trisoul_DodgeRoll_SFX_4.wav",
+      "CachePath": "37/{3706CE7A-D0A9-4449-DC59-4D4D79769D31}.wem"
+     },
+     {
+      "Id": "983562577",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Trisoul_DodgeRoll_SFX_3.wav",
+      "CachePath": "F3/{F366AF4A-267A-FF43-94E7-5328D3F4B575}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1942692385",
+      "Name": "Dash",
+      "ObjectPath": "\\Events\\Default Work Unit\\Dash",
+      "GUID": "{D4B6CC9A-BFF4-4931-AA16-DDE6332E698D}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.3437415",
+      "DurationMax": "1.3437415",
+      "MediaRefs": [
+       {
+        "Id": "190679874"
+       },
+       {
+        "Id": "433824418"
+       },
+       {
+        "Id": "764992986"
+       },
+       {
+        "Id": "938206191"
+       },
+       {
+        "Id": "983562577"
+       }
+      ]
+     },
+     {
+      "Id": "2385628198",
+      "Name": "Footsteps",
+      "ObjectPath": "\\Events\\Default Work Unit\\Footsteps",
+      "GUID": "{FC401FC9-866D-4452-81D3-B66AB0DC4DDF}",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "3833651337",
+      "Name": "Jump",
+      "ObjectPath": "\\Events\\Default Work Unit\\Jump",
+      "GUID": "{5228FD80-CD1A-44C5-B4FD-90C55FDECA64}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.0750417",
+      "DurationMax": "1.0750417",
+      "MediaRefs": [
+       {
+        "Id": "752048971"
+       }
+      ]
+     },
+     {
+      "Id": "3991942870",
+      "Name": "Music",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music",
+      "GUID": "{C396E428-1427-453C-A58D-569D97B955EE}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "738341883"
+       },
+       {
+        "Id": "911417253"
+       }
+      ]
+     },
+     {
+      "Id": "3826569560",
+      "Name": "Music_State",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music_State",
+      "GUID": "{00DD34E6-1B38-48C0-B4F6-902BEBC9F58F}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetState": [
+       {
+        "GroupId": "3873482650",
+        "Id": "168610243",
+        "Name": "Fighting",
+        "ObjectPath": "\\States\\Default Work Unit\\Tower_Theme\\Fighting",
+        "GUID": "{00C52401-B4FA-4511-A245-B401A0360DAE}"
+       },
+       {
+        "GroupId": "3873482650",
+        "Id": "1823678183",
+        "Name": "Exploring",
+        "ObjectPath": "\\States\\Default Work Unit\\Tower_Theme\\Exploring",
+        "GUID": "{7E25F7AE-4495-4DA5-9596-AE2B915761A6}"
+       }
+      ]
+     },
+     {
+      "Id": "2386519981",
+      "Name": "Swing",
+      "ObjectPath": "\\Events\\Default Work Unit\\Swing",
+      "GUID": "{7701D21A-5E6C-4682-A460-30B9D6D74626}",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "4213119059",
+      "Name": "Test_Coin",
+      "ObjectPath": "\\Events\\Default Work Unit\\Test_Coin",
+      "GUID": "{14888F90-1B79-41A1-81A6-9F7A722AF9C0}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.85891837",
+      "DurationMax": "0.85891837",
+      "MediaRefs": [
+       {
+        "Id": "252246478"
+       }
+      ]
+     },
+     {
+      "Id": "2858866177",
+      "Name": "Test_Gem",
+      "ObjectPath": "\\Events\\Default Work Unit\\Test_Gem",
+      "GUID": "{866B64A4-761C-4EAA-A96A-A0D450EC4099}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.0180209",
+      "DurationMax": "2.0180209",
+      "MediaRefs": [
+       {
+        "Id": "339665840"
+       }
+      ]
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "3873482650",
+      "Name": "Tower_Theme",
+      "ObjectPath": "\\States\\Default Work Unit\\Tower_Theme",
+      "GUID": "{B5F6643A-357F-41BB-B5B3-DC756079A30D}",
+      "States": [
+       {
+        "Id": "168610243",
+        "Name": "Fighting",
+        "ObjectPath": "\\States\\Default Work Unit\\Tower_Theme\\Fighting",
+        "GUID": "{00C52401-B4FA-4511-A245-B401A0360DAE}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Tower_Theme\\None",
+        "GUID": "{2EA2A999-CCE6-40E5-85F7-D859D5A78257}"
+       },
+       {
+        "Id": "1823678183",
+        "Name": "Exploring",
+        "ObjectPath": "\\States\\Default Work Unit\\Tower_Theme\\Exploring",
+        "GUID": "{7E25F7AE-4495-4DA5-9596-AE2B915761A6}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{00338212-B095-FF55-07ED-B31D65FD487D}"
+ }
+}
