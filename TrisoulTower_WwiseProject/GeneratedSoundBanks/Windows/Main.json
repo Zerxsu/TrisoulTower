@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{879ED1C6-7157-4890-992E-2BBE2CD3E8E1}",
     "Language": "SFX",
-    "Hash": "{771BF60E-3C6B-E34F-9B96-2802171BBC9B}",
+    "Hash": "{955EBF83-2E33-29C6-FE75-0F05B231C801}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -162,6 +162,32 @@
       ]
      },
      {
+      "Id": "3826569560",
+      "Name": "Music_State",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music_State",
+      "GUID": "{00DD34E6-1B38-48C0-B4F6-902BEBC9F58F}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetState": [
+       {
+        "GroupId": "3873482650",
+        "Id": "168610243",
+        "Name": "Fighting",
+        "ObjectPath": "\\States\\Default Work Unit\\Tower_Theme\\Fighting",
+        "GUID": "{00C52401-B4FA-4511-A245-B401A0360DAE}"
+       },
+       {
+        "GroupId": "3873482650",
+        "Id": "1823678183",
+        "Name": "Exploring",
+        "ObjectPath": "\\States\\Default Work Unit\\Tower_Theme\\Exploring",
+        "GUID": "{7E25F7AE-4495-4DA5-9596-AE2B915761A6}"
+       }
+      ]
+     },
+     {
       "Id": "2386519981",
       "Name": "Swing",
       "ObjectPath": "\\Events\\Default Work Unit\\Swing",
@@ -198,9 +224,37 @@
        }
       ]
      }
+    ],
+    "StateGroups": [
+     {
+      "Id": "3873482650",
+      "Name": "Tower_Theme",
+      "ObjectPath": "\\States\\Default Work Unit\\Tower_Theme",
+      "GUID": "{B5F6643A-357F-41BB-B5B3-DC756079A30D}",
+      "States": [
+       {
+        "Id": "168610243",
+        "Name": "Fighting",
+        "ObjectPath": "\\States\\Default Work Unit\\Tower_Theme\\Fighting",
+        "GUID": "{00C52401-B4FA-4511-A245-B401A0360DAE}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Tower_Theme\\None",
+        "GUID": "{2EA2A999-CCE6-40E5-85F7-D859D5A78257}"
+       },
+       {
+        "Id": "1823678183",
+        "Name": "Exploring",
+        "ObjectPath": "\\States\\Default Work Unit\\Tower_Theme\\Exploring",
+        "GUID": "{7E25F7AE-4495-4DA5-9596-AE2B915761A6}"
+       }
+      ]
+     }
     ]
    }
   ],
-  "FileHash": "{D58E4B40-0229-C646-E527-4001CC1E24F6}"
+  "FileHash": "{00338212-B095-FF55-07ED-B31D65FD487D}"
  }
 }

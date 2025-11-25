@@ -3,6 +3,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2385628198	Footsteps			\Default Work Unit\Footsteps	
 	2386519981	Swing			\Default Work Unit\Swing	
 	2858866177	Test_Gem			\Default Work Unit\Test_Gem	
+	3826569560	Music_State			\Default Work Unit\Music_State	
 	3833651337	Jump			\Default Work Unit\Jump	
 	3991942870	Music			\Default Work Unit\Music	
 	4213119059	Test_Coin			\Default Work Unit\Test_Coin	
