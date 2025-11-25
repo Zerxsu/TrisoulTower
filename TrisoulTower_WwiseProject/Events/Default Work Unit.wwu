@@ -25,6 +25,61 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Music" ID="{C396E428-1427-453C-A58D-569D97B955EE}">
+					<ChildrenList>
+						<Action Name="" ID="{B8B92F47-859A-44B4-A8D8-DBCF8EB886F9}" ShortID="586272429">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music" ID="{5B067505-3349-4AA2-9411-D992E12139C1}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Swing" ID="{7701D21A-5E6C-4682-A460-30B9D6D74626}">
+					<ChildrenList>
+						<Action Name="" ID="{D5B9603B-8AAC-4A32-9C9A-174395AF5C32}" ShortID="810595394">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Swing" ID="{881BAA2E-6490-461C-B600-0034BDB405E8}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Jump" ID="{5228FD80-CD1A-44C5-B4FD-90C55FDECA64}">
+					<ChildrenList>
+						<Action Name="" ID="{2867083E-5A13-47B8-9A03-4E0B9C45DA29}" ShortID="829414968">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Jump" ID="{CC2E2676-4C09-4BAD-8790-6E5BA5FFA03A}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Dash" ID="{D4B6CC9A-BFF4-4931-AA16-DDE6332E698D}">
+					<ChildrenList>
+						<Action Name="" ID="{D3DC77B2-E03C-4B72-9B99-4547AE98AD4F}" ShortID="302412035">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Dash" ID="{67AF976C-89ED-468E-B890-7ADEB701391F}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Footsteps" ID="{FC401FC9-866D-4452-81D3-B66AB0DC4DDF}">
+					<ChildrenList>
+						<Action Name="" ID="{7B4C25BA-0FBD-4534-95E8-2D078AFFFA7C}" ShortID="960111873">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footsteps" ID="{6C527826-5506-4E62-B1FD-F72EA5E0D18B}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

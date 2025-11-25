@@ -3,7 +3,7 @@
   "Platform": {
    "Name": "Windows",
    "BasePlatform": "Windows",
-   "Generator": "2024.1.8.8893"
+   "Generator": "2024.1.9.8920"
   },
   "RootPaths": {
    "ProjectRoot": "../..",
@@ -14,7 +14,7 @@
   },
   "DefaultAlign": "16",
   "Settings": {
-   "AutoSoundBankDefinition": "false",
+   "AutoSoundBankDefinition": "true",
    "CopyLooseStreamedMediaFiles": "true",
    "SubFoldersForGeneratedFiles": "false",
    "RemoveUnusedGeneratedFiles": "true",
@@ -33,6 +33,6 @@
    "PrintObjectPath": "true",
    "PrintObjectColor": "true"
   },
-  "FileHash": "{03C3EBED-C060-6FF7-1307-3A6575E936BF}"
+  "FileHash": "{39D0DADC-A71E-99F7-3823-58E71A201DC0}"
  }
 }

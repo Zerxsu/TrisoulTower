@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="Project" SchemaVersion="123" WwiseVersion="v2024.1.8" WwiseBuild="8893">
+<WwiseDocument Type="Project" SchemaVersion="123" WwiseVersion="v2024.1.9" WwiseBuild="8920">
 	<ProjectInfo>
 		<Project Name="TrisoulTower_WwiseProject" ID="{E9F0528E-9634-43A3-8985-8DB11386B7FB}">
 			<Platforms>
@@ -13,6 +13,7 @@
 				<Language Name="SFX" ID="{19F97A7A-EBBC-42AC-8FB7-C3A191BA6F14}"/>
 			</LanguageList>
 			<PropertyList>
+				<Property Name="AutoSoundBankEnabled" Type="bool" Value="True"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
 						<Value Platform="Windows"></Value>
@@ -21,11 +22,12 @@
 				</Property>
 				<Property Name="ExternalSourcesOutputPath" Type="string">
 					<ValueList>
-						<Value Platform="Windows">GeneratedSoundBanks\Windows\</Value>
-						<Value Platform="Mac">GeneratedSoundBanks\Mac\</Value>
+						<Value Platform="Windows">GeneratedSoundBanks\Windows</Value>
+						<Value Platform="Mac">GeneratedSoundBanks\Mac</Value>
 					</ValueList>
 				</Property>
-				<Property Name="SoundBankHeaderFilePath" Type="string" Value="GeneratedSoundBanks\"/>
+				<Property Name="LicenseKey" Type="string" Value="PHByb2plY3QgaWQ9IjU4NTQiIG1hc2s9IktXVVQ2MzU5IiBlbmM9IjAiPjxsaWNlbnNlIGlkPSIxIiBuYW1lPSJXd2lzZSIgdHlwZT0iMyIgcGxhdGZvcm1zPSIyLDMsNCwxMCwxMywxNCIgZXhwaXJlcz0iMjAyNi0wOC0zMSIgIC8+PGxpY2Vuc2UgaWQ9IjIyIiBuYW1lPSJMZXZlbCBBIExpY2Vuc2UiIHR5cGU9IjMiIHBsYXRmb3Jtcz0iMiwzLDQsMTAsMTMsMTQiIGV4cGlyZXM9IjIwMjYtMDgtMzEiICAvPjxsaWNlbnNlIGlkPSIyMSIgbmFtZT0iTWFpbnRlbmFuY2UiIHR5cGU9IjMiIHBsYXRmb3Jtcz0iMiwzLDQsMTAsMTMsMTQiIGV4cGlyZXM9IjIwMjYtMDgtMzEiICAvPjxsaWNlbnNlIGlkPSIyNSIgbmFtZT0iQWxsIFd3aXNlIFBsdWctSW5zIiB0eXBlPSIzIiAgZXhwaXJlcz0iMjAyNi0wOC0zMSIgIC8+PC9wcm9qZWN0Pg==|LLCxq9YFIio3/NzyetHqO2SOlqoOijhr4xetsin/aD8ffIHDawWbmRLQ1uXKKGc9yX9o94zzb6wVQ09Yg2DFpAoYu1MDLfsw7jDojVlEt92ydeNRG5SH/6cgJ3SL8qM1nqs7B/JmxWLGHwGozTvX2moq5087kUlgCmAfNeiRHeE8rSMlkvCpId14j0gmNoVpliKLHvTbEK3DK9LYSsIqxY1s5b7mE5EaAZW3WZyK9uEXet8fU2WECpIrOMsUpghUX2/XX0yGK2BCKjG/Q/OUT0gBwX5FEXhv/8gb/SvPteZAttpQ/FKpCqI388f9ZV/vs4/LGHbh/WMILPqN4hAjUg=="/>
+				<Property Name="SoundBankHeaderFilePath" Type="string" Value="SoundBanks"/>
 				<Property Name="SoundBankPaths" Type="string">
 					<ValueList>
 						<Value Platform="Windows">GeneratedSoundBanks\Windows\</Value>
@@ -58,6 +60,10 @@
 				</Property>
 				<Property Name="WwiseVersionWhenCreated" Type="string" Value="Branch=wwise_v2024.1.8|Build=8893|VersionName=v2024.1.8|Config=Release"/>
 			</PropertyList>
+			<MiscSettings>
+				<MiscSettingEntry Name="Cache"><![CDATA[.cache]]></MiscSettingEntry>
+				<MiscSettingEntry Name="Originals"><![CDATA[Originals]]></MiscSettingEntry>
+			</MiscSettings>
 			<SharedValues>
 				<SharedPropertyList ClassName="AudioFileSource" PluginType="0" CompanyID="1" PluginID="0">
 					<PropertyList>

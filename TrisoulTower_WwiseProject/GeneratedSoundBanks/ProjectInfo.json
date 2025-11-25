@@ -3,7 +3,7 @@
   "Project": {
    "Name": "TrisoulTower_WwiseProject",
    "GUID": "{E9F0528E-9634-43A3-8985-8DB11386B7FB}",
-   "Generator": "2024.1.8.8893"
+   "Generator": "2024.1.9.8920"
   },
   "CacheRoot": "../.cache",
   "Platforms": [
@@ -31,6 +31,6 @@
     "UseAsStandIn": "true"
    }
   ],
-  "FileHash": "{F12947C6-F3C2-BEC2-08F5-55C6AFB28EDE}"
+  "FileHash": "{9CCC0DA1-8DF8-5E57-CFA4-85C745D93F77}"
  }
 }

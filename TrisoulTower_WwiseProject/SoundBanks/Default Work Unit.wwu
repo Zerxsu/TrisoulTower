@@ -6,6 +6,7 @@
 				<SoundBank Name="Main" ID="{879ED1C6-7157-4890-992E-2BBE2CD3E8E1}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Test_Coin" ID="{14888F90-1B79-41A1-81A6-9F7A722AF9C0}" WorkUnitID="{DF32A78A-15D4-4E68-B566-159A8F6546E9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Music" ID="{C396E428-1427-453C-A58D-569D97B955EE}" WorkUnitID="{DF32A78A-15D4-4E68-B566-159A8F6546E9}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Test_Gem" ID="{866B64A4-761C-4EAA-A96A-A0D450EC4099}" WorkUnitID="{DF32A78A-15D4-4E68-B566-159A8F6546E9}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
