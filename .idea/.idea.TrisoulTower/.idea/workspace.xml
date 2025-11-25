@@ -16,10 +16,13 @@
     <list default="true" id="8e881ff7-db9b-43e6-80db-eb420dbd244d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TrisoulTower/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TrisoulTower/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultGame.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGame.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Materials/Player/M_Head.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Materials/Player/M_Head.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/WwiseSoundEngine/Source/WwiseSoundEngine/Public/Generated/AkiOSPlugins.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/WwiseSoundEngine/Source/WwiseSoundEngine/Public/Generated/AkiOSPlugins.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/WwiseSoundEngine/Source/WwiseSoundEngine/Public/Generated/AktvOSPlugins.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/WwiseSoundEngine/Source/WwiseSoundEngine/Public/Generated/AktvOSPlugins.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_CharacterController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_CharacterController.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Materials/EnvironmentMats/Landscape.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Materials/EnvironmentMats/Landscape.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TutorialMap/0/1M/GJSS4FE70UZAKC7P0GXXIG.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TutorialMap/0/1M/GJSS4FE70UZAKC7P0GXXIG.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TutorialMap/5/KE/MHI5AXBW542D5B6NMD4G1K.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TutorialMap/5/KE/MHI5AXBW542D5B6NMD4G1K.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TutorialMap/9/DM/LQDVCC9UULX3E1CV2N9TSO.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TutorialMap/9/DM/LQDVCC9UULX3E1CV2N9TSO.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TutorialMap/D/P1/6LQWKIK5Q3OQTLG0DIKMSE.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TutorialMap/D/P1/6LQWKIK5Q3OQTLG0DIKMSE.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TutorialMap/D/Y5/4ND1QNI8VXCZDY5L9ZWSJG.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TutorialMap/D/Y5/4ND1QNI8VXCZDY5L9ZWSJG.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +193,7 @@
       <workItem from="1763767251964" duration="1228000" />
       <workItem from="1763938731298" duration="7561000" />
       <workItem from="1764028358727" duration="335000" />
-      <workItem from="1764106228604" duration="507000" />
+      <workItem from="1764106228604" duration="3548000" />
     </task>
     <servers />
   </component>
