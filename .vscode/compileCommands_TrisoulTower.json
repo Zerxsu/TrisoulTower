@@ -1,0 +1,42 @@
+[
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Source\\TrisoulTower\\BaseEnemy.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_TrisoulTower\\TrisoulTower.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Source\\TrisoulTower\\BaseEnemy.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_TrisoulTower\\TrisoulTower.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Source\\TrisoulTower\\TrisoulTower.Build.cs",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_TrisoulTower\\TrisoulTower.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Source\\TrisoulTower\\TrisoulTower.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_TrisoulTower\\TrisoulTower.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Source\\TrisoulTower\\TrisoulTower.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_TrisoulTower\\TrisoulTower.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	}
+]
