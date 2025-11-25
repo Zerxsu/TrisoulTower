@@ -117,7 +117,7 @@ void ACharacterController::Dash()
 
 void ACharacterController::LightAttack()
 {
-	AbilitySystemComponent->TryActivateAbilityByClass(UGA_Attack::StaticClass());
+	AbilitySystemComponent->TryActivateAbilityByClass(LightAttackRef);
 }
 
 void ACharacterController::HeavyAttack()
