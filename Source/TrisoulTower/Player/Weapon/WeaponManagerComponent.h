@@ -14,10 +14,10 @@ class TRISOULTOWER_API UWeaponManagerComponent : public UActorComponent
 	GENERATED_BODY()
 
 public:	
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION()
 	void EquipWeapon(TSubclassOf<AWeapon_Base> WeaponToEquip);
 
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION()
 	void UnequipWeapon();
 
 protected:

@@ -40,8 +40,20 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "PlayerController|GameplayAbilitySystem")
 	void RemoveAbilities(TArray<FGameplayAbilitySpecHandle> AbilitiesToRemove);
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|GameplayAbilitySystem")
+	TSubclassOf<UGameplayAbility> LightAttackRef;
+
 	UPROPERTY(BlueprintReadOnly, Category = "PlayerController|Variables")
 	bool bIsDashing;
+
+	UPROPERTY(BlueprintReadWrite, Category = "PlayerController|Variables")
+	bool bIsAttacking;
+
+	UPROPERTY(BlueprintReadWrite, Category = "PlayerController|Variables")
+	int AttackIndex;
+
+	UPROPERTY(BlueprintReadWrite, Category = "PlayerController|Variables")
+	bool bIsWeaponEquipped;
 
 protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|GameplayAbilitySystem")
