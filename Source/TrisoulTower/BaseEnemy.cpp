@@ -1,12 +1,12 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-
+#include "BaseEnemy.h"
 #include "Containers/UnrealString.h"
 #include "GameFramework/PawnMovementComponent.h"
 #include "NavigationPath.h"
 #include "Kismet/GameplayStatics.h"
 #include "Kismet/KismetSystemLibrary.h"
-#include "BaseEnemy.h"
+
 
 // Sets default values
 ABaseEnemy::ABaseEnemy()
