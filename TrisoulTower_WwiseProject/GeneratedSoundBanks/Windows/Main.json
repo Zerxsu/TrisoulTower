@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{879ED1C6-7157-4890-992E-2BBE2CD3E8E1}",
     "Language": "SFX",
-    "Hash": "{80350BFF-4B76-836E-6806-0D008AA4276F}",
+    "Hash": "{A35FC103-7835-06EF-1C10-54F8BC023F1A}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -676,6 +676,142 @@
       ]
      },
      {
+      "Id": "3612189352",
+      "Name": "Temp_Footstep_Dirt",
+      "ObjectPath": "\\Events\\Default Work Unit\\Temp_Footstep_Dirt",
+      "GUID": "{1387C31B-B990-425C-86EB-CD00A57446A4}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.2852154",
+      "DurationMax": "0.3655102",
+      "MediaRefs": [
+       {
+        "Id": "191188656"
+       },
+       {
+        "Id": "192694640"
+       },
+       {
+        "Id": "472524586"
+       },
+       {
+        "Id": "515924223"
+       },
+       {
+        "Id": "737500400"
+       },
+       {
+        "Id": "741010699"
+       },
+       {
+        "Id": "857216331"
+       },
+       {
+        "Id": "975007778"
+       },
+       {
+        "Id": "992116950"
+       }
+      ]
+     },
+     {
+      "Id": "2237897111",
+      "Name": "Temp_Footstep_Grass",
+      "ObjectPath": "\\Events\\Default Work Unit\\Temp_Footstep_Grass",
+      "GUID": "{58F891FE-97A1-43BE-BD9A-44588CF18D34}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.2852154",
+      "DurationMax": "0.3655102",
+      "MediaRefs": [
+       {
+        "Id": "141411593"
+       },
+       {
+        "Id": "465008460"
+       },
+       {
+        "Id": "563396420"
+       },
+       {
+        "Id": "590461207"
+       },
+       {
+        "Id": "614895121"
+       },
+       {
+        "Id": "701209674"
+       },
+       {
+        "Id": "703086839"
+       },
+       {
+        "Id": "914263271"
+       },
+       {
+        "Id": "1008733411"
+       }
+      ]
+     },
+     {
+      "Id": "2727639046",
+      "Name": "Temp_Footstep_Stone",
+      "ObjectPath": "\\Events\\Default Work Unit\\Temp_Footstep_Stone",
+      "GUID": "{2D94C62F-EFBC-45EF-A1FE-60CD365B0917}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.2592517",
+      "DurationMax": "0.34489796",
+      "MediaRefs": [
+       {
+        "Id": "140529070"
+       },
+       {
+        "Id": "384422004"
+       },
+       {
+        "Id": "391763520"
+       },
+       {
+        "Id": "553045145"
+       }
+      ]
+     },
+     {
+      "Id": "1933848106",
+      "Name": "Temp_Swing_Hit",
+      "ObjectPath": "\\Events\\Default Work Unit\\Temp_Swing_Hit",
+      "GUID": "{B02B5558-8DAB-4548-A1BD-7ACB4E35265D}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.555669",
+      "DurationMax": "3.1577551",
+      "MediaRefs": [
+       {
+        "Id": "373082934"
+       },
+       {
+        "Id": "662488001"
+       }
+      ]
+     },
+     {
+      "Id": "3880234375",
+      "Name": "Temp_Swing_miss",
+      "ObjectPath": "\\Events\\Default Work Unit\\Temp_Swing_miss",
+      "GUID": "{02F02BE0-10C2-4EE4-B5E8-BB8F85BDA2A1}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.3794558",
+      "DurationMax": "1.3794558",
+      "MediaRefs": [
+       {
+        "Id": "744134619"
+       },
+       {
+        "Id": "939989117"
+       },
+       {
+        "Id": "961562867"
+       }
+      ]
+     },
+     {
       "Id": "4213119059",
       "Name": "Test_Coin",
       "ObjectPath": "\\Events\\Default Work Unit\\Test_Coin",
@@ -700,6 +836,20 @@
       "MediaRefs": [
        {
         "Id": "339665840"
+       }
+      ]
+     },
+     {
+      "Id": "1896376002",
+      "Name": "Test_Ui",
+      "ObjectPath": "\\Events\\Default Work Unit\\Test_Ui",
+      "GUID": "{61786EAA-61B0-4C2A-B4F0-91AB313419D3}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.21913832",
+      "DurationMax": "0.21913832",
+      "MediaRefs": [
+       {
+        "Id": "803049247"
        }
       ]
      }
@@ -788,6 +938,6 @@
     ]
    }
   ],
-  "FileHash": "{031B356F-A351-5422-5530-9FA9A435DD70}"
+  "FileHash": "{5971020B-4A75-5182-FB41-80C39B7913C2}"
  }
 }

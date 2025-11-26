@@ -186,6 +186,72 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Temp_Swing_Hit" ID="{B02B5558-8DAB-4548-A1BD-7ACB4E35265D}">
+					<ChildrenList>
+						<Action Name="" ID="{9A585B6A-802F-48DA-8D95-8F0CCBC7CCD5}" ShortID="38767444">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Swing_Hit_Dummy" ID="{582AFF18-09A4-4164-BF6A-A7F871512C62}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Temp_Swing_miss" ID="{02F02BE0-10C2-4EE4-B5E8-BB8F85BDA2A1}">
+					<ChildrenList>
+						<Action Name="" ID="{22E7BD0E-E7ED-46E5-B894-0D4945DDC0A0}" ShortID="698279224">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Swing_Miss_Normal" ID="{34D65106-758B-41DB-8379-73EE641C34AC}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Temp_Footstep_Grass" ID="{58F891FE-97A1-43BE-BD9A-44588CF18D34}">
+					<ChildrenList>
+						<Action Name="" ID="{ED168FE9-9FF0-47EC-BD1F-78FC25D61C5C}" ShortID="940413197">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Grass" ID="{8F8A22C3-CFF6-4EC2-ABCC-D4C9BEF84976}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Temp_Footstep_Stone" ID="{2D94C62F-EFBC-45EF-A1FE-60CD365B0917}">
+					<ChildrenList>
+						<Action Name="" ID="{297D4D41-6BA3-400A-A89D-E76318468537}" ShortID="487750991">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Stone" ID="{A5CD193A-0CB5-4F96-B350-8482E4244D0E}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Temp_Footstep_Dirt" ID="{1387C31B-B990-425C-86EB-CD00A57446A4}">
+					<ChildrenList>
+						<Action Name="" ID="{D6DDB92E-69F1-4B3A-8704-CC9CBF7B8F3F}" ShortID="131891870">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Dirt" ID="{E63F419A-2281-4F28-AC25-8F22B0BFD838}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Test_Ui" ID="{61786EAA-61B0-4C2A-B4F0-91AB313419D3}">
+					<ChildrenList>
+						<Action Name="" ID="{5F4F894D-4596-4CFD-AE58-70CDEC8F70E3}" ShortID="477190429">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ui" ID="{DF349B53-FD67-4D3A-99CB-8A9CEA0A10B9}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -1,13 +1,19 @@
 Event	ID	Name			Wwise Object Path	Notes
 	1322052556	Swing_Switch			\Default Work Unit\Swing_Switch	
+	1896376002	Test_Ui			\Default Work Unit\Test_Ui	
+	1933848106	Temp_Swing_Hit			\Default Work Unit\Temp_Swing_Hit	
 	1942692385	Dash			\Default Work Unit\Dash	
+	2237897111	Temp_Footstep_Grass			\Default Work Unit\Temp_Footstep_Grass	
 	2385628198	Footsteps			\Default Work Unit\Footsteps	
 	2386519981	Swing			\Default Work Unit\Swing	
+	2727639046	Temp_Footstep_Stone			\Default Work Unit\Temp_Footstep_Stone	
 	2858866177	Test_Gem			\Default Work Unit\Test_Gem	
 	3140091853	Footsteps_Switch			\Default Work Unit\Footsteps_Switch	
 	3227181061	Music_Stop			\Default Work Unit\Music_Stop	
+	3612189352	Temp_Footstep_Dirt			\Default Work Unit\Temp_Footstep_Dirt	
 	3826569560	Music_State			\Default Work Unit\Music_State	
 	3833651337	Jump			\Default Work Unit\Jump	
+	3880234375	Temp_Swing_miss			\Default Work Unit\Temp_Swing_miss	
 	3991942870	Music			\Default Work Unit\Music	
 	4213119059	Test_Coin			\Default Work Unit\Test_Coin	
 
