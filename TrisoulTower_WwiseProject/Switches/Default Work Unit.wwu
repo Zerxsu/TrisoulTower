@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{2F1DDC5E-189B-4D24-8AB6-C92E73FEA8BB}" SchemaVersion="123">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{2F1DDC5E-189B-4D24-8AB6-C92E73FEA8BB}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{2F1DDC5E-189B-4D24-8AB6-C92E73FEA8BB}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Swing_Switch" ID="{AEAD878C-D832-4265-BA7A-FAF698D4BF35}">
+					<ChildrenList>
+						<Switch Name="Swing_Miss_Normal" ID="{4059406A-D4F6-4DC2-96C0-A83CAAECE398}"/>
+						<Switch Name="Swing_Hit_Dummy" ID="{23CAFCB0-3D0E-4580-B4ED-54C8A36891F4}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Footsteps_Switch" ID="{6C2DFA40-AB1B-4476-80D9-061D1C731C48}">
+					<ChildrenList>
+						<Switch Name="Footsteps_Dirt" ID="{D4F2802F-26BF-4C9A-BFD7-F08EA3E3C85D}"/>
+						<Switch Name="Footsteps_Grass" ID="{128A683A-5AC2-4B6F-9BC3-D64A22C65749}"/>
+						<Switch Name="Footsteps_Stone" ID="{5A207BD0-3841-42D4-B15E-2AD15CE763EB}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

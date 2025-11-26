@@ -105,6 +105,14 @@
 												<CustomState Name="" ID="{90B5B7D0-0474-453F-B744-7235911DF9C8}" ShortID="731055987"/>
 											</CustomState>
 											<CustomState>
+												<StateRef Name="No_Music" ID="{6DE4D22C-BD7F-4402-9A3F-245B07C80326}"/>
+												<CustomState Name="" ID="{110405D8-9534-424F-A721-B53E0B9FBE82}" ShortID="632930385">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
 												<StateRef Name="Fighting" ID="{00C52401-B4FA-4511-A245-B401A0360DAE}"/>
 												<CustomState Name="" ID="{FE29F8F7-FB1C-441C-88C9-FAAFA3BBBF2E}" ShortID="126557329"/>
 											</CustomState>
@@ -183,6 +191,14 @@
 											<CustomState>
 												<StateRef Name="None" ID="{2EA2A999-CCE6-40E5-85F7-D859D5A78257}"/>
 												<CustomState Name="" ID="{A019FD21-F4B1-4E1F-82E2-835B08BEC966}" ShortID="690685033"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="No_Music" ID="{6DE4D22C-BD7F-4402-9A3F-245B07C80326}"/>
+												<CustomState Name="" ID="{96905098-E9C0-4254-87B7-9CE218422A32}" ShortID="595020108">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
 											</CustomState>
 											<CustomState>
 												<StateRef Name="Fighting" ID="{00C52401-B4FA-4511-A245-B401A0360DAE}"/>

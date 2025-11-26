@@ -184,8 +184,14 @@
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
 						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="Footsteps_Dirt" ID="{D4F2802F-26BF-4C9A-BFD7-F08EA3E3C85D}" WorkUnitID="{2F1DDC5E-189B-4D24-8AB6-C92E73FEA8BB}"/>
+						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="Footsteps_Switch" ID="{6C2DFA40-AB1B-4476-80D9-061D1C731C48}" WorkUnitID="{2F1DDC5E-189B-4D24-8AB6-C92E73FEA8BB}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -722,6 +728,26 @@
 								<ItemRef Name="Grass" ID="{8F8A22C3-CFF6-4EC2-ABCC-D4C9BEF84976}"/>
 							</GroupingBehavior>
 						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Footsteps_Dirt" ID="{D4F2802F-26BF-4C9A-BFD7-F08EA3E3C85D}"/>
+								<ItemList>
+									<ItemRef Name="Dirt" ID="{E63F419A-2281-4F28-AC25-8F22B0BFD838}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Footsteps_Grass" ID="{128A683A-5AC2-4B6F-9BC3-D64A22C65749}"/>
+								<ItemList>
+									<ItemRef Name="Grass" ID="{8F8A22C3-CFF6-4EC2-ABCC-D4C9BEF84976}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Footsteps_Stone" ID="{5A207BD0-3841-42D4-B15E-2AD15CE763EB}"/>
+								<ItemList>
+									<ItemRef Name="Stone" ID="{A5CD193A-0CB5-4F96-B350-8482E4244D0E}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
 				<SwitchContainer Name="Swing" ID="{881BAA2E-6490-461C-B600-0034BDB405E8}" ShortID="715917486">
@@ -729,8 +755,14 @@
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
 						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="Swing_Miss_Normal" ID="{4059406A-D4F6-4DC2-96C0-A83CAAECE398}" WorkUnitID="{2F1DDC5E-189B-4D24-8AB6-C92E73FEA8BB}"/>
+						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="Swing_Switch" ID="{AEAD878C-D832-4265-BA7A-FAF698D4BF35}" WorkUnitID="{2F1DDC5E-189B-4D24-8AB6-C92E73FEA8BB}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -742,6 +774,9 @@
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
 								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="Swing_Switch" ID="{AEAD878C-D832-4265-BA7A-FAF698D4BF35}" WorkUnitID="{2F1DDC5E-189B-4D24-8AB6-C92E73FEA8BB}"/>
+								</Reference>
 							</ReferenceList>
 							<ChildrenList>
 								<SwitchContainer Name="Dummy" ID="{331E6BEE-D6E6-454C-BDAC-FFC0DDD185C0}" ShortID="89704885">
@@ -749,12 +784,18 @@
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
 										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Swing_Hit_Dummy" ID="{23CAFCB0-3D0E-4580-B4ED-54C8A36891F4}" WorkUnitID="{2F1DDC5E-189B-4D24-8AB6-C92E73FEA8BB}"/>
+										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
 										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Swing_Switch" ID="{AEAD878C-D832-4265-BA7A-FAF698D4BF35}" WorkUnitID="{2F1DDC5E-189B-4D24-8AB6-C92E73FEA8BB}"/>
+										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<RandomSequenceContainer Name="Dummy_Temp" ID="{582AFF18-09A4-4164-BF6A-A7F871512C62}" ShortID="573890354">
+										<RandomSequenceContainer Name="Swing_Hit_Dummy" ID="{582AFF18-09A4-4164-BF6A-A7F871512C62}" ShortID="573890354">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
@@ -814,9 +855,17 @@
 									<GroupingInfo>
 										<GroupingBehaviorList>
 											<GroupingBehavior>
-												<ItemRef Name="Dummy_Temp" ID="{582AFF18-09A4-4164-BF6A-A7F871512C62}"/>
+												<ItemRef Name="Swing_Hit_Dummy" ID="{582AFF18-09A4-4164-BF6A-A7F871512C62}"/>
 											</GroupingBehavior>
 										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Swing_Hit_Dummy" ID="{23CAFCB0-3D0E-4580-B4ED-54C8A36891F4}"/>
+												<ItemList>
+													<ItemRef Name="Swing_Hit_Dummy" ID="{582AFF18-09A4-4164-BF6A-A7F871512C62}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
 									</GroupingInfo>
 								</SwitchContainer>
 							</ChildrenList>
@@ -826,6 +875,14 @@
 										<ItemRef Name="Dummy" ID="{331E6BEE-D6E6-454C-BDAC-FFC0DDD185C0}"/>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Swing_Hit_Dummy" ID="{23CAFCB0-3D0E-4580-B4ED-54C8A36891F4}"/>
+										<ItemList>
+											<ItemRef Name="Dummy" ID="{331E6BEE-D6E6-454C-BDAC-FFC0DDD185C0}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
 						<SwitchContainer Name="Miss" ID="{626EB7C3-4F78-4DD7-BF8C-FD79A629D749}" ShortID="689227577">
@@ -835,6 +892,9 @@
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="Swing_Switch" ID="{AEAD878C-D832-4265-BA7A-FAF698D4BF35}" WorkUnitID="{2F1DDC5E-189B-4D24-8AB6-C92E73FEA8BB}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -865,12 +925,18 @@
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
 										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Swing_Miss_Normal" ID="{4059406A-D4F6-4DC2-96C0-A83CAAECE398}" WorkUnitID="{2F1DDC5E-189B-4D24-8AB6-C92E73FEA8BB}"/>
+										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
 										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Swing_Switch" ID="{AEAD878C-D832-4265-BA7A-FAF698D4BF35}" WorkUnitID="{2F1DDC5E-189B-4D24-8AB6-C92E73FEA8BB}"/>
+										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<RandomSequenceContainer Name="Normal_Sword_Miss" ID="{34D65106-758B-41DB-8379-73EE641C34AC}" ShortID="1022120766">
+										<RandomSequenceContainer Name="Swing_Miss_Normal" ID="{34D65106-758B-41DB-8379-73EE641C34AC}" ShortID="1022120766">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
@@ -952,9 +1018,17 @@
 									<GroupingInfo>
 										<GroupingBehaviorList>
 											<GroupingBehavior>
-												<ItemRef Name="Normal_Sword_Miss" ID="{34D65106-758B-41DB-8379-73EE641C34AC}"/>
+												<ItemRef Name="Swing_Miss_Normal" ID="{34D65106-758B-41DB-8379-73EE641C34AC}"/>
 											</GroupingBehavior>
 										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Swing_Miss_Normal" ID="{4059406A-D4F6-4DC2-96C0-A83CAAECE398}"/>
+												<ItemList>
+													<ItemRef Name="Swing_Miss_Normal" ID="{34D65106-758B-41DB-8379-73EE641C34AC}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
 									</GroupingInfo>
 								</SwitchContainer>
 							</ChildrenList>
@@ -970,6 +1044,16 @@
 										<ItemRef Name="Light" ID="{87648C4E-3EE4-4246-83F7-9B4BB92DC4E1}"/>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Swing_Miss_Normal" ID="{4059406A-D4F6-4DC2-96C0-A83CAAECE398}"/>
+										<ItemList>
+											<ItemRef Name="Heavy" ID="{149D174E-A79F-481B-832D-42C9BEC1F748}"/>
+											<ItemRef Name="Light" ID="{87648C4E-3EE4-4246-83F7-9B4BB92DC4E1}"/>
+											<ItemRef Name="Normal" ID="{92F4481E-853A-4272-928E-683D8A78EED4}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
 					</ChildrenList>
@@ -982,6 +1066,20 @@
 								<ItemRef Name="Hit" ID="{031EC0DA-BA22-4D38-92AA-F292BE681C50}"/>
 							</GroupingBehavior>
 						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Swing_Miss_Normal" ID="{4059406A-D4F6-4DC2-96C0-A83CAAECE398}"/>
+								<ItemList>
+									<ItemRef Name="Miss" ID="{626EB7C3-4F78-4DD7-BF8C-FD79A629D749}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Swing_Hit_Dummy" ID="{23CAFCB0-3D0E-4580-B4ED-54C8A36891F4}"/>
+								<ItemList>
+									<ItemRef Name="Hit" ID="{031EC0DA-BA22-4D38-92AA-F292BE681C50}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
 				<RandomSequenceContainer Name="Jump" ID="{CC2E2676-4C09-4BAD-8790-6E5BA5FFA03A}" ShortID="642288663">
@@ -1018,6 +1116,28 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<Sound Name="ui" ID="{DF349B53-FD67-4D3A-99CB-8A9CEA0A10B9}" ShortID="460131563">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="ui" ID="{134A9EBE-BBA4-489C-8134-B03618BBBE64}">
+							<Language>SFX</Language>
+							<AudioFile>ui.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="803049247"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="ui" ID="{134A9EBE-BBA4-489C-8134-B03618BBBE64}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

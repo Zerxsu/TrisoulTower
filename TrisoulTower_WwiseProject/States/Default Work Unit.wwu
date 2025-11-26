@@ -8,18 +8,19 @@
 						<State Name="None" ID="{2EA2A999-CCE6-40E5-85F7-D859D5A78257}"/>
 						<State Name="Exploring" ID="{7E25F7AE-4495-4DA5-9596-AE2B915761A6}"/>
 						<State Name="Fighting" ID="{00C52401-B4FA-4511-A245-B401A0360DAE}"/>
+						<State Name="No_Music" ID="{6DE4D22C-BD7F-4402-9A3F-245B07C80326}"/>
 					</ChildrenList>
 					<TransitionList>
 						<Transition>
 							<StartState Name="Exploring" ID="{7E25F7AE-4495-4DA5-9596-AE2B915761A6}"/>
-							<EndState Name="Fighting" ID="{00C52401-B4FA-4511-A245-B401A0360DAE}"/>
-							<Time>1</Time>
+							<EndState Name="No_Music" ID="{6DE4D22C-BD7F-4402-9A3F-245B07C80326}"/>
+							<Time>0.3</Time>
 							<IsShared>false</IsShared>
 						</Transition>
 						<Transition>
 							<StartState Name="Fighting" ID="{00C52401-B4FA-4511-A245-B401A0360DAE}"/>
-							<EndState Name="Exploring" ID="{7E25F7AE-4495-4DA5-9596-AE2B915761A6}"/>
-							<Time>1</Time>
+							<EndState Name="No_Music" ID="{6DE4D22C-BD7F-4402-9A3F-245B07C80326}"/>
+							<Time>0.3</Time>
 							<IsShared>false</IsShared>
 						</Transition>
 					</TransitionList>
