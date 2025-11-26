@@ -1,12 +1,32 @@
 Event	ID	Name			Wwise Object Path	Notes
+	1322052556	Swing_Switch			\Default Work Unit\Swing_Switch	
+	1896376002	Test_Ui			\Default Work Unit\Test_Ui	
+	1933848106	Temp_Swing_Hit			\Default Work Unit\Temp_Swing_Hit	
 	1942692385	Dash			\Default Work Unit\Dash	
+	2237897111	Temp_Footstep_Grass			\Default Work Unit\Temp_Footstep_Grass	
 	2385628198	Footsteps			\Default Work Unit\Footsteps	
 	2386519981	Swing			\Default Work Unit\Swing	
+	2727639046	Temp_Footstep_Stone			\Default Work Unit\Temp_Footstep_Stone	
 	2858866177	Test_Gem			\Default Work Unit\Test_Gem	
+	3140091853	Footsteps_Switch			\Default Work Unit\Footsteps_Switch	
+	3227181061	Music_Stop			\Default Work Unit\Music_Stop	
+	3612189352	Temp_Footstep_Dirt			\Default Work Unit\Temp_Footstep_Dirt	
 	3826569560	Music_State			\Default Work Unit\Music_State	
 	3833651337	Jump			\Default Work Unit\Jump	
+	3880234375	Temp_Swing_miss			\Default Work Unit\Temp_Swing_miss	
 	3991942870	Music			\Default Work Unit\Music	
 	4213119059	Test_Coin			\Default Work Unit\Test_Coin	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1322052556	Swing_Switch			\Default Work Unit\Swing_Switch	
+	3140091853	Footsteps_Switch			\Default Work Unit\Footsteps_Switch	
+
+Switch	ID	Name	Switch Group			Notes
+	1120321930	Swing_Hit_Dummy	Swing_Switch			
+	3873576798	Swing_Miss_Normal	Swing_Switch			
+	7365553	Footsteps_Grass	Footsteps_Switch			
+	307640020	Footsteps_Stone	Footsteps_Switch			
+	1565032450	Footsteps_Dirt	Footsteps_Switch			
 
 State Group	ID	Name			Wwise Object Path	Notes
 	3873482650	Tower_Theme			\Default Work Unit\Tower_Theme	
@@ -15,16 +35,45 @@ State	ID	Name	State Group			Notes
 	168610243	Fighting	Tower_Theme			
 	748895195	None	Tower_Theme			
 	1823678183	Exploring	Tower_Theme			
+	3767268120	No_Music	Tower_Theme			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	190679874	Trisoul_DodgeRoll_SFX_1	C:\Users\xoesm\Documents\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\FE\{FE798C17-21EF-6820-2945-F9C79FA27EB6}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dash\Trisoul_DodgeRoll_SFX_1		237180
-	252246478	Test_Coin	C:\Users\xoesm\Documents\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\E7\{E72CDE35-16F8-BF4E-EDD2-C16C71168F50}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test_Coin		151608
-	339665840	Test_Gem	C:\Users\xoesm\Documents\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\5D\{5D9F5425-752F-A90E-9169-24DAB07696A7}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test_Gem		387556
-	433824418	Trisoul_DodgeRoll_SFX_0	C:\Users\xoesm\Documents\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\68\{68DB5E93-CC34-67D0-4E3B-E8BC8C87035F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dash\Trisoul_DodgeRoll_SFX_0		237180
-	738341883	Trisoul_TowerTheme_Default_145bpm	C:\Users\xoesm\Documents\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\3B\{3BDD4168-3A62-923B-7A6B-7B57FE61F2DA}.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Tower\Trisoul_TowerTheme_Default_145bpm		8175372
-	752048971	Jump_Temp	C:\Users\xoesm\Documents\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\C5\{C5F6DA6D-2813-1215-C0BB-D7B1EB9C423C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jump\Jump_Temp		206504
-	764992986	Trisoul_DodgeRoll_SFX_2	C:\Users\xoesm\Documents\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\41\{417336A1-8C0C-0458-30AB-039C42980F6B}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dash\Trisoul_DodgeRoll_SFX_2		237180
-	911417253	Trisoul_TowerTheme_Battle_145bpm	C:\Users\xoesm\Documents\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\A2\{A2AFD8CF-1741-C306-F879-0F8DAF1C9129}.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Tower\Trisoul_TowerTheme_Battle_145bpm		8175372
-	938206191	Trisoul_DodgeRoll_SFX_4	C:\Users\xoesm\Documents\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\37\{3706CE7A-D0A9-4449-DC59-4D4D79769D31}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dash\Trisoul_DodgeRoll_SFX_4		237180
-	983562577	Trisoul_DodgeRoll_SFX_3	C:\Users\xoesm\Documents\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\F3\{F366AF4A-267A-FF43-94E7-5328D3F4B575}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dash\Trisoul_DodgeRoll_SFX_3		237180
+	140529070	s2	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\E6\{E688E044-F712-7E6D-61E3-2F2AC188299D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Stone\s2		49544
+	141411593	g8	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\69\{694E5C1D-A1DE-40C6-D954-60A53289D9B2}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Grass\g8		50408
+	190679874	Trisoul_DodgeRoll_SFX_1	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\FE\{FE798C17-21EF-6820-2945-F9C79FA27EB6}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dash\Trisoul_DodgeRoll_SFX_1		237180
+	191188656	d9	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\34\{3425E7A9-FEF6-0F8E-9E08-BA507389ED43}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Dirt\d9		57080
+	192694640	d4	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\9B\{9BC50B68-4DEA-F9FA-4A02-C73AB7792A9A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Dirt\d4		64572
+	252246478	Test_Coin	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\E7\{E72CDE35-16F8-BF4E-EDD2-C16C71168F50}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test_Coin		151608
+	339665840	Test_Gem	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\5D\{5D9F5425-752F-A90E-9169-24DAB07696A7}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test_Gem		387556
+	373082934	slash 1	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\05\{05E17A6D-0C43-4556-6711-DA5F70C7201B}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Swing\Hit\Dummy\Swing_Hit_Dummy\slash 1		557124
+	384422004	s1	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\84\{849E60CE-CAC0-C88F-4DFD-8F980893BAD8}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Stone\s1		45828
+	391763520	s4	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\AD\{AD2BC5A3-0ECC-9FFB-A294-21AC5506ED93}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Stone\s4		53600
+	433824418	Trisoul_DodgeRoll_SFX_0	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\68\{68DB5E93-CC34-67D0-4E3B-E8BC8C87035F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dash\Trisoul_DodgeRoll_SFX_0		237180
+	465008460	g9	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\AB\{AB180B91-48EF-EA18-CC71-F5CCCCC2DE58}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Grass\g9		57080
+	472524586	d2	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\20\{2030C485-2EAB-04D6-BB6F-CD1F85162588}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Dirt\d2		56992
+	515924223	d1	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\D4\{D49A92FD-251E-7BBB-AD27-E4F228987ACE}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Dirt\d1		51472
+	553045145	s3	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\B6\{B687C529-2B31-6EA8-1027-E3327A127296}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Stone\s3		60936
+	563396420	g7	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\F0\{F0E6FCBE-344C-3204-6342-22CE66BFE973}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Grass\g7		59364
+	590461207	g5	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\31\{31808120-0FE2-C935-A54D-1C43962EB788}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Grass\g5		58388
+	614895121	g2	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\CA\{CA5ACE72-667B-D500-241E-E2EB94BD6E6E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Grass\g2		56992
+	662488001	slash 1-001 (1)	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\8F\{8F0CC7A4-B8E7-9FDD-4E2C-F8FD94DDCE65}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Swing\Hit\Dummy\Swing_Hit_Dummy\slash 1-001 (1)		274516
+	701209674	g6	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\BD\{BD110B2C-7C08-7FB3-8823-E57C5271DC78}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Grass\g6		52876
+	703086839	g3	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\3D\{3D4AAB20-F9CD-E507-5A9E-36230992E369}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Grass\g3		59540
+	737500400	d6	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\8D\{8D9C4CCC-127C-E239-0124-C93968E3F217}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Dirt\d6		52876
+	738341883	Trisoul_TowerTheme_Default_145bpm	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\3B\{3BDD4168-3A62-923B-7A6B-7B57FE61F2DA}.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Tower\Trisoul_TowerTheme_Default_145bpm		8175372
+	741010699	d5	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\48\{48CE7D0F-4948-8D7A-B3A6-769C7D5E6A6A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Dirt\d5		58388
+	744134619	Trisoul_MidSwordSwing_V2_1	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\24\{24878A77-7884-4C39-A5FE-500DFBBFF353}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Swing\Miss\Normal\Swing_Miss_Normal\Trisoul_MidSwordSwing_V2_1		243480
+	752048971	Jump_Temp	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\C5\{C5F6DA6D-2813-1215-C0BB-D7B1EB9C423C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jump\Jump_Temp		206504
+	764992986	Trisoul_DodgeRoll_SFX_2	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\41\{417336A1-8C0C-0458-30AB-039C42980F6B}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dash\Trisoul_DodgeRoll_SFX_2		237180
+	803049247	ui	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\B0\{B03D14ED-5EC8-938D-9C43-CC3839CB69C5}.wem		\Actor-Mixer Hierarchy\Default Work Unit\ui		38752
+	857216331	d7	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\EA\{EAD5AFAB-5232-1F9D-0D14-B02BFF7AC054}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Dirt\d7		59364
+	911417253	Trisoul_TowerTheme_Battle_145bpm	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\A2\{A2AFD8CF-1741-C306-F879-0F8DAF1C9129}.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Tower\Trisoul_TowerTheme_Battle_145bpm		8175372
+	914263271	g4	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\00\{005D72A9-E7A3-55E3-DEEB-44E37BCD6CE1}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Grass\g4		64572
+	938206191	Trisoul_DodgeRoll_SFX_4	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\37\{3706CE7A-D0A9-4449-DC59-4D4D79769D31}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dash\Trisoul_DodgeRoll_SFX_4		237180
+	939989117	Trisoul_MidSwordSwing_V2_2	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\36\{36560840-D249-E775-5835-4B824B4C427A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Swing\Miss\Normal\Swing_Miss_Normal\Trisoul_MidSwordSwing_V2_2		243480
+	961562867	Trisoul_MidSwordSwing_V2_0	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\CB\{CB815B13-A6B9-CE0E-D455-00910CDD3EF4}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Swing\Miss\Normal\Swing_Miss_Normal\Trisoul_MidSwordSwing_V2_0		243480
+	975007778	d3	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\44\{440BE812-6827-6003-BB7F-30A3507A32B9}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Dirt\d3		59540
+	983562577	Trisoul_DodgeRoll_SFX_3	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\F3\{F366AF4A-267A-FF43-94E7-5328D3F4B575}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dash\Trisoul_DodgeRoll_SFX_3		237180
+	992116950	d8	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\BA\{BAF81401-DC61-8DC7-7B66-3FBD38FD4391}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Dirt\d8		50408
+	1008733411	g1	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\79\{79724DA1-9630-CFF8-20EB-4FA1E9349893}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Grass\g1		58332
 

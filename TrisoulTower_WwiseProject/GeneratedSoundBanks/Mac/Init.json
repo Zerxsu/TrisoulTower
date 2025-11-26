@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{5FAE52D5-7354-FECF-E4B6-C3F39893DAE6}",
+    "Hash": "{4F8C284B-E100-4F22-CC90-4F470D0BA6C5}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -66,12 +66,66 @@
         "Name": "Exploring",
         "ObjectPath": "\\States\\Default Work Unit\\Tower_Theme\\Exploring",
         "GUID": "{7E25F7AE-4495-4DA5-9596-AE2B915761A6}"
+       },
+       {
+        "Id": "3767268120",
+        "Name": "No_Music",
+        "ObjectPath": "\\States\\Default Work Unit\\Tower_Theme\\No_Music",
+        "GUID": "{6DE4D22C-BD7F-4402-9A3F-245B07C80326}"
+       }
+      ]
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "1322052556",
+      "Name": "Swing_Switch",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Swing_Switch",
+      "GUID": "{AEAD878C-D832-4265-BA7A-FAF698D4BF35}",
+      "Switches": [
+       {
+        "Id": "1120321930",
+        "Name": "Swing_Hit_Dummy",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Swing_Switch\\Swing_Hit_Dummy",
+        "GUID": "{23CAFCB0-3D0E-4580-B4ED-54C8A36891F4}"
+       },
+       {
+        "Id": "3873576798",
+        "Name": "Swing_Miss_Normal",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Swing_Switch\\Swing_Miss_Normal",
+        "GUID": "{4059406A-D4F6-4DC2-96C0-A83CAAECE398}"
+       }
+      ]
+     },
+     {
+      "Id": "3140091853",
+      "Name": "Footsteps_Switch",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Footsteps_Switch",
+      "GUID": "{6C2DFA40-AB1B-4476-80D9-061D1C731C48}",
+      "Switches": [
+       {
+        "Id": "7365553",
+        "Name": "Footsteps_Grass",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Footsteps_Switch\\Footsteps_Grass",
+        "GUID": "{128A683A-5AC2-4B6F-9BC3-D64A22C65749}"
+       },
+       {
+        "Id": "307640020",
+        "Name": "Footsteps_Stone",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Footsteps_Switch\\Footsteps_Stone",
+        "GUID": "{5A207BD0-3841-42D4-B15E-2AD15CE763EB}"
+       },
+       {
+        "Id": "1565032450",
+        "Name": "Footsteps_Dirt",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Footsteps_Switch\\Footsteps_Dirt",
+        "GUID": "{D4F2802F-26BF-4C9A-BFD7-F08EA3E3C85D}"
        }
       ]
      }
     ]
    }
   ],
-  "FileHash": "{9695CD33-66CC-7386-2716-90795C4A3795}"
+  "FileHash": "{1E931984-37C4-BA85-3554-AE059715A036}"
  }
 }

@@ -5,6 +5,7 @@ State	ID	Name	State Group			Notes
 	168610243	Fighting	Tower_Theme			
 	748895195	None	Tower_Theme			
 	1823678183	Exploring	Tower_Theme			
+	3767268120	No_Music	Tower_Theme			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
