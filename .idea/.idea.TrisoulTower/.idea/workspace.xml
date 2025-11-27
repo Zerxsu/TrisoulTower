@@ -15,20 +15,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8e881ff7-db9b-43e6-80db-eb420dbd244d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TrisoulTower/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TrisoulTower/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_CharacterController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_CharacterController.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Cues/GC_Dash.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Cues/GC_Dash.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Levels/TutorialMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/TutorialMap.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Levels/TutorialMap_HLOD0_Instancing.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/TutorialMap_HLOD0_Instancing.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Materials/EnvironmentMats/Landscape.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Materials/EnvironmentMats/Landscape.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Materials/Player/M_Head.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Materials/Player/M_Head.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Materials/Shaders/Foliage_Bush.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Materials/Shaders/Foliage_Bush.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Materials/Shaders/M_CelShader.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Materials/Shaders/M_CelShader.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/Run.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/Run.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/Walk.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/Walk.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Character_Model_Official_Skeleton.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Character/Player/Character_Model_Official_Skeleton.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Cues/GC_Dash.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Cues/GC_Dash.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Cues/GC_Dash.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Cues/GC_Dash.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +189,7 @@
       <workItem from="1763938731298" duration="7561000" />
       <workItem from="1764028358727" duration="335000" />
       <workItem from="1764106228604" duration="5268000" />
-      <workItem from="1764190603725" duration="8068000" />
+      <workItem from="1764190603725" duration="9287000" />
     </task>
     <servers />
   </component>
