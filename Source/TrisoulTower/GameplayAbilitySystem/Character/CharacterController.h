@@ -34,13 +34,13 @@ public:
 
 	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override;
 
-	UFUNCTION(BlueprintCallable, Category = "PlayerController|GameplayAbilitySystem")
+	UFUNCTION(BlueprintCallable)
 	TArray<FGameplayAbilitySpecHandle> GrantAbilities(TArray<TSubclassOf<UGameplayAbility>> AbilitiesToGrant);
 
-	UFUNCTION(BlueprintCallable, Category = "PlayerController|GameplayAbilitySystem")
+	UFUNCTION(BlueprintCallable)
 	void RemoveAbilities(TArray<FGameplayAbilitySpecHandle> AbilitiesToRemove);
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|GameplayAbilitySystem")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|GameplayAbilitySystem|Abilities")
 	TSubclassOf<UGameplayAbility> LightAttackRef;
 
 	UPROPERTY(BlueprintReadOnly, Category = "PlayerController|Variables")
@@ -56,7 +56,7 @@ public:
 	bool bIsWeaponEquipped;
 
 protected:
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|GameplayAbilitySystem")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|GameplayAbilitySystem|Abilities")
 	TArray<TSubclassOf<UGameplayAbility>> StartingAbilities;
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "PlayerController")
@@ -141,7 +141,10 @@ protected:
 	UFUNCTION()
 	void EquipWeapon3();
 
+	void HandleStaminaChanged(const FOnAttributeChangeData& Data);
+
 private:
+	UPROPERTY()
 	float OriginalWalkSpeed;
 
 	UPROPERTY()
@@ -155,4 +158,16 @@ private:
 
 	UPROPERTY(EditAnywhere, Category = "PlayerController|Weapon")
 	TSubclassOf<AWeapon_Base> WeaponSlot3;
+
+	UPROPERTY(EditAnywhere, Category = "PlayerController|GameplayAbilitySystem|Effects")
+	TSubclassOf<UGameplayEffect> StaminaRegenEffect;
+
+	UPROPERTY(EditAnywhere, Category = "PlayerController|GameplayAbilitySystem|Tags")
+	FGameplayTag StaminaRegenTag;
+
+	UFUNCTION()
+	void ApplyStaminaRegen();
+
+	UFUNCTION()
+	void RemoveStaminaRegen();
 };
