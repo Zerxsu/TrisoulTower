@@ -46,7 +46,9 @@ protected:
 
 	TArray<ABaseEnemy*> Navigators;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float Separation = 256.0f;//32.0f;
+
+	UPROPERTY(BlueprintReadWrite)
 	TMap<FVector2D, FNavPoint> Points;
 
 public:	
@@ -57,6 +59,11 @@ public:
 
 	FNavPoint* GetPoint(FVector2D at);
 
+	UFUNCTION(BlueprintCallable)
 	void AssignPoint(ABaseEnemy* ai);	
+
+	void TradePoint(FVector2D at);
+
+	FVector2D GetHexPos(int point, int dist = 1);
 
 };

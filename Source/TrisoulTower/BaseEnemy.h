@@ -7,6 +7,7 @@
 #include "AIController.h"
 #include "NavigationSystem.h"
 #include "NavigationPath.h"
+//#include "AIGroupManager.h"
 #include "BaseEnemy.generated.h"
 
 UENUM(BlueprintType)
@@ -27,6 +28,9 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Behaviour")
 	ETargetType TargetType = ETargetType::Direct;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Behaviour")
+	bool needPoint = false;
 
 	FNavigationPath* NavPath;
 
@@ -81,6 +85,10 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Behaviour")
 	virtual void TakeAttack(float damage, bool parry);
 
+	UFUNCTION(BlueprintCallable, Category = "Navigation")
+	void AssignPoint(FVector2D at, int priotity);
+
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -92,13 +100,14 @@ protected:
 	float stunTime = 0.0f;
 
 	bool isAtTarget = false;
+	bool pointAtPlayer = true;//Assigned point is player adjacent (priority 1)
 
 	UPROPERTY(BlueprintReadOnly)
 	AActor* PlayerActor;
 
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
-	float Speed = 256.0f;
+	float Speed = 64.0f;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
 	float StopDist = 32.0f;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")

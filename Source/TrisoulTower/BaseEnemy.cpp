@@ -36,6 +36,8 @@ void ABaseEnemy::BeginPlay()
 	
 	FindTarget();
 	MakePath();
+
+	if (TargetType == ETargetType::Direct) needPoint = true;
 }
 
 // Called every frame
@@ -49,8 +51,8 @@ void ABaseEnemy::Tick(float DeltaTime)
 
 	if (!isAtTarget && stunTime <= 0 && NavPath != nullptr) {//If path is unfinished
 		
-		if (NavPath->GetLength() <= TargetDist) bool m = true;
-		if (CanSeeTarget()) bool m = false;
+		//if (NavPath->GetLength() <= TargetDist) bool m = true;
+		//if (CanSeeTarget()) bool m = false;
 
 		if (NavPath->GetLength() <= TargetDist && CanSeeTarget()) {
 			ReachedTarget();
@@ -64,8 +66,9 @@ void ABaseEnemy::Tick(float DeltaTime)
 			FVector Dir;//Direction to next point
 			Dir = NavPath->GetPathPointLocation(1).Position - GetActorLocation();
 			Dir.Normalize();
-			SetActorLocation(GetActorLocation() + Dir * Speed * DeltaTime);//Move actor towards next point
-			
+			//SetActorLocation(GetActorLocation() + Dir * Speed * DeltaTime);//Move actor towards next point
+			AddMovementInput(Dir, Speed / 100.0f);
+
 			FRotator Rot = GetActorRotation();
 			SetActorRotation(FRotator(Rot.Pitch, Dir.Rotation().Yaw, Rot.Roll));
 			
@@ -82,10 +85,26 @@ void ABaseEnemy::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent
 	//return;
 }
 
+//Set target point from AIGroupManager
+void ABaseEnemy::AssignPoint(FVector2D at, int prio)
+{
+	if (PlayerActor == nullptr) return;
+	if (isAttacking) return;
+
+	FVector new_at = FVector(at.X, at.Y, 0);
+
+	SetDestination(PlayerActor->GetActorLocation() + new_at, true);
+
+	needPoint = false;
+
+	if (TargetType == ETargetType::Direct) pointAtPlayer = prio <= 1;  
+
+}
+
 void ABaseEnemy::FindTarget()
 {
 
-	if (TargetType == ETargetType::Direct || TargetType == ETargetType::Near) {
+	if (TargetType == ETargetType::Near) {//TargetType == ETargetType::Direct || 
 		SetDestination(PlayerActor->GetActorLocation(), true);
 		
 	} else if (TargetType == ETargetType::Front)
@@ -100,6 +119,7 @@ void ABaseEnemy::FindTarget()
 
 }
 
+//Find target location based on pack navigation
 void ABaseEnemy::FindPackTarget()
 {
 
@@ -151,6 +171,7 @@ void ABaseEnemy::FindPackTarget()
 
 }
 
+//Get the target move position based on pack  navigation
 FVector ABaseEnemy::GetPackPoint() {
 
 	if (NavPath == nullptr) {
@@ -202,12 +223,7 @@ TArray<FVector> ABaseEnemy::GetPath(){
 		}
 	} else {
 		FString DebugMessage = FString::Printf(TEXT("No NavPath"));
-		GEngine->AddOnScreenDebugMessage(
-			-1,            // A unique key. -1 means a new entry each time.
-			5.0f,          // How long the message will display (in seconds).
-			FColor::Green, // The color of the debug text.
-			DebugMessage   // The FString containing the message to print.
-		);
+		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Green, DebugMessage);
 	}
 
 	return points;
@@ -216,16 +232,26 @@ TArray<FVector> ABaseEnemy::GetPath(){
 void ABaseEnemy::ReachedTarget() {
 	isAtTarget = true;
 
-	FString DebugMessage = FString::Printf(TEXT("At Target"));
-	GEngine->AddOnScreenDebugMessage(
-		-1,            // A unique key. -1 means a new entry each time.
-		5.0f,          // How long the message will display (in seconds).
-		FColor::Green, // The color of the debug text.
-		DebugMessage   // The FString containing the message to print.
+	//FString DebugMessage = FString::Printf(TEXT("At Target"));
+	//GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Green, DebugMessage);
+
+	FColor aer = FColor::Cyan;
+	if (pointAtPlayer) aer = FColor::Magenta;
+
+	DrawDebugSphere(
+		GetWorld(),
+		Destination,
+		64.0f,
+		12,
+		aer,
+		false,
+		5.0f,
+		0, // Depth priority
+		2.0f
 	);
 
 	//Check of target is at the right position
-	if (!isAttacking) StartAttack();
+	if (!isAttacking && pointAtPlayer) StartAttack();
 }
 
 bool ABaseEnemy::CanSeeTarget() {
@@ -248,20 +274,15 @@ bool ABaseEnemy::CanSeeTarget() {
         GetWorld(),
         GetActorLocation(),
         hit.ImpactPoint,
-        FColor::Red, // Color of the debug line
-        false,       // Persistent?
-        5.f          // Life span of the line
+        FColor::Red,
+        false,
+        5.f 
     );
 
 	if (hit.ImpactPoint == Destination || hit.GetActor() == PlayerActor) {
 
 		FString DebugMessage = FString::Printf(TEXT("Sees Player"));
-		GEngine->AddOnScreenDebugMessage(
-			-1,            // A unique key. -1 means a new entry each time.
-			5.0f,          // How long the message will display (in seconds).
-			FColor::Green, // The color of the debug text.
-			DebugMessage   // The FString containing the message to print.
-		);
+		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Green, DebugMessage);
 
 		return true;
 	}
@@ -273,12 +294,7 @@ void ABaseEnemy::StartAttack() {
 	isAttacking = true;
 
 	FString DebugMessage = FString::Printf(TEXT("StartAttack"));
-	GEngine->AddOnScreenDebugMessage(
-		-1,            // A unique key. -1 means a new entry each time.
-		5.0f,          // How long the message will display (in seconds).
-		FColor::Green, // The color of the debug text.
-		DebugMessage   // The FString containing the message to print.
-	);
+	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Green, DebugMessage);
 
 	//Wait for attack animation to happen
 	//FTimerHandle UnusedHandle;
@@ -290,24 +306,14 @@ void ABaseEnemy::EndAttack() {
 	isAttacking = false;
 
 	FString DebugMessage = FString::Printf(TEXT("EndAttack"));
-	GEngine->AddOnScreenDebugMessage(
-		-1,            // A unique key. -1 means a new entry each time.
-		5.0f,          // How long the message will display (in seconds).
-		FColor::Purple, // The color of the debug text.
-		DebugMessage   // The FString containing the message to print.
-	);
+	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Purple, DebugMessage);
 
 }
 
 /**/
 void ABaseEnemy::RunAttack_Implementation() {
 	FString DebugMessage = FString::Printf(TEXT("Strike"));
-	GEngine->AddOnScreenDebugMessage(
-		-1,            // A unique key. -1 means a new entry each time.
-		5.0f,          // How long the message will display (in seconds).
-		FColor::Orange, // The color of the debug text.
-		DebugMessage   // The FString containing the message to print.
-	);
+	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Orange, DebugMessage);
 }
 
 void ABaseEnemy::TakeAttack(float damage, bool parry) {
@@ -317,6 +323,7 @@ void ABaseEnemy::TakeAttack(float damage, bool parry) {
 		isAttacking = false;
 		isAtTarget = false;
 		takeHit = true;
+		if (TargetType == ETargetType::Direct) needPoint = true;
 	}
 
 	Health -= damage;
@@ -325,12 +332,7 @@ void ABaseEnemy::TakeAttack(float damage, bool parry) {
 		//Die
 
 		FString DebugMessage = FString::Printf(TEXT("Dead"));
-		GEngine->AddOnScreenDebugMessage(
-			-1,            // A unique key. -1 means a new entry each time.
-			5.0f,          // How long the message will display (in seconds).
-			FColor::Red, // The color of the debug text.
-			DebugMessage   // The FString containing the message to print.
-		);
+		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, DebugMessage);
 
 	}
 
