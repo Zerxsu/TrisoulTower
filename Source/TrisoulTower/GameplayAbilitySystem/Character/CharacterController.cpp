@@ -68,6 +68,7 @@ void ACharacterController::Move(const FInputActionValue& Value)
 {
 	const FVector2D MovementValue = Value.Get<FVector2D>();
 
+	// sets player movement speed to walk speed after input is released
 	if (GetLastMovementInputVector().IsNearlyZero())
 		GetCharacterMovement()->MaxWalkSpeed = OriginalWalkSpeed;
 	
@@ -98,50 +99,58 @@ void ACharacterController::Look(const FInputActionValue& Value)
 	}
 }
 
-void ACharacterController::StartSprint()
-{
-	GetCharacterMovement()->MaxWalkSpeed = SprintSpeed;
-}
-
-void ACharacterController::StopSprint()
-{
-	//GetCharacterMovement()->MaxWalkSpeed = OriginalWalkSpeed;
-}
-
 void ACharacterController::Dash()
 {
+	// starts sprint
+	GetCharacterMovement()->MaxWalkSpeed = SprintSpeed;
+	
 	if (!GetMovementComponent()->IsFalling())
 		AbilitySystemComponent->TryActivateAbilityByClass(UGA_Dash::StaticClass());
 }
 
 void ACharacterController::LightAttack()
 {
-	AbilitySystemComponent->TryActivateAbilityByClass(LightAttackRef);
+	if (!WeaponManager->GetEquippedWeapon())
+		return;
+	
+	TSubclassOf<UGameplayAbility> LightAttack = WeaponManager->GetEquippedWeapon()->GetAbility(0);
+	AbilitySystemComponent->TryActivateAbilityByClass(LightAttack);
 }
 
 void ACharacterController::HeavyAttack()
 {
-	// will be implemented later
+	if (!WeaponManager->GetEquippedWeapon())
+		return;
+	
+	TSubclassOf<UGameplayAbility> HeavyAttack = WeaponManager->GetEquippedWeapon()->GetAbility(1);
+	AbilitySystemComponent->TryActivateAbilityByClass(HeavyAttack);
 }
 
 void ACharacterController::UltimateAttack()
 {
-	// will be implemented later
+	if (!WeaponManager->GetEquippedWeapon())
+		return;
+	
+	TSubclassOf<UGameplayAbility> UltimateAttack = WeaponManager->GetEquippedWeapon()->GetAbility(2);
+	AbilitySystemComponent->TryActivateAbilityByClass(UltimateAttack);
 }
 
 void ACharacterController::EquipWeapon1()
 {
-	if (WeaponSlot1) WeaponManager->EquipWeapon(WeaponSlot1);
+	if (WeaponSlot1)
+		WeaponManager->EquipWeapon(WeaponSlot1);
 }
 
 void ACharacterController::EquipWeapon2()
 {
-	if (WeaponSlot2) WeaponManager->EquipWeapon(WeaponSlot2);
+	if (WeaponSlot2)
+		WeaponManager->EquipWeapon(WeaponSlot2);
 }
 
 void ACharacterController::EquipWeapon3()
 {
-	if (WeaponSlot3) WeaponManager->EquipWeapon(WeaponSlot3);
+	if (WeaponSlot3)
+		WeaponManager->EquipWeapon(WeaponSlot3);
 }
 
 void ACharacterController::HandleStaminaChanged(const FOnAttributeChangeData& Data)
@@ -186,9 +195,6 @@ void ACharacterController::SetupPlayerInputComponent(UInputComponent* PlayerInpu
 		// binding actions to their respective method
 		EnhancedInputComp->BindAction(MoveAction, ETriggerEvent::Triggered, this, &ACharacterController::Move);
 		EnhancedInputComp->BindAction(LookAction, ETriggerEvent::Triggered, this, &ACharacterController::Look);
-		
-		EnhancedInputComp->BindAction(SprintAction, ETriggerEvent::Started,this, &ACharacterController::StartSprint);
-		EnhancedInputComp->BindAction(SprintAction, ETriggerEvent::Completed, this, &ACharacterController::StopSprint);
 		
 		// binding JumpAction to default CharacterMovementComponent jump function
 		EnhancedInputComp->BindAction(JumpAction, ETriggerEvent::Started, this, &ACharacter::Jump);

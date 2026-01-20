@@ -20,6 +20,9 @@ public:
 	UFUNCTION()
 	void UnequipWeapon();
 
+	UFUNCTION()
+	AWeapon_Base* GetEquippedWeapon();
+
 protected:
 	virtual void BeginPlay() override;
 

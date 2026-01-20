@@ -12,6 +12,9 @@ UGA_Dash::UGA_Dash()
 {
 	InstancingPolicy = EGameplayAbilityInstancingPolicy::InstancedPerActor;
 
+	AbilityTags.AddTag(FGameplayTag::RequestGameplayTag(FName("GameplayAbility.Movement.Dash")));
+	CancelAbilitiesWithTag.AddTag(FGameplayTag::RequestGameplayTag(FName("GameplayAbility.Combat.LightAttack")));
+
 	// sets the gameplay cost and cooldown classes
 	CostGameplayEffectClass = UGE_DashCost::StaticClass();
 	CooldownGameplayEffectClass = UGE_DashCooldown::StaticClass();
@@ -42,7 +45,7 @@ void UGA_Dash::ActivateAbility(
 			0.18f,
 			false,
 			nullptr,
-			ERootMotionFinishVelocityMode::MaintainLastRootMotionVelocity,
+			ERootMotionFinishVelocityMode::ClampVelocity,
 			FVector::ZeroVector,
 			GetMaxSpeed(),
 			true);

@@ -40,12 +40,12 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void RemoveAbilities(TArray<FGameplayAbilitySpecHandle> AbilitiesToRemove);
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|GameplayAbilitySystem|Abilities")
-	TSubclassOf<UGameplayAbility> LightAttackRef;
-
 	UPROPERTY(BlueprintReadOnly, Category = "PlayerController|Variables")
 	bool bIsDashing;
 
+
+	//////// delete later
+	
 	UPROPERTY(BlueprintReadWrite, Category = "PlayerController|Variables")
 	bool bIsAttacking;
 
@@ -54,6 +54,8 @@ public:
 
 	UPROPERTY(BlueprintReadWrite, Category = "PlayerController|Variables")
 	bool bIsWeaponEquipped;
+
+	////////
 
 protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|GameplayAbilitySystem|Abilities")
@@ -115,12 +117,6 @@ protected:
 	void Look(const FInputActionValue& Value);
 
 	UFUNCTION()
-	void StartSprint();
-
-	UFUNCTION()
-	void StopSprint();
-
-	UFUNCTION()
 	void Dash();
 
 	UFUNCTION()
@@ -131,7 +127,7 @@ protected:
 
 	UFUNCTION()
 	void UltimateAttack();
-	
+
 	UFUNCTION()
 	void EquipWeapon1();
 	

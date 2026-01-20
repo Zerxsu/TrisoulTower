@@ -73,3 +73,8 @@ void UWeaponManagerComponent::UnequipWeapon()
 	// remove abilities
 	CharacterRef->RemoveAbilities(GrantedAbilities);
 }
+
+AWeapon_Base* UWeaponManagerComponent::GetEquippedWeapon()
+{
+	return EquippedWeapon;
+}
