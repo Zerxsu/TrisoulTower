@@ -16,18 +16,28 @@
     <list default="true" id="8e881ff7-db9b-43e6-80db-eb420dbd244d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TrisoulTower/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TrisoulTower/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_CharacterController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_CharacterController.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Temp/AnimNS_HitDetect.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_Dummy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_Dummy.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Temp/AN_Footstep.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Temp/AN_Footstep.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Temp/BP_Weapon_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Temp/BP_Weapon_Base.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Temp/BP_Weapon_Test.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Temp/BP_Weapon_Test.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_TestAttack.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_TestAttack.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Levels/PlayerControllerTest.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/PlayerControllerTest.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Materials/Shaders/Foliage_Bush.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Materials/Shaders/Foliage_Bush.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/ABP_Player.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/ABP_Player.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/Attack1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/Attack1.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/Attack2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/Attack2.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/Character_Model_and_Anims_Anim_Character_Rig_002_Attack1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/Character_Model_and_Anims_Anim_Character_Rig_002_Attack1.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/Character_Model_and_Anims_Anim_Character_Rig_002_Attack2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/Character_Model_and_Anims_Anim_Character_Rig_002_Attack2.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Abilities/GA_Dash.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Abilities/GA_Dash.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/BS_Idle_Walk.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/BS_Idle_Walk.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/Character_Model_Model_and_Animations_Anim_Character_Rig_002_Landing.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/Character_Model_and_Anims_Anim_Character_Rig_002_Attack1.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/Character_Model_and_Anims_Anim_Character_Rig_002_Attack2.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/Dash.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/Falling.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/Idle.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/Jump.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/Run.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/Walk.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/WwiseSoundEngine/Source/WwiseSoundEngine/Public/Generated/AkiOSPlugins.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/WwiseSoundEngine/Source/WwiseSoundEngine/Public/Generated/AkiOSPlugins.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/WwiseSoundEngine/Source/WwiseSoundEngine/Public/Generated/AktvOSPlugins.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/WwiseSoundEngine/Source/WwiseSoundEngine/Public/Generated/AktvOSPlugins.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Character/CharacterController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Character/CharacterController.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Character/CharacterController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Character/CharacterController.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TrisoulTower/Player/Weapon/WeaponManagerComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TrisoulTower/Player/Weapon/WeaponManagerComponent.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +75,7 @@
     "C/C++ Project.TrisoulTower.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Merging UbisoftPlaytest(01/23)",
+    "git-widget-placeholder": "UbisoftPlaytest(01/23)",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",

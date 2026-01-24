@@ -69,8 +69,8 @@ void ACharacterController::Move(const FInputActionValue& Value)
 	const FVector2D MovementValue = Value.Get<FVector2D>();
 
 	// sets player movement speed to walk speed after input is released
-	//if (GetLastMovementInputVector().IsNearlyZero() && !IsPlayerFrozen)
-		//GetCharacterMovement()->MaxWalkSpeed = OriginalWalkSpeed;
+	if (GetLastMovementInputVector().IsNearlyZero() && !IsPlayerFrozen)
+		GetCharacterMovement()->MaxWalkSpeed = OriginalWalkSpeed;
 	
 	if (Controller)
 	{
