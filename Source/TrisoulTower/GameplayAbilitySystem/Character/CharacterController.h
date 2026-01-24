@@ -40,9 +40,6 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void RemoveAbilities(TArray<FGameplayAbilitySpecHandle> AbilitiesToRemove);
 
-	UFUNCTION(BlueprintCallable)
-	void FreezePlayer(bool IsFrozen);
-
 	UPROPERTY(BlueprintReadOnly, Category = "PlayerController|Variables")
 	bool bIsDashing;
 
@@ -142,8 +139,6 @@ private:
 
 	// current walk speed is cached everytime the player is frozen
 	float CurrentWalkSpeed;
-
-	bool IsPlayerFrozen;
 
 	UPROPERTY()
 	UWeaponManagerComponent* WeaponManager;
