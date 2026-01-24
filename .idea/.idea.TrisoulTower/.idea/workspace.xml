@@ -14,30 +14,87 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e881ff7-db9b-43e6-80db-eb420dbd244d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Cues/GC_LightAttack.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Levels/BossRoom.umap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Materials/DungeonMaterials/FloorTT/FloorMat.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Materials/DungeonMaterials/FloorTT/FloorMat_Inst.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Materials/DungeonMaterials/FloorTT/plane_divided_DefaultMaterial_BaseColor.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Materials/DungeonMaterials/FloorTT/plane_divided_DefaultMaterial_Normal.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Materials/DungeonMaterials/FloorTT/plane_divided_DefaultMaterial_OcclusionRoughnessMetallic.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Materials/DungeonMaterials/Pillars/PillarMat.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Materials/DungeonMaterials/Pillars/Pillars_uv_checker_material_uv_grid_512x512_BaseColor.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Materials/DungeonMaterials/Pillars/Pillars_uv_checker_material_uv_grid_512x512_Normal.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Materials/DungeonMaterials/Pillars/Pillars_uv_checker_material_uv_grid_512x512_OcclusionRoughnessMetallic.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Materials/DungeonMaterials/Railings/RailingsMat.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Materials/DungeonMaterials/Railings/Railings_uv_checker_material_uv_grid_512x512_BaseColor.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Materials/DungeonMaterials/Railings/Railings_uv_checker_material_uv_grid_512x512_Normal.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Materials/DungeonMaterials/Railings/Railings_uv_checker_material_uv_grid_512x512_OcclusionRoughnessMetallic.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Materials/DungeonMaterials/RockTT/NewMaterial.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Materials/DungeonMaterials/RockTT/RockMat.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Materials/DungeonMaterials/RockTT/plane_divided_DefaultMaterial_BaseColor.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Materials/DungeonMaterials/RockTT/plane_divided_DefaultMaterial_Normal.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Materials/DungeonMaterials/RockTT/plane_divided_DefaultMaterial_OcclusionRoughnessMetallic.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Materials/DungeonMaterials/Stage/StageMat.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Materials/DungeonMaterials/Stage/Stage_uv_checker_material_uv_grid_512x512_BaseColor.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Materials/DungeonMaterials/Stage/Stage_uv_checker_material_uv_grid_512x512_Normal.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Materials/DungeonMaterials/Stage/Stage_uv_checker_material_uv_grid_512x512_OcclusionRoughnessMetallic.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Materials/DungeonMaterials/StairsAndTrim/StairsAndTrimMat.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Materials/DungeonMaterials/StairsAndTrim/Stairs_and_trims_uv_checker_material_uv_grid_512x512_BaseColor.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Materials/DungeonMaterials/StairsAndTrim/Stairs_and_trims_uv_checker_material_uv_grid_512x512_Normal.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Materials/DungeonMaterials/StairsAndTrim/Stairs_and_trims_uv_checker_material_uv_grid_512x512_OcclusionRoughnessMetallic.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Materials/DungeonMaterials/SupportPillar/SupportPillarMat.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Materials/DungeonMaterials/SupportPillar/SupportPillar_uv_checker_material_uv_grid_512x512_BaseColor.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Materials/DungeonMaterials/SupportPillar/SupportPillar_uv_checker_material_uv_grid_512x512_Normal.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Materials/DungeonMaterials/SupportPillar/SupportPillar_uv_checker_material_uv_grid_512x512_OcclusionRoughnessMetallic.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Materials/DungeonMaterials/WindowTrim/WindowMat.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Materials/DungeonMaterials/WindowTrim/Window_uv_checker_material_uv_grid_512x512_BaseColor.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Materials/DungeonMaterials/WindowTrim/Window_uv_checker_material_uv_grid_512x512_Normal.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Materials/DungeonMaterials/WindowTrim/Window_uv_checker_material_uv_grid_512x512_OcclusionRoughnessMetallic.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Materials/EnvironmentMats/EnvironmentModels/BushVariants/Tree_leaf.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Materials/M_EmissiveLight.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Meshes/Environment/BP_Lam.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/CeilingArc.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/CornerWall2.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Corner_Wall.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Cube_010.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Cube_014.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Cube_015.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Cube_018.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Cube_026.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Cube_027.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Cube_032.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Cube_034.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Cube_036.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Floor.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Floor_001.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/HighWall.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Plane_030.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Plane_032.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/SupportPillar.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Wall.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Meshes/Environment/Lamp_BossRoom.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Meshes/Environment/Lamp_BossRoom_DefaultMaterial_BaseColor.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Meshes/Environment/Lamp_BossRoom_DefaultMaterial_Normal.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Meshes/Environment/Lamp_BossRoom_DefaultMaterial_OcclusionRoughnessMetallic.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Meshes/Environment/lmao.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VFX/CombinedVFX/Fire (1).uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VFX/CombinedVFX/Fire.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VFX/CombinedVFX/FireHead.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VFX/CombinedVFX/e.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VFX/CombinedVFX/image.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TutorialMap/3/JF/SEDWFIO5EI77WRAAOJXKKE.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TutorialMap/6/N5/YKS1HWGV4XTW5YUW8V50GD.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TrisoulTower/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TrisoulTower/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_CharacterController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_CharacterController.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_Dummy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_Dummy.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Temp/AN_Footstep.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Temp/AN_Footstep.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Temp/BP_Weapon_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Temp/BP_Weapon_Base.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Temp/BP_Weapon_Test.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Temp/BP_Weapon_Test.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_TestAttack.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_TestAttack.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Cues/GC_Dash.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Cues/GC_Dash.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Materials/Player/M_Accessories.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Materials/Player/M_Accessories.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Materials/Player/M_Body.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Materials/Player/M_Body.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Materials/Player/M_Hair.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Materials/Player/M_Hair.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Materials/Player/M_Head.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Materials/Player/M_Head.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Materials/Shaders/Foliage_Bush.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Materials/Shaders/Foliage_Bush.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/ABP_Player.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/ABP_Player.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/Attack1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/Attack1.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/Attack2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/Attack2.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/BS_Idle_Walk.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/BS_Idle_Walk.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/Character_Model_Model_and_Animations_Anim_Character_Rig_002_Landing.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/Character_Model_and_Anims_Anim_Character_Rig_002_Attack1.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/Character_Model_and_Anims_Anim_Character_Rig_002_Attack2.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/Dash.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/Falling.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/Idle.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/Jump.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/Run.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/Walk.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/WwiseSoundEngine/Source/WwiseSoundEngine/Public/Generated/AkiOSPlugins.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/WwiseSoundEngine/Source/WwiseSoundEngine/Public/Generated/AkiOSPlugins.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/WwiseSoundEngine/Source/WwiseSoundEngine/Public/Generated/AktvOSPlugins.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/WwiseSoundEngine/Source/WwiseSoundEngine/Public/Generated/AktvOSPlugins.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Character/CharacterController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Character/CharacterController.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/VFX/CombinedVFX/ShieldAura.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFX/CombinedVFX/ShieldAura.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TutorialMap/9/NG/33PVDRNG978BP9XSHWL5IR.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TutorialMap/9/NG/33PVDRNG978BP9XSHWL5IR.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,21 +127,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "C/C++ Project.TrisoulTower.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "UbisoftPlaytest(01/23)",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "configurable.group.appearance",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;C/C++ Project.TrisoulTower.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;UbisoftPlaytest(01/23)&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="C/C++ Project.TrisoulTower">
     <configuration name="TrisoulTower" type="CppProject" factoryName="C++ Project">
       <configuration_1 setup="1">
@@ -230,6 +287,8 @@
       <workItem from="1768936962845" duration="7153000" />
       <workItem from="1769017667384" duration="5075000" />
       <workItem from="1769115356638" duration="10413000" />
+      <workItem from="1769231745016" duration="2587000" />
+      <workItem from="1769239780141" duration="1575000" />
     </task>
     <servers />
   </component>
