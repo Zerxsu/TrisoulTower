@@ -40,22 +40,21 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void RemoveAbilities(TArray<FGameplayAbilitySpecHandle> AbilitiesToRemove);
 
+	UFUNCTION(BlueprintCallable)
+	void FreezePlayer(bool IsFrozen);
+
 	UPROPERTY(BlueprintReadOnly, Category = "PlayerController|Variables")
 	bool bIsDashing;
 
-
-	//////// delete later
-	
+	// handles light attack combo logic
 	UPROPERTY(BlueprintReadWrite, Category = "PlayerController|Variables")
 	bool bIsAttacking;
 
 	UPROPERTY(BlueprintReadWrite, Category = "PlayerController|Variables")
 	int AttackIndex;
 
-	UPROPERTY(BlueprintReadWrite, Category = "PlayerController|Variables")
-	bool bIsWeaponEquipped;
-
-	////////
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|Variables")
+	float SprintSpeed = 700.f;
 
 protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|GameplayAbilitySystem|Abilities")
@@ -103,9 +102,6 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|Input")
 	UInputAction* EquipWeapon3Action;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|Variables")
-	float SprintSpeed = 700.f;
-
 	virtual void BeginPlay() override;
 
 	virtual void PossessedBy(AController* NewController) override;
@@ -141,7 +137,13 @@ protected:
 
 private:
 	UPROPERTY()
+	// original walk speed is cached at the start of the game
 	float OriginalWalkSpeed;
+
+	// current walk speed is cached everytime the player is frozen
+	float CurrentWalkSpeed;
+
+	bool IsPlayerFrozen;
 
 	UPROPERTY()
 	UWeaponManagerComponent* WeaponManager;

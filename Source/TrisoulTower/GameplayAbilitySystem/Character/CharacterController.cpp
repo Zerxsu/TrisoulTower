@@ -69,8 +69,8 @@ void ACharacterController::Move(const FInputActionValue& Value)
 	const FVector2D MovementValue = Value.Get<FVector2D>();
 
 	// sets player movement speed to walk speed after input is released
-	if (GetLastMovementInputVector().IsNearlyZero())
-		GetCharacterMovement()->MaxWalkSpeed = OriginalWalkSpeed;
+	//if (GetLastMovementInputVector().IsNearlyZero() && !IsPlayerFrozen)
+		//GetCharacterMovement()->MaxWalkSpeed = OriginalWalkSpeed;
 	
 	if (Controller)
 	{
@@ -81,7 +81,7 @@ void ACharacterController::Move(const FInputActionValue& Value)
 		// sets movement direction based on camera rotation
 		const FVector DirectionX = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
 		const FVector DirectionY = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
-
+		
 		// applies the result
 		AddMovementInput(DirectionX, MovementValue.X);
 		AddMovementInput(DirectionY, MovementValue.Y);
@@ -103,6 +103,10 @@ void ACharacterController::Dash()
 {
 	// starts sprint
 	GetCharacterMovement()->MaxWalkSpeed = SprintSpeed;
+	
+	// temp fix for attack not resetting
+	AttackIndex = 0;
+	bIsAttacking = false;
 	
 	if (!GetMovementComponent()->IsFalling())
 		AbilitySystemComponent->TryActivateAbilityByClass(UGA_Dash::StaticClass());
@@ -238,4 +242,19 @@ void ACharacterController::RemoveAbilities(TArray<FGameplayAbilitySpecHandle> Ab
 	
 	for (FGameplayAbilitySpecHandle AbilityHandle : AbilitiesToRemove)
 		AbilitySystemComponent->ClearAbility(AbilityHandle);
+}
+
+void ACharacterController::FreezePlayer(bool IsFrozen)
+{
+	if (IsFrozen)
+	{
+		IsPlayerFrozen = true;
+		CurrentWalkSpeed = GetCharacterMovement()->MaxWalkSpeed;
+		GetCharacterMovement()->MaxWalkSpeed = 0;
+	}
+	else
+	{
+		IsPlayerFrozen = false;
+		GetCharacterMovement()->MaxWalkSpeed = CurrentWalkSpeed;
+	}
 }
