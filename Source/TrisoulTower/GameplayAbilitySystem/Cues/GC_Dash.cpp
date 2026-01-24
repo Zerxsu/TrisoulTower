@@ -1,4 +1,5 @@
 #include "GC_Dash.h"
+#include "AudioManager.generated.h"
 
 #include "TrisoulTower/AudioManager.h"
 

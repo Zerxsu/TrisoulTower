@@ -84,7 +84,7 @@
     "settings.editor.selected.configurable": "configurable.group.appearance",
     "vue.rearranger.settings.migration": "true"
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="C/C++ Project.TrisoulTower">
     <configuration name="TrisoulTower" type="CppProject" factoryName="C++ Project">
       <configuration_1 setup="1">
