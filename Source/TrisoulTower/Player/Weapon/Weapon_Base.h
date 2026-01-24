@@ -28,4 +28,7 @@ class TRISOULTOWER_API AWeapon_Base : public AActor
 public:	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	FWeapon WeaponProperties;
+
+	UFUNCTION()
+	TSubclassOf<UGameplayAbility> GetAbility(int32 AbilityIndex);
 };

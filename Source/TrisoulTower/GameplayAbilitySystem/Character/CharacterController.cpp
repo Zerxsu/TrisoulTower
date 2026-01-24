@@ -48,6 +48,9 @@ void ACharacterController::BeginPlay()
 
 	// cache max walk speed value
 	OriginalWalkSpeed = GetCharacterMovement()->MaxWalkSpeed;
+
+	AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(
+		BasicAttributeSet->GetStaminaAttribute()).AddUObject(this, &ACharacterController::HandleStaminaChanged);
 }
 
 void ACharacterController::PossessedBy(AController* NewController)
@@ -65,10 +68,9 @@ void ACharacterController::Move(const FInputActionValue& Value)
 {
 	const FVector2D MovementValue = Value.Get<FVector2D>();
 
-	if (GetLastMovementInputVector().IsNearlyZero())
-	{
-		GetCharacterMovement()->MaxWalkSpeed = OriginalWalkSpeed;
-	}
+	// sets player movement speed to walk speed after input is released
+	//if (GetLastMovementInputVector().IsNearlyZero() && !IsPlayerFrozen)
+		//GetCharacterMovement()->MaxWalkSpeed = OriginalWalkSpeed;
 	
 	if (Controller)
 	{
@@ -79,7 +81,7 @@ void ACharacterController::Move(const FInputActionValue& Value)
 		// sets movement direction based on camera rotation
 		const FVector DirectionX = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
 		const FVector DirectionY = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
-
+		
 		// applies the result
 		AddMovementInput(DirectionX, MovementValue.X);
 		AddMovementInput(DirectionY, MovementValue.Y);
@@ -97,52 +99,97 @@ void ACharacterController::Look(const FInputActionValue& Value)
 	}
 }
 
-void ACharacterController::StartSprint()
-{
-	GetCharacterMovement()->MaxWalkSpeed = SprintSpeed;
-}
-
-void ACharacterController::StopSprint()
-{
-	//GetCharacterMovement()->MaxWalkSpeed = OriginalWalkSpeed;
-}
-
 void ACharacterController::Dash()
 {
+	// starts sprint
+	GetCharacterMovement()->MaxWalkSpeed = SprintSpeed;
+	
+	// temp fix for attack not resetting
+	AttackIndex = 0;
+	bIsAttacking = false;
+	
 	if (!GetMovementComponent()->IsFalling())
-	{
 		AbilitySystemComponent->TryActivateAbilityByClass(UGA_Dash::StaticClass());
-	}
 }
 
 void ACharacterController::LightAttack()
 {
-	AbilitySystemComponent->TryActivateAbilityByClass(LightAttackRef);
+	if (!WeaponManager->GetEquippedWeapon())
+		return;
+	
+	TSubclassOf<UGameplayAbility> LightAttack = WeaponManager->GetEquippedWeapon()->GetAbility(0);
+	AbilitySystemComponent->TryActivateAbilityByClass(LightAttack);
 }
 
 void ACharacterController::HeavyAttack()
 {
-	// will be implemented later
+	if (!WeaponManager->GetEquippedWeapon())
+		return;
+	
+	TSubclassOf<UGameplayAbility> HeavyAttack = WeaponManager->GetEquippedWeapon()->GetAbility(1);
+	AbilitySystemComponent->TryActivateAbilityByClass(HeavyAttack);
 }
 
 void ACharacterController::UltimateAttack()
 {
-	// will be implemented later
+	if (!WeaponManager->GetEquippedWeapon())
+		return;
+	
+	TSubclassOf<UGameplayAbility> UltimateAttack = WeaponManager->GetEquippedWeapon()->GetAbility(2);
+	AbilitySystemComponent->TryActivateAbilityByClass(UltimateAttack);
 }
 
 void ACharacterController::EquipWeapon1()
 {
-	if (WeaponSlot1) WeaponManager->EquipWeapon(WeaponSlot1);
+	if (WeaponSlot1)
+		WeaponManager->EquipWeapon(WeaponSlot1);
 }
 
 void ACharacterController::EquipWeapon2()
 {
-	if (WeaponSlot2) WeaponManager->EquipWeapon(WeaponSlot2);
+	if (WeaponSlot2)
+		WeaponManager->EquipWeapon(WeaponSlot2);
 }
 
 void ACharacterController::EquipWeapon3()
 {
-	if (WeaponSlot3) WeaponManager->EquipWeapon(WeaponSlot3);
+	if (WeaponSlot3)
+		WeaponManager->EquipWeapon(WeaponSlot3);
+}
+
+void ACharacterController::HandleStaminaChanged(const FOnAttributeChangeData& Data)
+{
+	const float NewValue = Data.NewValue;
+	const float OldValue = Data.OldValue;
+
+	if (NewValue < OldValue)
+	{
+		RemoveStaminaRegen();
+
+		FTimerHandle RegenDelay;
+		GetWorldTimerManager().SetTimer(RegenDelay, this, &ACharacterController::ApplyStaminaRegen, 1, false);
+	}
+	else if (NewValue >= BasicAttributeSet->GetMaxStamina())
+	{
+		RemoveStaminaRegen();
+	}
+}
+
+void ACharacterController::ApplyStaminaRegen()
+{
+	FGameplayEffectContextHandle Context = AbilitySystemComponent->MakeEffectContext();
+	FGameplayEffectSpecHandle SpecHandle = AbilitySystemComponent->MakeOutgoingSpec(StaminaRegenEffect, 0, Context);
+
+	if (SpecHandle.IsValid())
+		AbilitySystemComponent->ApplyGameplayEffectSpecToSelf(*SpecHandle.Data.Get());
+}
+
+void ACharacterController::RemoveStaminaRegen()
+{
+	FGameplayTagContainer TagContainer;
+	TagContainer.AddTag(StaminaRegenTag);
+
+	AbilitySystemComponent->RemoveActiveEffectsWithGrantedTags(TagContainer);
 }
 
 void ACharacterController::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
@@ -152,9 +199,6 @@ void ACharacterController::SetupPlayerInputComponent(UInputComponent* PlayerInpu
 		// binding actions to their respective method
 		EnhancedInputComp->BindAction(MoveAction, ETriggerEvent::Triggered, this, &ACharacterController::Move);
 		EnhancedInputComp->BindAction(LookAction, ETriggerEvent::Triggered, this, &ACharacterController::Look);
-		
-		EnhancedInputComp->BindAction(SprintAction, ETriggerEvent::Started,this, &ACharacterController::StartSprint);
-		EnhancedInputComp->BindAction(SprintAction, ETriggerEvent::Completed, this, &ACharacterController::StopSprint);
 		
 		// binding JumpAction to default CharacterMovementComponent jump function
 		EnhancedInputComp->BindAction(JumpAction, ETriggerEvent::Started, this, &ACharacter::Jump);
@@ -197,7 +241,20 @@ void ACharacterController::RemoveAbilities(TArray<FGameplayAbilitySpecHandle> Ab
 	if (!AbilitySystemComponent) return;
 	
 	for (FGameplayAbilitySpecHandle AbilityHandle : AbilitiesToRemove)
-	{
 		AbilitySystemComponent->ClearAbility(AbilityHandle);
+}
+
+void ACharacterController::FreezePlayer(bool IsFrozen)
+{
+	if (IsFrozen)
+	{
+		IsPlayerFrozen = true;
+		CurrentWalkSpeed = GetCharacterMovement()->MaxWalkSpeed;
+		GetCharacterMovement()->MaxWalkSpeed = 0;
+	}
+	else
+	{
+		IsPlayerFrozen = false;
+		GetCharacterMovement()->MaxWalkSpeed = CurrentWalkSpeed;
 	}
 }

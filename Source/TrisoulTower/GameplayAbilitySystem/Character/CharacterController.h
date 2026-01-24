@@ -34,29 +34,30 @@ public:
 
 	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override;
 
-	UFUNCTION(BlueprintCallable, Category = "PlayerController|GameplayAbilitySystem")
+	UFUNCTION(BlueprintCallable)
 	TArray<FGameplayAbilitySpecHandle> GrantAbilities(TArray<TSubclassOf<UGameplayAbility>> AbilitiesToGrant);
 
-	UFUNCTION(BlueprintCallable, Category = "PlayerController|GameplayAbilitySystem")
+	UFUNCTION(BlueprintCallable)
 	void RemoveAbilities(TArray<FGameplayAbilitySpecHandle> AbilitiesToRemove);
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|GameplayAbilitySystem")
-	TSubclassOf<UGameplayAbility> LightAttackRef;
+	UFUNCTION(BlueprintCallable)
+	void FreezePlayer(bool IsFrozen);
 
 	UPROPERTY(BlueprintReadOnly, Category = "PlayerController|Variables")
 	bool bIsDashing;
 
+	// handles light attack combo logic
 	UPROPERTY(BlueprintReadWrite, Category = "PlayerController|Variables")
 	bool bIsAttacking;
 
 	UPROPERTY(BlueprintReadWrite, Category = "PlayerController|Variables")
 	int AttackIndex;
 
-	UPROPERTY(BlueprintReadWrite, Category = "PlayerController|Variables")
-	bool bIsWeaponEquipped;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|Variables")
+	float SprintSpeed = 700.f;
 
 protected:
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|GameplayAbilitySystem")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|GameplayAbilitySystem|Abilities")
 	TArray<TSubclassOf<UGameplayAbility>> StartingAbilities;
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "PlayerController")
@@ -101,9 +102,6 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|Input")
 	UInputAction* EquipWeapon3Action;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|Variables")
-	float SprintSpeed = 700.f;
-
 	virtual void BeginPlay() override;
 
 	virtual void PossessedBy(AController* NewController) override;
@@ -113,12 +111,6 @@ protected:
 
 	UFUNCTION()
 	void Look(const FInputActionValue& Value);
-
-	UFUNCTION()
-	void StartSprint();
-
-	UFUNCTION()
-	void StopSprint();
 
 	UFUNCTION()
 	void Dash();
@@ -131,7 +123,7 @@ protected:
 
 	UFUNCTION()
 	void UltimateAttack();
-	
+
 	UFUNCTION()
 	void EquipWeapon1();
 	
@@ -141,8 +133,17 @@ protected:
 	UFUNCTION()
 	void EquipWeapon3();
 
+	void HandleStaminaChanged(const FOnAttributeChangeData& Data);
+
 private:
+	UPROPERTY()
+	// original walk speed is cached at the start of the game
 	float OriginalWalkSpeed;
+
+	// current walk speed is cached everytime the player is frozen
+	float CurrentWalkSpeed;
+
+	bool IsPlayerFrozen;
 
 	UPROPERTY()
 	UWeaponManagerComponent* WeaponManager;
@@ -155,4 +156,16 @@ private:
 
 	UPROPERTY(EditAnywhere, Category = "PlayerController|Weapon")
 	TSubclassOf<AWeapon_Base> WeaponSlot3;
+
+	UPROPERTY(EditAnywhere, Category = "PlayerController|GameplayAbilitySystem|Effects")
+	TSubclassOf<UGameplayEffect> StaminaRegenEffect;
+
+	UPROPERTY(EditAnywhere, Category = "PlayerController|GameplayAbilitySystem|Tags")
+	FGameplayTag StaminaRegenTag;
+
+	UFUNCTION()
+	void ApplyStaminaRegen();
+
+	UFUNCTION()
+	void RemoveStaminaRegen();
 };

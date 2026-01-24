@@ -44,9 +44,6 @@ void UWeaponManagerComponent::EquipWeapon(TSubclassOf<AWeapon_Base> WeaponToEqui
 			FAttachmentTransformRules::SnapToTargetIncludingScale,
 			EquippedWeapon->WeaponProperties.SocketName
 		);
-
-		//temp
-		CharacterRef->bIsWeaponEquipped = true;
 	}
 
 	// set anim class
@@ -64,12 +61,14 @@ void UWeaponManagerComponent::UnequipWeapon()
 	EquippedWeapon->Destroy();
 	EquippedWeapon = nullptr;
 
-	//temp
-	CharacterRef->bIsWeaponEquipped = false;
-
 	// set anim class
 	//CharacterRef->GetMesh()->SetAnimInstanceClass(DefaultAnimClass);
 	
 	// remove abilities
 	CharacterRef->RemoveAbilities(GrantedAbilities);
+}
+
+AWeapon_Base* UWeaponManagerComponent::GetEquippedWeapon()
+{
+	return EquippedWeapon;
 }

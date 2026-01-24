@@ -12,8 +12,11 @@ UGA_Dash::UGA_Dash()
 {
 	InstancingPolicy = EGameplayAbilityInstancingPolicy::InstancedPerActor;
 
+	AbilityTags.AddTag(FGameplayTag::RequestGameplayTag(FName("GameplayAbility.Movement.Dash")));
+	CancelAbilitiesWithTag.AddTag(FGameplayTag::RequestGameplayTag(FName("GameplayAbility.Combat.LightAttack")));
+
 	// sets the gameplay cost and cooldown classes
-	//CostGameplayEffectClass = UGE_DashCost::StaticClass();
+	CostGameplayEffectClass = UGE_DashCost::StaticClass();
 	CooldownGameplayEffectClass = UGE_DashCooldown::StaticClass();
 	
 	DashCueTag = FGameplayTag::RequestGameplayTag(FName("GameplayCue.Dash.Active"));
@@ -42,7 +45,7 @@ void UGA_Dash::ActivateAbility(
 			0.18f,
 			false,
 			nullptr,
-			ERootMotionFinishVelocityMode::MaintainLastRootMotionVelocity,
+			ERootMotionFinishVelocityMode::ClampVelocity,
 			FVector::ZeroVector,
 			GetMaxSpeed(),
 			true);
@@ -87,11 +90,11 @@ FVector UGA_Dash::GetDashDirection() const
 float UGA_Dash::GetMaxSpeed() const
 {
 	AActor* Player = GetAvatarActorFromActorInfo();
-	const APawn* PlayerPawn = Cast<APawn>(Player);
+	const ACharacterController* PlayerController = Cast<ACharacterController>(Player);
 
-	if (PlayerPawn)
+	if (PlayerController)
 	{
-		return PlayerPawn->GetMovementComponent()->GetMaxSpeed();
+		return PlayerController->SprintSpeed;
 	}
 
 	// hard coded return
