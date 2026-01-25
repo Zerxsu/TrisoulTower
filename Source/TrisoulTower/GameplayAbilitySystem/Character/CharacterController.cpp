@@ -26,6 +26,8 @@ ACharacterController::ACharacterController()
 	SpringArmComp->SetupAttachment(RootComponent);
 	CameraComp->SetupAttachment(SpringArmComp, USpringArmComponent::SocketName);
 	SpringArmComp->bUsePawnControlRotation = true;
+	SpringArmComp->bEnableCameraLag = true;
+	SpringArmComp->CameraLagSpeed = 15.f;
 
 	// for character mesh rotation
 	GetCharacterMovement()->bOrientRotationToMovement = true;
