@@ -24,7 +24,7 @@ void UAIGroupManager::BeginPlay()
 	if (FoundActors.Num() > 0) PlayerActor = FoundActors[0];
 
 	for (int i = 0; i < 6; i++) {
-		//UE_LOG(LogTemp, Warning, TEXT("Point %d: %s"), i, *GetHexPos(i, 1).ToString());
+		UE_LOG(LogTemp, Warning, TEXT("Point %d: %s"), i, *GetHexPos(i).ToString());
 		AddPoint(GetHexPos(i), 0);
 	}
 	
@@ -55,34 +55,83 @@ void UAIGroupManager::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
+	uint64_t StartTime = FPlatformTime::Cycles64();//Start Time
+
 	TArray<AActor*> AllEnemies;
 	UGameplayStatics::GetAllActorsOfClass(GetWorld(), ABaseEnemy::StaticClass(), AllEnemies);
 	
-
 	TArray<FVector2D> Keys;
 	Points.GetKeys(Keys);
 
+	int checkLevel = 0;
+	int ringLevel = 1;
+	int inRing = 1;
+	int ringMax = 2;
+
+	while (inRing > 0) {//For each point ring level
+		inRing = 0;
+		checkLevel++;
+
+		for (int i = 0; i < Points.Num(); i++) {//count assigned enemies
+			FNavPoint* checkPoint = &Points[Keys[i]];
+		
+			if (checkPoint->priority == checkLevel && checkPoint->AIGuy != nullptr) {
+
+				if (checkPoint->AIGuy->needPoint) {
+					checkPoint->AIGuy = nullptr;
+				} else if (AllEnemies.Contains(checkPoint->AIGuy)) {
+					AllEnemies[AllEnemies.Find(checkPoint->AIGuy)] = nullptr;
+					inRing++;
+				}
+			}
+		}
+
+		if (inRing >= ringMax) {
+			ringLevel++;
+			ringMax *= 2;
+		}
+
+	}
+
+	//There are now the enemies at assigned points and unassigned enemies 
 	
-	for (int i = 0; i < Points.Num(); i++) {
-		
-		if (Points[Keys[i]].AIGuy != nullptr) {
-			if (!IsValid(Points[Keys[i]].AIGuy)) Points[Keys[i]].AIGuy = nullptr;//Unassign Invalid Enemies From Points
-			else if (Points[Keys[i]].AIGuy->needPoint) TradePoint(Keys[i]);//Reassign Enemy points
-		}
+	TArray<AActor*> LostEnemies;//An array of unassigned enemies, to be sorted by distance to the player
 
+	FVector PlayerPos = PlayerActor->GetActorLocation();
+
+	for (int i = 0; i < AllEnemies.Num(); i++) {
+		if (AllEnemies[i] != nullptr) {
+
+			float playerDist = FVector::Dist(AllEnemies[i]->GetActorLocation(), PlayerPos);
+
+			if (LostEnemies.Num() == 0) LostEnemies.Add(AllEnemies[i]);
+			else if (FVector::Dist(LostEnemies.Last()->GetActorLocation(), PlayerPos) < playerDist) LostEnemies.Add(AllEnemies[i]);
+			else {
+				for (int j = 0; j < LostEnemies.Num(); j++) {
+					if (FVector::Dist(LostEnemies[j]->GetActorLocation(), PlayerPos) > playerDist) {
+						LostEnemies.Insert(AllEnemies[i], j);
+						break;
+					}
+				}
+			}
+
+		}
 	}
 
-	//Assign Unassigned Enemies
-	for (AActor* enemyActor : AllEnemies) {
+	//Assign all the unassigned guys
+	for (AActor* enemyActor : LostEnemies) {
 		//UE_LOG(LogTemp, Warning, TEXT("Enemy: %s"), *enemyActor->GetName());
-		ABaseEnemy* enemy = Cast<ABaseEnemy>(enemyActor);
-		
-		if (enemy->needPoint) {
-			AssignPoint(enemy);
+		//ABaseEnemy* enemy = Cast<ABaseEnemy>(enemyActor);
+		AssignPoint(Cast<ABaseEnemy>(enemyActor), ringLevel);
+
+		inRing++;
+
+		if (inRing >= ringMax) {
+			ringLevel++;
+			inRing = 0;
+			ringMax *= 2;
 		}
 	}
-
-	//When points are unassigned, a nearby enemy should be assigned to fill the space
 
 	Points.GetKeys(Keys);
 
@@ -106,15 +155,28 @@ void UAIGroupManager::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 			0,
 			2.0f
 		);
-		
-		FNavPoint* check_point = &Points[Keys[i]];
 
+		//Update the target location of each enemy relative to the player
+		FNavPoint* check_point = &Points[Keys[i]];
 		if (check_point->isValid) {
 			if (check_point->AIGuy != nullptr) check_point->AIGuy->AssignPoint(Keys[i], check_point->priority);
 		}
 
+		if (check_point->priority > checkLevel + 1) Points.Remove(Keys[i]);
+		//Somehoe a bunch of new ring keep getting made and also all the guys rearagne themselves out of the first ring
+		//Likley that guys are being removed from points but the reference to them is not removed so all the points think they have guys
+		//Fix the bug where they all leave the first ring and then optimize
 	}
 	
+	uint64_t EndTime = FPlatformTime::Cycles64();//End Time
+	double DurationNS = FPlatformTime::ToSeconds64(EndTime - StartTime) * 1e9;//Tick Duration
+	FString DebugMessage = FString::Printf(TEXT("Tick Time: %f"), DurationNS);
+    GEngine->AddOnScreenDebugMessage(
+        -1,
+        0.5f,
+        FColor::Yellow,
+        DebugMessage
+    );
 }
 
 
@@ -124,15 +186,16 @@ void UAIGroupManager::AddPoint(FVector2D at, int prio)
 	TArray<FVector2D> Keys;
 	Points.GetKeys(Keys);
 
-	if (at.Length() < Separation) return;
+	if (at.Length() < Separation - 1) return;
 
 	//This part is a mess
 	for (int i = 0; i < Keys.Num(); i++) {
-		if ((at - Keys[i]).Length() < Separation) {
+		if ((at - Keys[i]).Length() < Separation - 1) {
 			int NewPrio = Points[Keys[i]].priority;
 			if (NewPrio > prio + 1) {
 				Points[Keys[i]].priority = prio + 1;
 			}
+			UE_LOG(LogTemp, Warning, TEXT("Bad Point %f: %s"), (at - Keys[i]).Length(), *at.ToString());
 			return;
 		}
 	}
@@ -159,7 +222,7 @@ FNavPoint* UAIGroupManager::GetPoint(FVector2D at)
 	return Points.Find(at);
 }
 
-void UAIGroupManager::AssignPoint(ABaseEnemy* ai)
+void UAIGroupManager::AssignPoint(ABaseEnemy* ai, int minRing)
 {
 
 	FVector AIpos = ai->GetActorLocation();
@@ -174,22 +237,26 @@ void UAIGroupManager::AssignPoint(ABaseEnemy* ai)
 	float bestWeight = -1.0f;
 	FVector2D bestPos = pos;
 
+
 	for (int i = 0; i < Points.Num(); i++) {//Look through every point
 
-		if (Points[Keys[i]].isValid && Points[Keys[i]].AIGuy == nullptr) {
+		FNavPoint* check = &Points[Keys[i]];
+
+		if (check->isValid && check->AIGuy == nullptr && check->priority >= minRing) {
 
 			float pointWeight = 0.0f;
 
 			//Calculate weight of each point relative to enemy
-			pointWeight = (float)Points[Keys[i]].priority * 30.0f;
+			pointWeight = (float)check->priority * 12.0f;
 			pointWeight *= FMath::Sqrt(((tpos + Keys[i]) - pos).Size());
-			pointWeight *= FVector2D::DotProduct((tpos + Keys[i] - pos).GetSafeNormal(), Keys[i].GetSafeNormal());
+			//pointWeight *= FVector2D::DotProduct((tpos + Keys[i] - pos).GetSafeNormal(), Keys[i].GetSafeNormal());
 			
 			//Find the best point
 			if (pointWeight >= 0 && (bestWeight == -1 || pointWeight < bestWeight)) {
 				bestWeight = pointWeight;
-				best = &Points[Keys[i]];
+				best = check;
 				bestPos = Keys[i];
+
 			}
 			
 			UE_LOG(LogTemp, Warning, TEXT("Point %d: %s - %f"), i, *Keys[i].ToString(), pointWeight);
@@ -215,6 +282,15 @@ void UAIGroupManager::AssignPoint(ABaseEnemy* ai)
 }
 
 void UAIGroupManager::TradePoint(FVector2D at) {
+
+	//Right now before check point, the assigned AIGuy is made null
+	//This is because otherwise, every point ends up with the same AIGuy
+	//This causes errors when trying to trade points
+	//The system needs to:
+	//		reassign ai points after they attack
+	//		allow trading points with nothing
+	//		make sure guys from further rings move in
+	//		maybe
 
 	int prio = Points[at].priority;
 

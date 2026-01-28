@@ -5,7 +5,9 @@
 #include "GameFramework/PawnMovementComponent.h"
 #include "NavigationPath.h"
 #include "Kismet/GameplayStatics.h"
+#include "Kismet/KismetMathLibrary.h"
 #include "Kismet/KismetSystemLibrary.h"
+
 
 
 // Sets default values
@@ -88,14 +90,13 @@ void ABaseEnemy::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent
 //Set target point from AIGroupManager
 void ABaseEnemy::AssignPoint(FVector2D at, int prio)
 {
+	needPoint = false;
 	if (PlayerActor == nullptr) return;
 	if (isAttacking) return;
 
 	FVector new_at = FVector(at.X, at.Y, 0);
 
 	SetDestination(PlayerActor->GetActorLocation() + new_at, true);
-
-	needPoint = false;
 
 	if (TargetType == ETargetType::Direct) pointAtPlayer = prio <= 1;  
 
@@ -235,6 +236,12 @@ void ABaseEnemy::ReachedTarget() {
 	//FString DebugMessage = FString::Printf(TEXT("At Target"));
 	//GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Green, DebugMessage);
 
+	FRotator LookAtPlayer = UKismetMathLibrary::FindLookAtRotation(GetActorLocation(), PlayerActor->GetActorLocation());
+	LookAtPlayer.Pitch = GetActorRotation().Pitch;
+	LookAtPlayer.Roll = GetActorRotation().Roll;
+	SetActorRotation(LookAtPlayer);
+
+
 	FColor aer = FColor::Cyan;
 	if (pointAtPlayer) aer = FColor::Magenta;
 
@@ -293,20 +300,18 @@ bool ABaseEnemy::CanSeeTarget() {
 void ABaseEnemy::StartAttack() {
 	isAttacking = true;
 
-	FString DebugMessage = FString::Printf(TEXT("StartAttack"));
-	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Green, DebugMessage);
+	//FString DebugMessage = FString::Printf(TEXT("StartAttack"));
+	//GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Green, DebugMessage);
 
-	//Wait for attack animation to happen
-	//FTimerHandle UnusedHandle;
-	//GetWorldTimerManager().SetTimer(
-	//	UnusedHandle, this, &ABaseEnemy::EndAttack, 2.0f, false);
 }
 
 void ABaseEnemy::EndAttack() {
 	isAttacking = false;
 
-	FString DebugMessage = FString::Printf(TEXT("EndAttack"));
-	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Purple, DebugMessage);
+	if (FVector::Dist(Destination, GetActorLocation()) > TargetDist && TargetType == ETargetType::Direct) needPoint = true;
+
+	//FString DebugMessage = FString::Printf(TEXT("EndAttack"));
+	//GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Purple, DebugMessage);
 
 }
 

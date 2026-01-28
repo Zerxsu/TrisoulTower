@@ -60,7 +60,7 @@ public:
 	FNavPoint* GetPoint(FVector2D at);
 
 	UFUNCTION(BlueprintCallable)
-	void AssignPoint(ABaseEnemy* ai);	
+	void AssignPoint(ABaseEnemy* ai, int minRing = 0);	
 
 	void TradePoint(FVector2D at);
 
