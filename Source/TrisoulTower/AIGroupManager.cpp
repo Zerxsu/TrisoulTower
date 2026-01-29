@@ -3,6 +3,10 @@
 
 #include "AIGroupManager.h"
 
+//Debug variables to track duration of tick function
+TArray<float> tickTimes = {0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f};
+int tickIdx = 0;
+
 // Sets default values for this component's properties
 UAIGroupManager::UAIGroupManager()
 {
@@ -36,16 +40,6 @@ void UAIGroupManager::BeginPlay()
 	//	UE_LOG(LogTemp, Warning, TEXT("Point %d: %s"), i, *Keys[i].ToString());
 	//}
 
-	//AddPoint(FVector2D(0, 0), 1);
-
-	/*Temporary for debug
-	TArray<AActor*> FoundEnemy;
-	UGameplayStatics::GetAllActorsOfClass(GetWorld(), ABaseEnemy::StaticClass(), FoundEnemy);
-	if (FoundActors.Num() > 0) {
-		ABaseEnemy* Found = Cast<ABaseEnemy>(FoundActors[0]);
-		if (Found) AssignPoint(Found);
-	}
-	*/
 
 }
 
@@ -55,7 +49,10 @@ void UAIGroupManager::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
-	uint64_t StartTime = FPlatformTime::Cycles64();//Start Time
+	uint64_t StartTime = FPlatformTime::Cycles64();//Start Time, for debugging
+
+	//Enemies aren't being unassigned from points properly
+	//Enemies are still targeting invalid points
 
 	TArray<AActor*> AllEnemies;
 	UGameplayStatics::GetAllActorsOfClass(GetWorld(), ABaseEnemy::StaticClass(), AllEnemies);
@@ -77,14 +74,25 @@ void UAIGroupManager::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 		
 			if (checkPoint->priority == checkLevel && checkPoint->AIGuy != nullptr) {
 
+				if (!checkPoint->isValid) checkPoint->AIGuy->needPoint = true;
+
 				if (checkPoint->AIGuy->needPoint) {
 					checkPoint->AIGuy = nullptr;
 				} else if (AllEnemies.Contains(checkPoint->AIGuy)) {
-					AllEnemies[AllEnemies.Find(checkPoint->AIGuy)] = nullptr;
-					inRing++;
+					if (checkLevel > ringLevel) {//If the last ring wasn't full, this guy needs a new spot
+						checkPoint->AIGuy->needPoint = true;
+						checkPoint->AIGuy = nullptr;
+					}
+					else {//If the guy doesn't need a new point and can't advance to a closer ring, remove from enemy list
+						AllEnemies[AllEnemies.Find(checkPoint->AIGuy)] = nullptr;
+						inRing++;
+					}
 				}
 			}
 		}
+
+		FString DebugMessage = FString::Printf(TEXT("Ring %d: %d"), checkLevel, inRing);
+    	GEngine->AddOnScreenDebugMessage(-1, 0, FColor::Cyan, DebugMessage);
 
 		if (inRing >= ringMax) {
 			ringLevel++;
@@ -118,6 +126,9 @@ void UAIGroupManager::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 		}
 	}
 
+	FString DebugMessagee = FString::Printf(TEXT("Unassigned: %d"), LostEnemies.Num());
+    GEngine->AddOnScreenDebugMessage(-1, 0, FColor::Cyan, DebugMessagee);
+
 	//Assign all the unassigned guys
 	for (AActor* enemyActor : LostEnemies) {
 		//UE_LOG(LogTemp, Warning, TEXT("Enemy: %s"), *enemyActor->GetName());
@@ -138,11 +149,15 @@ void UAIGroupManager::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 	//Update point positions for enemies
 	for (int i = 0; i < Points.Num(); i++) {
 
+		//Debugging Visuals
 		FVector aer = PlayerActor->GetActorLocation() + FVector(Keys[i].X, Keys[i].Y, Points[Keys[i]].priority * 32.0f);
-
 		FColor maroo = FColor::Green;
 		if (!Points[Keys[i]].isValid) maroo = FColor::Red;
-		else if (Points[Keys[i]].priority >= 2) maroo = FColor::Blue;
+		else if (Points[Keys[i]].priority >= 2) {
+			maroo = FColor::Blue;
+			//maroo.B = 1.0f - (0.1f * ((float)Points[Keys[i]].priority));
+			//maroo.B = ((Points[Keys[i]].priority - 1) / FMath::Clamp(checkLevel - 1, 1, checkLevel + 1));
+		}
 
 		DrawDebugSphere(
 			GetWorld(),
@@ -151,7 +166,7 @@ void UAIGroupManager::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 			12,
 			maroo,
 			false,
-			0,
+			0.0,
 			0,
 			2.0f
 		);
@@ -163,20 +178,30 @@ void UAIGroupManager::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 		}
 
 		if (check_point->priority > checkLevel + 1) Points.Remove(Keys[i]);
-		//Somehoe a bunch of new ring keep getting made and also all the guys rearagne themselves out of the first ring
+		//Somehow a bunch of new ring keep getting made and also all the guys rearagne themselves out of the first ring
 		//Likley that guys are being removed from points but the reference to them is not removed so all the points think they have guys
 		//Fix the bug where they all leave the first ring and then optimize
+		//One of the issues could be that the enemy target dist is too small, but others should still try and fill the space
+		//The script needs to move enemies down if a level isn't full
+		//The problem is probably that the ringLevel isn't programed as intended, and empty rings are counted as full 
+		//Update: The program says the rings are sorted as intented, but the enemies don't go to the right points, sometimes they are stick unassigned
 	}
 	
 	uint64_t EndTime = FPlatformTime::Cycles64();//End Time
-	double DurationNS = FPlatformTime::ToSeconds64(EndTime - StartTime) * 1e9;//Tick Duration
-	FString DebugMessage = FString::Printf(TEXT("Tick Time: %f"), DurationNS);
-    GEngine->AddOnScreenDebugMessage(
-        -1,
-        0.5f,
-        FColor::Yellow,
-        DebugMessage
-    );
+	float DurationNS = FPlatformTime::ToSeconds64(EndTime - StartTime);//Tick Duration
+
+	tickTimes[tickIdx] = DurationNS;
+	tickIdx++;
+	if (tickIdx >= tickTimes.Num()) tickIdx = 0;
+
+	float tickAvg = 0.0;
+	for (int i = 0; i < tickTimes.Num(); i++) {
+		tickAvg += tickTimes[i];
+	}
+	tickAvg /= tickTimes.Num();
+
+	FString DebugMessage = FString::Printf(TEXT("Tick Time: %f"), tickAvg);
+    GEngine->AddOnScreenDebugMessage(-1, 0, FColor::Yellow, DebugMessage);
 }
 
 

@@ -212,6 +212,7 @@ void ABaseEnemy::MakePath()
 		const TArray<FNavPathPoint>& Points = NewPath->GetPathPoints();
 		NavPath = NewPath.Get();
 	}
+	else if (TargetType == ETargetType::Direct) needPoint = true;//If a path can't be made to desired point, request a new one
 }
 
 TArray<FVector> ABaseEnemy::GetPath(){
@@ -259,6 +260,7 @@ void ABaseEnemy::ReachedTarget() {
 
 	//Check of target is at the right position
 	if (!isAttacking && pointAtPlayer) StartAttack();
+	else if (TargetType == ETargetType::Direct) needPoint = true;
 }
 
 bool ABaseEnemy::CanSeeTarget() {
