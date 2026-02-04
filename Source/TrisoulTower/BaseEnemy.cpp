@@ -260,7 +260,7 @@ void ABaseEnemy::ReachedTarget() {
 
 	//Check of target is at the right position
 	if (!isAttacking && pointAtPlayer) StartAttack();
-	else if (TargetType == ETargetType::Direct) needPoint = true;
+	//else if (TargetType == ETargetType::Direct) needPoint = true;
 }
 
 bool ABaseEnemy::CanSeeTarget() {

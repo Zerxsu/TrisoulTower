@@ -173,8 +173,9 @@ void UAIGroupManager::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 
 		//Update the target location of each enemy relative to the player
 		FNavPoint* check_point = &Points[Keys[i]];
-		if (check_point->isValid) {
-			if (check_point->AIGuy != nullptr) check_point->AIGuy->AssignPoint(Keys[i], check_point->priority);
+		if (check_point->isValid && check_point->AIGuy != nullptr) {
+			if (check_point->priority > 1) check_point->AIGuy->AssignPoint(Keys[i], check_point->priority);
+			else check_point->AIGuy->AssignPoint(Keys[i].GetSafeNormal() * StartDist, check_point->priority);
 		}
 
 		if (check_point->priority > checkLevel + 1) Points.Remove(Keys[i]);
@@ -211,11 +212,11 @@ void UAIGroupManager::AddPoint(FVector2D at, int prio)
 	TArray<FVector2D> Keys;
 	Points.GetKeys(Keys);
 
-	if (at.Length() < Separation - 1) return;
+	//if (at.Length() < StartDist - 1) return;
 
 	//This part is a mess
 	for (int i = 0; i < Keys.Num(); i++) {
-		if ((at - Keys[i]).Length() < Separation - 1) {
+		if (FVector2D::Distance(at, Keys[i]) < 8.0f) {//((at - Keys[i]).Length() < StartDist - 1) {
 			int NewPrio = Points[Keys[i]].priority;
 			if (NewPrio > prio + 1) {
 				Points[Keys[i]].priority = prio + 1;
@@ -346,6 +347,6 @@ void UAIGroupManager::TradePoint(FVector2D at) {
 
 FVector2D UAIGroupManager::GetHexPos(int point, int dist)
 {
-	 
+
 	return FVector2D(0, Separation * dist).GetRotated(point * 60);
 }

@@ -46,7 +46,8 @@ protected:
 
 	TArray<ABaseEnemy*> Navigators;
 
-	float Separation = 256.0f;//32.0f;
+	float StartDist = 48.0f;//Seperation from player
+	float Separation = 256.0f;//32.0f;//Seperation between rings
 
 	UPROPERTY(BlueprintReadWrite)
 	TMap<FVector2D, FNavPoint> Points;
