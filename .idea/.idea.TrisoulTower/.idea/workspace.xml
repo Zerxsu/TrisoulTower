@@ -17,6 +17,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TrisoulTower/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TrisoulTower/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_CharacterController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_CharacterController.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_TestAttack.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_TestAttack.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Levels/PlayerControllerTest.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/PlayerControllerTest.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/Attack1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/Attack1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/Attack2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/Attack2.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +198,7 @@
       <workItem from="1769115356638" duration="10413000" />
       <workItem from="1769282470918" duration="2771000" />
       <workItem from="1769290365117" duration="3114000" />
-      <workItem from="1770226500452" duration="2638000" />
+      <workItem from="1770226500452" duration="4054000" />
     </task>
     <servers />
   </component>
