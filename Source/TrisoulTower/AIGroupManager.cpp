@@ -51,9 +51,6 @@ void UAIGroupManager::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 
 	uint64_t StartTime = FPlatformTime::Cycles64();//Start Time, for debugging
 
-	//Enemies aren't being unassigned from points properly
-	//Enemies are still targeting invalid points
-
 	TArray<AActor*> AllEnemies;
 	UGameplayStatics::GetAllActorsOfClass(GetWorld(), ABaseEnemy::StaticClass(), AllEnemies);
 	
@@ -76,9 +73,16 @@ void UAIGroupManager::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 
 				if (!checkPoint->isValid) checkPoint->AIGuy->needPoint = true;
 
-				if (checkPoint->AIGuy->needPoint) {
+				if (!AllEnemies.Contains(checkPoint->AIGuy)) {
 					checkPoint->AIGuy = nullptr;
-				} else if (AllEnemies.Contains(checkPoint->AIGuy)) {
+				} else if (checkPoint->AIGuy->needPoint) {
+					
+					if (checkPoint->AIGuy->stunTime > 0) {
+						AllEnemies[AllEnemies.Find(checkPoint->AIGuy)] = nullptr;
+					}			
+					checkPoint->AIGuy = nullptr;
+
+				} else {
 					if (checkLevel > ringLevel) {//If the last ring wasn't full, this guy needs a new spot
 						checkPoint->AIGuy->needPoint = true;
 						checkPoint->AIGuy = nullptr;
@@ -212,11 +216,11 @@ void UAIGroupManager::AddPoint(FVector2D at, int prio)
 	TArray<FVector2D> Keys;
 	Points.GetKeys(Keys);
 
-	//if (at.Length() < StartDist - 1) return;
+	if (at.Length() < StartDist - 1) return;//No points at 0 0
 
 	//This part is a mess
 	for (int i = 0; i < Keys.Num(); i++) {
-		if (FVector2D::Distance(at, Keys[i]) < 8.0f) {//((at - Keys[i]).Length() < StartDist - 1) {
+		if (FVector2D::Distance(at, Keys[i]) < 8.0f) {
 			int NewPrio = Points[Keys[i]].priority;
 			if (NewPrio > prio + 1) {
 				Points[Keys[i]].priority = prio + 1;

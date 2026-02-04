@@ -56,7 +56,7 @@ void ABaseEnemy::Tick(float DeltaTime)
 		//if (NavPath->GetLength() <= TargetDist) bool m = true;
 		//if (CanSeeTarget()) bool m = false;
 
-		if (NavPath->GetLength() <= TargetDist && CanSeeTarget()) {
+		if ((NavPath->GetLength() <= TargetDist && CanSeeTarget()) || IsAtTarget()) {
 			ReachedTarget();
 			isMoving = false;
 		}
@@ -231,6 +231,10 @@ TArray<FVector> ABaseEnemy::GetPath(){
 	return points;
 }
 
+bool ABaseEnemy::IsAtTarget() {
+	return FVector::Distance(GetActorLocation(), PlayerActor->GetActorLocation()) <= TargetDist;
+}
+
 void ABaseEnemy::ReachedTarget() {
 	isAtTarget = true;
 
@@ -249,8 +253,8 @@ void ABaseEnemy::ReachedTarget() {
 	DrawDebugSphere(
 		GetWorld(),
 		Destination,
-		64.0f,
-		12,
+		32.0f,
+		8,
 		aer,
 		false,
 		5.0f,
@@ -259,7 +263,7 @@ void ABaseEnemy::ReachedTarget() {
 	);
 
 	//Check of target is at the right position
-	if (!isAttacking && pointAtPlayer) StartAttack();
+	if (!isAttacking && (pointAtPlayer || IsAtTarget())) StartAttack();
 	//else if (TargetType == ETargetType::Direct) needPoint = true;
 }
 
@@ -340,7 +344,7 @@ void ABaseEnemy::TakeAttack(float damage, bool parry) {
 
 		FString DebugMessage = FString::Printf(TEXT("Dead"));
 		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, DebugMessage);
-
+		Destroy();
 	}
 
 }

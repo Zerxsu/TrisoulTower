@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/Pawn.h"
+#include "GameFramework/Character.h"//#include "GameFramework/Pawn.h"
 #include "AIController.h"
 #include "NavigationSystem.h"
 #include "NavigationPath.h"
@@ -20,7 +20,7 @@ enum class ETargetType : uint8
 };
 
 UCLASS()
-class TRISOULTOWER_API ABaseEnemy : public APawn
+class TRISOULTOWER_API ABaseEnemy : public ACharacter
 {
 	GENERATED_BODY()
 
@@ -31,6 +31,8 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Behaviour")
 	bool needPoint = false;
+
+	float stunTime = 0.0f;
 
 	FNavigationPath* NavPath;
 
@@ -71,6 +73,9 @@ public:
 	void ReachedTarget();
 
 	UFUNCTION(BlueprintCallable, Category = "Navigation")
+	bool IsAtTarget();
+
+	UFUNCTION(BlueprintCallable, Category = "Navigation")
 	bool CanSeeTarget();
 
 	UFUNCTION(BlueprintCallable, Category = "Behaviour")
@@ -97,8 +102,6 @@ protected:
 
 	FVector Destination = FVector(0, 0, 0);
 
-	float stunTime = 0.0f;
-
 	bool isAtTarget = false;
 	bool pointAtPlayer = true;//Assigned point is player adjacent (priority 1)
 
@@ -111,10 +114,12 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
 	float StopDist = 32.0f;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
-	float TargetDist = 512.0f;
+	float TargetDist = 256.0f;
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+	//float MoveDist = 512.0f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
-	float Health = 3.0f;
+	float Health = 100.0f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Behaviour")
 	bool IsPackLeader = false;//Is this the pack leader
