@@ -14,6 +14,7 @@ UGA_Dash::UGA_Dash()
 
 	AbilityTags.AddTag(FGameplayTag::RequestGameplayTag(FName("GameplayAbility.Movement.Dash")));
 	CancelAbilitiesWithTag.AddTag(FGameplayTag::RequestGameplayTag(FName("GameplayAbility.Combat.LightAttack")));
+	CancelAbilitiesWithTag.AddTag(FGameplayTag::RequestGameplayTag(FName("GameplayAbility.Combat.HeavyAttack")));
 
 	// sets the gameplay cost and cooldown classes
 	CostGameplayEffectClass = UGE_DashCost::StaticClass();
