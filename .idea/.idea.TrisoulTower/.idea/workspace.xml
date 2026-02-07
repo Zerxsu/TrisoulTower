@@ -15,14 +15,49 @@
   <component name="ChangeListManager">
     <list default="true" id="8e881ff7-db9b-43e6-80db-eb420dbd244d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TrisoulTower/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TrisoulTower/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_CharacterController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_CharacterController.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Temp/BP_Weapon_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Temp/BP_Weapon_Base.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Temp/BP_Weapon_Test.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Temp/BP_Weapon_Test.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_TestAttack.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Cues/GC_TestAttack.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Temp/BP_Weapon_Base.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Temp/BP_Weapon_Test.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_HeavyAttack.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_HeavyAttack.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_LightAttack.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_LightAttack.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Levels/PlayerControllerTest.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/PlayerControllerTest.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Materials/M_PBR.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Materials/M_PBR.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/ABP_Player.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/ABP_Player.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/AM_Attack1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/AM_Attack1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/AM_Attack2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/AM_Attack2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Character_Model_Official.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Character/Player/Character_Model_Official.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Character_Model_Official_Skeleton.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Character/Player/Character_Model_Official_Skeleton.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword/Classic_Longsword.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword/Color_Palete.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword/M_Sword.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/Blade.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/Blade_Base_color.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/Blade_Height.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/Blade_Metallic.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/Blade_Normal_OpenGL.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/Blade_Roughness.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/End.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/End_Base_color.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/End_Height.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/End_Metallic.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/End_Normal_OpenGL.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/End_Roughness.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/Handle.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/Handle_Base_color.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/Handle_Height.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/Handle_Metallic.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/Handle_Normal_OpenGL.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/Handle_Roughness.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/Hilt.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/Hilt_Base_color.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/Hilt_Height.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/Hilt_Metallic.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/Hilt_Normal_OpenGL.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/Hilt_Roughness.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/Sword.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Abilities/GA_Dash.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Abilities/GA_Dash.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Character/CharacterController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Character/CharacterController.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +238,10 @@
       <workItem from="1769290365117" duration="3114000" />
       <workItem from="1770226500452" duration="7303000" />
       <workItem from="1770261244054" duration="2279000" />
-      <workItem from="1770318023783" duration="1538000" />
+      <workItem from="1770318023783" duration="5749000" />
+      <workItem from="1770407511163" duration="1417000" />
+      <workItem from="1770444154345" duration="1075000" />
+      <workItem from="1770448182201" duration="439000" />
     </task>
     <servers />
   </component>

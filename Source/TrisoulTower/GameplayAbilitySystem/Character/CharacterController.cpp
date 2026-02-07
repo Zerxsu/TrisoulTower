@@ -208,7 +208,7 @@ void ACharacterController::SetupPlayerInputComponent(UInputComponent* PlayerInpu
 
 		// binding abilities
 		EnhancedInputComp->BindAction(DashAction, ETriggerEvent::Started, this, &ACharacterController::Dash);
-		EnhancedInputComp->BindAction(LightAttackAction, ETriggerEvent::Started, this, &ACharacterController::LightAttack);
+		EnhancedInputComp->BindAction(LightAttackAction, ETriggerEvent::Triggered, this, &ACharacterController::LightAttack);
 		EnhancedInputComp->BindAction(HeavyAttackAction, ETriggerEvent::Started, this, &ACharacterController::HeavyAttack);
 		EnhancedInputComp->BindAction(UltimateAttackAction, ETriggerEvent::Started, this, &ACharacterController::UltimateAttack);
 
