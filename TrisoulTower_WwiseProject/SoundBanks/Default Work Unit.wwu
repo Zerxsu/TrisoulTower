@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1AF19610-959A-403A-9F9F-7CD1EA809B60}" SchemaVersion="123">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{1AF19610-959A-403A-9F9F-7CD1EA809B60}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main" ID="{879ED1C6-7157-4890-992E-2BBE2CD3E8E1}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Test_Coin" ID="{14888F90-1B79-41A1-81A6-9F7A722AF9C0}" WorkUnitID="{DF32A78A-15D4-4E68-B566-159A8F6546E9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Temp_Footstep_Dirt" ID="{1387C31B-B990-425C-86EB-CD00A57446A4}" WorkUnitID="{DF32A78A-15D4-4E68-B566-159A8F6546E9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Temp_Footstep_Grass" ID="{58F891FE-97A1-43BE-BD9A-44588CF18D34}" WorkUnitID="{DF32A78A-15D4-4E68-B566-159A8F6546E9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Footsteps" ID="{FC401FC9-866D-4452-81D3-B66AB0DC4DDF}" WorkUnitID="{DF32A78A-15D4-4E68-B566-159A8F6546E9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Jump" ID="{5228FD80-CD1A-44C5-B4FD-90C55FDECA64}" WorkUnitID="{DF32A78A-15D4-4E68-B566-159A8F6546E9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Music" ID="{C396E428-1427-453C-A58D-569D97B955EE}" WorkUnitID="{DF32A78A-15D4-4E68-B566-159A8F6546E9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Temp_Swing_Hit" ID="{B02B5558-8DAB-4548-A1BD-7ACB4E35265D}" WorkUnitID="{DF32A78A-15D4-4E68-B566-159A8F6546E9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Temp_Footstep_Stone" ID="{2D94C62F-EFBC-45EF-A1FE-60CD365B0917}" WorkUnitID="{DF32A78A-15D4-4E68-B566-159A8F6546E9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Swing" ID="{7701D21A-5E6C-4682-A460-30B9D6D74626}" WorkUnitID="{DF32A78A-15D4-4E68-B566-159A8F6546E9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Dash" ID="{D4B6CC9A-BFF4-4931-AA16-DDE6332E698D}" WorkUnitID="{DF32A78A-15D4-4E68-B566-159A8F6546E9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Swing_Switch" ID="{568CB563-8332-4B3F-A694-2DE17EFF7621}" WorkUnitID="{DF32A78A-15D4-4E68-B566-159A8F6546E9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Test_Ui" ID="{61786EAA-61B0-4C2A-B4F0-91AB313419D3}" WorkUnitID="{DF32A78A-15D4-4E68-B566-159A8F6546E9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ui" ID="{DF349B53-FD67-4D3A-99CB-8A9CEA0A10B9}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Music_Stop" ID="{97C66D8C-743A-4D7C-AB2D-495FE532B124}" WorkUnitID="{DF32A78A-15D4-4E68-B566-159A8F6546E9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Test_Gem" ID="{866B64A4-761C-4EAA-A96A-A0D450EC4099}" WorkUnitID="{DF32A78A-15D4-4E68-B566-159A8F6546E9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Temp_Swing_miss" ID="{02F02BE0-10C2-4EE4-B5E8-BB8F85BDA2A1}" WorkUnitID="{DF32A78A-15D4-4E68-B566-159A8F6546E9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Footsteps_Switch" ID="{09A35A27-1A94-4F27-86F8-9626273836D9}" WorkUnitID="{DF32A78A-15D4-4E68-B566-159A8F6546E9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Music_State" ID="{2EB1A45B-61CA-4F3A-9C1D-333BA854778A}" WorkUnitID="{DF32A78A-15D4-4E68-B566-159A8F6546E9}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

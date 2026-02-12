@@ -1,5 +1,7 @@
 #include "GC_Dash.h"
 
+#include "TrisoulTower/AudioManager.h"
+
 void UGC_Dash::HandleGameplayCue(AActor* MyTarget, EGameplayCueEvent::Type EventType, const FGameplayCueParameters& Parameters)
 {
 	if (!MyTarget) return;
@@ -7,6 +9,10 @@ void UGC_Dash::HandleGameplayCue(AActor* MyTarget, EGameplayCueEvent::Type Event
 	if (EventType == EGameplayCueEvent::OnActive)
 	{
 		// Spawn VFX & Play audio from Audio manager
+
+		UAudioManager* AudioManager = GetWorld()->GetGameInstance()->GetSubsystem<UAudioManager>();
+
+		AudioManager->PlayMusic(DashSoundEffect);
 	}
 	else if (EventType == EGameplayCueEvent::Removed)
 	{
