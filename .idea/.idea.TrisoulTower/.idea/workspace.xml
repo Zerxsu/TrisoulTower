@@ -15,49 +15,16 @@
   <component name="ChangeListManager">
     <list default="true" id="8e881ff7-db9b-43e6-80db-eb420dbd244d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TrisoulTower/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TrisoulTower/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_CharacterController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_CharacterController.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Temp/BP_Weapon_Base.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Temp/BP_Weapon_Test.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_HeavyAttack.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_HeavyAttack.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/EnemySystem/SmackEnemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/EnemySystem/SmackEnemy.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/UI/WBP_HUD.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/UI/WBP_HUD.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/UI/W_PlayerResources.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/UI/W_PlayerResources.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_LightAttack.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_LightAttack.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Levels/PlayerControllerTest.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/PlayerControllerTest.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Materials/M_PBR.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Materials/M_PBR.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/ABP_Player.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/ABP_Player.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/AM_Attack1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/AM_Attack1.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/AM_Attack2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/AM_Attack2.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Character_Model_Official.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Character/Player/Character_Model_Official.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Character_Model_Official_Skeleton.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Character/Player/Character_Model_Official_Skeleton.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword/Classic_Longsword.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword/Color_Palete.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword/M_Sword.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/Blade.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/Blade_Base_color.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/Blade_Height.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/Blade_Metallic.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/Blade_Normal_OpenGL.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/Blade_Roughness.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/End.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/End_Base_color.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/End_Height.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/End_Metallic.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/End_Normal_OpenGL.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/End_Roughness.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/Handle.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/Handle_Base_color.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/Handle_Height.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/Handle_Metallic.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/Handle_Normal_OpenGL.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/Handle_Roughness.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/Hilt.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/Hilt_Base_color.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/Hilt_Height.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/Hilt_Metallic.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/Hilt_Normal_OpenGL.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/Hilt_Roughness.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TEMP_Jaden/Sword2/Sword.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Abilities/GA_Dash.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Abilities/GA_Dash.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Character/CharacterController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Character/CharacterController.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Levels/EnemyTest.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/EnemyTest.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/WwiseSoundEngine/Source/WwiseSoundEngine/Public/Generated/AkiOSPlugins.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/WwiseSoundEngine/Source/WwiseSoundEngine/Public/Generated/AkiOSPlugins.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/WwiseSoundEngine/Source/WwiseSoundEngine/Public/Generated/AktvOSPlugins.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/WwiseSoundEngine/Source/WwiseSoundEngine/Public/Generated/AktvOSPlugins.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TrisoulTower/BaseEnemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TrisoulTower/BaseEnemy.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Character/CharacterController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Character/CharacterController.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +39,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../../Program Files/Epic Games/UE_5.5/Engine/Source/Runtime/GameplayTasks/Classes/GameplayTask.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/TrisoulTower/AIGroupManager.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Abilities/GA_Attack.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Effects/GE_StaminaRegen.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Effects/GE_StaminaRegen.h" root0="FORCE_HIGHLIGHTING" />
@@ -88,21 +56,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;C/C++ Project.TrisoulTower.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;PlayerController&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "C/C++ Project.TrisoulTower.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "PlayerEnemyInteract",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "configurable.group.appearance",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="C/C++ Project.TrisoulTower">
     <configuration name="TrisoulTower" type="CppProject" factoryName="C++ Project">
       <configuration_1 setup="1">
@@ -242,6 +210,7 @@
       <workItem from="1770407511163" duration="1417000" />
       <workItem from="1770444154345" duration="1075000" />
       <workItem from="1770448182201" duration="439000" />
+      <workItem from="1770915453318" duration="2907000" />
     </task>
     <servers />
   </component>

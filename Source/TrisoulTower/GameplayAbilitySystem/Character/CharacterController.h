@@ -50,6 +50,9 @@ public:
 	UPROPERTY(BlueprintReadWrite, Category = "PlayerController|Variables")
 	int AttackIndex;
 
+	UPROPERTY(BlueprintReadWrite, Category = "PlayerController|Variables")
+	TArray<AActor*> Enemies;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|Variables")
 	float SprintSpeed = 700.f;
 

@@ -66,6 +66,9 @@ void ABaseEnemy::Tick(float DeltaTime)
 			isMoving = true;
 
 			FVector Dir;//Direction to next point
+
+			if (!NavPath) return;
+			
 			Dir = NavPath->GetPathPointLocation(1).Position - GetActorLocation();
 			Dir.Normalize();
 			//SetActorLocation(GetActorLocation() + Dir * Speed * DeltaTime);//Move actor towards next point
