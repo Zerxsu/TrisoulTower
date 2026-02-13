@@ -40,6 +40,10 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void RemoveAbilities(TArray<FGameplayAbilitySpecHandle> AbilitiesToRemove);
 
+	// only used for debugging rn might keep tho
+	UFUNCTION(BlueprintCallable)
+	void ResetAttackCombo();
+
 	UPROPERTY(BlueprintReadOnly, Category = "PlayerController|Variables")
 	bool bIsDashing;
 

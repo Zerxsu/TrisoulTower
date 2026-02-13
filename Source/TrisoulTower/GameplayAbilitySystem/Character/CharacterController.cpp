@@ -106,10 +106,6 @@ void ACharacterController::Dash()
 	// starts sprint
 	GetCharacterMovement()->MaxWalkSpeed = SprintSpeed;
 	
-	// temp fix for attack not resetting
-	AttackIndex = 0;
-	bIsAttacking = false;
-	
 	if (!GetMovementComponent()->IsFalling())
 		AbilitySystemComponent->TryActivateAbilityByClass(UGA_Dash::StaticClass());
 }
@@ -244,4 +240,10 @@ void ACharacterController::RemoveAbilities(TArray<FGameplayAbilitySpecHandle> Ab
 	
 	for (FGameplayAbilitySpecHandle AbilityHandle : AbilitiesToRemove)
 		AbilitySystemComponent->ClearAbility(AbilityHandle);
+}
+
+void ACharacterController::ResetAttackCombo()
+{
+	AttackIndex = 0;
+	bIsAttacking = false;
 }

@@ -121,4 +121,9 @@ void UGA_Dash::SetDashing(bool bIsDashing)
 	{
 		PlayerController->bIsDashing = bIsDashing;
 	}
+
+	if (bIsDashing)
+	{
+		PlayerController->ResetAttackCombo();
+	}
 }
