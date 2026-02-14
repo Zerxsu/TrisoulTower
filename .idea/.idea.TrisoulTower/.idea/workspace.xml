@@ -14,13 +14,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e881ff7-db9b-43e6-80db-eb420dbd244d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TrisoulTower/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TrisoulTower/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_LightAttack.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_LightAttack.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_HeavyAttack.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_HeavyAttack.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/ABP_Player.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/ABP_Player.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/AM_Attack2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/AM_Attack2.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Abilities/GA_Dash.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Abilities/GA_Dash.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Character/CharacterController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Character/CharacterController.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Character/CharacterController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Character/CharacterController.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +203,7 @@
       <workItem from="1770518114952" duration="375000" />
       <workItem from="1770954787330" duration="3626000" />
       <workItem from="1771008002301" duration="1828000" />
-      <workItem from="1771022759847" duration="1204000" />
+      <workItem from="1771022759847" duration="1817000" />
     </task>
     <servers />
   </component>
