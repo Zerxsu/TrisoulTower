@@ -114,6 +114,13 @@ void ACharacterController::LightAttack()
 {
 	if (!WeaponManager->GetEquippedWeapon())
 		return;
+
+	// temp implementation for ground slam ability activation
+	if (GetCharacterMovement()->IsFalling())
+	{
+		AbilitySystemComponent->TryActivateAbilityByClass(GroundSlamAbility);
+		return;
+	}
 	
 	TSubclassOf<UGameplayAbility> LightAttack = WeaponManager->GetEquippedWeapon()->GetAbility(0);
 	AbilitySystemComponent->TryActivateAbilityByClass(LightAttack);

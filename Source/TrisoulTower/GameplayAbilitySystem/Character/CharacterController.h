@@ -63,6 +63,10 @@ public:
 protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|GameplayAbilitySystem|Abilities")
 	TArray<TSubclassOf<UGameplayAbility>> StartingAbilities;
+
+	// TEMP (remove later when implementing ground slam in C++)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|GameplayAbilitySystem|Abilities")
+	TSubclassOf<UGameplayAbility> GroundSlamAbility;
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "PlayerController")
 	class USpringArmComponent* SpringArmComp;
