@@ -14,64 +14,72 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e881ff7-db9b-43e6-80db-eb420dbd244d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TrisoulTower/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TrisoulTower/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TrisoulTower/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TrisoulTower/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Materials/EnvironmentMats/Landscape.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Materials/EnvironmentMats/Landscape.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TutorialMap/0/6W/4XAYFGMKGZ9X7PS1O4FH09.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TutorialMap/1/PG/39R8VK95MT9WIRH8S7EDH8.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TutorialMap/3/RP/CQ8S7XAPQ67TR1QZSD8DQ2.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TutorialMap/6/1Y/V9J20POA8RCI23YVPLEHPJ.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TutorialMap/6/7D/QFQI0N8QCMUOBCQ9VE130M.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TutorialMap/6/CP/FY9WFFU8UWZJ044TQ08CKT.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TutorialMap/7/07/JXG0P0DNVKBGWFEDNF6KAB.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TutorialMap/7/83/GY8P94HDU7SQWQV8MFP88V.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TutorialMap/7/83/GY8P94HDU7SQWQV8MFP88V.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TutorialMap/8/0W/32MVN4NFC6HU02LPYKQR0B.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TutorialMap/8/4P/IT28O473TH893AW6HFCDBS.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TutorialMap/8/B5/N721BZIZ52MCR1REVHBVHJ.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TutorialMap/9/37/KQRZLU9VV9Y0UE3JNDUPLN.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TutorialMap/9/7E/KEXGN37HKCA1FWP4VIRR61.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TutorialMap/9/7E/KEXGN37HKCA1FWP4VIRR61.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TutorialMap/9/B0/46FX29RY8G1U69YB7RQU1H.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TutorialMap/9/M0/8QAF0AIG448HDGSA6Y0C02.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TutorialMap/9/NG/33PVDRNG978BP9XSHWL5IR.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TutorialMap/9/NG/33PVDRNG978BP9XSHWL5IR.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TutorialMap/9/OC/QQ00QX3KNOAYNZHB0FLOJ7.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TutorialMap/9/OC/QQ00QX3KNOAYNZHB0FLOJ7.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TutorialMap/A/IF/0DMR45OKHUILJT4UIWEWC1.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TutorialMap/B/UJ/4IMT2N8PKEXPLG8QG6LVXW.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TutorialMap/C/5S/HYMN9KDT38S4JEH7K72IKP.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TutorialMap/E/E7/9VJW1ESIKIXU86WL9ZG6JS.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TutorialMap/E/PG/2BLK392KBSX0YEGCW38U3V.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalObjects__/Levels/TutorialMap/7/WU/SYHZW488P5O2STN7XJCB5F.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Levels/BossRoom.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/BossRoom.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Materials/DungeonMaterials/FloorTT/FloorMat.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Materials/DungeonMaterials/FloorTT/FloorMat_Inst.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Materials/DungeonMaterials/Pillars/PillarMat.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Materials/DungeonMaterials/Railings/RailingsMat.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Materials/DungeonMaterials/RockTT/RockMat.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Materials/DungeonMaterials/Stage/StageMat.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Materials/DungeonMaterials/StairsAndTrim/StairsAndTrimMat.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Materials/DungeonMaterials/SupportPillar/SupportPillarMat.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Materials/DungeonMaterials/WindowTrim/WindowMat.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/CeilingArc.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/CeilingArc.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/CornerWall2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/CornerWall2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Corner_Wall.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Corner_Wall.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Cube_010.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Cube_010.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Cube_014.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Cube_014.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Cube_015.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Cube_015.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Cube_018.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Cube_018.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Cube_026.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Cube_026.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Cube_027.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Cube_027.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Cube_032.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Cube_032.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Cube_034.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Cube_034.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Cube_036.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Cube_036.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Floor.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Floor.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Floor_001.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Floor_001.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/HighWall.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/HighWall.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Plane_030.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Plane_030.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Plane_032.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Plane_032.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/SupportPillar.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/SupportPillar.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Wall.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Environment/DungeonTilset/Wall.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="38jY3Q7Sw3rQMVzscGSfIvZdBHb" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "C/C++ Project.TrisoulTower.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "temp",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;C/C++ Project.TrisoulTower.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;LevelDesign&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="C/C++ Project.TrisoulTower">
     <configuration name="TrisoulTower" type="CppProject" factoryName="C++ Project">
       <configuration_1 setup="1">
@@ -202,6 +210,8 @@
       <option name="presentableId" value="Default" />
       <updated>1769314253391</updated>
       <workItem from="1769314253876" duration="608000" />
+      <workItem from="1771356838171" duration="1393000" />
+      <workItem from="1771447653718" duration="3165000" />
     </task>
     <servers />
   </component>
