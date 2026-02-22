@@ -1,0 +1,394 @@
+[
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Plugins\\KawaiiPhysics\\Source\\KawaiiPhysicsEd\\KawaiiPhysicsEd.Build.cs",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\KawaiiPhysicsEd.46.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Plugins\\KawaiiPhysics\\Source\\KawaiiPhysicsEd\\Private\\AnimGraphNode_KawaiiPhysics.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\KawaiiPhysicsEd.46.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Plugins\\KawaiiPhysics\\Source\\KawaiiPhysicsEd\\Private\\KawaiiPhysicsEd.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\KawaiiPhysicsEd.46.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Plugins\\KawaiiPhysics\\Source\\KawaiiPhysicsEd\\Private\\KawaiiPhysicsEditMode.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\KawaiiPhysicsEd.46.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Plugins\\KawaiiPhysics\\Source\\KawaiiPhysicsEd\\Public\\AnimGraphNode_KawaiiPhysics.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\KawaiiPhysicsEd.46.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Plugins\\KawaiiPhysics\\Source\\KawaiiPhysicsEd\\Public\\KawaiiPhysicsEd.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\KawaiiPhysicsEd.46.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Plugins\\KawaiiPhysics\\Source\\KawaiiPhysicsEd\\Public\\KawaiiPhysicsEditMode.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\KawaiiPhysicsEd.46.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Plugins\\KawaiiPhysics\\Source\\KawaiiPhysics\\AnimNotifies\\AnimNotifyState_KawaiiPhysics.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\KawaiiPhysics.45.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Plugins\\KawaiiPhysics\\Source\\KawaiiPhysics\\AnimNotifies\\AnimNotifyState_KawaiiPhysics.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\KawaiiPhysics.45.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Plugins\\KawaiiPhysics\\Source\\KawaiiPhysics\\AnimNotifies\\AnimNotify_KawaiiPhysics.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\KawaiiPhysics.45.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Plugins\\KawaiiPhysics\\Source\\KawaiiPhysics\\AnimNotifies\\AnimNotify_KawaiiPhysics.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\KawaiiPhysics.45.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Plugins\\KawaiiPhysics\\Source\\KawaiiPhysics\\KawaiiPhysics.Build.cs",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\KawaiiPhysics.45.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Plugins\\KawaiiPhysics\\Source\\KawaiiPhysics\\Private\\AnimNode_KawaiiPhysics.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\KawaiiPhysics.45.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Plugins\\KawaiiPhysics\\Source\\KawaiiPhysics\\Private\\KawaiiPhysics.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\KawaiiPhysics.45.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Plugins\\KawaiiPhysics\\Source\\KawaiiPhysics\\Private\\KawaiiPhysicsBoneConstraintsDataAsset.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\KawaiiPhysics.45.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Plugins\\KawaiiPhysics\\Source\\KawaiiPhysics\\Private\\KawaiiPhysicsCustomExternalForce.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\KawaiiPhysics.45.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Plugins\\KawaiiPhysics\\Source\\KawaiiPhysics\\Private\\KawaiiPhysicsExternalForce.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\KawaiiPhysics.45.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Plugins\\KawaiiPhysics\\Source\\KawaiiPhysics\\Private\\KawaiiPhysicsLibrary.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\KawaiiPhysics.45.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Plugins\\KawaiiPhysics\\Source\\KawaiiPhysics\\Private\\KawaiiPhysicsLimitsDataAsset.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\KawaiiPhysics.45.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Plugins\\KawaiiPhysics\\Source\\KawaiiPhysics\\Public\\AnimNode_KawaiiPhysics.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\KawaiiPhysics.45.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Plugins\\KawaiiPhysics\\Source\\KawaiiPhysics\\Public\\KawaiiPhysics.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\KawaiiPhysics.45.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Plugins\\KawaiiPhysics\\Source\\KawaiiPhysics\\Public\\KawaiiPhysicsBoneConstraintsDataAsset.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\KawaiiPhysics.45.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Plugins\\KawaiiPhysics\\Source\\KawaiiPhysics\\Public\\KawaiiPhysicsCustomExternalForce.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\KawaiiPhysics.45.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Plugins\\KawaiiPhysics\\Source\\KawaiiPhysics\\Public\\KawaiiPhysicsExternalForce.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\KawaiiPhysics.45.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Plugins\\KawaiiPhysics\\Source\\KawaiiPhysics\\Public\\KawaiiPhysicsLibrary.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\KawaiiPhysics.45.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Plugins\\KawaiiPhysics\\Source\\KawaiiPhysics\\Public\\KawaiiPhysicsLimitsDataAsset.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\KawaiiPhysics.45.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Source\\TrisoulTower\\BaseEnemy.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\TrisoulTower.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Source\\TrisoulTower\\BaseEnemy.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\TrisoulTower.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Source\\TrisoulTower\\GameplayAbilitySystem\\Abilities\\GA_Attack.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\TrisoulTower.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Source\\TrisoulTower\\GameplayAbilitySystem\\Abilities\\GA_Attack.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\TrisoulTower.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Source\\TrisoulTower\\GameplayAbilitySystem\\Abilities\\GA_Dash.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\TrisoulTower.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Source\\TrisoulTower\\GameplayAbilitySystem\\Abilities\\GA_Dash.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\TrisoulTower.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Source\\TrisoulTower\\GameplayAbilitySystem\\AttributeSets\\BasicAttributeSet.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\TrisoulTower.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Source\\TrisoulTower\\GameplayAbilitySystem\\AttributeSets\\BasicAttributeSet.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\TrisoulTower.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Source\\TrisoulTower\\GameplayAbilitySystem\\Character\\CharacterController.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\TrisoulTower.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Source\\TrisoulTower\\GameplayAbilitySystem\\Character\\CharacterController.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\TrisoulTower.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Source\\TrisoulTower\\GameplayAbilitySystem\\Cues\\GC_Dash.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\TrisoulTower.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Source\\TrisoulTower\\GameplayAbilitySystem\\Cues\\GC_Dash.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\TrisoulTower.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Source\\TrisoulTower\\GameplayAbilitySystem\\Effects\\GE_DashCooldown.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\TrisoulTower.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Source\\TrisoulTower\\GameplayAbilitySystem\\Effects\\GE_DashCooldown.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\TrisoulTower.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Source\\TrisoulTower\\GameplayAbilitySystem\\Effects\\GE_DashCost.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\TrisoulTower.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Source\\TrisoulTower\\GameplayAbilitySystem\\Effects\\GE_DashCost.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\TrisoulTower.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Source\\TrisoulTower\\Player\\Weapon\\WeaponManagerComponent.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\TrisoulTower.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Source\\TrisoulTower\\Player\\Weapon\\WeaponManagerComponent.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\TrisoulTower.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Source\\TrisoulTower\\Player\\Weapon\\Weapon_Base.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\TrisoulTower.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Source\\TrisoulTower\\Player\\Weapon\\Weapon_Base.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\TrisoulTower.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Source\\TrisoulTower\\TrisoulTower.Build.cs",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\TrisoulTower.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Source\\TrisoulTower\\TrisoulTower.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\TrisoulTower.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\ryann\\TrisoulTower\\Source\\TrisoulTower\\TrisoulTower.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\ryann\\TrisoulTower\\.vscode\\compileCommands_Default\\TrisoulTower.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	}
+]
