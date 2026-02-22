@@ -16,10 +16,13 @@
     <list default="true" id="8e881ff7-db9b-43e6-80db-eb420dbd244d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TrisoulTower/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TrisoulTower/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_CharacterController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_CharacterController.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Temp/BP_FireWeapon.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Temp/BP_NatureWeapon.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_GroundSlam.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_GroundSlam.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_HeavyAttack.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_HeavyAttack.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_LightAttack.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_LightAttack.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Levels/PlayerControllerTest.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/PlayerControllerTest.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Character/CharacterController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Character/CharacterController.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Character/CharacterController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TrisoulTower/GameplayAbilitySystem/Character/CharacterController.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/AM_Attack2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/Character/Player/Animations/AM_Attack2.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,6 +214,7 @@
       <workItem from="1771136426660" duration="1168000" />
       <workItem from="1771211180886" duration="3151000" />
       <workItem from="1771265562802" duration="788000" />
+      <workItem from="1771698405685" duration="3577000" />
     </task>
     <servers />
   </component>
