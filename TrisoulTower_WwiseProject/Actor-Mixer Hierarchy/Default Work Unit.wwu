@@ -805,7 +805,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="slash 1" ID="{CF34FB82-EB2C-4104-B743-412A34EABED8}" ShortID="502343661">
+												<Sound Name="fireswing1testexport" ID="{44702AD3-6F72-49BE-A360-8726BD0A8B84}" ShortID="95884078">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
@@ -815,19 +815,19 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="slash 1" ID="{0DC8BFC2-80E0-41FF-B8DF-93E080D25978}">
+														<AudioFileSource Name="fireswing1testexport" ID="{DEA76D0D-498D-477A-87CF-5E173117433B}">
 															<Language>SFX</Language>
-															<AudioFile>slash 1.wav</AudioFile>
+															<AudioFile>fireswing1testexport.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="373082934"/>
+																<MediaID ID="775904912"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="slash 1" ID="{0DC8BFC2-80E0-41FF-B8DF-93E080D25978}" Platform="Linked"/>
+														<ActiveSource Name="fireswing1testexport" ID="{DEA76D0D-498D-477A-87CF-5E173117433B}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="slash 1-001 (1)" ID="{7BCBCD34-9093-47D5-A409-92509015046A}" ShortID="365204835">
+												<Sound Name="fireswing2testexport" ID="{C534DC4D-29BA-4F03-A005-C594382ADDBA}" ShortID="280476082">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
@@ -837,16 +837,16 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="slash 1-001 (1)" ID="{779536C6-83AB-49E3-853D-F39803D7F9BC}">
+														<AudioFileSource Name="fireswing2testexport" ID="{37F3FD1B-EB8E-42D4-99F2-113FAF9BE00A}">
 															<Language>SFX</Language>
-															<AudioFile>slash 1-001 (1).wav</AudioFile>
+															<AudioFile>fireswing2testexport.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="662488001"/>
+																<MediaID ID="959288998"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="slash 1-001 (1)" ID="{779536C6-83AB-49E3-853D-F39803D7F9BC}" Platform="Linked"/>
+														<ActiveSource Name="fireswing2testexport" ID="{37F3FD1B-EB8E-42D4-99F2-113FAF9BE00A}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>

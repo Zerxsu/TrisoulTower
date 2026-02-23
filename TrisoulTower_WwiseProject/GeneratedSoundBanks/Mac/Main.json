@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{879ED1C6-7157-4890-992E-2BBE2CD3E8E1}",
     "Language": "SFX",
-    "Hash": "{A35FC103-7835-06EF-1C10-54F8BC023F1A}",
+    "Hash": "{4D058B43-FCD9-6B79-A6F6-7323172D3F5F}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -70,14 +70,6 @@
       "Location": "Memory",
       "ShortName": "gem collect.wav",
       "CachePath": "5D/{5D9F5425-752F-A90E-9169-24DAB07696A7}.wem"
-     },
-     {
-      "Id": "373082934",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "slash 1.wav",
-      "CachePath": "05/{05E17A6D-0C43-4556-6711-DA5F70C7201B}.wem"
      },
      {
       "Id": "384422004",
@@ -160,14 +152,6 @@
       "CachePath": "CA/{CA5ACE72-667B-D500-241E-E2EB94BD6E6E}.wem"
      },
      {
-      "Id": "662488001",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "slash 1-001 (1).wav",
-      "CachePath": "8F/{8F0CC7A4-B8E7-9FDD-4E2C-F8FD94DDCE65}.wem"
-     },
-     {
       "Id": "701209674",
       "Language": "SFX",
       "Streaming": "false",
@@ -232,6 +216,14 @@
       "CachePath": "41/{417336A1-8C0C-0458-30AB-039C42980F6B}.wem"
      },
      {
+      "Id": "775904912",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "fireswing1testexport.wav",
+      "CachePath": "C1/{C19C3B2F-58CB-D6FF-4719-5F96E715EF34}.wem"
+     },
+     {
       "Id": "803049247",
       "Language": "SFX",
       "Streaming": "false",
@@ -278,6 +270,14 @@
       "Location": "Memory",
       "ShortName": "Trisoul_MidSwordSwing_V2_2.wav",
       "CachePath": "36/{36560840-D249-E775-5835-4B824B4C427A}.wem"
+     },
+     {
+      "Id": "959288998",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "fireswing2testexport.wav",
+      "CachePath": "40/{40625D5A-B54D-EC48-A60D-91000889B826}.wem"
      },
      {
       "Id": "961562867",
@@ -567,7 +567,7 @@
       "GUID": "{7701D21A-5E6C-4682-A460-30B9D6D74626}",
       "DurationType": "OneShot",
       "DurationMin": "0",
-      "DurationMax": "3.1577551",
+      "DurationMax": "2.8495464",
       "SwitchContainers": [
        {
         "SwitchValue": {
@@ -636,10 +636,10 @@
             },
             "MediaRefs": [
              {
-              "Id": "373082934"
+              "Id": "775904912"
              },
              {
-              "Id": "662488001"
+              "Id": "959288998"
              }
             ]
            }
@@ -780,14 +780,14 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Temp_Swing_Hit",
       "GUID": "{B02B5558-8DAB-4548-A1BD-7ACB4E35265D}",
       "DurationType": "OneShot",
-      "DurationMin": "1.555669",
-      "DurationMax": "3.1577551",
+      "DurationMin": "2.8495464",
+      "DurationMax": "2.8495464",
       "MediaRefs": [
        {
-        "Id": "373082934"
+        "Id": "775904912"
        },
        {
-        "Id": "662488001"
+        "Id": "959288998"
        }
       ]
      },
@@ -938,6 +938,6 @@
     ]
    }
   ],
-  "FileHash": "{B4E95047-7801-C790-BDE9-79D9ABF47B1E}"
+  "FileHash": "{3370C8A5-0009-3884-76CD-A1984867BBBF}"
  }
 }
