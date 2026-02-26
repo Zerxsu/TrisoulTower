@@ -50,9 +50,6 @@ void ACharacterController::BeginPlay()
 
 	// cache max walk speed value
 	OriginalWalkSpeed = GetCharacterMovement()->MaxWalkSpeed;
-
-	AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(
-		BasicAttributeSet->GetStaminaAttribute()).AddUObject(this, &ACharacterController::HandleStaminaChanged);
 }
 
 void ACharacterController::PossessedBy(AController* NewController)
@@ -160,41 +157,6 @@ void ACharacterController::EquipWeapon3()
 {
 	if (WeaponSlot3)
 		WeaponManager->EquipWeapon(WeaponSlot3);
-}
-
-void ACharacterController::HandleStaminaChanged(const FOnAttributeChangeData& Data)
-{
-	const float NewValue = Data.NewValue;
-	const float OldValue = Data.OldValue;
-
-	if (NewValue < OldValue)
-	{
-		RemoveStaminaRegen();
-
-		FTimerHandle RegenDelay;
-		GetWorldTimerManager().SetTimer(RegenDelay, this, &ACharacterController::ApplyStaminaRegen, 1, false);
-	}
-	else if (NewValue >= BasicAttributeSet->GetMaxStamina())
-	{
-		RemoveStaminaRegen();
-	}
-}
-
-void ACharacterController::ApplyStaminaRegen()
-{
-	FGameplayEffectContextHandle Context = AbilitySystemComponent->MakeEffectContext();
-	FGameplayEffectSpecHandle SpecHandle = AbilitySystemComponent->MakeOutgoingSpec(StaminaRegenEffect, 0, Context);
-
-	if (SpecHandle.IsValid())
-		AbilitySystemComponent->ApplyGameplayEffectSpecToSelf(*SpecHandle.Data.Get());
-}
-
-void ACharacterController::RemoveStaminaRegen()
-{
-	FGameplayTagContainer TagContainer;
-	TagContainer.AddTag(StaminaRegenTag);
-
-	AbilitySystemComponent->RemoveActiveEffectsWithGrantedTags(TagContainer);
 }
 
 void ACharacterController::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)

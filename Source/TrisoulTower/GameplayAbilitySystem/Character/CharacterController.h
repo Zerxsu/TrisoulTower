@@ -141,8 +141,6 @@ protected:
 	UFUNCTION()
 	void EquipWeapon3();
 
-	void HandleStaminaChanged(const FOnAttributeChangeData& Data);
-
 private:
 	UPROPERTY()
 	// original walk speed is cached at the start of the game
@@ -162,16 +160,4 @@ private:
 
 	UPROPERTY(EditAnywhere, Category = "PlayerController|Weapon")
 	TSubclassOf<AWeapon_Base> WeaponSlot3;
-
-	UPROPERTY(EditAnywhere, Category = "PlayerController|GameplayAbilitySystem|Effects")
-	TSubclassOf<UGameplayEffect> StaminaRegenEffect;
-
-	UPROPERTY(EditAnywhere, Category = "PlayerController|GameplayAbilitySystem|Tags")
-	FGameplayTag StaminaRegenTag;
-
-	UFUNCTION()
-	void ApplyStaminaRegen();
-
-	UFUNCTION()
-	void RemoveStaminaRegen();
 };

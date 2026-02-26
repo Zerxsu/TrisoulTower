@@ -6,7 +6,6 @@
 #include "TrisoulTower/GameplayAbilitySystem/AttributeSets/BasicAttributeSet.h"
 #include "TrisoulTower/GameplayAbilitySystem/Character/CharacterController.h"
 #include "TrisoulTower/GameplayAbilitySystem/Effects/GE_DashCooldown.h"
-#include "TrisoulTower/GameplayAbilitySystem/Effects/GE_DashCost.h"
 
 UGA_Dash::UGA_Dash()
 {
@@ -18,8 +17,7 @@ UGA_Dash::UGA_Dash()
 	BlockAbilitiesWithTag.AddTag(FGameplayTag::RequestGameplayTag(FName("GameplayAbility.Combat.LightAttack")));
 	BlockAbilitiesWithTag.AddTag(FGameplayTag::RequestGameplayTag(FName("GameplayAbility.Combat.HeavyAttack")));
 
-	// sets the gameplay cost and cooldown classes
-	CostGameplayEffectClass = UGE_DashCost::StaticClass();
+	// sets the gameplay cooldown class
 	CooldownGameplayEffectClass = UGE_DashCooldown::StaticClass();
 	
 	DashCueTag = FGameplayTag::RequestGameplayTag(FName("GameplayCue.Dash.Active"));
