@@ -48,8 +48,8 @@ void ACharacterController::BeginPlay()
 		}
 	}
 
-	// cache max walk speed value
-	OriginalWalkSpeed = GetCharacterMovement()->MaxWalkSpeed;
+	CurrentWalkSpeed = JogSpeed;
+	GetCharacterMovement()->MaxWalkSpeed = CurrentWalkSpeed;
 }
 
 void ACharacterController::PossessedBy(AController* NewController)
@@ -67,9 +67,9 @@ void ACharacterController::Move(const FInputActionValue& Value)
 {
 	const FVector2D MovementValue = Value.Get<FVector2D>();
 
-	// sets player movement speed to walk speed after input is released
+	// sets player movement speed to jog speed after input is released
 	if (GetLastMovementInputVector().IsNearlyZero())
-		GetCharacterMovement()->MaxWalkSpeed = OriginalWalkSpeed;
+		GetCharacterMovement()->MaxWalkSpeed = CurrentWalkSpeed;
 	
 	if (Controller)
 	{
@@ -102,9 +102,26 @@ void ACharacterController::Dash()
 {
 	// starts sprint
 	GetCharacterMovement()->MaxWalkSpeed = SprintSpeed;
+
+	// sets default walk speed to jogging after input release
+	CurrentWalkSpeed = JogSpeed;
 	
 	if (!GetMovementComponent()->IsFalling())
 		AbilitySystemComponent->TryActivateAbilityByClass(UGA_Dash::StaticClass());
+}
+
+void ACharacterController::ToggleWalk()
+{
+	if (CurrentWalkSpeed == WalkSpeed)
+	{
+		CurrentWalkSpeed = JogSpeed;
+	}
+	else if (CurrentWalkSpeed == JogSpeed)
+	{
+		CurrentWalkSpeed = WalkSpeed;
+	}
+
+	GetCharacterMovement()->MaxWalkSpeed = CurrentWalkSpeed;
 }
 
 void ACharacterController::LightAttack()
@@ -181,6 +198,9 @@ void ACharacterController::SetupPlayerInputComponent(UInputComponent* PlayerInpu
 		EnhancedInputComp->BindAction(EquipWeapon1Action, ETriggerEvent::Started, this, &ACharacterController::EquipWeapon1);
 		EnhancedInputComp->BindAction(EquipWeapon2Action, ETriggerEvent::Started, this, &ACharacterController::EquipWeapon2);
 		EnhancedInputComp->BindAction(EquipWeapon3Action, ETriggerEvent::Started, this, &ACharacterController::EquipWeapon3);
+
+		// walk / jog toggle
+		EnhancedInputComp->BindAction(ToggleWalkAction, ETriggerEvent::Started, this, &ACharacterController::ToggleWalk);
 	}
 }
 

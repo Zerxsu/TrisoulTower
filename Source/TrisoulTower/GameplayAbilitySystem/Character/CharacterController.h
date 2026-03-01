@@ -58,6 +58,12 @@ public:
 	TArray<AActor*> EnemiesHit;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|Variables")
+	float WalkSpeed = 130.f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|Variables")
+	float JogSpeed = 375.f;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|Variables")
 	float SprintSpeed = 700.f;
 
 protected:
@@ -88,6 +94,9 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|Input")
 	UInputAction* SprintAction;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|Input")
+	UInputAction* ToggleWalkAction;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|Input")
 	UInputAction* DashAction;
@@ -124,6 +133,9 @@ protected:
 	void Dash();
 
 	UFUNCTION()
+	void ToggleWalk();
+
+	UFUNCTION()
 	void LightAttack();
 
 	UFUNCTION()
@@ -142,11 +154,7 @@ protected:
 	void EquipWeapon3();
 
 private:
-	UPROPERTY()
-	// original walk speed is cached at the start of the game
-	float OriginalWalkSpeed;
-
-	// current walk speed is cached everytime the player is frozen
+	// current walk speed is cached everytime the player changes speed
 	float CurrentWalkSpeed;
 
 	UPROPERTY()

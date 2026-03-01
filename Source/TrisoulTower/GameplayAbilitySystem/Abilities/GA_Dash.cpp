@@ -1,9 +1,7 @@
 #include "GA_Dash.h"
 
 #include "Abilities/Tasks/AbilityTask_ApplyRootMotionConstantForce.h"
-#include "GameFramework/PawnMovementComponent.h"
 #include "GameFramework/RootMotionSource.h"
-#include "TrisoulTower/GameplayAbilitySystem/AttributeSets/BasicAttributeSet.h"
 #include "TrisoulTower/GameplayAbilitySystem/Character/CharacterController.h"
 #include "TrisoulTower/GameplayAbilitySystem/Effects/GE_DashCooldown.h"
 
@@ -42,8 +40,8 @@ void UGA_Dash::ActivateAbility(
 			this,
 			FName("DashAbilityTask"),
 			GetDashDirection(),
-			2500.f,
-			0.18f,
+			1700.f,
+			0.17f,
 			false,
 			nullptr,
 			ERootMotionFinishVelocityMode::ClampVelocity,
