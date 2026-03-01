@@ -117,6 +117,10 @@ protected:
 	float TargetDist = 256.0f;
 	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
 	//float MoveDist = 512.0f;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+	float ReactTime = 0.6f;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+	float ReactTimer = 0.0f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
 	float Health = 100.0f;

@@ -49,8 +49,6 @@ void UAIGroupManager::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
-	uint64_t StartTime = FPlatformTime::Cycles64();//Start Time, for debugging
-
 	TArray<AActor*> AllEnemies;
 	UGameplayStatics::GetAllActorsOfClass(GetWorld(), ABaseEnemy::StaticClass(), AllEnemies);
 	
@@ -95,8 +93,8 @@ void UAIGroupManager::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 			}
 		}
 
-		FString DebugMessage = FString::Printf(TEXT("Ring %d: %d"), checkLevel, inRing);
-    	GEngine->AddOnScreenDebugMessage(-1, 0, FColor::Cyan, DebugMessage);
+		//FString DebugMessage = FString::Printf(TEXT("Ring %d: %d"), checkLevel, inRing);
+    	//GEngine->AddOnScreenDebugMessage(-1, 0, FColor::Cyan, DebugMessage);
 
 		if (inRing >= ringMax) {
 			ringLevel++;
@@ -130,8 +128,8 @@ void UAIGroupManager::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 		}
 	}
 
-	FString DebugMessagee = FString::Printf(TEXT("Unassigned: %d"), LostEnemies.Num());
-    GEngine->AddOnScreenDebugMessage(-1, 0, FColor::Cyan, DebugMessagee);
+	//FString DebugMessagee = FString::Printf(TEXT("Unassigned: %d"), LostEnemies.Num());
+    //GEngine->AddOnScreenDebugMessage(-1, 0, FColor::Cyan, DebugMessagee);
 
 	//Assign all the unassigned guys
 	for (AActor* enemyActor : LostEnemies) {
@@ -163,6 +161,7 @@ void UAIGroupManager::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 			//maroo.B = ((Points[Keys[i]].priority - 1) / FMath::Clamp(checkLevel - 1, 1, checkLevel + 1));
 		}
 
+		/*
 		DrawDebugSphere(
 			GetWorld(),
 			aer,
@@ -174,6 +173,7 @@ void UAIGroupManager::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 			0,
 			2.0f
 		);
+		*/
 
 		//Update the target location of each enemy relative to the player
 		FNavPoint* check_point = &Points[Keys[i]];
@@ -183,30 +183,10 @@ void UAIGroupManager::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 		}
 
 		if (check_point->priority > checkLevel + 1) Points.Remove(Keys[i]);
-		//Somehow a bunch of new ring keep getting made and also all the guys rearagne themselves out of the first ring
-		//Likley that guys are being removed from points but the reference to them is not removed so all the points think they have guys
-		//Fix the bug where they all leave the first ring and then optimize
-		//One of the issues could be that the enemy target dist is too small, but others should still try and fill the space
-		//The script needs to move enemies down if a level isn't full
-		//The problem is probably that the ringLevel isn't programed as intended, and empty rings are counted as full 
-		//Update: The program says the rings are sorted as intented, but the enemies don't go to the right points, sometimes they are stick unassigned
+		
 	}
-	
-	uint64_t EndTime = FPlatformTime::Cycles64();//End Time
-	float DurationNS = FPlatformTime::ToSeconds64(EndTime - StartTime);//Tick Duration
 
-	tickTimes[tickIdx] = DurationNS;
-	tickIdx++;
-	if (tickIdx >= tickTimes.Num()) tickIdx = 0;
 
-	float tickAvg = 0.0;
-	for (int i = 0; i < tickTimes.Num(); i++) {
-		tickAvg += tickTimes[i];
-	}
-	tickAvg /= tickTimes.Num();
-
-	FString DebugMessage = FString::Printf(TEXT("Tick Time: %f"), tickAvg);
-    GEngine->AddOnScreenDebugMessage(-1, 0, FColor::Yellow, DebugMessage);
 }
 
 

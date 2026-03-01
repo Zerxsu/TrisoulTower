@@ -49,19 +49,34 @@ void ABaseEnemy::Tick(float DeltaTime)
 
 	if (stunTime > 0) stunTime -= DeltaTime;
 
-	if (!isAttacking && stunTime <= 0) FindTarget();
+	if (!isAttacking && stunTime <= 0) {
+		FindTarget();
+		ReactTimer -= FMath::FRand() * DeltaTime;
+	}
 
 	if (!isAtTarget && stunTime <= 0 && NavPath != nullptr) {//If path is unfinished
 		
 		//if (NavPath->GetLength() <= TargetDist) bool m = true;
 		//if (CanSeeTarget()) bool m = false;
-
+		
 		if ((NavPath->GetLength() <= TargetDist && CanSeeTarget()) || IsAtTarget()) {
 			ReachedTarget();
 			isMoving = false;
 		}
 		else 
 		{
+
+			if (TargetType == ETargetType::Direct && FVector::Distance(GetActorLocation(), PlayerActor->GetActorLocation()) <= TargetDist * 2) {
+				ReachedTarget();
+				StartAttack();
+				return;
+			}
+
+			if (ReactTimer > 0) {
+				isMoving = false;
+				return;
+			}
+
 			MakePath();//Recalculate path to target
 			isMoving = true;
 
@@ -76,7 +91,7 @@ void ABaseEnemy::Tick(float DeltaTime)
 
 			FRotator Rot = GetActorRotation();
 			SetActorRotation(FRotator(Rot.Pitch, Dir.Rotation().Yaw, Rot.Roll));
-			
+
 		}
 		
 	}
@@ -93,6 +108,7 @@ void ABaseEnemy::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent
 //Set target point from AIGroupManager
 void ABaseEnemy::AssignPoint(FVector2D at, int prio)
 {
+
 	needPoint = false;
 	if (PlayerActor == nullptr) return;
 	if (isAttacking) return;
@@ -195,6 +211,7 @@ FVector ABaseEnemy::GetPackPoint() {
  */
 void ABaseEnemy::SetDestination(FVector To, bool path = true)
 {
+	
 	Destination = To;
 	isAtTarget = false;
 	if (path) MakePath();
@@ -240,6 +257,7 @@ bool ABaseEnemy::IsAtTarget() {
 
 void ABaseEnemy::ReachedTarget() {
 	isAtTarget = true;
+	ReactTimer = ReactTime;
 
 	//FString DebugMessage = FString::Printf(TEXT("At Target"));
 	//GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Green, DebugMessage);
@@ -250,9 +268,10 @@ void ABaseEnemy::ReachedTarget() {
 	SetActorRotation(LookAtPlayer);
 
 
-	FColor aer = FColor::Cyan;
-	if (pointAtPlayer) aer = FColor::Magenta;
+	//FColor aer = FColor::Cyan;
+	//if (pointAtPlayer) aer = FColor::Magenta;
 
+	/*
 	DrawDebugSphere(
 		GetWorld(),
 		Destination,
@@ -264,6 +283,7 @@ void ABaseEnemy::ReachedTarget() {
 		0, // Depth priority
 		2.0f
 	);
+	*/
 
 	//Check of target is at the right position
 	if (!isAttacking && (pointAtPlayer || IsAtTarget())) StartAttack();
@@ -297,8 +317,8 @@ bool ABaseEnemy::CanSeeTarget() {
 
 	if (hit.ImpactPoint == Destination || hit.GetActor() == PlayerActor) {
 
-		FString DebugMessage = FString::Printf(TEXT("Sees Player"));
-		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Green, DebugMessage);
+		//FString DebugMessage = FString::Printf(TEXT("Sees Player"));
+		//GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Green, DebugMessage);
 
 		return true;
 	}
@@ -317,7 +337,7 @@ void ABaseEnemy::StartAttack() {
 void ABaseEnemy::EndAttack() {
 	isAttacking = false;
 
-	if (FVector::Dist(Destination, GetActorLocation()) > TargetDist && TargetType == ETargetType::Direct) needPoint = true;
+	if (IsAtTarget() && TargetType == ETargetType::Direct) needPoint = true;
 
 	//FString DebugMessage = FString::Printf(TEXT("EndAttack"));
 	//GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Purple, DebugMessage);
