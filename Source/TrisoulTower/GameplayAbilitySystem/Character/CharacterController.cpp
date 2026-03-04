@@ -50,6 +50,8 @@ void ACharacterController::BeginPlay()
 
 	CurrentWalkSpeed = JogSpeed;
 	GetCharacterMovement()->MaxWalkSpeed = CurrentWalkSpeed;
+
+	bCanEquipWeapon = true;
 }
 
 void ACharacterController::PossessedBy(AController* NewController)
@@ -160,20 +162,38 @@ void ACharacterController::UltimateAttack()
 
 void ACharacterController::EquipWeapon1()
 {
-	if (WeaponSlot1)
-		WeaponManager->EquipWeapon(WeaponSlot1);
+	HandleWeaponEquip(WeaponSlot1);
 }
 
 void ACharacterController::EquipWeapon2()
 {
-	if (WeaponSlot2)
-		WeaponManager->EquipWeapon(WeaponSlot2);
+	HandleWeaponEquip(WeaponSlot2);
 }
 
 void ACharacterController::EquipWeapon3()
 {
-	if (WeaponSlot3)
-		WeaponManager->EquipWeapon(WeaponSlot3);
+	HandleWeaponEquip(WeaponSlot3);
+}
+
+void ACharacterController::HandleWeaponEquip(const TSubclassOf<AWeapon_Base>& WeaponToEquip)
+{
+	if (!WeaponToEquip || !bCanEquipWeapon || GetWorld()->GetTimerManager().IsTimerActive(WeaponEquipCooldown))
+		return;
+	
+	bCanEquipWeapon = false;
+	WeaponManager->EquipWeapon(WeaponToEquip);
+
+	// weapon equip cooldown
+	GetWorld()->GetTimerManager().SetTimer(
+			WeaponEquipCooldown,
+			FTimerDelegate::CreateLambda([this]()
+			{
+				// this executes after the timer
+				bCanEquipWeapon = true;
+			}),
+			.5f,
+			false
+	);
 }
 
 void ACharacterController::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)

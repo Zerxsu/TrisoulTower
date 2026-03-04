@@ -61,7 +61,7 @@ public:
 	float WalkSpeed = 130.f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|Variables")
-	float JogSpeed = 375.f;
+	float JogSpeed = 417.f;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|Variables")
 	float SprintSpeed = 700.f;
@@ -152,10 +152,16 @@ protected:
 
 	UFUNCTION()
 	void EquipWeapon3();
+	
+	UFUNCTION()
+	void HandleWeaponEquip(const TSubclassOf<AWeapon_Base>& WeaponToEquip);
 
 private:
 	// current walk speed is cached everytime the player changes speed
 	float CurrentWalkSpeed;
+
+	FTimerHandle WeaponEquipCooldown;
+	bool bCanEquipWeapon;
 
 	UPROPERTY()
 	UWeaponManagerComponent* WeaponManager;
