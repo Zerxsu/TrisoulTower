@@ -44,6 +44,10 @@ public:
 	bool isAttacking = false;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Animation")
 	bool takeHit = false;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Animation")
+	bool isDead = false;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Animation")
+	bool Disable = false;
 
 	// Sets default values for this pawn's properties
 	ABaseEnemy();
@@ -124,6 +128,8 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
 	float Health = 100.0f;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
+	bool Vulnerable = false;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Behaviour")
 	bool IsPackLeader = false;//Is this the pack leader

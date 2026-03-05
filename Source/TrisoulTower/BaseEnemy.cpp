@@ -47,6 +47,8 @@ void ABaseEnemy::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	if (Disable) return;
+
 	if (stunTime > 0) stunTime -= DeltaTime;
 
 	if (!isAttacking && stunTime <= 0) {
@@ -108,6 +110,7 @@ void ABaseEnemy::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent
 //Set target point from AIGroupManager
 void ABaseEnemy::AssignPoint(FVector2D at, int prio)
 {
+	if (Disable) return;
 
 	needPoint = false;
 	if (PlayerActor == nullptr) return;
@@ -352,7 +355,8 @@ void ABaseEnemy::RunAttack_Implementation() {
 
 void ABaseEnemy::TakeAttack(float damage, bool parry) {
 
-	if (parry) {
+	if (parry || Vulnerable) {
+		Vulnerable = false;
 		stunTime += 2.5f;
 		isAttacking = false;
 		isAtTarget = false;
@@ -363,11 +367,11 @@ void ABaseEnemy::TakeAttack(float damage, bool parry) {
 	Health -= damage;
 	if (Health <= 0) {
 
-		//Die
+		isDead = true;
 
 		FString DebugMessage = FString::Printf(TEXT("Dead"));
 		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, DebugMessage);
-		Destroy();
+		//Destroy();
 	}
 
 }
