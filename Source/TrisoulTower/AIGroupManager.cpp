@@ -3,10 +3,6 @@
 
 #include "AIGroupManager.h"
 
-//Debug variables to track duration of tick function
-TArray<float> tickTimes = {0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f};
-int tickIdx = 0;
-
 // Sets default values for this component's properties
 UAIGroupManager::UAIGroupManager()
 {

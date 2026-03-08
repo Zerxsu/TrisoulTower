@@ -147,10 +147,10 @@ void ABaseEnemy::FindTarget()
 	if (TargetType == ETargetType::Near) {//TargetType == ETargetType::Direct || 
 
 		FVector Separation = (GetActorLocation() - PlayerActor->GetActorLocation()).GetSafeNormal();
-		DebugPoint(PlayerActor->GetActorLocation() + Separation, FColor::Green);
+		//DebugPoint(PlayerActor->GetActorLocation() + Separation, FColor::Green);
 		Separation *= TargetDist;
 		Separation.Z = GetActorLocation().Z;
-		DebugPoint(PlayerActor->GetActorLocation() + Separation, FColor::Blue);
+		//DebugPoint(PlayerActor->GetActorLocation() + Separation, FColor::Blue);
 		SetDestination(PlayerActor->GetActorLocation() + Separation, true);
 
 		/*
@@ -249,7 +249,7 @@ FVector ABaseEnemy::GetPackPoint() {
 void ABaseEnemy::SetDestination(FVector To, bool path = true)
 {
 	
-	DebugPoint(To, FColor::Red);
+	//DebugPoint(To, FColor::Red);
 	
 	Destination = To;
 	isAtTarget = false;
