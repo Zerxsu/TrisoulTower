@@ -97,6 +97,9 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Navigation")
 	void AssignPoint(FVector2D at, int priotity);
 
+	UFUNCTION(BlueprintCallable, Category = "Navigation")
+	void DebugPoint(FVector at, FColor col);
+
 
 protected:
 	// Called when the game starts or when spawned
@@ -131,6 +134,8 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
 	bool Vulnerable = false;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Behaviour")
+	bool IsTheBoss = false;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Behaviour")
 	bool IsPackLeader = false;//Is this the pack leader
 	ABaseEnemy* PackLeader = nullptr;

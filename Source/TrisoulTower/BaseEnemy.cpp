@@ -61,7 +61,8 @@ void ABaseEnemy::Tick(float DeltaTime)
 		//if (NavPath->GetLength() <= TargetDist) bool m = true;
 		//if (CanSeeTarget()) bool m = false;
 		
-		if ((NavPath->GetLength() <= TargetDist && CanSeeTarget()) || IsAtTarget()) {
+		//if ((NavPath->GetLength() <= TargetDist && CanSeeTarget()) || IsAtTarget()) {
+		if (IsAtTarget()) {
 			ReachedTarget();
 			isMoving = false;
 		}
@@ -107,6 +108,22 @@ void ABaseEnemy::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent
 	//return;
 }
 
+void ABaseEnemy::DebugPoint(FVector at, FColor col) {
+
+	DrawDebugSphere(
+		GetWorld(),
+		at,
+		50.0f,
+		12,
+		col,
+		false,
+		0,
+		SDPG_World,
+		1.0f
+	);
+
+}
+
 //Set target point from AIGroupManager
 void ABaseEnemy::AssignPoint(FVector2D at, int prio)
 {
@@ -128,7 +145,24 @@ void ABaseEnemy::FindTarget()
 {
 
 	if (TargetType == ETargetType::Near) {//TargetType == ETargetType::Direct || 
-		SetDestination(PlayerActor->GetActorLocation(), true);
+
+		FVector Separation = (GetActorLocation() - PlayerActor->GetActorLocation()).GetSafeNormal();
+		DebugPoint(PlayerActor->GetActorLocation() + Separation, FColor::Green);
+		Separation *= TargetDist;
+		Separation.Z = GetActorLocation().Z;
+		DebugPoint(PlayerActor->GetActorLocation() + Separation, FColor::Blue);
+		SetDestination(PlayerActor->GetActorLocation() + Separation, true);
+
+		/*
+		if (FVector::Distance(GetActorLocation(), PlayerActor->GetActorLocation()) <= TargetDist * 0.75) {
+			FVector Separation = (PlayerActor->GetActorLocation() - GetActorLocation()).GetSafeNormal();
+			Separation *= TargetDist;
+			Separation.Z = 0;
+			SetDestination(PlayerActor->GetActorLocation() + Separation, true);
+		} else {
+			SetDestination(PlayerActor->GetActorLocation(), true);
+		}
+		*/
 		
 	} else if (TargetType == ETargetType::Front)
 	{
@@ -215,6 +249,8 @@ FVector ABaseEnemy::GetPackPoint() {
 void ABaseEnemy::SetDestination(FVector To, bool path = true)
 {
 	
+	DebugPoint(To, FColor::Red);
+	
 	Destination = To;
 	isAtTarget = false;
 	if (path) MakePath();
@@ -255,6 +291,7 @@ TArray<FVector> ABaseEnemy::GetPath(){
 }
 
 bool ABaseEnemy::IsAtTarget() {
+	if (TargetType == ETargetType::Near && FVector::Distance(GetActorLocation(), PlayerActor->GetActorLocation()) <= TargetDist * 0.75) return false;
 	return FVector::Distance(GetActorLocation(), PlayerActor->GetActorLocation()) <= TargetDist;
 }
 
