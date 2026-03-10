@@ -384,13 +384,15 @@ void ABaseEnemy::EndAttack() {
 
 }
 
-/**/
+
 void ABaseEnemy::RunAttack_Implementation() {
 	FString DebugMessage = FString::Printf(TEXT("Strike"));
 	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Orange, DebugMessage);
 }
 
 void ABaseEnemy::TakeAttack(float damage, bool parry) {
+
+	RunDamage();
 
 	if (parry || Vulnerable) {
 		Vulnerable = false;
@@ -411,4 +413,9 @@ void ABaseEnemy::TakeAttack(float damage, bool parry) {
 		//Destroy();
 	}
 
+}
+
+void ABaseEnemy::RunDamage_Implementation() {
+	FString DebugMessage = FString::Printf(TEXT("Damage"));
+	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Orange, DebugMessage);
 }

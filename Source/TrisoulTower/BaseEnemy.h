@@ -91,6 +91,9 @@ public:
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = "Behaviour")
 	void RunAttack();
 
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = "Behaviour")
+	void RunDamage();
+
 	UFUNCTION(BlueprintCallable, Category = "Behaviour")
 	virtual void TakeAttack(float damage, bool parry);
 
