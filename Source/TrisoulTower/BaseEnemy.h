@@ -44,6 +44,10 @@ public:
 	bool isAttacking = false;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Animation")
 	bool takeHit = false;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Animation")
+	bool isDead = false;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Animation")
+	bool Disable = false;
 
 	// Sets default values for this pawn's properties
 	ABaseEnemy();
@@ -87,11 +91,17 @@ public:
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = "Behaviour")
 	void RunAttack();
 
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = "Behaviour")
+	void RunDamage();
+
 	UFUNCTION(BlueprintCallable, Category = "Behaviour")
 	virtual void TakeAttack(float damage, bool parry);
 
 	UFUNCTION(BlueprintCallable, Category = "Navigation")
 	void AssignPoint(FVector2D at, int priotity);
+
+	UFUNCTION(BlueprintCallable, Category = "Navigation")
+	void DebugPoint(FVector at, FColor col);
 
 
 protected:
@@ -117,10 +127,18 @@ protected:
 	float TargetDist = 256.0f;
 	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
 	//float MoveDist = 512.0f;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+	float ReactTime = 0.6f;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+	float ReactTimer = 0.0f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
 	float Health = 100.0f;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
+	bool Vulnerable = false;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Behaviour")
+	bool IsTheBoss = false;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Behaviour")
 	bool IsPackLeader = false;//Is this the pack leader
 	ABaseEnemy* PackLeader = nullptr;
