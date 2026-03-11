@@ -47,6 +47,18 @@ public:
 	UPROPERTY(BlueprintReadOnly, Category = "PlayerController|Variables")
 	bool bIsDashing;
 
+	UPROPERTY(BlueprintReadWrite, Category = "PlayerController|Variables")
+	bool bIsParry;
+
+	UPROPERTY(BlueprintReadWrite, Category = "PlayerController|Variables")
+	bool bIsBlock;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|Variables")
+	int MaxBlocks;
+
+	UPROPERTY(BlueprintReadWrite, Category = "PlayerController|Variables")
+	int CurrentBlocks;
+
 	// handles light attack combo logic
 	UPROPERTY(BlueprintReadWrite, Category = "PlayerController|Variables")
 	bool bIsAttacking;
@@ -61,18 +73,25 @@ public:
 	float WalkSpeed = 130.f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|Variables")
-	float JogSpeed = 417.f;
+	float JogSpeed = 350.f;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|Variables")
 	float SprintSpeed = 700.f;
 
 protected:
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|Variables")
+	TSubclassOf<UAnimInstance> PlayerAnimClass;
+	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|GameplayAbilitySystem|Abilities")
 	TArray<TSubclassOf<UGameplayAbility>> StartingAbilities;
 
 	// TEMP (remove later when implementing ground slam in C++)
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|GameplayAbilitySystem|Abilities")
 	TSubclassOf<UGameplayAbility> GroundSlamAbility;
+
+	// TEMP (remove later when implementing parry in C++)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|GameplayAbilitySystem|Abilities")
+	TSubclassOf<UGameplayAbility> ParryAbility;
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "PlayerController")
 	class USpringArmComponent* SpringArmComp;
@@ -100,6 +119,9 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|Input")
 	UInputAction* DashAction;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|Input")
+	UInputAction* ParryAction;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|Input")
 	UInputAction* LightAttackAction;
@@ -134,6 +156,12 @@ protected:
 
 	UFUNCTION()
 	void ToggleWalk();
+
+	UFUNCTION()
+	void ParryPressed();
+
+	UFUNCTION()
+	void ParryReleased();
 
 	UFUNCTION()
 	void LightAttack();

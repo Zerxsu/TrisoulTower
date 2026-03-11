@@ -47,7 +47,7 @@ void UWeaponManagerComponent::EquipWeapon(TSubclassOf<AWeapon_Base> WeaponToEqui
 	}
 
 	// set anim class
-	//CharacterRef->GetMesh()->SetAnimInstanceClass(EquippedWeapon->WeaponProperties.AnimClass);
+	CharacterRef->GetMesh()->SetAnimInstanceClass(EquippedWeapon->WeaponProperties.AnimClass);
 
 	// grant abilities
 	GrantedAbilities = CharacterRef->GrantAbilities(EquippedWeapon->WeaponProperties.AbilitiesToGrant);
@@ -62,7 +62,7 @@ void UWeaponManagerComponent::UnequipWeapon()
 	EquippedWeapon = nullptr;
 
 	// set anim class
-	//CharacterRef->GetMesh()->SetAnimInstanceClass(DefaultAnimClass);
+	CharacterRef->GetMesh()->SetAnimInstanceClass(DefaultAnimClass);
 	
 	// remove abilities
 	CharacterRef->RemoveAbilities(GrantedAbilities);

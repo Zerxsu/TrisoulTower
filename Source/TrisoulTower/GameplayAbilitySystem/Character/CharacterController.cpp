@@ -52,6 +52,12 @@ void ACharacterController::BeginPlay()
 	GetCharacterMovement()->MaxWalkSpeed = CurrentWalkSpeed;
 
 	bCanEquipWeapon = true;
+
+	// Granting parry ability here for input press and release
+	FGameplayAbilitySpec ParrySpec(ParryAbility, 1, 0);
+	AbilitySystemComponent->GiveAbility(ParrySpec);
+
+	WeaponManager->DefaultAnimClass = PlayerAnimClass;
 }
 
 void ACharacterController::PossessedBy(AController* NewController)
@@ -124,6 +130,20 @@ void ACharacterController::ToggleWalk()
 	}
 
 	GetCharacterMovement()->MaxWalkSpeed = CurrentWalkSpeed;
+}
+
+void ACharacterController::ParryPressed()
+{
+	if (!WeaponManager->GetEquippedWeapon())
+		return;
+
+	AbilitySystemComponent->AbilityLocalInputPressed(0);
+	AbilitySystemComponent->TryActivateAbilityByClass(ParryAbility);
+}
+
+void ACharacterController::ParryReleased()
+{
+	AbilitySystemComponent->AbilityLocalInputReleased(0);
 }
 
 void ACharacterController::LightAttack()
@@ -210,6 +230,8 @@ void ACharacterController::SetupPlayerInputComponent(UInputComponent* PlayerInpu
 
 		// binding abilities
 		EnhancedInputComp->BindAction(DashAction, ETriggerEvent::Started, this, &ACharacterController::Dash);
+		EnhancedInputComp->BindAction(ParryAction, ETriggerEvent::Started, this, &ACharacterController::ParryPressed);
+		EnhancedInputComp->BindAction(ParryAction, ETriggerEvent::Completed, this, &ACharacterController::ParryReleased);
 		EnhancedInputComp->BindAction(LightAttackAction, ETriggerEvent::Triggered, this, &ACharacterController::LightAttack);
 		EnhancedInputComp->BindAction(HeavyAttackAction, ETriggerEvent::Started, this, &ACharacterController::HeavyAttack);
 		EnhancedInputComp->BindAction(UltimateAttackAction, ETriggerEvent::Started, this, &ACharacterController::UltimateAttack);

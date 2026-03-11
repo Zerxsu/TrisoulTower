@@ -13,7 +13,10 @@ class TRISOULTOWER_API UWeaponManagerComponent : public UActorComponent
 {
 	GENERATED_BODY()
 
-public:	
+public:
+	UPROPERTY()
+	UClass* DefaultAnimClass;
+	
 	UFUNCTION()
 	void EquipWeapon(TSubclassOf<AWeapon_Base> WeaponToEquip);
 
@@ -25,16 +28,13 @@ public:
 
 protected:
 	virtual void BeginPlay() override;
-
+	
 private:
 	UPROPERTY()
 	ACharacterController* CharacterRef;
 
 	UPROPERTY()
 	AWeapon_Base* EquippedWeapon;
-
-	UPROPERTY()
-	UClass* DefaultAnimClass;
 
 	TArray<FGameplayAbilitySpecHandle> GrantedAbilities;
 };
