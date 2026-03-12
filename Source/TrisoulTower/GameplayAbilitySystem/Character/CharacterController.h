@@ -44,6 +44,12 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void ResetAttackCombo();
 
+	UFUNCTION(BlueprintCallable)
+	void FreezeMovement(bool CanMove);
+
+	UFUNCTION(BlueprintCallable)
+	void LockRotation(bool IsLocked);
+
 	UPROPERTY(BlueprintReadOnly, Category = "PlayerController|Variables")
 	bool bIsDashing;
 
@@ -77,6 +83,12 @@ public:
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|Variables")
 	float SprintSpeed = 700.f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|Variables")
+	bool bCanDash;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|Variables")
+	bool bCanMove;
 
 protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|Variables")

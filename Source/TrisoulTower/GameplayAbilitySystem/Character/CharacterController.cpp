@@ -50,6 +50,8 @@ void ACharacterController::BeginPlay()
 
 	CurrentWalkSpeed = JogSpeed;
 	GetCharacterMovement()->MaxWalkSpeed = CurrentWalkSpeed;
+	bCanMove = true;
+	bCanDash = true;
 
 	bCanEquipWeapon = true;
 
@@ -76,8 +78,17 @@ void ACharacterController::Move(const FInputActionValue& Value)
 	const FVector2D MovementValue = Value.Get<FVector2D>();
 
 	// sets player movement speed to jog speed after input is released
-	if (GetLastMovementInputVector().IsNearlyZero())
-		GetCharacterMovement()->MaxWalkSpeed = CurrentWalkSpeed;
+	if (GetLastMovementInputVector().IsNearlyZero() && bCanMove)
+	{
+		if (CurrentWalkSpeed >= JogSpeed)
+		{
+			GetCharacterMovement()->MaxWalkSpeed = JogSpeed;
+		}
+		else
+		{
+			GetCharacterMovement()->MaxWalkSpeed = CurrentWalkSpeed;
+		}
+	}
 	
 	if (Controller)
 	{
@@ -108,11 +119,13 @@ void ACharacterController::Look(const FInputActionValue& Value)
 
 void ACharacterController::Dash()
 {
+	if (!bCanDash) return;
+	
 	// starts sprint
 	GetCharacterMovement()->MaxWalkSpeed = SprintSpeed;
 
 	// sets default walk speed to jogging after input release
-	CurrentWalkSpeed = JogSpeed;
+	CurrentWalkSpeed = SprintSpeed;
 	
 	if (!GetMovementComponent()->IsFalling())
 		AbilitySystemComponent->TryActivateAbilityByClass(UGA_Dash::StaticClass());
@@ -124,7 +137,7 @@ void ACharacterController::ToggleWalk()
 	{
 		CurrentWalkSpeed = JogSpeed;
 	}
-	else if (CurrentWalkSpeed == JogSpeed)
+	else if (CurrentWalkSpeed == JogSpeed || CurrentWalkSpeed == SprintSpeed)
 	{
 		CurrentWalkSpeed = WalkSpeed;
 	}
@@ -277,4 +290,32 @@ void ACharacterController::ResetAttackCombo()
 {
 	AttackIndex = 0;
 	bIsAttacking = false;
+}
+
+void ACharacterController::FreezeMovement(bool CanMove)
+{
+	if (CanMove)
+	{
+		bCanMove = true;
+		GetCharacterMovement()->MaxWalkSpeed = CurrentWalkSpeed;
+	}
+	else
+	{
+		bCanMove = false;
+		GetCharacterMovement()->MaxWalkSpeed = 0.0f;
+	}
+}
+
+void ACharacterController::LockRotation(bool IsLocked)
+{
+	if (IsLocked)
+	{
+		GetCharacterMovement()->bUseControllerDesiredRotation = false;
+		GetCharacterMovement()->bOrientRotationToMovement = false;
+	}
+	else
+	{
+		GetCharacterMovement()->bUseControllerDesiredRotation = true;
+		GetCharacterMovement()->bOrientRotationToMovement = true;
+	}
 }
