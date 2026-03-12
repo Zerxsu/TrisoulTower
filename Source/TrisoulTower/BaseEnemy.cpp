@@ -47,7 +47,10 @@ void ABaseEnemy::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	if (Disable) return;
+	if (Disable) {
+		stunTime = 1.0f;//This is a workaround to dead enemies being coordinated
+		return;
+	}
 
 	if (stunTime > 0) stunTime -= DeltaTime;
 

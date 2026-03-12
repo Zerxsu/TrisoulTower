@@ -71,7 +71,7 @@ void UAIGroupManager::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 					checkPoint->AIGuy = nullptr;
 				} else if (checkPoint->AIGuy->needPoint) {
 					
-					if (checkPoint->AIGuy->stunTime > 0) {
+					if (checkPoint->AIGuy->stunTime > 0 || checkPoint->AIGuy->Disable) {
 						AllEnemies[AllEnemies.Find(checkPoint->AIGuy)] = nullptr;
 					}			
 					checkPoint->AIGuy = nullptr;
