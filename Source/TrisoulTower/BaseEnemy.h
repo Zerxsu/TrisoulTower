@@ -48,6 +48,8 @@ public:
 	bool isDead = false;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Animation")
 	bool Disable = false;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Animation")
+	float lastDamage = 0.0f;
 
 	// Sets default values for this pawn's properties
 	ABaseEnemy();

@@ -392,6 +392,7 @@ void ABaseEnemy::RunAttack_Implementation() {
 
 void ABaseEnemy::TakeAttack(float damage, bool parry) {
 
+	lastDamage = damage;
 	RunDamage();
 
 	if (parry || Vulnerable) {
