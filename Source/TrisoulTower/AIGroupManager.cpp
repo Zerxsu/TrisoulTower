@@ -48,6 +48,12 @@ void UAIGroupManager::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 	TArray<AActor*> AllEnemies;
 	UGameplayStatics::GetAllActorsOfClass(GetWorld(), ABaseEnemy::StaticClass(), AllEnemies);
 	
+	for (int i = 0; i < AllEnemies.Num(); i++) {
+		if (AllEnemies[i] != nullptr) {
+			if (!Cast<ABaseEnemy>(AllEnemies[i])->CanCoordinate()) AllEnemies[i] = nullptr;
+		}
+	}
+
 	TArray<FVector2D> Keys;
 	Points.GetKeys(Keys);
 

@@ -47,10 +47,7 @@ void ABaseEnemy::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	if (Disable) {
-		stunTime = 1.0f;//This is a workaround to dead enemies being coordinated
-		return;
-	}
+	if (Disable) return;
 
 	if (stunTime > 0) stunTime -= DeltaTime;
 
@@ -410,6 +407,7 @@ void ABaseEnemy::TakeAttack(float damage, bool parry) {
 	if (Health <= 0) {
 
 		isDead = true;
+		Disable = true;
 
 		FString DebugMessage = FString::Printf(TEXT("Dead"));
 		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, DebugMessage);
@@ -417,6 +415,15 @@ void ABaseEnemy::TakeAttack(float damage, bool parry) {
 	}
 
 }
+
+bool ABaseEnemy::CanCoordinate() {
+
+	if (isDead || Disable || stunTime > 0 || ReactTimer > 0) return false;
+	if (TargetType != ETargetType::Direct) return false;
+
+	return true;
+}
+
 
 void ABaseEnemy::RunDamage_Implementation() {
 	FString DebugMessage = FString::Printf(TEXT("Damage"));

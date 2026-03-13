@@ -98,6 +98,9 @@ public:
 	virtual void TakeAttack(float damage, bool parry);
 
 	UFUNCTION(BlueprintCallable, Category = "Navigation")
+	bool CanCoordinate();
+
+	UFUNCTION(BlueprintCallable, Category = "Navigation")
 	void AssignPoint(FVector2D at, int priotity);
 
 	UFUNCTION(BlueprintCallable, Category = "Navigation")
