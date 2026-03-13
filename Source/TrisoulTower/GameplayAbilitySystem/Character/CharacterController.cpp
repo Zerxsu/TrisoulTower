@@ -55,10 +55,6 @@ void ACharacterController::BeginPlay()
 
 	bCanEquipWeapon = true;
 
-	// Granting parry ability here for input press and release
-	FGameplayAbilitySpec ParrySpec(ParryAbility, 1, 0);
-	AbilitySystemComponent->GiveAbility(ParrySpec);
-
 	WeaponManager->DefaultAnimClass = PlayerAnimClass;
 }
 
@@ -151,6 +147,7 @@ void ACharacterController::ParryPressed()
 		return;
 
 	AbilitySystemComponent->AbilityLocalInputPressed(0);
+	TSubclassOf<UGameplayAbility> ParryAbility = WeaponManager->GetEquippedWeapon()->WeaponProperties.ParryAbility;
 	AbilitySystemComponent->TryActivateAbilityByClass(ParryAbility);
 }
 
@@ -167,6 +164,7 @@ void ACharacterController::LightAttack()
 	// temp implementation for ground slam ability activation
 	if (GetCharacterMovement()->IsFalling())
 	{
+		TSubclassOf<UGameplayAbility> GroundSlamAbility = WeaponManager->GetEquippedWeapon()->WeaponProperties.GroundSlamAbility;
 		AbilitySystemComponent->TryActivateAbilityByClass(GroundSlamAbility);
 		return;
 	}

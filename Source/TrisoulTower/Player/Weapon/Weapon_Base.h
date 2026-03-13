@@ -14,6 +14,12 @@ struct FWeapon
 	TArray<TSubclassOf<UGameplayAbility>> AbilitiesToGrant;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	TSubclassOf<UGameplayAbility> ParryAbility;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	TSubclassOf<UGameplayAbility> GroundSlamAbility;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	FName SocketName;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)

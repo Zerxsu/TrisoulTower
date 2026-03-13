@@ -51,6 +51,13 @@ void UWeaponManagerComponent::EquipWeapon(TSubclassOf<AWeapon_Base> WeaponToEqui
 
 	// grant abilities
 	GrantedAbilities = CharacterRef->GrantAbilities(EquippedWeapon->WeaponProperties.AbilitiesToGrant);
+
+	// grant parry ability
+	FGameplayAbilitySpec ParrySpec(EquippedWeapon->WeaponProperties.ParryAbility, 1, 0);
+	ParrySpecHandle = CharacterRef->AbilitySystemComponent->GiveAbility(ParrySpec);
+
+	FGameplayAbilitySpec GroundSlamSpec(EquippedWeapon->WeaponProperties.GroundSlamAbility, 1, -1);
+	GroundSlamSpecHandle = CharacterRef->AbilitySystemComponent->GiveAbility(GroundSlamSpec);
 }
 
 void UWeaponManagerComponent::UnequipWeapon()
@@ -66,6 +73,9 @@ void UWeaponManagerComponent::UnequipWeapon()
 	
 	// remove abilities
 	CharacterRef->RemoveAbilities(GrantedAbilities);
+
+	CharacterRef->AbilitySystemComponent->ClearAbility(ParrySpecHandle);
+	CharacterRef->AbilitySystemComponent->ClearAbility(GroundSlamSpecHandle);
 }
 
 AWeapon_Base* UWeaponManagerComponent::GetEquippedWeapon()

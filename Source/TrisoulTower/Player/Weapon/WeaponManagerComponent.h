@@ -37,4 +37,7 @@ private:
 	AWeapon_Base* EquippedWeapon;
 
 	TArray<FGameplayAbilitySpecHandle> GrantedAbilities;
+
+	FGameplayAbilitySpecHandle ParrySpecHandle;
+	FGameplayAbilitySpecHandle GroundSlamSpecHandle;
 };
