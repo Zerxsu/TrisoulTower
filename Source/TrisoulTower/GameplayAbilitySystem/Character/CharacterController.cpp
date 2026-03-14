@@ -113,6 +113,12 @@ void ACharacterController::Look(const FInputActionValue& Value)
 	}
 }
 
+void ACharacterController::StartJump()
+{
+	if (bCanMove)
+		Jump();
+}
+
 void ACharacterController::Dash()
 {
 	if (!bCanDash) return;
@@ -143,7 +149,7 @@ void ACharacterController::ToggleWalk()
 
 void ACharacterController::ParryPressed()
 {
-	if (!WeaponManager->GetEquippedWeapon())
+	if (!WeaponManager->GetEquippedWeapon() || bIsDead)
 		return;
 
 	AbilitySystemComponent->AbilityLocalInputPressed(0);
@@ -158,7 +164,7 @@ void ACharacterController::ParryReleased()
 
 void ACharacterController::LightAttack()
 {
-	if (!WeaponManager->GetEquippedWeapon())
+	if (!WeaponManager->GetEquippedWeapon() || bIsDead)
 		return;
 
 	// temp implementation for ground slam ability activation
@@ -175,7 +181,7 @@ void ACharacterController::LightAttack()
 
 void ACharacterController::HeavyAttack()
 {
-	if (!WeaponManager->GetEquippedWeapon())
+	if (!WeaponManager->GetEquippedWeapon() || bIsDead)
 		return;
 	
 	TSubclassOf<UGameplayAbility> HeavyAttack = WeaponManager->GetEquippedWeapon()->GetAbility(1);
@@ -184,7 +190,7 @@ void ACharacterController::HeavyAttack()
 
 void ACharacterController::UltimateAttack()
 {
-	if (!WeaponManager->GetEquippedWeapon())
+	if (!WeaponManager->GetEquippedWeapon() || bIsDead)
 		return;
 	
 	TSubclassOf<UGameplayAbility> UltimateAttack = WeaponManager->GetEquippedWeapon()->GetAbility(2);
@@ -208,7 +214,7 @@ void ACharacterController::EquipWeapon3()
 
 void ACharacterController::HandleWeaponEquip(const TSubclassOf<AWeapon_Base>& WeaponToEquip)
 {
-	if (!WeaponToEquip || !bCanEquipWeapon || GetWorld()->GetTimerManager().IsTimerActive(WeaponEquipCooldown))
+	if (!WeaponToEquip || !bCanEquipWeapon || GetWorld()->GetTimerManager().IsTimerActive(WeaponEquipCooldown) || bIsDead)
 		return;
 	
 	bCanEquipWeapon = false;
@@ -236,7 +242,7 @@ void ACharacterController::SetupPlayerInputComponent(UInputComponent* PlayerInpu
 		EnhancedInputComp->BindAction(LookAction, ETriggerEvent::Triggered, this, &ACharacterController::Look);
 		
 		// binding JumpAction to default CharacterMovementComponent jump function
-		EnhancedInputComp->BindAction(JumpAction, ETriggerEvent::Started, this, &ACharacter::Jump);
+		EnhancedInputComp->BindAction(JumpAction, ETriggerEvent::Started, this, &ACharacterController::StartJump);
 		EnhancedInputComp->BindAction(JumpAction, ETriggerEvent::Completed, this, &ACharacter::StopJumping);
 
 		// binding abilities

@@ -54,6 +54,15 @@ public:
 	bool bIsDashing;
 
 	UPROPERTY(BlueprintReadWrite, Category = "PlayerController|Variables")
+	float CurrentHealth;
+	
+	UPROPERTY(BlueprintReadWrite, Category = "PlayerController|Variables")
+	bool bIsDead;
+
+	UPROPERTY(BlueprintReadWrite, Category = "PlayerController|Variables")
+	bool bIsImmune;
+
+	UPROPERTY(BlueprintReadWrite, Category = "PlayerController|Variables")
 	bool bIsParry;
 
 	UPROPERTY(BlueprintReadWrite, Category = "PlayerController|Variables")
@@ -71,6 +80,9 @@ public:
 
 	UPROPERTY(BlueprintReadWrite, Category = "PlayerController|Variables")
 	int AttackIndex;
+
+	UPROPERTY(BlueprintReadWrite, Category = "PlayerController|Variables")
+	bool bCanEquipWeapon;
 
 	UPROPERTY(BlueprintReadWrite, Category = "PlayerController|Variables")
 	TArray<AActor*> EnemiesHit;
@@ -156,6 +168,9 @@ protected:
 	void Look(const FInputActionValue& Value);
 
 	UFUNCTION()
+	void StartJump();
+
+	UFUNCTION()
 	void Dash();
 
 	UFUNCTION()
@@ -193,7 +208,6 @@ private:
 	float CurrentWalkSpeed;
 
 	FTimerHandle WeaponEquipCooldown;
-	bool bCanEquipWeapon;
 
 	UPROPERTY()
 	UWeaponManagerComponent* WeaponManager;

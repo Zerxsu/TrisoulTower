@@ -121,5 +121,10 @@ void UGA_Dash::SetDashing(bool bIsDashing)
 	if (bIsDashing)
 	{
 		PlayerController->ResetAttackCombo();
+		PlayerController->bIsImmune = true;
+	}
+	else
+	{
+		PlayerController->bIsImmune = false;
 	}
 }
