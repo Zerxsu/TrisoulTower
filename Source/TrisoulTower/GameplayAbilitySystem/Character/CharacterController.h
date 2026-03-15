@@ -40,6 +40,9 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void RemoveAbilities(TArray<FGameplayAbilitySpecHandle> AbilitiesToRemove);
 
+	UFUNCTION(BlueprintCallable)
+	FGameplayAbilitySpecHandle GetWeaponAbility(int AbilityIndex);
+
 	// only used for debugging rn might keep tho
 	UFUNCTION(BlueprintCallable)
 	void ResetAttackCombo();
@@ -157,6 +160,9 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|Input")
 	UInputAction* EquipWeapon3Action;
 
+	UPROPERTY(BlueprintReadWrite, Category = "PlayerController|Variables")
+	UWeaponManagerComponent* WeaponManager;
+
 	virtual void BeginPlay() override;
 
 	virtual void PossessedBy(AController* NewController) override;
@@ -200,17 +206,14 @@ protected:
 	UFUNCTION()
 	void EquipWeapon3();
 	
-	UFUNCTION()
-	void HandleWeaponEquip(const TSubclassOf<AWeapon_Base>& WeaponToEquip);
+	/*UFUNCTION()
+	void HandleWeaponEquip(const TSubclassOf<AWeapon_Base>& WeaponToEquip);*/
 
 private:
 	// current walk speed is cached everytime the player changes speed
 	float CurrentWalkSpeed;
 
 	FTimerHandle WeaponEquipCooldown;
-
-	UPROPERTY()
-	UWeaponManagerComponent* WeaponManager;
 	
 	UPROPERTY(EditAnywhere, Category = "PlayerController|Weapon")
 	TSubclassOf<AWeapon_Base> WeaponSlot1;

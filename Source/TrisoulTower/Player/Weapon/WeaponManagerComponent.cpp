@@ -82,3 +82,12 @@ AWeapon_Base* UWeaponManagerComponent::GetEquippedWeapon()
 {
 	return EquippedWeapon;
 }
+
+FGameplayAbilitySpecHandle UWeaponManagerComponent::GetAbility(int AbilityIndex)
+{
+	if (GrantedAbilities.IsValidIndex(AbilityIndex))
+		return GrantedAbilities[AbilityIndex];
+	
+	FGameplayAbilitySpecHandle EmptyAbilitySpec;
+	return EmptyAbilitySpec;
+}
