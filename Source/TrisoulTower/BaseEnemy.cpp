@@ -394,7 +394,22 @@ void ABaseEnemy::RunAttack_Implementation() {
 
 void ABaseEnemy::TakeAttack(float damage, bool parry) {
 
-	lastDamage = damage;
+	FVector thisForward = GetActorForwardVector();
+	thisForward.Z = 0;
+	thisForward.Normalize();
+
+	FVector playerForward = PlayerActor->GetActorForwardVector();
+	playerForward.Z = 0;
+	playerForward.Normalize();
+
+	float damageDot = -FVector::DotProduct(thisForward, playerForward);
+	damageDot += 1.5f;
+	damageDot /= 2.0f;
+
+	FString DotMessage = FString::Printf(TEXT("Dawt %f"), damageDot);
+    GEngine->AddOnScreenDebugMessage(-1, 4.0f, FColor::Yellow, DotMessage);
+
+	lastDamage = damage * damageDot;
 	RunDamage();
 
 	if (parry || Vulnerable) {
