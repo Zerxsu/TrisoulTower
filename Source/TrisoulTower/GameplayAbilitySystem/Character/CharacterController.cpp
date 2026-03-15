@@ -197,22 +197,13 @@ void ACharacterController::UltimateAttack()
 	AbilitySystemComponent->TryActivateAbilityByClass(UltimateAttack);
 }
 
-void ACharacterController::EquipWeapon1()
-{
-	HandleWeaponEquip(WeaponSlot1);
-}
+void ACharacterController::EquipWeapon1(){}
 
-void ACharacterController::EquipWeapon2()
-{
-	HandleWeaponEquip(WeaponSlot2);
-}
+void ACharacterController::EquipWeapon2(){}
 
-void ACharacterController::EquipWeapon3()
-{
-	HandleWeaponEquip(WeaponSlot3);
-}
+void ACharacterController::EquipWeapon3(){}
 
-void ACharacterController::HandleWeaponEquip(const TSubclassOf<AWeapon_Base>& WeaponToEquip)
+/*void ACharacterController::HandleWeaponEquip(const TSubclassOf<AWeapon_Base>& WeaponToEquip)
 {
 	if (!WeaponToEquip || !bCanEquipWeapon || GetWorld()->GetTimerManager().IsTimerActive(WeaponEquipCooldown) || bIsDead)
 		return;
@@ -231,7 +222,7 @@ void ACharacterController::HandleWeaponEquip(const TSubclassOf<AWeapon_Base>& We
 			.5f,
 			false
 	);
-}
+}*/
 
 void ACharacterController::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
@@ -288,6 +279,11 @@ void ACharacterController::RemoveAbilities(TArray<FGameplayAbilitySpecHandle> Ab
 	
 	for (FGameplayAbilitySpecHandle AbilityHandle : AbilitiesToRemove)
 		AbilitySystemComponent->ClearAbility(AbilityHandle);
+}
+
+FGameplayAbilitySpecHandle ACharacterController::GetWeaponAbility(int AbilityIndex)
+{
+	return WeaponManager->GetAbility(AbilityIndex);
 }
 
 void ACharacterController::ResetAttackCombo()

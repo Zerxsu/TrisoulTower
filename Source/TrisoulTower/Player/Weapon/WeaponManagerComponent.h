@@ -17,7 +17,7 @@ public:
 	UPROPERTY()
 	UClass* DefaultAnimClass;
 	
-	UFUNCTION()
+	UFUNCTION(BlueprintCallable)
 	void EquipWeapon(TSubclassOf<AWeapon_Base> WeaponToEquip);
 
 	UFUNCTION()
@@ -25,6 +25,9 @@ public:
 
 	UFUNCTION()
 	AWeapon_Base* GetEquippedWeapon();
+
+	UFUNCTION()
+	FGameplayAbilitySpecHandle GetAbility(int AbilityIndex);
 
 protected:
 	virtual void BeginPlay() override;
