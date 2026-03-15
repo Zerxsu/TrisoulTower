@@ -99,6 +99,8 @@ void ABaseEnemy::Tick(float DeltaTime)
 		
 	}
 
+	if (GetActorLocation().Z < -2048) TakeAttack(Health, true);
+
 }
 
 // Called to bind functionality to input
