@@ -20,6 +20,9 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void EquipWeapon(TSubclassOf<AWeapon_Base> WeaponToEquip);
 
+	UFUNCTION(BlueprintCallable)
+	TSubclassOf<AWeapon_Base> GetCurrentEquippedWeaponClass();
+	
 	UFUNCTION()
 	void UnequipWeapon();
 
@@ -38,6 +41,9 @@ private:
 
 	UPROPERTY()
 	AWeapon_Base* EquippedWeapon;
+
+	UPROPERTY()
+	TSubclassOf<AWeapon_Base> CurrentEquippedWeaponClass;
 
 	TArray<FGameplayAbilitySpecHandle> GrantedAbilities;
 

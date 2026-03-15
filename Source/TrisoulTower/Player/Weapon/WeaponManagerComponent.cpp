@@ -26,6 +26,7 @@ void UWeaponManagerComponent::EquipWeapon(TSubclassOf<AWeapon_Base> WeaponToEqui
 	if (EquippedWeapon)
 	{
 		UnequipWeapon();
+		CurrentEquippedWeaponClass = nullptr;
 	}
 
 	// spawn weapon
@@ -58,6 +59,14 @@ void UWeaponManagerComponent::EquipWeapon(TSubclassOf<AWeapon_Base> WeaponToEqui
 
 	FGameplayAbilitySpec GroundSlamSpec(EquippedWeapon->WeaponProperties.GroundSlamAbility, 1, -1);
 	GroundSlamSpecHandle = CharacterRef->AbilitySystemComponent->GiveAbility(GroundSlamSpec);
+
+	// sets current equipped weapon
+	CurrentEquippedWeaponClass = WeaponToEquip;
+}
+
+TSubclassOf<AWeapon_Base> UWeaponManagerComponent::GetCurrentEquippedWeaponClass()
+{
+	return CurrentEquippedWeaponClass;
 }
 
 void UWeaponManagerComponent::UnequipWeapon()
