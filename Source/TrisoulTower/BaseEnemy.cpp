@@ -392,7 +392,7 @@ void ABaseEnemy::RunAttack_Implementation() {
 	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Orange, DebugMessage);
 }
 
-void ABaseEnemy::TakeAttack(float damage, bool parry) {
+void ABaseEnemy::TakeAttack_Implementation(float damage, bool parry) {
 
 	FVector thisForward = GetActorForwardVector();
 	thisForward.Z = 0;
