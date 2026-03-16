@@ -1097,6 +1097,9 @@
 					</ObjectLists>
 				</MusicSwitchContainer>
 				<MusicSwitchContainer Name="Tower_Switch" ID="{BF44E9E9-9594-49B0-B496-83476EDCB8C6}" ShortID="137413234">
+					<PropertyList>
+						<Property Name="Tempo" Type="Real64" Value="145"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
@@ -1828,6 +1831,9 @@
 					</ObjectLists>
 				</MusicSwitchContainer>
 				<MusicSwitchContainer Name="BossKilled_Switch" ID="{3C52FB9D-5B5F-4B3D-BCF6-0EB71D615032}" ShortID="550436784">
+					<PropertyList>
+						<Property Name="Tempo" Type="Real64" Value="150"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
@@ -1866,9 +1872,6 @@
 								<Reference Name="PlaylistRoot">
 									<Custom>
 										<MusicPlaylistItem Name="" ID="{931AE316-23C2-44C3-87B2-CBE9EBCB2B54}" ShortID="279184857">
-											<PropertyList>
-												<Property Name="LoopCount" Type="int16" Value="0"/>
-											</PropertyList>
 											<ChildrenList>
 												<MusicPlaylistItem Name="" ID="{5B03A0EF-8C6E-45B3-9E7F-24790391F55B}" ShortID="833149629">
 													<PropertyList>
@@ -2063,6 +2066,9 @@
 					</ObjectLists>
 				</MusicSwitchContainer>
 				<MusicSwitchContainer Name="Boss_Phase1_Switch" ID="{9365EB86-B56F-46D1-AD90-CA20EE175EE3}" ShortID="1041254062">
+					<PropertyList>
+						<Property Name="Tempo" Type="Real64" Value="150"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
@@ -2336,6 +2342,9 @@
 					</ObjectLists>
 				</MusicSwitchContainer>
 				<MusicSwitchContainer Name="Boss_Phase2_Switch" ID="{D8F600F2-D3A8-49DC-91E5-A384229F0A11}" ShortID="764930086">
+					<PropertyList>
+						<Property Name="Tempo" Type="Real64" Value="150"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
@@ -2609,6 +2618,9 @@
 					</ObjectLists>
 				</MusicSwitchContainer>
 				<MusicSwitchContainer Name="Boss_Phase3_Switch" ID="{1EFCEF3D-BF7A-41BC-A531-3AD5D2A4438F}" ShortID="395208020">
+					<PropertyList>
+						<Property Name="Tempo" Type="Real64" Value="150"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
