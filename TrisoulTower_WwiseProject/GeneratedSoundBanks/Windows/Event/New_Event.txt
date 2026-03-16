@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3050945240	New_Event			\Music\New_Event	
+

@@ -1138,6 +1138,17 @@
 						<ActiveSource Name="ui" ID="{134A9EBE-BBA4-489C-8134-B03618BBBE64}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<SwitchContainer Name="Fire_Swing" ID="{49403574-E709-416A-BB2C-77214A54E866}" ShortID="73995998">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+						</Reference>
+					</ReferenceList>
+					<GroupingInfo/>
+				</SwitchContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

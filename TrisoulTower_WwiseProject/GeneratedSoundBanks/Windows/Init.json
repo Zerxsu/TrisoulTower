@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{5F25B062-3DE0-5EFF-9C76-FD134CE7B98C}",
+    "Hash": "{A32C0B57-E025-A092-E007-18BC0446989A}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -44,6 +44,44 @@
     ],
     "StateGroups": [
      {
+      "Id": "2166191340",
+      "Name": "Boss_Theme",
+      "ObjectPath": "\\States\\Default Work Unit\\Boss_Theme",
+      "GUID": "{030B6321-5C92-4415-BEF2-AE6495D52B00}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Boss_Theme\\None",
+        "GUID": "{AE4EB580-9E76-4E6A-9EFD-A224597B4261}"
+       },
+       {
+        "Id": "3630028968",
+        "Name": "Phase2",
+        "ObjectPath": "\\States\\Default Work Unit\\Boss_Theme\\Phase2",
+        "GUID": "{DEDBF804-0DC8-46AA-A61E-80A1EBD721AF}"
+       },
+       {
+        "Id": "3630028969",
+        "Name": "Phase3",
+        "ObjectPath": "\\States\\Default Work Unit\\Boss_Theme\\Phase3",
+        "GUID": "{1B055634-18B4-468B-AE26-04CE32523CC6}"
+       },
+       {
+        "Id": "3630028971",
+        "Name": "Phase1",
+        "ObjectPath": "\\States\\Default Work Unit\\Boss_Theme\\Phase1",
+        "GUID": "{F3DEE3DD-7258-4EB4-A925-69E5327FF311}"
+       },
+       {
+        "Id": "3972193662",
+        "Name": "Boss_killed",
+        "ObjectPath": "\\States\\Default Work Unit\\Boss_Theme\\Boss_killed",
+        "GUID": "{363F4410-D7B9-4445-A763-88D9AD5C4E97}"
+       }
+      ]
+     },
+     {
       "Id": "3873482650",
       "Name": "Tower_Theme",
       "ObjectPath": "\\States\\Default Work Unit\\Tower_Theme",
@@ -72,6 +110,102 @@
         "Name": "No_Music",
         "ObjectPath": "\\States\\Default Work Unit\\Tower_Theme\\No_Music",
         "GUID": "{6DE4D22C-BD7F-4402-9A3F-245B07C80326}"
+       }
+      ]
+     },
+     {
+      "Id": "3922696680",
+      "Name": "Boss_Phase_3",
+      "ObjectPath": "\\States\\Default Work Unit\\Boss_Phase_3",
+      "GUID": "{A69E1F13-2DB9-4970-9CBB-20E3D68F16C6}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Boss_Phase_3\\None",
+        "GUID": "{5FDDE5DF-8607-4A4E-9F0B-354FDEC5E9FC}"
+       },
+       {
+        "Id": "930712164",
+        "Name": "Off",
+        "ObjectPath": "\\States\\Default Work Unit\\Boss_Phase_3\\Off",
+        "GUID": "{8A0DFA96-EB37-411E-B39A-6A35782E0AB1}"
+       },
+       {
+        "Id": "1651971902",
+        "Name": "On",
+        "ObjectPath": "\\States\\Default Work Unit\\Boss_Phase_3\\On",
+        "GUID": "{7142603D-2E15-45F0-8BC6-04B7EC058D92}"
+       },
+       {
+        "Id": "2607556080",
+        "Name": "Menu",
+        "ObjectPath": "\\States\\Default Work Unit\\Boss_Phase_3\\Menu",
+        "GUID": "{EFB51D94-39C6-4859-8640-ABCB3C015E37}"
+       }
+      ]
+     },
+     {
+      "Id": "3922696681",
+      "Name": "Boss_Phase_2",
+      "ObjectPath": "\\States\\Default Work Unit\\Boss_Phase_2",
+      "GUID": "{525D8CC0-4965-495B-93F4-6AA0A0A38684}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Boss_Phase_2\\None",
+        "GUID": "{177A9A2E-0811-4EB2-AFEC-99E14ECAC12F}"
+       },
+       {
+        "Id": "930712164",
+        "Name": "Off",
+        "ObjectPath": "\\States\\Default Work Unit\\Boss_Phase_2\\Off",
+        "GUID": "{9D2452FF-D539-4C9E-A689-9DDF8FD5DAC7}"
+       },
+       {
+        "Id": "1651971902",
+        "Name": "On",
+        "ObjectPath": "\\States\\Default Work Unit\\Boss_Phase_2\\On",
+        "GUID": "{84F0AB82-29BE-4156-BD55-584655523416}"
+       },
+       {
+        "Id": "2607556080",
+        "Name": "Menu",
+        "ObjectPath": "\\States\\Default Work Unit\\Boss_Phase_2\\Menu",
+        "GUID": "{3567A4FE-EB64-407F-924A-EBAE1F5D5A17}"
+       }
+      ]
+     },
+     {
+      "Id": "3922696682",
+      "Name": "Boss_Phase_1",
+      "ObjectPath": "\\States\\Default Work Unit\\Boss_Phase_1",
+      "GUID": "{F935702D-A2C7-4E79-A716-3BE16615A52F}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Boss_Phase_1\\None",
+        "GUID": "{684AE194-4669-4E2F-9674-23CE24093328}"
+       },
+       {
+        "Id": "930712164",
+        "Name": "Off",
+        "ObjectPath": "\\States\\Default Work Unit\\Boss_Phase_1\\Off",
+        "GUID": "{35D3157E-AC7E-4894-972D-5CBA9307CE70}"
+       },
+       {
+        "Id": "1651971902",
+        "Name": "On",
+        "ObjectPath": "\\States\\Default Work Unit\\Boss_Phase_1\\On",
+        "GUID": "{BE908002-2633-479E-BC74-2F47FB1B1B76}"
+       },
+       {
+        "Id": "2607556080",
+        "Name": "Menu",
+        "ObjectPath": "\\States\\Default Work Unit\\Boss_Phase_1\\Menu",
+        "GUID": "{DDF9933D-9C2E-4553-8E53-2D90DC246562}"
        }
       ]
      }
@@ -126,6 +260,6 @@
     ]
    }
   ],
-  "FileHash": "{A6873779-E8C9-5FC0-E82C-9463E512B894}"
+  "FileHash": "{512F8F56-D543-EF81-DEFC-EB7A91A7E564}"
  }
 }

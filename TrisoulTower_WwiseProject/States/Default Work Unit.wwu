@@ -25,6 +25,63 @@
 						</Transition>
 					</TransitionList>
 				</StateGroup>
+				<StateGroup Name="Boss_Theme" ID="{030B6321-5C92-4415-BEF2-AE6495D52B00}">
+					<ChildrenList>
+						<State Name="None" ID="{AE4EB580-9E76-4E6A-9EFD-A224597B4261}"/>
+						<State Name="Phase1" ID="{F3DEE3DD-7258-4EB4-A925-69E5327FF311}"/>
+						<State Name="Phase2" ID="{DEDBF804-0DC8-46AA-A61E-80A1EBD721AF}"/>
+						<State Name="Phase3" ID="{1B055634-18B4-468B-AE26-04CE32523CC6}"/>
+						<State Name="Boss_killed" ID="{363F4410-D7B9-4445-A763-88D9AD5C4E97}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Boss_Phase_1" ID="{F935702D-A2C7-4E79-A716-3BE16615A52F}">
+					<ChildrenList>
+						<State Name="None" ID="{684AE194-4669-4E2F-9674-23CE24093328}"/>
+						<State Name="On" ID="{BE908002-2633-479E-BC74-2F47FB1B1B76}"/>
+						<State Name="Off" ID="{35D3157E-AC7E-4894-972D-5CBA9307CE70}"/>
+						<State Name="Menu" ID="{DDF9933D-9C2E-4553-8E53-2D90DC246562}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="On" ID="{BE908002-2633-479E-BC74-2F47FB1B1B76}"/>
+							<EndState Name="Menu" ID="{DDF9933D-9C2E-4553-8E53-2D90DC246562}"/>
+							<Time>2.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="Boss_Phase_2" ID="{525D8CC0-4965-495B-93F4-6AA0A0A38684}">
+					<ChildrenList>
+						<State Name="None" ID="{177A9A2E-0811-4EB2-AFEC-99E14ECAC12F}"/>
+						<State Name="On" ID="{84F0AB82-29BE-4156-BD55-584655523416}"/>
+						<State Name="Off" ID="{9D2452FF-D539-4C9E-A689-9DDF8FD5DAC7}"/>
+						<State Name="Menu" ID="{3567A4FE-EB64-407F-924A-EBAE1F5D5A17}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="On" ID="{84F0AB82-29BE-4156-BD55-584655523416}"/>
+							<EndState Name="Menu" ID="{3567A4FE-EB64-407F-924A-EBAE1F5D5A17}"/>
+							<Time>2.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="Boss_Phase_3" ID="{A69E1F13-2DB9-4970-9CBB-20E3D68F16C6}">
+					<ChildrenList>
+						<State Name="None" ID="{5FDDE5DF-8607-4A4E-9F0B-354FDEC5E9FC}"/>
+						<State Name="On" ID="{7142603D-2E15-45F0-8BC6-04B7EC058D92}"/>
+						<State Name="Off" ID="{8A0DFA96-EB37-411E-B39A-6A35782E0AB1}"/>
+						<State Name="Menu" ID="{EFB51D94-39C6-4859-8640-ABCB3C015E37}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="On" ID="{7142603D-2E15-45F0-8BC6-04B7EC058D92}"/>
+							<EndState Name="Menu" ID="{EFB51D94-39C6-4859-8640-ABCB3C015E37}"/>
+							<Time>2.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

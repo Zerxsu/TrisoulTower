@@ -1,11 +1,32 @@
 State Group	ID	Name			Wwise Object Path	Notes
+	2166191340	Boss_Theme			\Default Work Unit\Boss_Theme	
 	3873482650	Tower_Theme			\Default Work Unit\Tower_Theme	
+	3922696680	Boss_Phase_3			\Default Work Unit\Boss_Phase_3	
+	3922696681	Boss_Phase_2			\Default Work Unit\Boss_Phase_2	
+	3922696682	Boss_Phase_1			\Default Work Unit\Boss_Phase_1	
 
 State	ID	Name	State Group			Notes
+	748895195	None	Boss_Theme			
+	3630028968	Phase2	Boss_Theme			
+	3630028969	Phase3	Boss_Theme			
+	3630028971	Phase1	Boss_Theme			
+	3972193662	Boss_killed	Boss_Theme			
 	168610243	Fighting	Tower_Theme			
 	748895195	None	Tower_Theme			
 	1823678183	Exploring	Tower_Theme			
 	3767268120	No_Music	Tower_Theme			
+	748895195	None	Boss_Phase_3			
+	930712164	Off	Boss_Phase_3			
+	1651971902	On	Boss_Phase_3			
+	2607556080	Menu	Boss_Phase_3			
+	748895195	None	Boss_Phase_2			
+	930712164	Off	Boss_Phase_2			
+	1651971902	On	Boss_Phase_2			
+	2607556080	Menu	Boss_Phase_2			
+	748895195	None	Boss_Phase_1			
+	930712164	Off	Boss_Phase_1			
+	1651971902	On	Boss_Phase_1			
+	2607556080	Menu	Boss_Phase_1			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	

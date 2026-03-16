@@ -1,0 +1,121 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3991942870",
+    "Type": "User",
+    "GUID": "{03DC8F4B-44C3-4833-8039-D75C2C00E6D3}",
+    "Language": "SFX",
+    "Hash": "{F1FF85BD-D173-D242-4B26-997760A310EE}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Music",
+    "ShortName": "Music",
+    "Path": "Music.bnk",
+    "Media": [
+     {
+      "Id": "17138113",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Phase3_TrisoulFinalBoss_150BPM.wav",
+      "CachePath": "32/{32FA7D67-B685-84F6-35FD-EB3672C5B72F}.wem"
+     },
+     {
+      "Id": "583356784",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Phase2_TrisoulFinalBoss_150BPM_Reverb.wav",
+      "CachePath": "C9/{C99857E6-C00C-20EB-2818-3D5DF8AF0890}.wem"
+     },
+     {
+      "Id": "738341883",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Trisoul_TowerTheme_Default_145bpm.wav",
+      "CachePath": "3B/{3BDD4168-3A62-923B-7A6B-7B57FE61F2DA}.wem"
+     },
+     {
+      "Id": "751266702",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Phase1_TrisoulFinalBoss_150BPM.wav",
+      "CachePath": "ED/{EDCF8EF6-485E-2775-897E-95B7E748190B}.wem"
+     },
+     {
+      "Id": "911417253",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Trisoul_TowerTheme_Battle_145bpm.wav",
+      "CachePath": "A2/{A2AFD8CF-1741-C306-F879-0F8DAF1C9129}.wem"
+     },
+     {
+      "Id": "1019931530",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FinalHit_TrisoulFinalBoss_150BPM.wav",
+      "CachePath": "62/{62DE93F0-F55A-390A-C08B-3498DD58B16F}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3456390069",
+      "Name": "Boss_Phases",
+      "ObjectPath": "\\Events\\Music\\Boss_Phases",
+      "GUID": "{CAA32C93-FE2E-41DB-9E53-00DDD2C11F03}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "17138113"
+       },
+       {
+        "Id": "583356784"
+       },
+       {
+        "Id": "751266702"
+       },
+       {
+        "Id": "1019931530"
+       }
+      ]
+     },
+     {
+      "Id": "3991942870",
+      "Name": "Music",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music",
+      "GUID": "{C396E428-1427-453C-A58D-569D97B955EE}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "17138113"
+       },
+       {
+        "Id": "583356784"
+       },
+       {
+        "Id": "738341883"
+       },
+       {
+        "Id": "751266702"
+       },
+       {
+        "Id": "911417253"
+       },
+       {
+        "Id": "1019931530"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{6AC6F5C9-631F-A540-2C11-D8FCAAD39E79}"
+ }
+}

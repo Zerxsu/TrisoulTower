@@ -252,6 +252,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Flame_Swing" ID="{9897AEDF-BC65-4A93-B476-7C354D572BB8}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

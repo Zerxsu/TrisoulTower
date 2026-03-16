@@ -43,6 +43,12 @@
 										<MusicTransition Name="Transition" ID="{B6A88EC0-8838-4B4B-A196-3350A95BA519}">
 											<TransitionInfo/>
 										</MusicTransition>
+										<MusicTransition Name="Transition" ID="{17DE3093-B300-456A-9EAF-23DC7F357EDD}">
+											<TransitionInfo/>
+										</MusicTransition>
+										<MusicTransition Name="Transition" ID="{6654C3BA-3DE5-4878-B3D3-3A73F88F2666}">
+											<TransitionInfo/>
+										</MusicTransition>
 									</ChildrenList>
 									<TransitionInfo/>
 								</MusicTransition>
@@ -54,7 +60,7 @@
 							<PropertyList>
 								<Property Name="EndPosition" Type="Real64" Value="46344.8299319728"/>
 								<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
-								<Property Name="Tempo" Type="Real64" Value="145"/>
+								<Property Name="Tempo" Type="Real64" Value="150"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -258,8 +264,1795 @@
 								</ObjectList>
 							</ObjectLists>
 						</MusicSegment>
+						<MusicSegment Name="New Music Segment" ID="{26D64561-8999-4E21-BD1A-DD62F26CD493}" ShortID="742406214">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="662589.976562093"/>
+								<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+								<Property Name="Tempo" Type="Real64" Value="150"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Phase1_TrisoulFinalBoss_150BPM" ID="{752388F4-B592-45C7-AEB6-2470907FCDDB}" ShortID="616230707">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{14BADCAF-0C7F-45DB-A452-01D935074ABF}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Phase1_TrisoulFinalBoss_150BPM" ID="{6D751458-6950-40C2-B467-14F210D29038}">
+											<Language>SFX</Language>
+											<AudioFile>Phase1_TrisoulFinalBoss_150BPM.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="751266702"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{22E9208D-1A5C-42B7-8232-31DB9D67B4A7}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Phase1_TrisoulFinalBoss_150BPM" ID="{BFEE7A36-3504-4EB5-99F4-6CF0C23CDE4F}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="131229.166666667"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="15572.0258861197"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Phase1_TrisoulFinalBoss_150BPM" ID="{6D751458-6950-40C2-B467-14F210D29038}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="Phase2_TrisoulFinalBoss_150BPM_Reverb" ID="{E518169D-ED99-46B6-888C-99A5B6F740AA}" ShortID="431888837">
+									<PropertyList>
+										<Property Name="MusicTrackType" Type="int16" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{454F7449-9E77-4582-8045-718AC215F49B}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<ChildrenList>
+														<MusicTransition Name="Transition" ID="{C668909C-844E-49ED-9AB1-C7BE0D56C60E}">
+															<TransitionInfo/>
+														</MusicTransition>
+													</ChildrenList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Phase2_TrisoulFinalBoss_150BPM_Reverb" ID="{7B2B7FBD-B203-4455-B1DE-61217835A039}">
+											<Language>SFX</Language>
+											<AudioFile>Phase2_TrisoulFinalBoss_150BPM_Reverb.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="583356784"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{D7622A27-D95F-451B-AA9E-3C10FF654C0C}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Phase2_TrisoulFinalBoss_150BPM_Reverb" ID="{C9110089-8D35-4B89-A882-EF150120CF61}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="148800"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="169172.025886119"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Phase2_TrisoulFinalBoss_150BPM_Reverb" ID="{7B2B7FBD-B203-4455-B1DE-61217835A039}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="Phase3_TrisoulFinalBoss_150BPM" ID="{9BC0592B-CD6D-44E3-9300-577F10027B5D}" ShortID="489137433">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{8F198FF1-0455-4C5F-B17B-1687CE37160A}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Phase3_TrisoulFinalBoss_150BPM" ID="{CDBF5597-D914-4763-83A7-3272C1EC2707}">
+											<Language>SFX</Language>
+											<AudioFile>Phase3_TrisoulFinalBoss_150BPM.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="17138113"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{2F1BB4BC-4CC3-4B86-B6E9-5073562D641B}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Phase3_TrisoulFinalBoss_150BPM" ID="{AF8B44C5-1FA4-429B-A24B-D224BB72EFB9}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="233600"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="348372.025886119"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Phase3_TrisoulFinalBoss_150BPM" ID="{CDBF5597-D914-4763-83A7-3272C1EC2707}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="FinalHit_TrisoulFinalBoss_150BPM" ID="{3487C2F4-A1DB-4565-B8D8-D09EECDB6866}" ShortID="514798386">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{CCD62022-CE31-4013-8871-4B54D12D3CEA}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FinalHit_TrisoulFinalBoss_150BPM" ID="{3D5E2130-5B37-410D-8FDA-6F5BC87CBFA2}">
+											<Language>SFX</Language>
+											<AudioFile>FinalHit_TrisoulFinalBoss_150BPM.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1019931530"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{27B6C875-5658-4E58-84AB-2A0120505689}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="FinalHit_TrisoulFinalBoss_150BPM" ID="{7CC8C37D-9B33-417C-BFFF-297231CA130F}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="17616.6666666667"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="606576.602368662"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="FinalHit_TrisoulFinalBoss_150BPM" ID="{3D5E2130-5B37-410D-8FDA-6F5BC87CBFA2}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{D669970E-EA8D-424A-854B-223D31BEF7AB}">
+												<PropertyList>
+													<Property Name="TimeMs" Type="Real64" Value="15572.0258861197"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{317E2AF4-2311-4DE6-A33F-C127DCA261FF}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="143572.02588612"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="" ID="{2204D82D-2C96-449F-8DD7-25BD7FF80418}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="2"/>
+													<Property Name="TimeMs" Type="Real64" Value="143572.02588612"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="" ID="{19DBE24E-B825-49B5-9EF5-AB6E9D6AD7B3}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="2"/>
+													<Property Name="TimeMs" Type="Real64" Value="41172.0258861197"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
 					</ChildrenList>
 				</MusicPlaylistContainer>
+				<MusicSwitchContainer Name="Boss_Theme" ID="{E2CACEEC-15AB-4210-8D03-5C9DBEEC38FD}" ShortID="243907079">
+					<PropertyList>
+						<Property Name="Tempo" Type="Real64" Value="150"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+						</Reference>
+						<Reference Name="TransitionRoot">
+							<Custom>
+								<MusicTransition Name="Root" ID="{945C5E6A-A6A7-4B2A-A365-CD2B0023637C}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{FDC87156-D3C7-4084-9770-F7A85A9194CB}">
+											<TransitionInfo/>
+										</MusicTransition>
+										<MusicTransition Name="Transition" ID="{7112D478-AEE5-4B81-B44B-9E13F9A527DC}">
+											<PropertyList>
+												<Property Name="DestinationContextType" Type="int16" Value="2"/>
+												<Property Name="DestinationJumpPositionPreset" Type="int16" Value="1"/>
+												<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+												<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
+												<Property Name="SourceContextType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="DestinationContextObject">
+													<ObjectRef Name="Phase2_TrisoulFinalBoss_150BPM_Reverb" ID="{FD0E633A-589A-4CBD-9550-A0780DB1CE4E}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+												</Reference>
+												<Reference Name="SourceContextObject">
+													<ObjectRef Name="Phase1_TrisoulFinalBoss_150BPM" ID="{0CAFCDAD-2BBF-4928-BC53-653744C42441}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+												</Reference>
+											</ReferenceList>
+											<TransitionInfo/>
+										</MusicTransition>
+										<MusicTransition Name="Transition" ID="{EA8CF1F4-EA5D-462A-A516-82286685D0C7}">
+											<PropertyList>
+												<Property Name="DestinationContextType" Type="int16" Value="2"/>
+												<Property Name="DestinationJumpPositionPreset" Type="int16" Value="1"/>
+												<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+												<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
+												<Property Name="SourceContextType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="DestinationContextObject">
+													<ObjectRef Name="Phase3_TrisoulFinalBoss_150BPM" ID="{B0F6EDD4-A910-45B3-A004-F6499502CB8A}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+												</Reference>
+												<Reference Name="SourceContextObject">
+													<ObjectRef Name="Phase2_TrisoulFinalBoss_150BPM_Reverb" ID="{FD0E633A-589A-4CBD-9550-A0780DB1CE4E}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+												</Reference>
+											</ReferenceList>
+											<TransitionInfo>
+												<SourceFadeOut>
+													<MusicFade Name="Source Fade-out" ID="{9B984961-7EE7-4D6E-823B-389C2D7B59D7}">
+														<PropertyList>
+															<Property Name="FadeType" Type="int16" Value="1"/>
+														</PropertyList>
+													</MusicFade>
+												</SourceFadeOut>
+											</TransitionInfo>
+										</MusicTransition>
+										<MusicTransition Name="Transition" ID="{BEC7AE70-F299-425F-BD50-B90D9B4C63D7}">
+											<PropertyList>
+												<Property Name="DestinationContextType" Type="int16" Value="2"/>
+												<Property Name="DestinationJumpPositionPreset" Type="int16" Value="1"/>
+												<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+												<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
+												<Property Name="SourceContextType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="DestinationContextObject">
+													<ObjectRef Name="Boss_Killed" ID="{BC0257B7-8CD2-4605-AEBE-73DDDD777008}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+												</Reference>
+												<Reference Name="SourceContextObject">
+													<ObjectRef Name="Phase3" ID="{55E8B533-449A-4E66-B5D8-EEC6BEF9B56B}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+												</Reference>
+											</ReferenceList>
+											<TransitionInfo/>
+										</MusicTransition>
+										<MusicTransition Name="Transition" ID="{29C390EE-C535-44FB-8407-8BF350CCFEB6}">
+											<PropertyList>
+												<Property Name="DestinationContextType" Type="int16" Value="2"/>
+												<Property Name="DestinationJumpPositionPreset" Type="int16" Value="1"/>
+												<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+												<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
+												<Property Name="SourceContextType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="DestinationContextObject">
+													<ObjectRef Name="Boss_Killed" ID="{BC0257B7-8CD2-4605-AEBE-73DDDD777008}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+												</Reference>
+												<Reference Name="SourceContextObject">
+													<ObjectRef Name="Phase2" ID="{EEF3B036-30F2-4845-A595-A44D18C5E9B7}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+												</Reference>
+											</ReferenceList>
+											<TransitionInfo/>
+										</MusicTransition>
+										<MusicTransition Name="Transition" ID="{405675FF-A77D-4BC9-A78B-22A91B58A195}">
+											<PropertyList>
+												<Property Name="DestinationContextType" Type="int16" Value="2"/>
+												<Property Name="DestinationJumpPositionPreset" Type="int16" Value="1"/>
+												<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+												<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
+												<Property Name="SourceContextType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="DestinationContextObject">
+													<ObjectRef Name="Boss_Killed" ID="{BC0257B7-8CD2-4605-AEBE-73DDDD777008}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+												</Reference>
+												<Reference Name="SourceContextObject">
+													<ObjectRef Name="Phase1" ID="{17B1A26B-0169-4953-883F-89E18C0EE963}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+												</Reference>
+											</ReferenceList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</Custom>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicPlaylistContainer Name="Phase1" ID="{17B1A26B-0169-4953-883F-89E18C0EE963}" ShortID="121252134">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+								</Reference>
+								<Reference Name="PlaylistRoot">
+									<Custom>
+										<MusicPlaylistItem Name="" ID="{CCFA1267-F237-4292-9974-599DB20AE6EB}" ShortID="989773953">
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{AF685002-5A45-4F3F-883E-ADFC4F965944}" ShortID="654673456">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="0"/>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="Phase1_TrisoulFinalBoss_150BPM" ID="{0CAFCDAD-2BBF-4928-BC53-653744C42441}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Custom>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{B02DD898-3B3F-4789-82DD-A09D8C5F5175}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{AA45287D-8505-498A-A3D0-DA1B2BAA257D}">
+													<TransitionInfo/>
+												</MusicTransition>
+												<MusicTransition Name="Transition" ID="{DA0B06ED-2451-4D5C-BDB9-19B8D9E04E97}">
+													<PropertyList>
+														<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
+														<Property Name="SourceContextType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="SourceContextObject">
+															<ObjectRef Name="Phase1_TrisoulFinalBoss_150BPM" ID="{0CAFCDAD-2BBF-4928-BC53-653744C42441}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+														</Reference>
+													</ReferenceList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="Phase1_TrisoulFinalBoss_150BPM" ID="{0CAFCDAD-2BBF-4928-BC53-653744C42441}" ShortID="844031995">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="136154.658367849"/>
+										<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+										<Property Name="Tempo" Type="Real64" Value="150"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Phase1_TrisoulFinalBoss_150BPM" ID="{6FD59D4D-8E7D-4696-B9EA-442A2A63725C}" ShortID="257776797">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{F185FF29-F22A-4E2C-95E3-F62B23A76D8A}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Phase1_TrisoulFinalBoss_150BPM" ID="{19F994F3-45E1-45F9-B53A-43D51D25756E}">
+													<Language>SFX</Language>
+													<AudioFile>Phase1_TrisoulFinalBoss_150BPM.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="751266702"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{20477133-0EE2-468D-A837-1551FA492D56}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Phase1_TrisoulFinalBoss_150BPM" ID="{2D790791-98C9-417A-9288-CE5B4717A6A6}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="131229.166666667"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Phase1_TrisoulFinalBoss_150BPM" ID="{19F994F3-45E1-45F9-B53A-43D51D25756E}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Phase1_TrisoulFinalBoss_150BPM" ID="{0EA2C4CA-B339-4975-81B5-1E9512281CDF}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="131229.166666667"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Phase1_TrisoulFinalBoss_150BPM" ID="{19F994F3-45E1-45F9-B53A-43D51D25756E}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{26159EA5-2706-4DE7-9632-B82E73B45C9B}">
+														<PropertyList>
+															<Property Name="TimeMs" Type="Real64" Value="25600"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{A7FC15F2-BC18-4792-89A6-B8F84145CB35}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="128000"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="" ID="{4BD6ECF8-18D5-4ABA-9049-CE2542BA263D}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="2"/>
+															<Property Name="TimeMs" Type="Real64" Value="85657.7116549494"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="Phase2" ID="{EEF3B036-30F2-4845-A595-A44D18C5E9B7}" ShortID="706741033">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+								</Reference>
+								<Reference Name="PlaylistRoot">
+									<Custom>
+										<MusicPlaylistItem Name="" ID="{53CAAD2C-3945-4E12-85E7-3351F1FF7608}" ShortID="171768977">
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{F940387A-EFD6-4FC5-B4C3-E979FC8206C9}" ShortID="422139099">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="0"/>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="Phase2_TrisoulFinalBoss_150BPM_Reverb" ID="{FD0E633A-589A-4CBD-9550-A0780DB1CE4E}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Custom>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{219E7B5D-813D-434E-BDF1-D8AD642E4F5D}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{393ADD5B-1DB9-4352-8256-1F489EEB6EA6}">
+													<TransitionInfo/>
+												</MusicTransition>
+												<MusicTransition Name="Transition" ID="{263D810D-2FD3-4A85-B190-CBCC40B7991B}">
+													<PropertyList>
+														<Property Name="DestinationContextType" Type="int16" Value="2"/>
+														<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="DestinationContextObject">
+															<ObjectRef Name="Phase2_TrisoulFinalBoss_150BPM_Reverb" ID="{FD0E633A-589A-4CBD-9550-A0780DB1CE4E}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+														</Reference>
+													</ReferenceList>
+													<TransitionInfo/>
+												</MusicTransition>
+												<MusicTransition Name="Transition" ID="{67AD1C49-1CF2-4887-BE19-254FA72E90E6}">
+													<PropertyList>
+														<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
+														<Property Name="SourceContextType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="SourceContextObject">
+															<ObjectRef Name="Phase2_TrisoulFinalBoss_150BPM_Reverb" ID="{FD0E633A-589A-4CBD-9550-A0780DB1CE4E}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+														</Reference>
+													</ReferenceList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="Phase2_TrisoulFinalBoss_150BPM_Reverb" ID="{FD0E633A-589A-4CBD-9550-A0780DB1CE4E}" ShortID="58701612">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="148800"/>
+										<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+										<Property Name="Tempo" Type="Real64" Value="150"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Phase2_TrisoulFinalBoss_150BPM_Reverb" ID="{337EF903-1798-4350-A392-3A9B1E21F5F3}" ShortID="932054030">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{9720DBC5-F4DA-4F8D-925B-A5746106BFDB}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Phase2_TrisoulFinalBoss_150BPM_Reverb" ID="{DA3C18A1-B3DE-4179-A58B-CE2292D667FA}">
+													<Language>SFX</Language>
+													<AudioFile>Phase2_TrisoulFinalBoss_150BPM_Reverb.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="583356784"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{F0BE7926-CDBB-40E0-B640-0E8D79E86964}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Phase2_TrisoulFinalBoss_150BPM_Reverb" ID="{CD0530CB-8DAF-498D-B4DE-2CD5EC382682}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="148800"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Phase2_TrisoulFinalBoss_150BPM_Reverb" ID="{DA3C18A1-B3DE-4179-A58B-CE2292D667FA}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{3FCE10E9-0BD3-49A9-8A97-E4C17EEA12D4}">
+														<PropertyList>
+															<Property Name="TimeMs" Type="Real64" Value="4800"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{14172BE2-CB4A-4702-9B25-64191180E64E}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="147240.005850003"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="Phase3" ID="{55E8B533-449A-4E66-B5D8-EEC6BEF9B56B}" ShortID="189298917">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+								</Reference>
+								<Reference Name="PlaylistRoot">
+									<Custom>
+										<MusicPlaylistItem Name="" ID="{504C8C82-CF17-4E19-831D-4D0AB7848BCC}" ShortID="99241380">
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{6A30E47F-65AD-4781-8808-19C94FF45E8A}" ShortID="165619932">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="0"/>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="Phase3_TrisoulFinalBoss_150BPM" ID="{B0F6EDD4-A910-45B3-A004-F6499502CB8A}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Custom>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{8E83A324-290C-4740-AD72-CE2A6B61B15B}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{5CDC22D7-F807-4B08-90BB-AF6F43D9EBAA}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="Phase3_TrisoulFinalBoss_150BPM" ID="{B0F6EDD4-A910-45B3-A004-F6499502CB8A}" ShortID="95453945">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="233600"/>
+										<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+										<Property Name="Tempo" Type="Real64" Value="150"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Phase3_TrisoulFinalBoss_150BPM" ID="{62760B9B-0BA0-4CF9-A66F-321AF66820CC}" ShortID="939437589">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{111ADD4B-F44F-4648-B433-73437063DC21}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Phase3_TrisoulFinalBoss_150BPM" ID="{D8725528-022C-493F-9B4B-33FB0E4F7F4A}">
+													<Language>SFX</Language>
+													<AudioFile>Phase3_TrisoulFinalBoss_150BPM.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="17138113"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{D42F7539-4CFE-4DFD-92C0-F7207175A204}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Phase3_TrisoulFinalBoss_150BPM" ID="{A7168B89-D890-43DC-8C92-B60C91280533}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="233600"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Phase3_TrisoulFinalBoss_150BPM" ID="{D8725528-022C-493F-9B4B-33FB0E4F7F4A}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{478C0E64-9476-409B-80A5-8D911C888D93}">
+														<PropertyList>
+															<Property Name="TimeMs" Type="Real64" Value="120000"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{A15AB840-CA07-49B1-9925-07519E7B8F06}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="211200"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="Boss_Killed" ID="{BC0257B7-8CD2-4605-AEBE-73DDDD777008}" ShortID="87542974">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+								</Reference>
+								<Reference Name="PlaylistRoot">
+									<Custom>
+										<MusicPlaylistItem Name="" ID="{12487B56-9078-418C-B76B-106C2DA05B54}" ShortID="525615099">
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{E5235FE1-AEC6-4008-A147-DFB64A8871B0}" ShortID="215293102">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="0"/>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="FinalHit_TrisoulFinalBoss_150BPM" ID="{7BB436CE-51DB-4697-99DB-F699EF42F2BE}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Custom>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{2BCBFBE4-92C0-41F0-BE64-503AFACE549D}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{1DD2E964-F369-4377-B6D6-41400FC38DC0}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="FinalHit_TrisoulFinalBoss_150BPM" ID="{7BB436CE-51DB-4697-99DB-F699EF42F2BE}" ShortID="341612293">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="17616.6666666667"/>
+										<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+										<Property Name="Tempo" Type="Real64" Value="150"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="FinalHit_TrisoulFinalBoss_150BPM" ID="{9D8602CC-451F-40BC-8D00-50C6BE2D4613}" ShortID="830216780">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{85948EE5-DA5E-4E76-93D1-B73C402B6093}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FinalHit_TrisoulFinalBoss_150BPM" ID="{2FE5D83E-419F-4AF1-AD5A-6AC4640929A0}">
+													<Language>SFX</Language>
+													<AudioFile>FinalHit_TrisoulFinalBoss_150BPM.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1019931530"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{91347B00-C050-4ABF-ACAB-81BA5A79F6A4}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="FinalHit_TrisoulFinalBoss_150BPM" ID="{37C5E841-385F-4EE2-A742-688425F19E73}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="17616.6666666667"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="FinalHit_TrisoulFinalBoss_150BPM" ID="{2FE5D83E-419F-4AF1-AD5A-6AC4640929A0}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{C77F45DB-15AF-44D7-8BFC-E17C53328A01}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{AF22E48B-DB02-44EB-807F-D67C960DD675}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="17616.6666666667"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+						</MusicPlaylistContainer>
+					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Boss_Theme" ID="{030B6321-5C92-4415-BEF2-AE6495D52B00}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Boss_killed" ID="{363F4410-D7B9-4445-A763-88D9AD5C4E97}"/>
+								<CustomState Name="" ID="{30378E9A-2C24-4665-8074-96E007E2CED5}" ShortID="859608627"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Phase3" ID="{1B055634-18B4-468B-AE26-04CE32523CC6}"/>
+								<CustomState Name="" ID="{548E186E-7A49-4F07-A571-8A78E1E0A0DC}" ShortID="962320938"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Phase2" ID="{DEDBF804-0DC8-46AA-A61E-80A1EBD721AF}"/>
+								<CustomState Name="" ID="{EAD19072-C25E-4825-8C08-3C2A67A38690}" ShortID="633314497"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="None" ID="{AE4EB580-9E76-4E6A-9EFD-A224597B4261}"/>
+								<CustomState Name="" ID="{FF808D2A-C905-42D6-A554-03B68D63B841}" ShortID="449627362"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Phase1" ID="{F3DEE3DD-7258-4EB4-A925-69E5327FF311}"/>
+								<CustomState Name="" ID="{F57E54F4-5326-43AF-A7B0-7E5AB18C75C9}" ShortID="1014013561"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
+					<ObjectLists>
+						<ObjectList Name="Arguments">
+							<Reference>
+								<ObjectRef Name="Boss_Theme" ID="{030B6321-5C92-4415-BEF2-AE6495D52B00}" WorkUnitID="{3438AE22-F682-4F52-A75F-3430FD9B2FCA}"/>
+							</Reference>
+						</ObjectList>
+						<ObjectList Name="Entries">
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{2599EED2-BA29-469B-BC54-B4DA1E174502}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Phase2" ID="{EEF3B036-30F2-4845-A595-A44D18C5E9B7}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Phase2" ID="{DEDBF804-0DC8-46AA-A61E-80A1EBD721AF}" WorkUnitID="{3438AE22-F682-4F52-A75F-3430FD9B2FCA}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{7DF22FAB-BFAB-4E69-BEE0-87749BAF1767}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Phase3" ID="{55E8B533-449A-4E66-B5D8-EEC6BEF9B56B}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Phase3" ID="{1B055634-18B4-468B-AE26-04CE32523CC6}" WorkUnitID="{3438AE22-F682-4F52-A75F-3430FD9B2FCA}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{F60A022A-2F40-4419-93D0-DF055A383C38}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Boss_Killed" ID="{BC0257B7-8CD2-4605-AEBE-73DDDD777008}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Boss_killed" ID="{363F4410-D7B9-4445-A763-88D9AD5C4E97}" WorkUnitID="{3438AE22-F682-4F52-A75F-3430FD9B2FCA}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{BADCF756-29B8-418C-92A4-DEFDA63ED308}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Phase1" ID="{17B1A26B-0169-4953-883F-89E18C0EE963}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Phase1" ID="{F3DEE3DD-7258-4EB4-A925-69E5327FF311}" WorkUnitID="{3438AE22-F682-4F52-A75F-3430FD9B2FCA}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</MusicSwitchContainer>
+				<Folder Name="Boss" ID="{B0578B6F-1ECD-4234-B6E5-131B237E27D8}" ShortID="783064993">
+					<ChildrenList>
+						<MusicPlaylistContainer Name="Boss_Phase_2" ID="{D1FB9A4E-CBB7-4371-9504-E51E1CE27AF5}" ShortID="509269836">
+							<PropertyList>
+								<Property Name="Tempo" Type="Real64" Value="150"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+								</Reference>
+								<Reference Name="PlaylistRoot">
+									<Custom>
+										<MusicPlaylistItem Name="" ID="{FEA58F93-3C0E-46FB-99D8-C331A629B766}" ShortID="763196054">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{ED1E2005-9C3F-42C9-B6B9-EF5C76355472}" ShortID="7384879">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="Phase2_TrisoulFinalBoss_150BPM_Reverb" ID="{9F25F2C9-1F29-4821-BFEC-6F204A7F5FE1}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Custom>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{4F6383D1-D30F-4B77-82EB-6F7B313E38FE}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{0C8C4799-A58F-454C-91DB-926CF4F9FFFB}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="Phase2_TrisoulFinalBoss_150BPM_Reverb" ID="{9F25F2C9-1F29-4821-BFEC-6F204A7F5FE1}" ShortID="113616246">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="148800"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Phase2_TrisoulFinalBoss_150BPM_Reverb" ID="{B6DB3808-F542-4686-91D2-5D35E21FFA98}" ShortID="902465230">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{876093D6-5A45-4E0B-BA40-96ADF698BB01}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Phase2_TrisoulFinalBoss_150BPM_Reverb" ID="{E2FAFBE4-7E55-4C19-A1E8-50D8374163F6}">
+													<Language>SFX</Language>
+													<AudioFile>Phase2_TrisoulFinalBoss_150BPM_Reverb.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="583356784"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{5F6C225E-5479-4844-BAB1-818AF7A0BB2A}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Phase2_TrisoulFinalBoss_150BPM_Reverb" ID="{4F4B6DC8-16AD-4E98-911B-9C32EDE9AF83}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="148800"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Phase2_TrisoulFinalBoss_150BPM_Reverb" ID="{E2FAFBE4-7E55-4C19-A1E8-50D8374163F6}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{07727BDC-4628-4837-B51F-47A265FEF1A0}">
+														<PropertyList>
+															<Property Name="TimeMs" Type="Real64" Value="19200"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{CD4467C6-D452-43CC-86DB-A3C0CC7DE8DA}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="147200"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Boss_Phase_2" ID="{525D8CC0-4965-495B-93F4-6AA0A0A38684}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Menu" ID="{3567A4FE-EB64-407F-924A-EBAE1F5D5A17}"/>
+										<CustomState Name="" ID="{128F1449-6854-4695-AA6A-77F05F0D7E35}" ShortID="40619741">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-17"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="On" ID="{84F0AB82-29BE-4156-BD55-584655523416}"/>
+										<CustomState Name="" ID="{3ACE7150-EB39-4F61-A68C-F55163D29350}" ShortID="255811656"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Off" ID="{9D2452FF-D539-4C9E-A689-9DDF8FD5DAC7}"/>
+										<CustomState Name="" ID="{3553A5D9-4FB5-43B7-9D11-EF10A386D0E8}" ShortID="967236982">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="None" ID="{177A9A2E-0811-4EB2-AFEC-99E14ECAC12F}"/>
+										<CustomState Name="" ID="{C0452553-E1B2-4AB9-810F-287094897448}" ShortID="947357471"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="Boss_Phase_1" ID="{0924F378-98E4-46BD-8768-8DA365616DB8}" ShortID="280379167">
+							<PropertyList>
+								<Property Name="Tempo" Type="Real64" Value="150"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+								</Reference>
+								<Reference Name="PlaylistRoot">
+									<Custom>
+										<MusicPlaylistItem Name="" ID="{078003ED-D06B-4C60-909D-662DD37D657D}" ShortID="129839458">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{2643E603-CF3F-470E-9967-64ECF15AA0BA}" ShortID="262998175">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="Phase1_TrisoulFinalBoss_150BPM" ID="{AAEFFFDF-C3C3-4DA5-910A-5688504BCCDD}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Custom>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{D13F2FD7-67F3-4E88-9356-3347398479A2}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{1052D01E-6572-42EF-90A2-08BDCCD23293}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="Phase1_TrisoulFinalBoss_150BPM" ID="{AAEFFFDF-C3C3-4DA5-910A-5688504BCCDD}" ShortID="388057503">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="131229.166666667"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Phase1_TrisoulFinalBoss_150BPM" ID="{164867E3-1908-495D-8A17-767FD6570AF6}" ShortID="852409768">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{39725DF7-B32A-4F7C-AC58-105276A1060F}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Phase1_TrisoulFinalBoss_150BPM" ID="{C90728EA-547A-49CA-939A-5343FD6AE2BF}">
+													<Language>SFX</Language>
+													<AudioFile>Phase1_TrisoulFinalBoss_150BPM.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="751266702"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{40B61F73-1358-442D-970A-BD66D913E192}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Phase1_TrisoulFinalBoss_150BPM" ID="{2F32E619-DA66-465D-A7F0-F72D642ACC6F}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="131229.166666667"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Phase1_TrisoulFinalBoss_150BPM" ID="{C90728EA-547A-49CA-939A-5343FD6AE2BF}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{7FB67361-9321-4DCF-B4E2-39220F5AF23D}">
+														<PropertyList>
+															<Property Name="TimeMs" Type="Real64" Value="25600"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{5945B164-1B2B-44D8-83C7-254626FC80C2}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="128000"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Boss_Phase_1" ID="{F935702D-A2C7-4E79-A716-3BE16615A52F}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Menu" ID="{DDF9933D-9C2E-4553-8E53-2D90DC246562}"/>
+										<CustomState Name="" ID="{1AFF48DF-2F36-491B-8223-34F9E43F2FAA}" ShortID="301687471">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-15"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="On" ID="{BE908002-2633-479E-BC74-2F47FB1B1B76}"/>
+										<CustomState Name="" ID="{15BD08C1-5225-4AD5-9B0A-A4893A4A760D}" ShortID="299923022"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Off" ID="{35D3157E-AC7E-4894-972D-5CBA9307CE70}"/>
+										<CustomState Name="" ID="{3B06B766-729A-45A3-A7C3-12E2B99756D6}" ShortID="143292065">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="None" ID="{684AE194-4669-4E2F-9674-23CE24093328}"/>
+										<CustomState Name="" ID="{C83C2F94-15A4-4373-91F6-76A427E6E2DA}" ShortID="66329998"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="Boss_Phase_3" ID="{A0F11F7D-E9CB-45CD-9492-FA80D1E2820B}" ShortID="167165693">
+							<PropertyList>
+								<Property Name="Tempo" Type="Real64" Value="150"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+								</Reference>
+								<Reference Name="PlaylistRoot">
+									<Custom>
+										<MusicPlaylistItem Name="" ID="{8D24A6FD-65FE-4F07-8DA9-C4E1AE974312}" ShortID="76934194">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{0F61EC53-EC1F-4A07-BF9C-96549B3FA15C}" ShortID="511067870">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="song" ID="{F5F93D59-C64C-4AB7-A9B4-A06EA2C0A0D8}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Custom>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{04E6E540-8389-4AC2-93EA-0137C810EA4B}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{434FB32F-076F-4518-BF08-2E78DD941E55}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="song" ID="{F5F93D59-C64C-4AB7-A9B4-A06EA2C0A0D8}" ShortID="911858265">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="348800"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Phase3_TrisoulFinalBoss_150BPM" ID="{9B787925-A781-4981-AC94-1F0784F4805E}" ShortID="616969601">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{9B417A52-2C68-466D-8A12-A16286B11F79}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Phase3_TrisoulFinalBoss_150BPM" ID="{B14B2F03-9B0D-4A98-8BF1-5E784220E143}">
+													<Language>SFX</Language>
+													<AudioFile>Phase3_TrisoulFinalBoss_150BPM.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="17138113"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{21879659-9B60-46B8-904E-90951E7A3F4E}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Phase3_TrisoulFinalBoss_150BPM" ID="{39670E79-C84B-4D81-963F-A8028F6A1F98}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="233600"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Phase3_TrisoulFinalBoss_150BPM" ID="{B14B2F03-9B0D-4A98-8BF1-5E784220E143}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{BC54BFFC-0A35-4092-B0F6-AB1651C5998C}">
+														<PropertyList>
+															<Property Name="TimeMs" Type="Real64" Value="120000"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{F2323681-E1F7-46C3-9028-563675DF4CA4}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="224000"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Boss_Phase_3" ID="{A69E1F13-2DB9-4970-9CBB-20E3D68F16C6}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Off" ID="{8A0DFA96-EB37-411E-B39A-6A35782E0AB1}"/>
+										<CustomState Name="" ID="{715983F4-2080-4C72-8A4B-ABA4298D9719}" ShortID="734586038">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="On" ID="{7142603D-2E15-45F0-8BC6-04B7EC058D92}"/>
+										<CustomState Name="" ID="{0DFD17E0-D5A5-4222-886E-3A6312387485}" ShortID="830948290"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Menu" ID="{EFB51D94-39C6-4859-8640-ABCB3C015E37}"/>
+										<CustomState Name="" ID="{99BE2792-8FF3-4F86-ADE0-CCE5E9BDF9BF}" ShortID="575261154">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-15"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="None" ID="{5FDDE5DF-8607-4A4E-9F0B-354FDEC5E9FC}"/>
+										<CustomState Name="" ID="{4ACFF714-80EA-43E9-98D2-9130526D703A}" ShortID="385094971"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="Boss_Killed" ID="{7657CC0C-790C-4B17-AE42-656DB2B66F4D}" ShortID="705295497">
+							<PropertyList>
+								<Property Name="Tempo" Type="Real64" Value="150"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+								</Reference>
+								<Reference Name="PlaylistRoot">
+									<Custom>
+										<MusicPlaylistItem Name="" ID="{931AE316-23C2-44C3-87B2-CBE9EBCB2B54}" ShortID="279184857">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{5B03A0EF-8C6E-45B3-9E7F-24790391F55B}" ShortID="833149629">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="FinalHit_TrisoulFinalBoss_150BPM" ID="{E788B04F-D909-490A-9B87-59D43578938E}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Custom>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{808E3D82-3197-469A-9E7F-208608BB9B2E}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{93A4F575-9829-42F7-9F2C-4E5ACF8DF326}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="FinalHit_TrisoulFinalBoss_150BPM" ID="{E788B04F-D909-490A-9B87-59D43578938E}" ShortID="459921514">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="17616.6666666667"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="FinalHit_TrisoulFinalBoss_150BPM" ID="{45D010A5-623E-4462-892A-FE89ABA9BBC7}" ShortID="200857280">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{8EAD9F7D-753C-4A67-861E-6642D7E771EE}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FinalHit_TrisoulFinalBoss_150BPM" ID="{AFDA96B9-73F2-440E-9E3D-F3001E4C3D15}">
+													<Language>SFX</Language>
+													<AudioFile>FinalHit_TrisoulFinalBoss_150BPM.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1019931530"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{E9F8AF10-294A-464F-8715-F7DA64A5209C}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="FinalHit_TrisoulFinalBoss_150BPM" ID="{28629714-B05B-4C86-B024-B6D3A51D98A9}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="17616.6666666667"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="FinalHit_TrisoulFinalBoss_150BPM" ID="{AFDA96B9-73F2-440E-9E3D-F3001E4C3D15}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{D5BA0225-498F-4CAF-8BC5-B91DA3F46618}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{2A666D78-FA0C-48D0-BE5C-C65A46E21179}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="17616.6666666667"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+						</MusicPlaylistContainer>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</InteractiveMusic>
