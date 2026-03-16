@@ -4,7 +4,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3227181061	Music_Stop			\Default Work Unit\Music_Stop	
 	3456390069	Boss_Phases			\Music\Boss_Phases	
 	3853285476	Title_Screen			\Music\Title_Screen	
-	3991942870	Music			\Default Work Unit\Music	
+	3873482650	Tower_Theme			\Music\Tower_Theme	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	1505442550	Training_Grounds			\Default Work Unit\Training_Grounds	
@@ -24,8 +24,9 @@ State	ID	Name	State Group			Notes
 	1651971902	On	Title_Theme			
 	168610243	Fighting	Tower_Theme			
 	748895195	None	Tower_Theme			
+	930712164	Off	Tower_Theme			
 	1823678183	Exploring	Tower_Theme			
-	3767268120	No_Music	Tower_Theme			
+	2607556080	Menu	Tower_Theme			
 	748895195	None	Boss_Phase_3			
 	930712164	Off	Boss_Phase_3			
 	1651971902	On	Boss_Phase_3			

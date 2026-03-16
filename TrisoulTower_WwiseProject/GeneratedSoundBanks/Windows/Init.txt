@@ -1,7 +1,7 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	1505442550	Training_Grounds			\Default Work Unit\Training_Grounds	
-	2166191340	Boss_Theme			\Default Work Unit\Boss_Theme	
 	2521525023	Title_Theme			\Default Work Unit\Title_Theme	
+	2831509153	Boss_States_Old			\Default Work Unit\Boss_States_Old	
 	3873482650	Tower_Theme			\Default Work Unit\Tower_Theme	
 	3922696680	Boss_Phase_3			\Default Work Unit\Boss_Phase_3	
 	3922696681	Boss_Phase_2			\Default Work Unit\Boss_Phase_2	
@@ -12,18 +12,19 @@ State	ID	Name	State Group			Notes
 	930712164	Off	Training_Grounds			
 	1651971902	On	Training_Grounds			
 	2607556080	Menu	Training_Grounds			
-	748895195	None	Boss_Theme			
-	3630028968	Phase2	Boss_Theme			
-	3630028969	Phase3	Boss_Theme			
-	3630028971	Phase1	Boss_Theme			
-	3972193662	Boss_killed	Boss_Theme			
 	748895195	None	Title_Theme			
 	930712164	Off	Title_Theme			
 	1651971902	On	Title_Theme			
+	748895195	None	Boss_States_Old			
+	3630028968	Phase2	Boss_States_Old			
+	3630028969	Phase3	Boss_States_Old			
+	3630028971	Phase1	Boss_States_Old			
+	3972193662	Boss_killed	Boss_States_Old			
 	168610243	Fighting	Tower_Theme			
 	748895195	None	Tower_Theme			
+	930712164	Off	Tower_Theme			
 	1823678183	Exploring	Tower_Theme			
-	3767268120	No_Music	Tower_Theme			
+	2607556080	Menu	Tower_Theme			
 	748895195	None	Boss_Phase_3			
 	930712164	Off	Boss_Phase_3			
 	1651971902	On	Boss_Phase_3			

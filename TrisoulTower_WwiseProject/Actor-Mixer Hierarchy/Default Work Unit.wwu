@@ -750,338 +750,6 @@
 						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
-				<SwitchContainer Name="Swing" ID="{881BAA2E-6490-461C-B600-0034BDB405E8}" ShortID="715917486">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
-						</Reference>
-						<Reference Name="DefaultSwitchOrState">
-							<ObjectRef Name="Swing_Miss_Normal" ID="{4059406A-D4F6-4DC2-96C0-A83CAAECE398}" WorkUnitID="{2F1DDC5E-189B-4D24-8AB6-C92E73FEA8BB}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
-						</Reference>
-						<Reference Name="SwitchGroupOrStateGroup">
-							<ObjectRef Name="Swing_Switch" ID="{AEAD878C-D832-4265-BA7A-FAF698D4BF35}" WorkUnitID="{2F1DDC5E-189B-4D24-8AB6-C92E73FEA8BB}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<SwitchContainer Name="Hit" ID="{031EC0DA-BA22-4D38-92AA-F292BE681C50}" ShortID="329895713">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
-								</Reference>
-								<Reference Name="SwitchGroupOrStateGroup">
-									<ObjectRef Name="Swing_Switch" ID="{AEAD878C-D832-4265-BA7A-FAF698D4BF35}" WorkUnitID="{2F1DDC5E-189B-4D24-8AB6-C92E73FEA8BB}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<SwitchContainer Name="Dummy" ID="{331E6BEE-D6E6-454C-BDAC-FFC0DDD185C0}" ShortID="89704885">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
-										</Reference>
-										<Reference Name="DefaultSwitchOrState">
-											<ObjectRef Name="Swing_Hit_Dummy" ID="{23CAFCB0-3D0E-4580-B4ED-54C8A36891F4}" WorkUnitID="{2F1DDC5E-189B-4D24-8AB6-C92E73FEA8BB}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
-										</Reference>
-										<Reference Name="SwitchGroupOrStateGroup">
-											<ObjectRef Name="Swing_Switch" ID="{AEAD878C-D832-4265-BA7A-FAF698D4BF35}" WorkUnitID="{2F1DDC5E-189B-4D24-8AB6-C92E73FEA8BB}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<RandomSequenceContainer Name="Swing_Hit_Dummy" ID="{582AFF18-09A4-4164-BF6A-A7F871512C62}" ShortID="573890354">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="fireswing1testexport" ID="{44702AD3-6F72-49BE-A360-8726BD0A8B84}" ShortID="95884078">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="fireswing1testexport" ID="{DEA76D0D-498D-477A-87CF-5E173117433B}">
-															<Language>SFX</Language>
-															<AudioFile>fireswing1testexport.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="775904912"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="fireswing1testexport" ID="{DEA76D0D-498D-477A-87CF-5E173117433B}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="fireswing2testexport" ID="{C534DC4D-29BA-4F03-A005-C594382ADDBA}" ShortID="280476082">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="fireswing2testexport" ID="{37F3FD1B-EB8E-42D4-99F2-113FAF9BE00A}">
-															<Language>SFX</Language>
-															<AudioFile>fireswing2testexport.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="959288998"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="fireswing2testexport" ID="{37F3FD1B-EB8E-42D4-99F2-113FAF9BE00A}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</RandomSequenceContainer>
-									</ChildrenList>
-									<GroupingInfo>
-										<GroupingBehaviorList>
-											<GroupingBehavior>
-												<ItemRef Name="Swing_Hit_Dummy" ID="{582AFF18-09A4-4164-BF6A-A7F871512C62}"/>
-											</GroupingBehavior>
-										</GroupingBehaviorList>
-										<GroupingList>
-											<Grouping>
-												<SwitchRef Name="Swing_Hit_Dummy" ID="{23CAFCB0-3D0E-4580-B4ED-54C8A36891F4}"/>
-												<ItemList>
-													<ItemRef Name="Swing_Hit_Dummy" ID="{582AFF18-09A4-4164-BF6A-A7F871512C62}"/>
-												</ItemList>
-											</Grouping>
-										</GroupingList>
-									</GroupingInfo>
-								</SwitchContainer>
-							</ChildrenList>
-							<GroupingInfo>
-								<GroupingBehaviorList>
-									<GroupingBehavior>
-										<ItemRef Name="Dummy" ID="{331E6BEE-D6E6-454C-BDAC-FFC0DDD185C0}"/>
-									</GroupingBehavior>
-								</GroupingBehaviorList>
-								<GroupingList>
-									<Grouping>
-										<SwitchRef Name="Swing_Hit_Dummy" ID="{23CAFCB0-3D0E-4580-B4ED-54C8A36891F4}"/>
-										<ItemList>
-											<ItemRef Name="Dummy" ID="{331E6BEE-D6E6-454C-BDAC-FFC0DDD185C0}"/>
-										</ItemList>
-									</Grouping>
-								</GroupingList>
-							</GroupingInfo>
-						</SwitchContainer>
-						<SwitchContainer Name="Miss" ID="{626EB7C3-4F78-4DD7-BF8C-FD79A629D749}" ShortID="689227577">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
-								</Reference>
-								<Reference Name="SwitchGroupOrStateGroup">
-									<ObjectRef Name="Swing_Switch" ID="{AEAD878C-D832-4265-BA7A-FAF698D4BF35}" WorkUnitID="{2F1DDC5E-189B-4D24-8AB6-C92E73FEA8BB}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<SwitchContainer Name="Heavy" ID="{149D174E-A79F-481B-832D-42C9BEC1F748}" ShortID="953751696">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
-										</Reference>
-									</ReferenceList>
-									<GroupingInfo/>
-								</SwitchContainer>
-								<SwitchContainer Name="Light" ID="{87648C4E-3EE4-4246-83F7-9B4BB92DC4E1}" ShortID="808935257">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
-										</Reference>
-									</ReferenceList>
-									<GroupingInfo/>
-								</SwitchContainer>
-								<SwitchContainer Name="Normal" ID="{92F4481E-853A-4272-928E-683D8A78EED4}" ShortID="333329441">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
-										</Reference>
-										<Reference Name="DefaultSwitchOrState">
-											<ObjectRef Name="Swing_Miss_Normal" ID="{4059406A-D4F6-4DC2-96C0-A83CAAECE398}" WorkUnitID="{2F1DDC5E-189B-4D24-8AB6-C92E73FEA8BB}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
-										</Reference>
-										<Reference Name="SwitchGroupOrStateGroup">
-											<ObjectRef Name="Swing_Switch" ID="{AEAD878C-D832-4265-BA7A-FAF698D4BF35}" WorkUnitID="{2F1DDC5E-189B-4D24-8AB6-C92E73FEA8BB}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<RandomSequenceContainer Name="Swing_Miss_Normal" ID="{34D65106-758B-41DB-8379-73EE641C34AC}" ShortID="1022120766">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="Trisoul_MidSwordSwing_V2_0" ID="{7BB8D7F3-7A23-4B69-A806-A730B2EC47A7}" ShortID="1050221302">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Trisoul_MidSwordSwing_V2_0" ID="{16C1CAF7-2B4C-4E23-9EFF-805B49C4A8B2}">
-															<Language>SFX</Language>
-															<AudioFile>Trisoul_MidSwordSwing_V2_0.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="961562867"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="Trisoul_MidSwordSwing_V2_0" ID="{16C1CAF7-2B4C-4E23-9EFF-805B49C4A8B2}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Trisoul_MidSwordSwing_V2_1" ID="{955DA31A-1063-42C8-A112-0AD0AFDB4F13}" ShortID="279487861">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Trisoul_MidSwordSwing_V2_1" ID="{5866F555-DF06-4173-AA60-0C0D3EB0D6E1}">
-															<Language>SFX</Language>
-															<AudioFile>Trisoul_MidSwordSwing_V2_1.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="744134619"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="Trisoul_MidSwordSwing_V2_1" ID="{5866F555-DF06-4173-AA60-0C0D3EB0D6E1}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Trisoul_MidSwordSwing_V2_2" ID="{CA26069C-8268-4642-A59A-82FD2FA41832}" ShortID="382191704">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Trisoul_MidSwordSwing_V2_2" ID="{B7EAB4D0-9D6E-4E05-A364-639901230190}">
-															<Language>SFX</Language>
-															<AudioFile>Trisoul_MidSwordSwing_V2_2.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="939989117"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="Trisoul_MidSwordSwing_V2_2" ID="{B7EAB4D0-9D6E-4E05-A364-639901230190}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</RandomSequenceContainer>
-									</ChildrenList>
-									<GroupingInfo>
-										<GroupingBehaviorList>
-											<GroupingBehavior>
-												<ItemRef Name="Swing_Miss_Normal" ID="{34D65106-758B-41DB-8379-73EE641C34AC}"/>
-											</GroupingBehavior>
-										</GroupingBehaviorList>
-										<GroupingList>
-											<Grouping>
-												<SwitchRef Name="Swing_Miss_Normal" ID="{4059406A-D4F6-4DC2-96C0-A83CAAECE398}"/>
-												<ItemList>
-													<ItemRef Name="Swing_Miss_Normal" ID="{34D65106-758B-41DB-8379-73EE641C34AC}"/>
-												</ItemList>
-											</Grouping>
-										</GroupingList>
-									</GroupingInfo>
-								</SwitchContainer>
-							</ChildrenList>
-							<GroupingInfo>
-								<GroupingBehaviorList>
-									<GroupingBehavior>
-										<ItemRef Name="Normal" ID="{92F4481E-853A-4272-928E-683D8A78EED4}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="Heavy" ID="{149D174E-A79F-481B-832D-42C9BEC1F748}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="Light" ID="{87648C4E-3EE4-4246-83F7-9B4BB92DC4E1}"/>
-									</GroupingBehavior>
-								</GroupingBehaviorList>
-								<GroupingList>
-									<Grouping>
-										<SwitchRef Name="Swing_Miss_Normal" ID="{4059406A-D4F6-4DC2-96C0-A83CAAECE398}"/>
-										<ItemList>
-											<ItemRef Name="Heavy" ID="{149D174E-A79F-481B-832D-42C9BEC1F748}"/>
-											<ItemRef Name="Light" ID="{87648C4E-3EE4-4246-83F7-9B4BB92DC4E1}"/>
-											<ItemRef Name="Normal" ID="{92F4481E-853A-4272-928E-683D8A78EED4}"/>
-										</ItemList>
-									</Grouping>
-								</GroupingList>
-							</GroupingInfo>
-						</SwitchContainer>
-					</ChildrenList>
-					<GroupingInfo>
-						<GroupingBehaviorList>
-							<GroupingBehavior>
-								<ItemRef Name="Miss" ID="{626EB7C3-4F78-4DD7-BF8C-FD79A629D749}"/>
-							</GroupingBehavior>
-							<GroupingBehavior>
-								<ItemRef Name="Hit" ID="{031EC0DA-BA22-4D38-92AA-F292BE681C50}"/>
-							</GroupingBehavior>
-						</GroupingBehaviorList>
-						<GroupingList>
-							<Grouping>
-								<SwitchRef Name="Swing_Miss_Normal" ID="{4059406A-D4F6-4DC2-96C0-A83CAAECE398}"/>
-								<ItemList>
-									<ItemRef Name="Miss" ID="{626EB7C3-4F78-4DD7-BF8C-FD79A629D749}"/>
-								</ItemList>
-							</Grouping>
-							<Grouping>
-								<SwitchRef Name="Swing_Hit_Dummy" ID="{23CAFCB0-3D0E-4580-B4ED-54C8A36891F4}"/>
-								<ItemList>
-									<ItemRef Name="Hit" ID="{031EC0DA-BA22-4D38-92AA-F292BE681C50}"/>
-								</ItemList>
-							</Grouping>
-						</GroupingList>
-					</GroupingInfo>
-				</SwitchContainer>
 				<RandomSequenceContainer Name="Jump" ID="{CC2E2676-4C09-4BAD-8790-6E5BA5FFA03A}" ShortID="642288663">
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -1138,7 +806,7 @@
 						<ActiveSource Name="ui" ID="{134A9EBE-BBA4-489C-8134-B03618BBBE64}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<SwitchContainer Name="Fire_Swing" ID="{49403574-E709-416A-BB2C-77214A54E866}" ShortID="73995998">
+				<RandomSequenceContainer Name="Fire_Swing" ID="{7566F685-6B6D-49EF-B747-7C0D8EFDA6AD}" ShortID="868514977">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
@@ -1147,8 +815,346 @@
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
 						</Reference>
 					</ReferenceList>
-					<GroupingInfo/>
-				</SwitchContainer>
+					<ChildrenList>
+						<Sound Name="Fire_Swing_1" ID="{44702AD3-6F72-49BE-A360-8726BD0A8B84}" ShortID="95884078">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="fireswing1testexport" ID="{DEA76D0D-498D-477A-87CF-5E173117433B}">
+									<Language>SFX</Language>
+									<AudioFile>fireswing1testexport.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="775904912"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="fireswing1testexport" ID="{DEA76D0D-498D-477A-87CF-5E173117433B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Fire_Swing_2" ID="{C534DC4D-29BA-4F03-A005-C594382ADDBA}" ShortID="280476082">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="fireswing2testexport" ID="{37F3FD1B-EB8E-42D4-99F2-113FAF9BE00A}">
+									<Language>SFX</Language>
+									<AudioFile>fireswing2testexport.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="959288998"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="fireswing2testexport" ID="{37F3FD1B-EB8E-42D4-99F2-113FAF9BE00A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Grass_Swing" ID="{A00651A3-E1EB-4058-8136-A5BF6E5F421D}" ShortID="69985908">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="grassswing" ID="{6DF7F064-DF05-496E-B574-5C1D0C760151}" ShortID="628720579">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="grassswing" ID="{2D964BF0-312A-4AD4-AB9B-3A9D6C287584}">
+									<Language>SFX</Language>
+									<AudioFile>grassswing.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="106905870"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="grassswing" ID="{2D964BF0-312A-4AD4-AB9B-3A9D6C287584}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Ice_Swing" ID="{E00E960D-1211-49E2-B02B-312D0CE4629F}" ShortID="947189261">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>7</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Trisoul_IceSwordSFX_1" ID="{7D0B59DC-EEC8-481B-B000-C70A580B8217}" ShortID="254083731">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Trisoul_IceSwordSFX_1" ID="{F26CF379-A250-4AE4-89E2-3B75228CCF91}">
+									<Language>SFX</Language>
+									<AudioFile>Trisoul_IceSwordSFX_1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="130090519"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Trisoul_IceSwordSFX_1" ID="{F26CF379-A250-4AE4-89E2-3B75228CCF91}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Trisoul_IceSwordSFX_2" ID="{C9BD38BC-C396-47E5-AD6D-11141B7DD348}" ShortID="516188780">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Trisoul_IceSwordSFX_2" ID="{3F43849A-68CA-4C18-9D0A-F9FD673D5081}">
+									<Language>SFX</Language>
+									<AudioFile>Trisoul_IceSwordSFX_2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="581681659"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Trisoul_IceSwordSFX_2" ID="{3F43849A-68CA-4C18-9D0A-F9FD673D5081}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Trisoul_IceSwordSFX_3" ID="{B794C42E-4EC8-435D-97FD-3C5809F81AED}" ShortID="929967051">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Trisoul_IceSwordSFX_3" ID="{C0D15CE1-0FD3-4B99-A762-3FD645AD4817}">
+									<Language>SFX</Language>
+									<AudioFile>Trisoul_IceSwordSFX_3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="775962090"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Trisoul_IceSwordSFX_3" ID="{C0D15CE1-0FD3-4B99-A762-3FD645AD4817}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Trisoul_IceSwordSFX_4" ID="{E795BBD1-9FCD-4741-851A-006E592959A4}" ShortID="963950684">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Trisoul_IceSwordSFX_4" ID="{42CB994F-90DB-4332-BAFA-5B17E16E7E32}">
+									<Language>SFX</Language>
+									<AudioFile>Trisoul_IceSwordSFX_4.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="268808089"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Trisoul_IceSwordSFX_4" ID="{42CB994F-90DB-4332-BAFA-5B17E16E7E32}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Trisoul_IceSwordSFX_5" ID="{79D1CDAF-6E47-4610-BBD1-89D7A45E5187}" ShortID="597622514">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Trisoul_IceSwordSFX_5" ID="{BFD96373-0FC4-48A7-BA02-7C749C777CE9}">
+									<Language>SFX</Language>
+									<AudioFile>Trisoul_IceSwordSFX_5.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="503112752"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Trisoul_IceSwordSFX_5" ID="{BFD96373-0FC4-48A7-BA02-7C749C777CE9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Ice_Heavy" ID="{B4C477DC-50A6-4F1D-AC9C-6A99655A60AA}" ShortID="638546524">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Trisoul_IceHeavy_SFX" ID="{C36796C5-13EA-4EE9-89D8-5BA623EAC509}" ShortID="963312874">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Trisoul_IceHeavy_SFX" ID="{C2E74D1B-B051-4C61-B743-C24292D227E8}">
+									<Language>SFX</Language>
+									<AudioFile>Trisoul_IceHeavy_SFX.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="546966444"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Trisoul_IceHeavy_SFX" ID="{C2E74D1B-B051-4C61-B743-C24292D227E8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Ice_Ult" ID="{5C7FFEA3-F1A8-4D48-A356-1B69913F30CD}" ShortID="207535354">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Trisoul_IceULT_SFX" ID="{D0C106E7-A989-4EF3-967F-0CA6F68F3D8F}" ShortID="333205983">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Trisoul_IceULT_SFX" ID="{F51257D7-1636-4084-BC25-FF0DA163CB20}">
+									<Language>SFX</Language>
+									<AudioFile>Trisoul_IceULT_SFX.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1062226183"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Trisoul_IceULT_SFX" ID="{F51257D7-1636-4084-BC25-FF0DA163CB20}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Parry" ID="{97E6FA8A-56EF-4FFF-AF74-696896C5DD8D}" ShortID="894986771">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-7</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Trisoul_Parry_New" ID="{D66427C6-3F82-4E0D-9EC7-87627AFB6376}" ShortID="49377043">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Trisoul_Parry_New" ID="{23ADF7AD-3558-4B67-8E5F-E540506EA2F8}">
+									<Language>SFX</Language>
+									<AudioFile>Trisoul_Parry_New.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="103884579"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Trisoul_Parry_New" ID="{23ADF7AD-3558-4B67-8E5F-E540506EA2F8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

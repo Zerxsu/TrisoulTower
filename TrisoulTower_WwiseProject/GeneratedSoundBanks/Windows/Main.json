@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{879ED1C6-7157-4890-992E-2BBE2CD3E8E1}",
     "Language": "SFX",
-    "Hash": "{12EDE77E-564E-E3AA-2E21-F2D1ADA24F3A}",
+    "Hash": "{F1C6C66E-E6CF-3E46-BBFC-69F1BA30B9E2}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -192,14 +192,6 @@
       "CachePath": "48/{48CE7D0F-4948-8D7A-B3A6-769C7D5E6A6A}.wem"
      },
      {
-      "Id": "744134619",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "Trisoul_MidSwordSwing_V2_1.wav",
-      "CachePath": "24/{24878A77-7884-4C39-A5FE-500DFBBFF353}.wem"
-     },
-     {
       "Id": "752048971",
       "Language": "SFX",
       "Streaming": "false",
@@ -264,28 +256,12 @@
       "CachePath": "37/{3706CE7A-D0A9-4449-DC59-4D4D79769D31}.wem"
      },
      {
-      "Id": "939989117",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "Trisoul_MidSwordSwing_V2_2.wav",
-      "CachePath": "36/{36560840-D249-E775-5835-4B824B4C427A}.wem"
-     },
-     {
       "Id": "959288998",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fireswing2testexport.wav",
       "CachePath": "40/{40625D5A-B54D-EC48-A60D-91000889B826}.wem"
-     },
-     {
-      "Id": "961562867",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "Trisoul_MidSwordSwing_V2_0.wav",
-      "CachePath": "CB/{CB815B13-A6B9-CE0E-D455-00910CDD3EF4}.wem"
      },
      {
       "Id": "975007778",
@@ -352,10 +328,17 @@
       "Name": "Flame_Swing",
       "ObjectPath": "\\Events\\Default Work Unit\\Flame_Swing",
       "GUID": "{9897AEDF-BC65-4A93-B476-7C354D572BB8}",
-      "MaxAttenuation": "0",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
+      "DurationMin": "2.8495464",
+      "DurationMax": "2.8495464",
+      "MediaRefs": [
+       {
+        "Id": "775904912"
+       },
+       {
+        "Id": "959288998"
+       }
+      ]
      },
      {
       "Id": "2385628198",
@@ -513,21 +496,6 @@
       ]
      },
      {
-      "Id": "3991942870",
-      "Name": "Music",
-      "ObjectPath": "\\Events\\Default Work Unit\\Music",
-      "GUID": "{C396E428-1427-453C-A58D-569D97B955EE}",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "738341883"
-       },
-       {
-        "Id": "911417253"
-       }
-      ]
-     },
-     {
       "Id": "3826569560",
       "Name": "Music_State",
       "ObjectPath": "\\Events\\Default Work Unit\\Music_State",
@@ -546,17 +514,17 @@
        },
        {
         "GroupId": "3873482650",
+        "Id": "930712164",
+        "Name": "Off",
+        "ObjectPath": "\\States\\Default Work Unit\\Tower_Theme\\Off",
+        "GUID": "{6DE4D22C-BD7F-4402-9A3F-245B07C80326}"
+       },
+       {
+        "GroupId": "3873482650",
         "Id": "1823678183",
         "Name": "Exploring",
         "ObjectPath": "\\States\\Default Work Unit\\Tower_Theme\\Exploring",
         "GUID": "{7E25F7AE-4495-4DA5-9596-AE2B915761A6}"
-       },
-       {
-        "GroupId": "3873482650",
-        "Id": "3767268120",
-        "Name": "No_Music",
-        "ObjectPath": "\\States\\Default Work Unit\\Tower_Theme\\No_Music",
-        "GUID": "{6DE4D22C-BD7F-4402-9A3F-245B07C80326}"
        }
       ]
      },
@@ -569,121 +537,6 @@
       "DurationType": "OneShot",
       "DurationMin": "0",
       "DurationMax": "0"
-     },
-     {
-      "Id": "2386519981",
-      "Name": "Swing",
-      "ObjectPath": "\\Events\\Default Work Unit\\Swing",
-      "GUID": "{7701D21A-5E6C-4682-A460-30B9D6D74626}",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "2.8495464",
-      "SwitchContainers": [
-       {
-        "SwitchValue": {
-         "GroupType": "Switch",
-         "GroupId": "1322052556",
-         "Id": "3873576798",
-         "GUID": "{4059406A-D4F6-4DC2-96C0-A83CAAECE398}",
-         "Default": "true"
-        },
-        "Children": [
-         {
-          "SwitchValue": {
-           "GroupType": "Switch",
-           "GroupId": "1322052556",
-           "Id": "3873576798",
-           "GUID": "{4059406A-D4F6-4DC2-96C0-A83CAAECE398}"
-          },
-          "Children": [
-           {
-            "SwitchValue": {
-             "GroupType": "Switch",
-             "GroupId": "1322052556",
-             "Id": "3873576798",
-             "GUID": "{4059406A-D4F6-4DC2-96C0-A83CAAECE398}",
-             "Default": "true"
-            },
-            "MediaRefs": [
-             {
-              "Id": "744134619"
-             },
-             {
-              "Id": "939989117"
-             },
-             {
-              "Id": "961562867"
-             }
-            ]
-           }
-          ]
-         }
-        ]
-       },
-       {
-        "SwitchValue": {
-         "GroupType": "Switch",
-         "GroupId": "1322052556",
-         "Id": "1120321930",
-         "GUID": "{23CAFCB0-3D0E-4580-B4ED-54C8A36891F4}"
-        },
-        "Children": [
-         {
-          "SwitchValue": {
-           "GroupType": "Switch",
-           "GroupId": "1322052556",
-           "Id": "1120321930",
-           "GUID": "{23CAFCB0-3D0E-4580-B4ED-54C8A36891F4}"
-          },
-          "Children": [
-           {
-            "SwitchValue": {
-             "GroupType": "Switch",
-             "GroupId": "1322052556",
-             "Id": "1120321930",
-             "GUID": "{23CAFCB0-3D0E-4580-B4ED-54C8A36891F4}",
-             "Default": "true"
-            },
-            "MediaRefs": [
-             {
-              "Id": "775904912"
-             },
-             {
-              "Id": "959288998"
-             }
-            ]
-           }
-          ]
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "Id": "1322052556",
-      "Name": "Swing_Switch",
-      "ObjectPath": "\\Events\\Default Work Unit\\Swing_Switch",
-      "GUID": "{568CB563-8332-4B3F-A694-2DE17EFF7621}",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0",
-      "ActionSetSwitch": [
-       {
-        "GroupId": "1322052556",
-        "Id": "1120321930",
-        "Name": "Swing_Hit_Dummy",
-        "ObjectPath": "\\Switches\\Default Work Unit\\Swing_Switch\\Swing_Hit_Dummy",
-        "GUID": "{23CAFCB0-3D0E-4580-B4ED-54C8A36891F4}"
-       },
-       {
-        "GroupId": "1322052556",
-        "Id": "3873576798",
-        "Name": "Swing_Miss_Normal",
-        "ObjectPath": "\\Switches\\Default Work Unit\\Swing_Switch\\Swing_Miss_Normal",
-        "GUID": "{4059406A-D4F6-4DC2-96C0-A83CAAECE398}"
-       }
-      ]
      },
      {
       "Id": "3612189352",
@@ -785,43 +638,6 @@
       ]
      },
      {
-      "Id": "1933848106",
-      "Name": "Temp_Swing_Hit",
-      "ObjectPath": "\\Events\\Default Work Unit\\Temp_Swing_Hit",
-      "GUID": "{B02B5558-8DAB-4548-A1BD-7ACB4E35265D}",
-      "DurationType": "OneShot",
-      "DurationMin": "2.8495464",
-      "DurationMax": "2.8495464",
-      "MediaRefs": [
-       {
-        "Id": "775904912"
-       },
-       {
-        "Id": "959288998"
-       }
-      ]
-     },
-     {
-      "Id": "3880234375",
-      "Name": "Temp_Swing_miss",
-      "ObjectPath": "\\Events\\Default Work Unit\\Temp_Swing_miss",
-      "GUID": "{02F02BE0-10C2-4EE4-B5E8-BB8F85BDA2A1}",
-      "DurationType": "OneShot",
-      "DurationMin": "1.3794558",
-      "DurationMax": "1.3794558",
-      "MediaRefs": [
-       {
-        "Id": "744134619"
-       },
-       {
-        "Id": "939989117"
-       },
-       {
-        "Id": "961562867"
-       }
-      ]
-     },
-     {
       "Id": "4213119059",
       "Name": "Test_Coin",
       "ObjectPath": "\\Events\\Default Work Unit\\Test_Coin",
@@ -862,6 +678,21 @@
         "Id": "803049247"
        }
       ]
+     },
+     {
+      "Id": "3873482650",
+      "Name": "Tower_Theme",
+      "ObjectPath": "\\Events\\Music\\Tower_Theme",
+      "GUID": "{C396E428-1427-453C-A58D-569D97B955EE}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "738341883"
+       },
+       {
+        "Id": "911417253"
+       }
+      ]
      }
     ],
     "StateGroups": [
@@ -884,41 +715,27 @@
         "GUID": "{2EA2A999-CCE6-40E5-85F7-D859D5A78257}"
        },
        {
+        "Id": "930712164",
+        "Name": "Off",
+        "ObjectPath": "\\States\\Default Work Unit\\Tower_Theme\\Off",
+        "GUID": "{6DE4D22C-BD7F-4402-9A3F-245B07C80326}"
+       },
+       {
         "Id": "1823678183",
         "Name": "Exploring",
         "ObjectPath": "\\States\\Default Work Unit\\Tower_Theme\\Exploring",
         "GUID": "{7E25F7AE-4495-4DA5-9596-AE2B915761A6}"
        },
        {
-        "Id": "3767268120",
-        "Name": "No_Music",
-        "ObjectPath": "\\States\\Default Work Unit\\Tower_Theme\\No_Music",
-        "GUID": "{6DE4D22C-BD7F-4402-9A3F-245B07C80326}"
+        "Id": "2607556080",
+        "Name": "Menu",
+        "ObjectPath": "\\States\\Default Work Unit\\Tower_Theme\\Menu",
+        "GUID": "{6170DB93-79A9-47B2-90E4-D53A867292C0}"
        }
       ]
      }
     ],
     "SwitchGroups": [
-     {
-      "Id": "1322052556",
-      "Name": "Swing_Switch",
-      "ObjectPath": "\\Switches\\Default Work Unit\\Swing_Switch",
-      "GUID": "{AEAD878C-D832-4265-BA7A-FAF698D4BF35}",
-      "Switches": [
-       {
-        "Id": "1120321930",
-        "Name": "Swing_Hit_Dummy",
-        "ObjectPath": "\\Switches\\Default Work Unit\\Swing_Switch\\Swing_Hit_Dummy",
-        "GUID": "{23CAFCB0-3D0E-4580-B4ED-54C8A36891F4}"
-       },
-       {
-        "Id": "3873576798",
-        "Name": "Swing_Miss_Normal",
-        "ObjectPath": "\\Switches\\Default Work Unit\\Swing_Switch\\Swing_Miss_Normal",
-        "GUID": "{4059406A-D4F6-4DC2-96C0-A83CAAECE398}"
-       }
-      ]
-     },
      {
       "Id": "3140091853",
       "Name": "Footsteps_Switch",
@@ -948,6 +765,6 @@
     ]
    }
   ],
-  "FileHash": "{D780E525-8361-CA99-5852-339C36EB17ED}"
+  "FileHash": "{AA14CAD5-0D56-85FD-2C32-1B62BA72424A}"
  }
 }

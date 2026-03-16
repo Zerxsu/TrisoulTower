@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "764183130",
+    "Type": "Event",
+    "GUID": "{6395A6B7-C116-46CA-838A-02C63CECB546}",
+    "Language": "SFX",
+    "Hash": "{EB02FE89-A221-6C89-129B-BD0A48BDD62B}",
+    "ObjectPath": "Ice_Ult",
+    "ShortName": "Ice_Ult",
+    "Path": "Event/Ice_Ult.bnk",
+    "Media": [
+     {
+      "Id": "1062226183",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Trisoul_IceULT_SFX.wav",
+      "Path": "Media/1062226183.wem",
+      "CachePath": "CA/{CA3C0C38-5EBA-5D6C-CCF6-286386834CEA}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "764183130",
+      "Name": "Ice_Ult",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ice_Ult",
+      "GUID": "{6395A6B7-C116-46CA-838A-02C63CECB546}",
+      "DurationType": "OneShot",
+      "DurationMin": "4.042653",
+      "DurationMax": "4.042653",
+      "MediaRefs": [
+       {
+        "Id": "1062226183"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{7146203D-552D-537C-685C-B7257710CA27}"
+ }
+}

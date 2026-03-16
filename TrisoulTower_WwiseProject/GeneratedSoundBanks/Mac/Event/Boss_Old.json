@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{62D8C136-BC1D-43EB-B012-0D3A55CB685D}",
     "Language": "SFX",
-    "Hash": "{A200080D-96B5-50B4-7C82-ED27D2029311}",
+    "Hash": "{795B95DA-2098-7D1C-A39C-B89A5844E6FC}",
     "ObjectPath": "Boss_Old",
     "ShortName": "Boss_Old",
     "Path": "Event/Boss_Old.bnk",
@@ -26,31 +26,31 @@
       "DurationMax": "0",
       "ActionSetState": [
        {
-        "GroupId": "2166191340",
+        "GroupId": "2831509153",
         "Id": "3630028968",
         "Name": "Phase2",
-        "ObjectPath": "\\States\\Default Work Unit\\Boss_Theme\\Phase2",
+        "ObjectPath": "\\States\\Default Work Unit\\Boss_States_Old\\Phase2",
         "GUID": "{DEDBF804-0DC8-46AA-A61E-80A1EBD721AF}"
        },
        {
-        "GroupId": "2166191340",
+        "GroupId": "2831509153",
         "Id": "3630028969",
         "Name": "Phase3",
-        "ObjectPath": "\\States\\Default Work Unit\\Boss_Theme\\Phase3",
+        "ObjectPath": "\\States\\Default Work Unit\\Boss_States_Old\\Phase3",
         "GUID": "{1B055634-18B4-468B-AE26-04CE32523CC6}"
        },
        {
-        "GroupId": "2166191340",
+        "GroupId": "2831509153",
         "Id": "3630028971",
         "Name": "Phase1",
-        "ObjectPath": "\\States\\Default Work Unit\\Boss_Theme\\Phase1",
+        "ObjectPath": "\\States\\Default Work Unit\\Boss_States_Old\\Phase1",
         "GUID": "{F3DEE3DD-7258-4EB4-A925-69E5327FF311}"
        },
        {
-        "GroupId": "2166191340",
+        "GroupId": "2831509153",
         "Id": "3972193662",
         "Name": "Boss_killed",
-        "ObjectPath": "\\States\\Default Work Unit\\Boss_Theme\\Boss_killed",
+        "ObjectPath": "\\States\\Default Work Unit\\Boss_States_Old\\Boss_killed",
         "GUID": "{363F4410-D7B9-4445-A763-88D9AD5C4E97}"
        }
       ]
@@ -58,39 +58,39 @@
     ],
     "StateGroups": [
      {
-      "Id": "2166191340",
-      "Name": "Boss_Theme",
-      "ObjectPath": "\\States\\Default Work Unit\\Boss_Theme",
+      "Id": "2831509153",
+      "Name": "Boss_States_Old",
+      "ObjectPath": "\\States\\Default Work Unit\\Boss_States_Old",
       "GUID": "{030B6321-5C92-4415-BEF2-AE6495D52B00}",
       "States": [
        {
         "Id": "748895195",
         "Name": "None",
-        "ObjectPath": "\\States\\Default Work Unit\\Boss_Theme\\None",
+        "ObjectPath": "\\States\\Default Work Unit\\Boss_States_Old\\None",
         "GUID": "{AE4EB580-9E76-4E6A-9EFD-A224597B4261}"
        },
        {
         "Id": "3630028968",
         "Name": "Phase2",
-        "ObjectPath": "\\States\\Default Work Unit\\Boss_Theme\\Phase2",
+        "ObjectPath": "\\States\\Default Work Unit\\Boss_States_Old\\Phase2",
         "GUID": "{DEDBF804-0DC8-46AA-A61E-80A1EBD721AF}"
        },
        {
         "Id": "3630028969",
         "Name": "Phase3",
-        "ObjectPath": "\\States\\Default Work Unit\\Boss_Theme\\Phase3",
+        "ObjectPath": "\\States\\Default Work Unit\\Boss_States_Old\\Phase3",
         "GUID": "{1B055634-18B4-468B-AE26-04CE32523CC6}"
        },
        {
         "Id": "3630028971",
         "Name": "Phase1",
-        "ObjectPath": "\\States\\Default Work Unit\\Boss_Theme\\Phase1",
+        "ObjectPath": "\\States\\Default Work Unit\\Boss_States_Old\\Phase1",
         "GUID": "{F3DEE3DD-7258-4EB4-A925-69E5327FF311}"
        },
        {
         "Id": "3972193662",
         "Name": "Boss_killed",
-        "ObjectPath": "\\States\\Default Work Unit\\Boss_Theme\\Boss_killed",
+        "ObjectPath": "\\States\\Default Work Unit\\Boss_States_Old\\Boss_killed",
         "GUID": "{363F4410-D7B9-4445-A763-88D9AD5C4E97}"
        }
       ]
@@ -98,6 +98,6 @@
     ]
    }
   ],
-  "FileHash": "{01786249-071C-3CE7-408A-8285E1B858B9}"
+  "FileHash": "{4A78F63F-8964-D2BA-77BF-62F000304163}"
  }
 }

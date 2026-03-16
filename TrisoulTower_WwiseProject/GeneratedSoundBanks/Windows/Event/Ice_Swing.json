@@ -1,0 +1,96 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1663533429",
+    "Type": "Event",
+    "GUID": "{10B27301-EB16-413B-8D06-080E99ACCE73}",
+    "Language": "SFX",
+    "Hash": "{A003E137-6B9B-8FEE-DD10-95F1D51959C0}",
+    "ObjectPath": "Ice_Swing",
+    "ShortName": "Ice_Swing",
+    "Path": "Event/Ice_Swing.bnk",
+    "Media": [
+     {
+      "Id": "130090519",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Trisoul_IceSwordSFX_1.wav",
+      "Path": "Media/130090519.wem",
+      "CachePath": "59/{59008954-09BD-2868-C10C-4460CD407C90}.wem"
+     },
+     {
+      "Id": "268808089",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Trisoul_IceSwordSFX_4.wav",
+      "Path": "Media/268808089.wem",
+      "CachePath": "E5/{E5E77A6A-8257-0D5C-F28D-DCC56A9A9C35}.wem"
+     },
+     {
+      "Id": "503112752",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Trisoul_IceSwordSFX_5.wav",
+      "Path": "Media/503112752.wem",
+      "CachePath": "71/{713A9572-004C-5E08-CEAD-D38B34A445E5}.wem"
+     },
+     {
+      "Id": "581681659",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Trisoul_IceSwordSFX_2.wav",
+      "Path": "Media/581681659.wem",
+      "CachePath": "29/{294D11BB-5592-75E3-0F1C-0B44B730E6DB}.wem"
+     },
+     {
+      "Id": "775962090",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Trisoul_IceSwordSFX_3.wav",
+      "Path": "Media/775962090.wem",
+      "CachePath": "12/{12659197-9C4F-9201-70B6-9AE4BDC4BFB3}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1663533429",
+      "Name": "Ice_Swing",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ice_Swing",
+      "GUID": "{10B27301-EB16-413B-8D06-080E99ACCE73}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.8565834",
+      "DurationMax": "1.8565834",
+      "MediaRefs": [
+       {
+        "Id": "130090519"
+       },
+       {
+        "Id": "268808089"
+       },
+       {
+        "Id": "503112752"
+       },
+       {
+        "Id": "581681659"
+       },
+       {
+        "Id": "775962090"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{BF61B7DE-6626-75D1-7E31-533714307991}"
+ }
+}

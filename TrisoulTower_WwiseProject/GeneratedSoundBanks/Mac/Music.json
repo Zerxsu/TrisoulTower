@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{03DC8F4B-44C3-4833-8039-D75C2C00E6D3}",
     "Language": "SFX",
-    "Hash": "{2864A142-D508-97D8-546D-942FE42B1501}",
+    "Hash": "{F38B7FCF-B050-00AE-0967-338E8D0E41D9}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Music",
     "ShortName": "Music",
     "Path": "Music.bnk",
@@ -103,21 +103,6 @@
       ]
      },
      {
-      "Id": "3991942870",
-      "Name": "Music",
-      "ObjectPath": "\\Events\\Default Work Unit\\Music",
-      "GUID": "{C396E428-1427-453C-A58D-569D97B955EE}",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "738341883"
-       },
-       {
-        "Id": "911417253"
-       }
-      ]
-     },
-     {
       "Id": "3227181061",
       "Name": "Music_Stop",
       "ObjectPath": "\\Events\\Default Work Unit\\Music_Stop",
@@ -160,6 +145,21 @@
       ]
      },
      {
+      "Id": "3873482650",
+      "Name": "Tower_Theme",
+      "ObjectPath": "\\Events\\Music\\Tower_Theme",
+      "GUID": "{C396E428-1427-453C-A58D-569D97B955EE}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "738341883"
+       },
+       {
+        "Id": "911417253"
+       }
+      ]
+     },
+     {
       "Id": "1505442550",
       "Name": "Training_Grounds",
       "ObjectPath": "\\Events\\Music\\Training_Grounds",
@@ -174,6 +174,6 @@
     ]
    }
   ],
-  "FileHash": "{3FE1048B-8486-F876-D00D-432C00F0A3BC}"
+  "FileHash": "{B35DF9D6-FB8E-5F42-A478-8992163E3310}"
  }
 }

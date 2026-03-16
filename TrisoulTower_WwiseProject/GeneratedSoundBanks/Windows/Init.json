@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{95B4269B-91A2-2C83-3334-DB88EDEC2A46}",
+    "Hash": "{E891B4DF-A36B-05C3-6FF1-4C6152E1AEE0}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -76,44 +76,6 @@
       ]
      },
      {
-      "Id": "2166191340",
-      "Name": "Boss_Theme",
-      "ObjectPath": "\\States\\Default Work Unit\\Boss_Theme",
-      "GUID": "{030B6321-5C92-4415-BEF2-AE6495D52B00}",
-      "States": [
-       {
-        "Id": "748895195",
-        "Name": "None",
-        "ObjectPath": "\\States\\Default Work Unit\\Boss_Theme\\None",
-        "GUID": "{AE4EB580-9E76-4E6A-9EFD-A224597B4261}"
-       },
-       {
-        "Id": "3630028968",
-        "Name": "Phase2",
-        "ObjectPath": "\\States\\Default Work Unit\\Boss_Theme\\Phase2",
-        "GUID": "{DEDBF804-0DC8-46AA-A61E-80A1EBD721AF}"
-       },
-       {
-        "Id": "3630028969",
-        "Name": "Phase3",
-        "ObjectPath": "\\States\\Default Work Unit\\Boss_Theme\\Phase3",
-        "GUID": "{1B055634-18B4-468B-AE26-04CE32523CC6}"
-       },
-       {
-        "Id": "3630028971",
-        "Name": "Phase1",
-        "ObjectPath": "\\States\\Default Work Unit\\Boss_Theme\\Phase1",
-        "GUID": "{F3DEE3DD-7258-4EB4-A925-69E5327FF311}"
-       },
-       {
-        "Id": "3972193662",
-        "Name": "Boss_killed",
-        "ObjectPath": "\\States\\Default Work Unit\\Boss_Theme\\Boss_killed",
-        "GUID": "{363F4410-D7B9-4445-A763-88D9AD5C4E97}"
-       }
-      ]
-     },
-     {
       "Id": "2521525023",
       "Name": "Title_Theme",
       "ObjectPath": "\\States\\Default Work Unit\\Title_Theme",
@@ -140,6 +102,44 @@
       ]
      },
      {
+      "Id": "2831509153",
+      "Name": "Boss_States_Old",
+      "ObjectPath": "\\States\\Default Work Unit\\Boss_States_Old",
+      "GUID": "{030B6321-5C92-4415-BEF2-AE6495D52B00}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Boss_States_Old\\None",
+        "GUID": "{AE4EB580-9E76-4E6A-9EFD-A224597B4261}"
+       },
+       {
+        "Id": "3630028968",
+        "Name": "Phase2",
+        "ObjectPath": "\\States\\Default Work Unit\\Boss_States_Old\\Phase2",
+        "GUID": "{DEDBF804-0DC8-46AA-A61E-80A1EBD721AF}"
+       },
+       {
+        "Id": "3630028969",
+        "Name": "Phase3",
+        "ObjectPath": "\\States\\Default Work Unit\\Boss_States_Old\\Phase3",
+        "GUID": "{1B055634-18B4-468B-AE26-04CE32523CC6}"
+       },
+       {
+        "Id": "3630028971",
+        "Name": "Phase1",
+        "ObjectPath": "\\States\\Default Work Unit\\Boss_States_Old\\Phase1",
+        "GUID": "{F3DEE3DD-7258-4EB4-A925-69E5327FF311}"
+       },
+       {
+        "Id": "3972193662",
+        "Name": "Boss_killed",
+        "ObjectPath": "\\States\\Default Work Unit\\Boss_States_Old\\Boss_killed",
+        "GUID": "{363F4410-D7B9-4445-A763-88D9AD5C4E97}"
+       }
+      ]
+     },
+     {
       "Id": "3873482650",
       "Name": "Tower_Theme",
       "ObjectPath": "\\States\\Default Work Unit\\Tower_Theme",
@@ -158,16 +158,22 @@
         "GUID": "{2EA2A999-CCE6-40E5-85F7-D859D5A78257}"
        },
        {
+        "Id": "930712164",
+        "Name": "Off",
+        "ObjectPath": "\\States\\Default Work Unit\\Tower_Theme\\Off",
+        "GUID": "{6DE4D22C-BD7F-4402-9A3F-245B07C80326}"
+       },
+       {
         "Id": "1823678183",
         "Name": "Exploring",
         "ObjectPath": "\\States\\Default Work Unit\\Tower_Theme\\Exploring",
         "GUID": "{7E25F7AE-4495-4DA5-9596-AE2B915761A6}"
        },
        {
-        "Id": "3767268120",
-        "Name": "No_Music",
-        "ObjectPath": "\\States\\Default Work Unit\\Tower_Theme\\No_Music",
-        "GUID": "{6DE4D22C-BD7F-4402-9A3F-245B07C80326}"
+        "Id": "2607556080",
+        "Name": "Menu",
+        "ObjectPath": "\\States\\Default Work Unit\\Tower_Theme\\Menu",
+        "GUID": "{6170DB93-79A9-47B2-90E4-D53A867292C0}"
        }
       ]
      },
@@ -318,6 +324,6 @@
     ]
    }
   ],
-  "FileHash": "{0D0A555F-375D-0DDD-F62C-F9A1FC521730}"
+  "FileHash": "{13B736DB-59FC-93AB-0DDD-7ECB84FC015A}"
  }
 }

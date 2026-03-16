@@ -25,17 +25,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Swing" ID="{7701D21A-5E6C-4682-A460-30B9D6D74626}">
-					<ChildrenList>
-						<Action Name="" ID="{D5B9603B-8AAC-4A32-9C9A-174395AF5C32}" ShortID="810595394">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Swing" ID="{881BAA2E-6490-461C-B600-0034BDB405E8}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Jump" ID="{5228FD80-CD1A-44C5-B4FD-90C55FDECA64}">
 					<ChildrenList>
 						<Action Name="" ID="{2867083E-5A13-47B8-9A03-4E0B9C45DA29}" ShortID="829414968">
@@ -78,30 +67,6 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Tower" ID="{B07505DC-D745-46B1-8D41-C1CEE1B19254}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Swing_Switch" ID="{568CB563-8332-4B3F-A694-2DE17EFF7621}">
-					<ChildrenList>
-						<Action Name="" ID="{C9FB020D-A819-45A7-8E6D-CA0E67E92A5F}" ShortID="712807077">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="23"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Swing_Hit_Dummy" ID="{23CAFCB0-3D0E-4580-B4ED-54C8A36891F4}" WorkUnitID="{2F1DDC5E-189B-4D24-8AB6-C92E73FEA8BB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{47B9A694-70EE-49F3-B5F9-BB1DBA12B5A0}" ShortID="672753904">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="23"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Swing_Miss_Normal" ID="{4059406A-D4F6-4DC2-96C0-A83CAAECE398}" WorkUnitID="{2F1DDC5E-189B-4D24-8AB6-C92E73FEA8BB}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -175,28 +140,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Temp_Swing_Hit" ID="{B02B5558-8DAB-4548-A1BD-7ACB4E35265D}">
-					<ChildrenList>
-						<Action Name="" ID="{9A585B6A-802F-48DA-8D95-8F0CCBC7CCD5}" ShortID="38767444">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Swing_Hit_Dummy" ID="{582AFF18-09A4-4164-BF6A-A7F871512C62}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Temp_Swing_miss" ID="{02F02BE0-10C2-4EE4-B5E8-BB8F85BDA2A1}">
-					<ChildrenList>
-						<Action Name="" ID="{22E7BD0E-E7ED-46E5-B894-0D4945DDC0A0}" ShortID="698279224">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Swing_Miss_Normal" ID="{34D65106-758B-41DB-8379-73EE641C34AC}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Temp_Footstep_Grass" ID="{58F891FE-97A1-43BE-BD9A-44588CF18D34}">
 					<ChildrenList>
 						<Action Name="" ID="{ED168FE9-9FF0-47EC-BD1F-78FC25D61C5C}" ShortID="940413197">
@@ -241,7 +184,72 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Flame_Swing" ID="{9897AEDF-BC65-4A93-B476-7C354D572BB8}"/>
+				<Event Name="Flame_Swing" ID="{9897AEDF-BC65-4A93-B476-7C354D572BB8}">
+					<ChildrenList>
+						<Action Name="" ID="{0FABBE36-5EF1-417A-938D-3A0F4F403966}" ShortID="117973951">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Fire_Swing" ID="{7566F685-6B6D-49EF-B747-7C0D8EFDA6AD}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Grass_Swing" ID="{ABC18279-2C80-4126-9827-2D2B589E4A6F}">
+					<ChildrenList>
+						<Action Name="" ID="{8C8C1CC5-B6E5-4DDD-B444-029DAC44F09C}" ShortID="917169157">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Grass_Swing" ID="{A00651A3-E1EB-4058-8136-A5BF6E5F421D}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Ice_Swing" ID="{10B27301-EB16-413B-8D06-080E99ACCE73}">
+					<ChildrenList>
+						<Action Name="" ID="{B72E133B-72FD-4EBC-A4B7-786327040D6B}" ShortID="573728186">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ice_Swing" ID="{E00E960D-1211-49E2-B02B-312D0CE4629F}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Ice_Heavy" ID="{EF683622-76C8-43A6-96C2-AD6BC2E10255}">
+					<ChildrenList>
+						<Action Name="" ID="{EF186EF6-ADF3-47AF-9D5F-224598A3DCA0}" ShortID="207286242">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ice_Heavy" ID="{B4C477DC-50A6-4F1D-AC9C-6A99655A60AA}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Ice_Ult" ID="{6395A6B7-C116-46CA-838A-02C63CECB546}">
+					<ChildrenList>
+						<Action Name="" ID="{1CB15D37-D192-4AFD-9A8E-76A0208A0BC7}" ShortID="353263807">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ice_Ult" ID="{5C7FFEA3-F1A8-4D48-A356-1B69913F30CD}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Parry" ID="{F32D6267-AA97-4EA8-B95A-AB6DE9119456}">
+					<ChildrenList>
+						<Action Name="" ID="{64F5167A-A832-49D4-A66F-A9EBD09A14FE}" ShortID="146343684">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Parry" ID="{97E6FA8A-56EF-4FFF-AF74-696896C5DD8D}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

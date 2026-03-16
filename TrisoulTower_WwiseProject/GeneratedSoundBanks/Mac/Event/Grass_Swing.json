@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2376270230",
+    "Type": "Event",
+    "GUID": "{ABC18279-2C80-4126-9827-2D2B589E4A6F}",
+    "Language": "SFX",
+    "Hash": "{0F066421-4A29-62FC-F75C-BA1104676AA6}",
+    "ObjectPath": "Grass_Swing",
+    "ShortName": "Grass_Swing",
+    "Path": "Event/Grass_Swing.bnk",
+    "Media": [
+     {
+      "Id": "106905870",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "grassswing.wav",
+      "Path": "Media/106905870.wem",
+      "CachePath": "1E/{1EBBFBAE-2ADD-1C67-BB2F-042D179A2317}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2376270230",
+      "Name": "Grass_Swing",
+      "ObjectPath": "\\Events\\Default Work Unit\\Grass_Swing",
+      "GUID": "{ABC18279-2C80-4126-9827-2D2B589E4A6F}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.3689796",
+      "DurationMax": "1.3689796",
+      "MediaRefs": [
+       {
+        "Id": "106905870"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{3F39AF60-5B00-1379-989A-C87FC184C4E6}"
+ }
+}
