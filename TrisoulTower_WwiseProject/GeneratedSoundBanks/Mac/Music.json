@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{03DC8F4B-44C3-4833-8039-D75C2C00E6D3}",
     "Language": "SFX",
-    "Hash": "{24F1D75A-1D7A-CF96-2F53-059D842849F5}",
+    "Hash": "{2864A142-D508-97D8-546D-942FE42B1501}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Music",
     "ShortName": "Music",
     "Path": "Music.bnk",
@@ -22,6 +22,22 @@
       "Location": "Memory",
       "ShortName": "Phase3_TrisoulFinalBoss_150BPM.wav",
       "CachePath": "32/{32FA7D67-B685-84F6-35FD-EB3672C5B72F}.wem"
+     },
+     {
+      "Id": "186069822",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "TrisoulTitleScreen_70BPM_DMin2.wav",
+      "CachePath": "7E/{7E9B945F-A807-4641-32D8-140354791B0B}.wem"
+     },
+     {
+      "Id": "459624906",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Trisoul_TrainingGroundsMusic_120BPM_Amin2.wav",
+      "CachePath": "29/{29414919-D6A9-42A0-20AA-000DD834508E}.wem"
      },
      {
       "Id": "583356784",
@@ -94,28 +110,70 @@
       "DurationType": "Infinite",
       "MediaRefs": [
        {
-        "Id": "17138113"
+        "Id": "738341883"
        },
        {
-        "Id": "583356784"
-       },
+        "Id": "911417253"
+       }
+      ]
+     },
+     {
+      "Id": "3227181061",
+      "Name": "Music_Stop",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music_Stop",
+      "GUID": "{97C66D8C-743A-4D7C-AB2D-495FE532B124}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "MediaRefs": [
        {
         "Id": "738341883"
        },
        {
-        "Id": "751266702"
-       },
-       {
         "Id": "911417253"
-       },
+       }
+      ]
+     },
+     {
+      "Id": "3853285476",
+      "Name": "Title_Screen",
+      "ObjectPath": "\\Events\\Music\\Title_Screen",
+      "GUID": "{78C510F2-F1C2-4F17-BCC7-31D1B91F8341}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
        {
-        "Id": "1019931530"
+        "Id": "186069822"
+       }
+      ]
+     },
+     {
+      "Id": "2521525023",
+      "Name": "Title_Theme",
+      "ObjectPath": "\\Events\\Music\\Title_Theme",
+      "GUID": "{2BB2C074-4431-45F4-8F74-1A7C5EE6C115}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "186069822"
+       }
+      ]
+     },
+     {
+      "Id": "1505442550",
+      "Name": "Training_Grounds",
+      "ObjectPath": "\\Events\\Music\\Training_Grounds",
+      "GUID": "{6F3B5C3C-8223-4C6D-8B05-34CC8743D699}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "459624906"
        }
       ]
      }
     ]
    }
   ],
-  "FileHash": "{7E34D504-02CB-2059-2F14-8E32D97F2F8C}"
+  "FileHash": "{3FE1048B-8486-F876-D00D-432C00F0A3BC}"
  }
 }

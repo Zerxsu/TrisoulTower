@@ -82,6 +82,29 @@
 						</Transition>
 					</TransitionList>
 				</StateGroup>
+				<StateGroup Name="Training_Grounds" ID="{D448BE74-CFBD-4F67-925C-8A251BACC1C6}">
+					<ChildrenList>
+						<State Name="None" ID="{CBEB319F-0308-4D7A-B76C-73729BAEE3B9}"/>
+						<State Name="On" ID="{D4A99181-347D-402E-89F2-BC977644A80A}"/>
+						<State Name="Off" ID="{23D16A19-B4E2-4FF1-98AF-3D852FB64D37}"/>
+						<State Name="Menu" ID="{7F38D79F-7045-46C2-86EF-31739EFD08A6}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="On" ID="{D4A99181-347D-402E-89F2-BC977644A80A}"/>
+							<EndState Name="Menu" ID="{7F38D79F-7045-46C2-86EF-31739EFD08A6}"/>
+							<Time>3</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="Title_Theme" ID="{CA60BC5B-D079-46B7-B116-C0CD729217DA}">
+					<ChildrenList>
+						<State Name="None" ID="{14553FB7-9AE2-4998-BE54-436353619D7D}"/>
+						<State Name="On" ID="{4E5A793F-4425-4A71-A6EA-6216F706EDC8}"/>
+						<State Name="Off" ID="{9B3221D5-98B0-4216-A7D2-218517544114}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

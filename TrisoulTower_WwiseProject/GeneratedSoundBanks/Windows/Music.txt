@@ -1,14 +1,27 @@
 Event	ID	Name			Wwise Object Path	Notes
+	1505442550	Training_Grounds			\Music\Training_Grounds	
+	2521525023	Title_Theme			\Music\Title_Theme	
+	3227181061	Music_Stop			\Default Work Unit\Music_Stop	
 	3456390069	Boss_Phases			\Music\Boss_Phases	
+	3853285476	Title_Screen			\Music\Title_Screen	
 	3991942870	Music			\Default Work Unit\Music	
 
 State Group	ID	Name			Wwise Object Path	Notes
+	1505442550	Training_Grounds			\Default Work Unit\Training_Grounds	
+	2521525023	Title_Theme			\Default Work Unit\Title_Theme	
 	3873482650	Tower_Theme			\Default Work Unit\Tower_Theme	
 	3922696680	Boss_Phase_3			\Default Work Unit\Boss_Phase_3	
 	3922696681	Boss_Phase_2			\Default Work Unit\Boss_Phase_2	
 	3922696682	Boss_Phase_1			\Default Work Unit\Boss_Phase_1	
 
 State	ID	Name	State Group			Notes
+	748895195	None	Training_Grounds			
+	930712164	Off	Training_Grounds			
+	1651971902	On	Training_Grounds			
+	2607556080	Menu	Training_Grounds			
+	748895195	None	Title_Theme			
+	930712164	Off	Title_Theme			
+	1651971902	On	Title_Theme			
 	168610243	Fighting	Tower_Theme			
 	748895195	None	Tower_Theme			
 	1823678183	Exploring	Tower_Theme			
@@ -27,10 +40,12 @@ State	ID	Name	State Group			Notes
 	2607556080	Menu	Boss_Phase_1			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	17138113	Phase3_TrisoulFinalBoss_150BPM	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\32\{32FA7D67-B685-84F6-35FD-EB3672C5B72F}.wem		\Interactive Music Hierarchy\Default Work Unit\Music\New Music Segment\Phase3_TrisoulFinalBoss_150BPM		44851344
-	583356784	Phase2_TrisoulFinalBoss_150BPM_Reverb	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\C9\{C99857E6-C00C-20EB-2818-3D5DF8AF0890}.wem		\Interactive Music Hierarchy\Default Work Unit\Music\New Music Segment\Phase2_TrisoulFinalBoss_150BPM_Reverb		28569744
-	738341883	Trisoul_TowerTheme_Default_145bpm	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\3B\{3BDD4168-3A62-923B-7A6B-7B57FE61F2DA}.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Tower\Trisoul_TowerTheme_Default_145bpm		8175372
-	751266702	Phase1_TrisoulFinalBoss_150BPM	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\ED\{EDCF8EF6-485E-2775-897E-95B7E748190B}.wem		\Interactive Music Hierarchy\Default Work Unit\Music\New Music Segment\Phase1_TrisoulFinalBoss_150BPM		25196144
-	911417253	Trisoul_TowerTheme_Battle_145bpm	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\A2\{A2AFD8CF-1741-C306-F879-0F8DAF1C9129}.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Tower\Trisoul_TowerTheme_Battle_145bpm		8175372
-	1019931530	FinalHit_TrisoulFinalBoss_150BPM	C:\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\62\{62DE93F0-F55A-390A-C08B-3498DD58B16F}.wem		\Interactive Music Hierarchy\Default Work Unit\Music\New Music Segment\FinalHit_TrisoulFinalBoss_150BPM		3382544
+	17138113	Phase3_TrisoulFinalBoss_150BPM	C:\Users\xoesm\Documents\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\32\{32FA7D67-B685-84F6-35FD-EB3672C5B72F}.wem		\Interactive Music Hierarchy\Default Work Unit\Boss\Boss_Phase_3\song\Phase3_TrisoulFinalBoss_150BPM		44851344
+	186069822	TrisoulTitleScreen_70BPM_DMin2	C:\Users\xoesm\Documents\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\7E\{7E9B945F-A807-4641-32D8-140354791B0B}.wem		\Interactive Music Hierarchy\Default Work Unit\Title_Screen\Title_Screen_Song\TrisoulTitleScreen_70BPM_DMin2		44763572
+	459624906	Trisoul_TrainingGroundsMusic_120BPM_Amin2	C:\Users\xoesm\Documents\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\29\{29414919-D6A9-42A0-20AA-000DD834508E}.wem		\Interactive Music Hierarchy\Default Work Unit\Training\Training_Song\Trisoul_TrainingGroundsMusic_120BPM_Amin2		11136144
+	583356784	Phase2_TrisoulFinalBoss_150BPM_Reverb	C:\Users\xoesm\Documents\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\C9\{C99857E6-C00C-20EB-2818-3D5DF8AF0890}.wem		\Interactive Music Hierarchy\Default Work Unit\Boss\Boss_Phase_2\Phase2_TrisoulFinalBoss_150BPM_Reverb\Phase2_TrisoulFinalBoss_150BPM_Reverb		28569744
+	738341883	Trisoul_TowerTheme_Default_145bpm	C:\Users\xoesm\Documents\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\3B\{3BDD4168-3A62-923B-7A6B-7B57FE61F2DA}.wem		\Interactive Music Hierarchy\Default Work Unit\Tower\Tower\Trisoul_TowerTheme_Default_145bpm		8175372
+	751266702	Phase1_TrisoulFinalBoss_150BPM	C:\Users\xoesm\Documents\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\ED\{EDCF8EF6-485E-2775-897E-95B7E748190B}.wem		\Interactive Music Hierarchy\Default Work Unit\Boss\Boss_Phase_1\Phase1_TrisoulFinalBoss_150BPM\Phase1_TrisoulFinalBoss_150BPM		25196144
+	911417253	Trisoul_TowerTheme_Battle_145bpm	C:\Users\xoesm\Documents\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\A2\{A2AFD8CF-1741-C306-F879-0F8DAF1C9129}.wem		\Interactive Music Hierarchy\Default Work Unit\Tower\Tower\Trisoul_TowerTheme_Battle_145bpm		8175372
+	1019931530	FinalHit_TrisoulFinalBoss_150BPM	C:\Users\xoesm\Documents\Unreal Projects\TrisoulTower\TrisoulTower_WwiseProject\.cache\62\{62DE93F0-F55A-390A-C08B-3498DD58B16F}.wem		\Interactive Music Hierarchy\Default Work Unit\Boss\Boss_Killed\FinalHit_TrisoulFinalBoss_150BPM\FinalHit_TrisoulFinalBoss_150BPM		3382544
 

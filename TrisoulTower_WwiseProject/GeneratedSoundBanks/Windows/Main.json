@@ -10,19 +10,11 @@
     "Type": "User",
     "GUID": "{879ED1C6-7157-4890-992E-2BBE2CD3E8E1}",
     "Language": "SFX",
-    "Hash": "{DFD05395-C08A-ADC0-100E-A21EEF60E358}",
+    "Hash": "{12EDE77E-564E-E3AA-2E21-F2D1ADA24F3A}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
     "Media": [
-     {
-      "Id": "17138113",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "Phase3_TrisoulFinalBoss_150BPM.wav",
-      "CachePath": "32/{32FA7D67-B685-84F6-35FD-EB3672C5B72F}.wem"
-     },
      {
       "Id": "140529070",
       "Language": "SFX",
@@ -144,14 +136,6 @@
       "CachePath": "F0/{F0E6FCBE-344C-3204-6342-22CE66BFE973}.wem"
      },
      {
-      "Id": "583356784",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "Phase2_TrisoulFinalBoss_150BPM_Reverb.wav",
-      "CachePath": "C9/{C99857E6-C00C-20EB-2818-3D5DF8AF0890}.wem"
-     },
-     {
       "Id": "590461207",
       "Language": "SFX",
       "Streaming": "false",
@@ -214,14 +198,6 @@
       "Location": "Memory",
       "ShortName": "Trisoul_MidSwordSwing_V2_1.wav",
       "CachePath": "24/{24878A77-7884-4C39-A5FE-500DFBBFF353}.wem"
-     },
-     {
-      "Id": "751266702",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "Phase1_TrisoulFinalBoss_150BPM.wav",
-      "CachePath": "ED/{EDCF8EF6-485E-2775-897E-95B7E748190B}.wem"
      },
      {
       "Id": "752048971",
@@ -342,14 +318,6 @@
       "Location": "Memory",
       "ShortName": "g1.wav",
       "CachePath": "79/{79724DA1-9630-CFF8-20EB-4FA1E9349893}.wem"
-     },
-     {
-      "Id": "1019931530",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "FinalHit_TrisoulFinalBoss_150BPM.wav",
-      "CachePath": "62/{62DE93F0-F55A-390A-C08B-3498DD58B16F}.wem"
      }
     ],
     "Events": [
@@ -552,22 +520,10 @@
       "DurationType": "Infinite",
       "MediaRefs": [
        {
-        "Id": "17138113"
-       },
-       {
-        "Id": "583356784"
-       },
-       {
         "Id": "738341883"
        },
        {
-        "Id": "751266702"
-       },
-       {
         "Id": "911417253"
-       },
-       {
-        "Id": "1019931530"
        }
       ]
      },
@@ -992,6 +948,6 @@
     ]
    }
   ],
-  "FileHash": "{F0AA2C96-7FE4-0D2A-25F7-2FB17173253B}"
+  "FileHash": "{D780E525-8361-CA99-5852-339C36EB17ED}"
  }
 }

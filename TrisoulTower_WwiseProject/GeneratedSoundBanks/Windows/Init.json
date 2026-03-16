@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{A32C0B57-E025-A092-E007-18BC0446989A}",
+    "Hash": "{95B4269B-91A2-2C83-3334-DB88EDEC2A46}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -43,6 +43,38 @@
      }
     ],
     "StateGroups": [
+     {
+      "Id": "1505442550",
+      "Name": "Training_Grounds",
+      "ObjectPath": "\\States\\Default Work Unit\\Training_Grounds",
+      "GUID": "{D448BE74-CFBD-4F67-925C-8A251BACC1C6}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Training_Grounds\\None",
+        "GUID": "{CBEB319F-0308-4D7A-B76C-73729BAEE3B9}"
+       },
+       {
+        "Id": "930712164",
+        "Name": "Off",
+        "ObjectPath": "\\States\\Default Work Unit\\Training_Grounds\\Off",
+        "GUID": "{23D16A19-B4E2-4FF1-98AF-3D852FB64D37}"
+       },
+       {
+        "Id": "1651971902",
+        "Name": "On",
+        "ObjectPath": "\\States\\Default Work Unit\\Training_Grounds\\On",
+        "GUID": "{D4A99181-347D-402E-89F2-BC977644A80A}"
+       },
+       {
+        "Id": "2607556080",
+        "Name": "Menu",
+        "ObjectPath": "\\States\\Default Work Unit\\Training_Grounds\\Menu",
+        "GUID": "{7F38D79F-7045-46C2-86EF-31739EFD08A6}"
+       }
+      ]
+     },
      {
       "Id": "2166191340",
       "Name": "Boss_Theme",
@@ -78,6 +110,32 @@
         "Name": "Boss_killed",
         "ObjectPath": "\\States\\Default Work Unit\\Boss_Theme\\Boss_killed",
         "GUID": "{363F4410-D7B9-4445-A763-88D9AD5C4E97}"
+       }
+      ]
+     },
+     {
+      "Id": "2521525023",
+      "Name": "Title_Theme",
+      "ObjectPath": "\\States\\Default Work Unit\\Title_Theme",
+      "GUID": "{CA60BC5B-D079-46B7-B116-C0CD729217DA}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Title_Theme\\None",
+        "GUID": "{14553FB7-9AE2-4998-BE54-436353619D7D}"
+       },
+       {
+        "Id": "930712164",
+        "Name": "Off",
+        "ObjectPath": "\\States\\Default Work Unit\\Title_Theme\\Off",
+        "GUID": "{9B3221D5-98B0-4216-A7D2-218517544114}"
+       },
+       {
+        "Id": "1651971902",
+        "Name": "On",
+        "ObjectPath": "\\States\\Default Work Unit\\Title_Theme\\On",
+        "GUID": "{4E5A793F-4425-4A71-A6EA-6216F706EDC8}"
        }
       ]
      },
@@ -260,6 +318,6 @@
     ]
    }
   ],
-  "FileHash": "{512F8F56-D543-EF81-DEFC-EB7A91A7E564}"
+  "FileHash": "{0D0A555F-375D-0DDD-F62C-F9A1FC521730}"
  }
 }

@@ -32,11 +32,17 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Boss_Phases" ID="{CAA32C93-FE2E-41DB-9E53-00DDD2C11F03}" WorkUnitID="{469E591F-0F3E-4561-BA06-5C1B45969A32}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Boss" ID="{B0578B6F-1ECD-4234-B6E5-131B237E27D8}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Title_Screen" ID="{6B739B8D-C33C-42EC-9B70-46BC389FB94E}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Boss_Phase_2" ID="{D1FB9A4E-CBB7-4371-9504-E51E1CE27AF5}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Music" ID="{C396E428-1427-453C-A58D-569D97B955EE}" WorkUnitID="{DF32A78A-15D4-4E68-B566-159A8F6546E9}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Boss_Phase_3" ID="{A0F11F7D-E9CB-45CD-9492-FA80D1E2820B}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Title_Theme" ID="{2BB2C074-4431-45F4-8F74-1A7C5EE6C115}" WorkUnitID="{469E591F-0F3E-4561-BA06-5C1B45969A32}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Training" ID="{3329860D-574A-46B0-9A8B-9213CA421ABE}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Boss_Phase_1" ID="{0924F378-98E4-46BD-8768-8DA365616DB8}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Tower" ID="{5B067505-3349-4AA2-9411-D992E12139C1}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Boss_Killed" ID="{7657CC0C-790C-4B17-AE42-656DB2B66F4D}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Training_Grounds" ID="{6F3B5C3C-8223-4C6D-8B05-34CC8743D699}" WorkUnitID="{469E591F-0F3E-4561-BA06-5C1B45969A32}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Title_Screen" ID="{78C510F2-F1C2-4F17-BCC7-31D1B91F8341}" WorkUnitID="{469E591F-0F3E-4561-BA06-5C1B45969A32}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

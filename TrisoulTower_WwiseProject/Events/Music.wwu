@@ -3,7 +3,7 @@
 	<Events>
 		<WorkUnit Name="Music" ID="{469E591F-0F3E-4561-BA06-5C1B45969A32}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Boss" ID="{62D8C136-BC1D-43EB-B012-0D3A55CB685D}">
+				<Event Name="Boss_Old" ID="{62D8C136-BC1D-43EB-B012-0D3A55CB685D}">
 					<ChildrenList>
 						<Action Name="" ID="{33D06F24-4B12-4868-AAE1-E9B178F10B52}" ShortID="949453297">
 							<PropertyList>
@@ -159,7 +159,99 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="New_Event" ID="{6F3B5C3C-8223-4C6D-8B05-34CC8743D699}"/>
+				<Event Name="Training_Grounds" ID="{6F3B5C3C-8223-4C6D-8B05-34CC8743D699}">
+					<ChildrenList>
+						<Action Name="" ID="{B300D37C-1C54-4AE4-85D1-6AA9670751F0}" ShortID="362348812">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Training" ID="{3329860D-574A-46B0-9A8B-9213CA421ABE}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{45FD80F9-2D38-4E07-8997-1DC156550ED2}" ShortID="931561099">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="7"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Training" ID="{3329860D-574A-46B0-9A8B-9213CA421ABE}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{774C7B40-C14E-4F0E-BD60-78B9FA37686A}" ShortID="590408030">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="20"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Training" ID="{3329860D-574A-46B0-9A8B-9213CA421ABE}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Title_Screen" ID="{78C510F2-F1C2-4F17-BCC7-31D1B91F8341}">
+					<ChildrenList>
+						<Action Name="" ID="{8206BB64-9054-41CE-874B-2BFCD8FB2009}" ShortID="421952016">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Title_Screen" ID="{6B739B8D-C33C-42EC-9B70-46BC389FB94E}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{4F251C77-62F9-453E-88AE-0D97B318DDD6}" ShortID="748644741">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="7"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Title_Screen" ID="{6B739B8D-C33C-42EC-9B70-46BC389FB94E}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{693FB059-F241-447B-893A-B959D0B5B42B}" ShortID="269527120">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="20"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Title_Screen" ID="{6B739B8D-C33C-42EC-9B70-46BC389FB94E}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Title_Theme" ID="{2BB2C074-4431-45F4-8F74-1A7C5EE6C115}">
+					<ChildrenList>
+						<Action Name="" ID="{BBB99322-65DA-4724-90FE-BD6F5415F92B}" ShortID="969795326">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Title_Screen" ID="{6B739B8D-C33C-42EC-9B70-46BC389FB94E}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{8BDAA36B-50BA-48ED-B3E7-5C659DEFF7F4}" ShortID="445624527">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="7"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Title_Screen" ID="{6B739B8D-C33C-42EC-9B70-46BC389FB94E}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{5796B8C8-7252-4A1B-BA51-2AA5B31A7082}" ShortID="6888983">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="20"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Title_Screen" ID="{6B739B8D-C33C-42EC-9B70-46BC389FB94E}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
