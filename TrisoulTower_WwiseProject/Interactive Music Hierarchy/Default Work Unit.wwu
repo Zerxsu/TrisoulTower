@@ -1833,6 +1833,11 @@
 				<MusicSwitchContainer Name="BossKilled_Switch" ID="{3C52FB9D-5B5F-4B3D-BCF6-0EB71D615032}" ShortID="550436784">
 					<PropertyList>
 						<Property Name="Tempo" Type="Real64" Value="150"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">

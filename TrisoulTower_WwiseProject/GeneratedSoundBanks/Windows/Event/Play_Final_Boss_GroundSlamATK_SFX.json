@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2980602427",
+    "Type": "Event",
+    "GUID": "{49D2038C-B82B-4E64-A55D-CA31207855BD}",
+    "Language": "SFX",
+    "Hash": "{AC38B54A-4853-B859-4D88-9F82AD12CAA9}",
+    "ObjectPath": "Play_Final_Boss_GroundSlamATK_SFX",
+    "ShortName": "Play_Final_Boss_GroundSlamATK_SFX",
+    "Path": "Event/Play_Final_Boss_GroundSlamATK_SFX.bnk",
+    "Media": [
+     {
+      "Id": "665076793",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Final_Boss_GroundSlamATK_SFX .wav",
+      "Path": "Media/665076793.wem",
+      "CachePath": "69/{69A283CA-E3E9-D859-5E0F-4B0EC724AD10}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2980602427",
+      "Name": "Play_Final_Boss_GroundSlamATK_SFX",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Final_Boss_GroundSlamATK_SFX",
+      "GUID": "{49D2038C-B82B-4E64-A55D-CA31207855BD}",
+      "DurationType": "OneShot",
+      "DurationMin": "6.5",
+      "DurationMax": "6.5",
+      "MediaRefs": [
+       {
+        "Id": "665076793"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{62FBD878-F1D0-2A81-D6CA-E1B940F7E842}"
+ }
+}

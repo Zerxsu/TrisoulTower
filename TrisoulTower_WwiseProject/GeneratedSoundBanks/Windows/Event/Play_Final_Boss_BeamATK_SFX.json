@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "943880706",
+    "Type": "Event",
+    "GUID": "{350791F3-6509-4F8B-91D8-1AB411284A4D}",
+    "Language": "SFX",
+    "Hash": "{D922671F-1689-DAE1-F4CD-19D0C5AE76F8}",
+    "ObjectPath": "Play_Final_Boss_BeamATK_SFX",
+    "ShortName": "Play_Final_Boss_BeamATK_SFX",
+    "Path": "Event/Play_Final_Boss_BeamATK_SFX.bnk",
+    "Media": [
+     {
+      "Id": "813581973",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Final_Boss_BeamATK_SFX.wav",
+      "Path": "Media/813581973.wem",
+      "CachePath": "72/{72C32D6A-D719-F41E-5D41-C4BA93CD2505}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "943880706",
+      "Name": "Play_Final_Boss_BeamATK_SFX",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Final_Boss_BeamATK_SFX",
+      "GUID": "{350791F3-6509-4F8B-91D8-1AB411284A4D}",
+      "DurationType": "OneShot",
+      "DurationMin": "3.5572608",
+      "DurationMax": "3.5572608",
+      "MediaRefs": [
+       {
+        "Id": "813581973"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{2C5A1E32-9654-89D4-C0DE-51112C81F6BA}"
+ }
+}

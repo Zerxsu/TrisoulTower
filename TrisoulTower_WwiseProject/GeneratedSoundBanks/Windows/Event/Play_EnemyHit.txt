@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2534390857	Play_EnemyHit			\Default Work Unit\Play_EnemyHit	
+

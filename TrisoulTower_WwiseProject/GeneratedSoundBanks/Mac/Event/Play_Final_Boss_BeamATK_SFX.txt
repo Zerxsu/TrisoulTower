@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	943880706	Play_Final_Boss_BeamATK_SFX			\Default Work Unit\Play_Final_Boss_BeamATK_SFX	
+

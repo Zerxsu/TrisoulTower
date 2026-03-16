@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1946883030",
+    "Type": "Event",
+    "GUID": "{B61520C7-D2CB-4E32-9CBF-4733D077E066}",
+    "Language": "SFX",
+    "Hash": "{29414E63-8EC1-8EBD-74BF-313A503929B9}",
+    "ObjectPath": "Play_Final_Boss_SwingsATK_SFX",
+    "ShortName": "Play_Final_Boss_SwingsATK_SFX",
+    "Path": "Event/Play_Final_Boss_SwingsATK_SFX.bnk",
+    "Media": [
+     {
+      "Id": "764028079",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Final_Boss_SwingsATK_SFX.wav",
+      "Path": "Media/764028079.wem",
+      "CachePath": "D2/{D2A989FF-63FA-58DB-85EB-82C67C7039BD}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1946883030",
+      "Name": "Play_Final_Boss_SwingsATK_SFX",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Final_Boss_SwingsATK_SFX",
+      "GUID": "{B61520C7-D2CB-4E32-9CBF-4733D077E066}",
+      "DurationType": "OneShot",
+      "DurationMin": "3.6863236",
+      "DurationMax": "3.6863236",
+      "MediaRefs": [
+       {
+        "Id": "764028079"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{B2E9BDEC-3471-5772-DFAD-5D4F879B55BB}"
+ }
+}

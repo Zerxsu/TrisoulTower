@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3655049831",
+    "Type": "Event",
+    "GUID": "{5295FE5C-2ACE-48E7-BE37-DDA590848F1B}",
+    "Language": "SFX",
+    "Hash": "{59B710D8-6D3E-350C-83D3-19A9789071FD}",
+    "ObjectPath": "Play_Final_Boss_SpinATK_2SFX",
+    "ShortName": "Play_Final_Boss_SpinATK_2SFX",
+    "Path": "Event/Play_Final_Boss_SpinATK_2SFX.bnk",
+    "Media": [
+     {
+      "Id": "813230988",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Final_Boss_SpinATK_2SFX.wav",
+      "Path": "Media/813230988.wem",
+      "CachePath": "A2/{A2C11337-3B2E-AA30-5C09-808737F68382}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3655049831",
+      "Name": "Play_Final_Boss_SpinATK_2SFX",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Final_Boss_SpinATK_2SFX",
+      "GUID": "{5295FE5C-2ACE-48E7-BE37-DDA590848F1B}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.7639484",
+      "DurationMax": "2.7639484",
+      "MediaRefs": [
+       {
+        "Id": "813230988"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{88B4C58E-F9B3-F6E2-F29B-04EA3BE6315A}"
+ }
+}

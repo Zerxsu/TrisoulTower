@@ -294,6 +294,83 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Final_Boss_BeamATK_SFX" ID="{350791F3-6509-4F8B-91D8-1AB411284A4D}">
+					<ChildrenList>
+						<Action Name="" ID="{50EBF3AB-1A20-4C5D-BCFD-F6592AC745AB}" ShortID="262049458">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Final_Boss_BeamATK_SFX" ID="{F2260B60-DF27-4BAA-BD5D-D7C2F96D8E58}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Final_Boss_GroundSlamATK_SFX" ID="{49D2038C-B82B-4E64-A55D-CA31207855BD}">
+					<ChildrenList>
+						<Action Name="" ID="{40C6EB24-E45D-48D0-ADFA-4AA8DFA2C41B}" ShortID="769530251">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Final_Boss_GroundSlamATK_SFX " ID="{DF52B3F4-3E9C-4092-88D0-639E2B65CBE9}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Final_Boss_SpinATK_2SFX" ID="{5295FE5C-2ACE-48E7-BE37-DDA590848F1B}">
+					<ChildrenList>
+						<Action Name="" ID="{F105EE4A-1544-4736-9379-02A55C79C768}" ShortID="359570373">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Final_Boss_SpinATK_2SFX" ID="{106D9380-CE66-4715-89D9-F762BAA73040}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Final_Boss_SwingsATK_SFX" ID="{B61520C7-D2CB-4E32-9CBF-4733D077E066}">
+					<ChildrenList>
+						<Action Name="" ID="{90ACFEA2-92AB-4E13-80A9-B4219F569274}" ShortID="186928547">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Final_Boss_SwingsATK_SFX" ID="{4FD73647-2A85-461C-952E-3D9AD82917CC}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_EnemyHit" ID="{126B7563-E066-48AC-AC77-26C269AFA7F8}">
+					<ChildrenList>
+						<Action Name="" ID="{256A529B-DC51-489F-96E6-25C8653CD933}" ShortID="854857657">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EnemyHit" ID="{C8F498A1-9DFC-4C10-A80B-D2614F9101D3}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_EnemyRawr" ID="{23F5B3CA-DA39-49C0-B0F1-D2F7552EA6D3}">
+					<ChildrenList>
+						<Action Name="" ID="{D2C42CBD-1BBE-4BC3-8B64-5AE257A0F615}" ShortID="871328434">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EnemyRawr" ID="{11629A92-3DC1-4369-9F2C-382C1CEE7B3F}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Trisoul_EnemyDeathSFX" ID="{5A7E3E81-8E0A-479A-B349-4FC9E587C2FE}">
+					<ChildrenList>
+						<Action Name="" ID="{7BBB1149-7A0C-4BFF-A8B5-4B13D1915B9A}" ShortID="552534576">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Trisoul_EnemyDeathSFX" ID="{DF335E45-4EEF-4C40-86E3-B4FE832D0258}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

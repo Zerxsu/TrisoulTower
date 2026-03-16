@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{2D94C62F-EFBC-45EF-A1FE-60CD365B0917}",
     "Language": "SFX",
-    "Hash": "{6A9F57AF-21BD-C1B1-705B-E73F0BCE83E8}",
+    "Hash": "{CB40E59E-1A6F-EC8A-16B8-E11AA46D62C4}",
     "ObjectPath": "Temp_Footstep_Stone",
     "ShortName": "Temp_Footstep_Stone",
     "Path": "Event/Temp_Footstep_Stone.bnk",
@@ -107,6 +107,6 @@
     ]
    }
   ],
-  "FileHash": "{445443D8-E615-AF9D-5406-9B008A2921D8}"
+  "FileHash": "{AAE3AE05-98D4-0F90-547B-A3BC86915E51}"
  }
 }
