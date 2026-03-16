@@ -252,6 +252,37 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Tower_Theme" ID="{C396E428-1427-453C-A58D-569D97B955EE}">
+					<ChildrenList>
+						<Action Name="" ID="{B8B92F47-859A-44B4-A8D8-DBCF8EB886F9}" ShortID="586272429">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Tower" ID="{5B067505-3349-4AA2-9411-D992E12139C1}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{198F5861-3F7D-4E05-AF23-F0ED238A2367}" ShortID="178881924">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="7"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Tower" ID="{5B067505-3349-4AA2-9411-D992E12139C1}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{A6304F54-E377-4BD2-B165-B930B9A66CDE}" ShortID="22068179">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="20"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Tower" ID="{5B067505-3349-4AA2-9411-D992E12139C1}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

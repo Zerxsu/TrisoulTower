@@ -25,17 +25,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Music" ID="{C396E428-1427-453C-A58D-569D97B955EE}">
-					<ChildrenList>
-						<Action Name="" ID="{B8B92F47-859A-44B4-A8D8-DBCF8EB886F9}" ShortID="586272429">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Tower" ID="{5B067505-3349-4AA2-9411-D992E12139C1}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Swing" ID="{7701D21A-5E6C-4682-A460-30B9D6D74626}">
 					<ChildrenList>
 						<Action Name="" ID="{D5B9603B-8AAC-4A32-9C9A-174395AF5C32}" ShortID="810595394">
@@ -180,7 +169,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="No_Music" ID="{6DE4D22C-BD7F-4402-9A3F-245B07C80326}" WorkUnitID="{3438AE22-F682-4F52-A75F-3430FD9B2FCA}"/>
+									<ObjectRef Name="Off" ID="{6DE4D22C-BD7F-4402-9A3F-245B07C80326}" WorkUnitID="{3438AE22-F682-4F52-A75F-3430FD9B2FCA}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
