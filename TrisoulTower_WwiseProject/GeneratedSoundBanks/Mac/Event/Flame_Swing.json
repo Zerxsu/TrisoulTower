@@ -1,0 +1,60 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1000369125",
+    "Type": "Event",
+    "GUID": "{9897AEDF-BC65-4A93-B476-7C354D572BB8}",
+    "Language": "SFX",
+    "Hash": "{82169F9F-4BB4-62D4-FA2F-0ABB03B3D307}",
+    "ObjectPath": "Flame_Swing",
+    "ShortName": "Flame_Swing",
+    "Path": "Event/Flame_Swing.bnk",
+    "Media": [
+     {
+      "Id": "775904912",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "fireswing1testexport.wav",
+      "Path": "Media/775904912.wem",
+      "CachePath": "C1/{C19C3B2F-58CB-D6FF-4719-5F96E715EF34}.wem"
+     },
+     {
+      "Id": "959288998",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "fireswing2testexport.wav",
+      "Path": "Media/959288998.wem",
+      "CachePath": "40/{40625D5A-B54D-EC48-A60D-91000889B826}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1000369125",
+      "Name": "Flame_Swing",
+      "ObjectPath": "\\Events\\Default Work Unit\\Flame_Swing",
+      "GUID": "{9897AEDF-BC65-4A93-B476-7C354D572BB8}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.8495464",
+      "DurationMax": "2.8495464",
+      "MediaRefs": [
+       {
+        "Id": "775904912"
+       },
+       {
+        "Id": "959288998"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{93D34FF0-83E4-FC50-AA85-353F41F4C625}"
+ }
+}

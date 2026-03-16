@@ -118,6 +118,14 @@
 						<State Name="Off" ID="{9B3221D5-98B0-4216-A7D2-218517544114}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="Boss_Killed" ID="{9CC0AA6D-2DCE-4578-8C22-02FDA2E5CD85}">
+					<ChildrenList>
+						<State Name="None" ID="{EC83388A-1AE7-4E70-B6DC-8C28E164F20A}"/>
+						<State Name="On" ID="{3EABCDFA-5160-42EC-9BA6-D0986F243BC0}"/>
+						<State Name="Off" ID="{8E46BA58-9F8A-4C98-A8FD-DD38C485507D}"/>
+						<State Name="Menu" ID="{1B202597-AE69-4445-9CC2-B5251DAEA36A}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

@@ -1,0 +1,96 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1942692385",
+    "Type": "Event",
+    "GUID": "{D4B6CC9A-BFF4-4931-AA16-DDE6332E698D}",
+    "Language": "SFX",
+    "Hash": "{64BA749A-945E-2E81-1280-6C394A9F091D}",
+    "ObjectPath": "Dash",
+    "ShortName": "Dash",
+    "Path": "Event/Dash.bnk",
+    "Media": [
+     {
+      "Id": "190679874",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Trisoul_DodgeRoll_SFX_1.wav",
+      "Path": "Media/190679874.wem",
+      "CachePath": "FE/{FE798C17-21EF-6820-2945-F9C79FA27EB6}.wem"
+     },
+     {
+      "Id": "433824418",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Trisoul_DodgeRoll_SFX_0.wav",
+      "Path": "Media/433824418.wem",
+      "CachePath": "68/{68DB5E93-CC34-67D0-4E3B-E8BC8C87035F}.wem"
+     },
+     {
+      "Id": "764992986",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Trisoul_DodgeRoll_SFX_2.wav",
+      "Path": "Media/764992986.wem",
+      "CachePath": "41/{417336A1-8C0C-0458-30AB-039C42980F6B}.wem"
+     },
+     {
+      "Id": "938206191",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Trisoul_DodgeRoll_SFX_4.wav",
+      "Path": "Media/938206191.wem",
+      "CachePath": "37/{3706CE7A-D0A9-4449-DC59-4D4D79769D31}.wem"
+     },
+     {
+      "Id": "983562577",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Trisoul_DodgeRoll_SFX_3.wav",
+      "Path": "Media/983562577.wem",
+      "CachePath": "F3/{F366AF4A-267A-FF43-94E7-5328D3F4B575}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1942692385",
+      "Name": "Dash",
+      "ObjectPath": "\\Events\\Default Work Unit\\Dash",
+      "GUID": "{D4B6CC9A-BFF4-4931-AA16-DDE6332E698D}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.3437415",
+      "DurationMax": "1.3437415",
+      "MediaRefs": [
+       {
+        "Id": "190679874"
+       },
+       {
+        "Id": "433824418"
+       },
+       {
+        "Id": "764992986"
+       },
+       {
+        "Id": "938206191"
+       },
+       {
+        "Id": "983562577"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{67196948-74C7-14CA-4710-4F28D9D0F318}"
+ }
+}

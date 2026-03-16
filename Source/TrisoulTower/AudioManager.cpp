@@ -11,31 +11,13 @@ void UAudioManager::Initialize(FSubsystemCollectionBase& Collection)
 
 void UAudioManager::Deinitialize()
 {
-	StopMusic();
 	Super::Deinitialize();
 }
 
-void UAudioManager::PlaySFX(UAkAudioEvent* SoundEffect, AActor* ActorSource)
+void UAudioManager::SetEvent(UAkAudioEvent* SoundEffect, AActor* ActorSource)
 {
 	if (SoundEffect)
-	{
 		UAkGameplayStatics::PostEvent(SoundEffect, ActorSource, 0, FOnAkPostEventCallback(), false);
-	}
-}
-
-void UAudioManager::PlayMusic(UAkAudioEvent* Music)
-{
-	if (Music)
-	{
-		StopMusic();
-		UAkGameplayStatics::PostEvent(Music, nullptr, 0, FOnAkPostEventCallback(), false);
-	}
-}
-
-void UAudioManager::StopMusic()
-{
-	// no function to stop music in Wwise documentation
-	// Will most likely have to stop music using a parameter in Wwise project
 }
 
 void UAudioManager::SetState(UAkStateValue const* StateName)

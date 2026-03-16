@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{03DC8F4B-44C3-4833-8039-D75C2C00E6D3}",
     "Language": "SFX",
-    "Hash": "{F38B7FCF-B050-00AE-0967-338E8D0E41D9}",
+    "Hash": "{07ACDA7B-3C43-4EF4-B72F-BECBA24B1075}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Music",
     "ShortName": "Music",
     "Path": "Music.bnk",
@@ -82,23 +82,37 @@
     ],
     "Events": [
      {
-      "Id": "3456390069",
-      "Name": "Boss_Phases",
-      "ObjectPath": "\\Events\\Music\\Boss_Phases",
+      "Id": "3972193662",
+      "Name": "Boss_Killed",
+      "ObjectPath": "\\Events\\Music\\Boss_Killed",
       "GUID": "{CAA32C93-FE2E-41DB-9E53-00DDD2C11F03}",
       "DurationType": "Infinite",
-      "MediaRefs": [
+      "SwitchContainers": [
        {
-        "Id": "17138113"
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "3972193662",
+         "Id": "2607556080",
+         "GUID": "{1B202597-AE69-4445-9CC2-B5251DAEA36A}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "1019931530"
+         }
+        ]
        },
        {
-        "Id": "583356784"
-       },
-       {
-        "Id": "751266702"
-       },
-       {
-        "Id": "1019931530"
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "3972193662",
+         "Id": "1651971902",
+         "GUID": "{3EABCDFA-5160-42EC-9BA6-D0986F243BC0}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "1019931530"
+         }
+        ]
        }
       ]
      },
@@ -114,9 +128,6 @@
       "MediaRefs": [
        {
         "Id": "738341883"
-       },
-       {
-        "Id": "911417253"
        }
       ]
      },
@@ -126,21 +137,19 @@
       "ObjectPath": "\\Events\\Music\\Title_Screen",
       "GUID": "{78C510F2-F1C2-4F17-BCC7-31D1B91F8341}",
       "DurationType": "Infinite",
-      "MediaRefs": [
+      "SwitchContainers": [
        {
-        "Id": "186069822"
-       }
-      ]
-     },
-     {
-      "Id": "2521525023",
-      "Name": "Title_Theme",
-      "ObjectPath": "\\Events\\Music\\Title_Theme",
-      "GUID": "{2BB2C074-4431-45F4-8F74-1A7C5EE6C115}",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "186069822"
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "2521525023",
+         "Id": "1651971902",
+         "GUID": "{4E5A793F-4425-4A71-A6EA-6216F706EDC8}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "186069822"
+         }
+        ]
        }
       ]
      },
@@ -150,12 +159,45 @@
       "ObjectPath": "\\Events\\Music\\Tower_Theme",
       "GUID": "{C396E428-1427-453C-A58D-569D97B955EE}",
       "DurationType": "Infinite",
-      "MediaRefs": [
+      "SwitchContainers": [
        {
-        "Id": "738341883"
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "3873482650",
+         "Id": "1823678183",
+         "GUID": "{7E25F7AE-4495-4DA5-9596-AE2B915761A6}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "738341883"
+         }
+        ]
        },
        {
-        "Id": "911417253"
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "3873482650",
+         "Id": "168610243",
+         "GUID": "{00C52401-B4FA-4511-A245-B401A0360DAE}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "911417253"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "3873482650",
+         "Id": "2607556080",
+         "GUID": "{6170DB93-79A9-47B2-90E4-D53A867292C0}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "738341883"
+         }
+        ]
        }
       ]
      },
@@ -165,15 +207,168 @@
       "ObjectPath": "\\Events\\Music\\Training_Grounds",
       "GUID": "{6F3B5C3C-8223-4C6D-8B05-34CC8743D699}",
       "DurationType": "Infinite",
-      "MediaRefs": [
+      "SwitchContainers": [
        {
-        "Id": "459624906"
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "1505442550",
+         "Id": "2607556080",
+         "GUID": "{7F38D79F-7045-46C2-86EF-31739EFD08A6}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "459624906"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "1505442550",
+         "Id": "1651971902",
+         "GUID": "{D4A99181-347D-402E-89F2-BC977644A80A}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "459624906"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "1505442550",
+      "Name": "Training_Grounds",
+      "ObjectPath": "\\States\\Default Work Unit\\Training_Grounds",
+      "GUID": "{D448BE74-CFBD-4F67-925C-8A251BACC1C6}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Training_Grounds\\None",
+        "GUID": "{CBEB319F-0308-4D7A-B76C-73729BAEE3B9}"
+       },
+       {
+        "Id": "930712164",
+        "Name": "Off",
+        "ObjectPath": "\\States\\Default Work Unit\\Training_Grounds\\Off",
+        "GUID": "{23D16A19-B4E2-4FF1-98AF-3D852FB64D37}"
+       },
+       {
+        "Id": "1651971902",
+        "Name": "On",
+        "ObjectPath": "\\States\\Default Work Unit\\Training_Grounds\\On",
+        "GUID": "{D4A99181-347D-402E-89F2-BC977644A80A}"
+       },
+       {
+        "Id": "2607556080",
+        "Name": "Menu",
+        "ObjectPath": "\\States\\Default Work Unit\\Training_Grounds\\Menu",
+        "GUID": "{7F38D79F-7045-46C2-86EF-31739EFD08A6}"
+       }
+      ]
+     },
+     {
+      "Id": "2521525023",
+      "Name": "Title_Theme",
+      "ObjectPath": "\\States\\Default Work Unit\\Title_Theme",
+      "GUID": "{CA60BC5B-D079-46B7-B116-C0CD729217DA}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Title_Theme\\None",
+        "GUID": "{14553FB7-9AE2-4998-BE54-436353619D7D}"
+       },
+       {
+        "Id": "930712164",
+        "Name": "Off",
+        "ObjectPath": "\\States\\Default Work Unit\\Title_Theme\\Off",
+        "GUID": "{9B3221D5-98B0-4216-A7D2-218517544114}"
+       },
+       {
+        "Id": "1651971902",
+        "Name": "On",
+        "ObjectPath": "\\States\\Default Work Unit\\Title_Theme\\On",
+        "GUID": "{4E5A793F-4425-4A71-A6EA-6216F706EDC8}"
+       }
+      ]
+     },
+     {
+      "Id": "3873482650",
+      "Name": "Tower_Theme",
+      "ObjectPath": "\\States\\Default Work Unit\\Tower_Theme",
+      "GUID": "{B5F6643A-357F-41BB-B5B3-DC756079A30D}",
+      "States": [
+       {
+        "Id": "168610243",
+        "Name": "Fighting",
+        "ObjectPath": "\\States\\Default Work Unit\\Tower_Theme\\Fighting",
+        "GUID": "{00C52401-B4FA-4511-A245-B401A0360DAE}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Tower_Theme\\None",
+        "GUID": "{2EA2A999-CCE6-40E5-85F7-D859D5A78257}"
+       },
+       {
+        "Id": "930712164",
+        "Name": "Off",
+        "ObjectPath": "\\States\\Default Work Unit\\Tower_Theme\\Off",
+        "GUID": "{6DE4D22C-BD7F-4402-9A3F-245B07C80326}"
+       },
+       {
+        "Id": "1823678183",
+        "Name": "Exploring",
+        "ObjectPath": "\\States\\Default Work Unit\\Tower_Theme\\Exploring",
+        "GUID": "{7E25F7AE-4495-4DA5-9596-AE2B915761A6}"
+       },
+       {
+        "Id": "2607556080",
+        "Name": "Menu",
+        "ObjectPath": "\\States\\Default Work Unit\\Tower_Theme\\Menu",
+        "GUID": "{6170DB93-79A9-47B2-90E4-D53A867292C0}"
+       }
+      ]
+     },
+     {
+      "Id": "3972193662",
+      "Name": "Boss_Killed",
+      "ObjectPath": "\\States\\Default Work Unit\\Boss_Killed",
+      "GUID": "{9CC0AA6D-2DCE-4578-8C22-02FDA2E5CD85}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Boss_Killed\\None",
+        "GUID": "{EC83388A-1AE7-4E70-B6DC-8C28E164F20A}"
+       },
+       {
+        "Id": "930712164",
+        "Name": "Off",
+        "ObjectPath": "\\States\\Default Work Unit\\Boss_Killed\\Off",
+        "GUID": "{8E46BA58-9F8A-4C98-A8FD-DD38C485507D}"
+       },
+       {
+        "Id": "1651971902",
+        "Name": "On",
+        "ObjectPath": "\\States\\Default Work Unit\\Boss_Killed\\On",
+        "GUID": "{3EABCDFA-5160-42EC-9BA6-D0986F243BC0}"
+       },
+       {
+        "Id": "2607556080",
+        "Name": "Menu",
+        "ObjectPath": "\\States\\Default Work Unit\\Boss_Killed\\Menu",
+        "GUID": "{1B202597-AE69-4445-9CC2-B5251DAEA36A}"
        }
       ]
      }
     ]
    }
   ],
-  "FileHash": "{A416F89D-AD52-5326-6CBC-3E85370B06F5}"
+  "FileHash": "{ADF7FE93-8D77-B4F4-6FE3-F475994D4011}"
  }
 }

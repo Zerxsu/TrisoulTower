@@ -1,0 +1,96 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3826569560",
+    "Type": "Event",
+    "GUID": "{2EB1A45B-61CA-4F3A-9C1D-333BA854778A}",
+    "Language": "SFX",
+    "Hash": "{B9FC1F1E-85B3-F14F-005C-C18AF280ABA7}",
+    "ObjectPath": "Music_State",
+    "ShortName": "Music_State",
+    "Path": "Event/Music_State.bnk",
+    "Events": [
+     {
+      "Id": "3826569560",
+      "Name": "Music_State",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music_State",
+      "GUID": "{2EB1A45B-61CA-4F3A-9C1D-333BA854778A}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetState": [
+       {
+        "GroupId": "3873482650",
+        "Id": "168610243",
+        "Name": "Fighting",
+        "ObjectPath": "\\States\\Default Work Unit\\Tower_Theme\\Fighting",
+        "GUID": "{00C52401-B4FA-4511-A245-B401A0360DAE}"
+       },
+       {
+        "GroupId": "3873482650",
+        "Id": "930712164",
+        "Name": "Off",
+        "ObjectPath": "\\States\\Default Work Unit\\Tower_Theme\\Off",
+        "GUID": "{6DE4D22C-BD7F-4402-9A3F-245B07C80326}"
+       },
+       {
+        "GroupId": "3873482650",
+        "Id": "1823678183",
+        "Name": "Exploring",
+        "ObjectPath": "\\States\\Default Work Unit\\Tower_Theme\\Exploring",
+        "GUID": "{7E25F7AE-4495-4DA5-9596-AE2B915761A6}"
+       }
+      ]
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "3873482650",
+      "Name": "Tower_Theme",
+      "ObjectPath": "\\States\\Default Work Unit\\Tower_Theme",
+      "GUID": "{B5F6643A-357F-41BB-B5B3-DC756079A30D}",
+      "States": [
+       {
+        "Id": "168610243",
+        "Name": "Fighting",
+        "ObjectPath": "\\States\\Default Work Unit\\Tower_Theme\\Fighting",
+        "GUID": "{00C52401-B4FA-4511-A245-B401A0360DAE}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Tower_Theme\\None",
+        "GUID": "{2EA2A999-CCE6-40E5-85F7-D859D5A78257}"
+       },
+       {
+        "Id": "930712164",
+        "Name": "Off",
+        "ObjectPath": "\\States\\Default Work Unit\\Tower_Theme\\Off",
+        "GUID": "{6DE4D22C-BD7F-4402-9A3F-245B07C80326}"
+       },
+       {
+        "Id": "1823678183",
+        "Name": "Exploring",
+        "ObjectPath": "\\States\\Default Work Unit\\Tower_Theme\\Exploring",
+        "GUID": "{7E25F7AE-4495-4DA5-9596-AE2B915761A6}"
+       },
+       {
+        "Id": "2607556080",
+        "Name": "Menu",
+        "ObjectPath": "\\States\\Default Work Unit\\Tower_Theme\\Menu",
+        "GUID": "{6170DB93-79A9-47B2-90E4-D53A867292C0}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{0BAB97BD-1F5E-1A1B-0F9B-93613CAFCE4F}"
+ }
+}

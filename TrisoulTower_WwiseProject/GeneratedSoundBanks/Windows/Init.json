@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{E891B4DF-A36B-05C3-6FF1-4C6152E1AEE0}",
+    "Hash": "{B7059B76-1198-1BD4-EA2D-8221359354C4}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -272,6 +272,38 @@
         "GUID": "{DDF9933D-9C2E-4553-8E53-2D90DC246562}"
        }
       ]
+     },
+     {
+      "Id": "3972193662",
+      "Name": "Boss_Killed",
+      "ObjectPath": "\\States\\Default Work Unit\\Boss_Killed",
+      "GUID": "{9CC0AA6D-2DCE-4578-8C22-02FDA2E5CD85}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Boss_Killed\\None",
+        "GUID": "{EC83388A-1AE7-4E70-B6DC-8C28E164F20A}"
+       },
+       {
+        "Id": "930712164",
+        "Name": "Off",
+        "ObjectPath": "\\States\\Default Work Unit\\Boss_Killed\\Off",
+        "GUID": "{8E46BA58-9F8A-4C98-A8FD-DD38C485507D}"
+       },
+       {
+        "Id": "1651971902",
+        "Name": "On",
+        "ObjectPath": "\\States\\Default Work Unit\\Boss_Killed\\On",
+        "GUID": "{3EABCDFA-5160-42EC-9BA6-D0986F243BC0}"
+       },
+       {
+        "Id": "2607556080",
+        "Name": "Menu",
+        "ObjectPath": "\\States\\Default Work Unit\\Boss_Killed\\Menu",
+        "GUID": "{1B202597-AE69-4445-9CC2-B5251DAEA36A}"
+       }
+      ]
      }
     ],
     "SwitchGroups": [
@@ -324,6 +356,6 @@
     ]
    }
   ],
-  "FileHash": "{13B736DB-59FC-93AB-0DDD-7ECB84FC015A}"
+  "FileHash": "{E52D1FFB-80C0-6D8C-FBBE-554FE1E36349}"
  }
 }

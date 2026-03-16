@@ -10,48 +10,107 @@
     "Type": "Event",
     "GUID": "{62D8C136-BC1D-43EB-B012-0D3A55CB685D}",
     "Language": "SFX",
-    "Hash": "{795B95DA-2098-7D1C-A39C-B89A5844E6FC}",
+    "Hash": "{16C54A80-F089-6C78-F9BB-DBDDEE443C6E}",
     "ObjectPath": "Boss_Old",
     "ShortName": "Boss_Old",
     "Path": "Event/Boss_Old.bnk",
+    "Media": [
+     {
+      "Id": "17138113",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Phase3_TrisoulFinalBoss_150BPM.wav",
+      "Path": "Media/17138113.wem",
+      "CachePath": "32/{32FA7D67-B685-84F6-35FD-EB3672C5B72F}.wem"
+     },
+     {
+      "Id": "583356784",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Phase2_TrisoulFinalBoss_150BPM_Reverb.wav",
+      "Path": "Media/583356784.wem",
+      "CachePath": "C9/{C99857E6-C00C-20EB-2818-3D5DF8AF0890}.wem"
+     },
+     {
+      "Id": "751266702",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Phase1_TrisoulFinalBoss_150BPM.wav",
+      "Path": "Media/751266702.wem",
+      "CachePath": "ED/{EDCF8EF6-485E-2775-897E-95B7E748190B}.wem"
+     },
+     {
+      "Id": "1019931530",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FinalHit_TrisoulFinalBoss_150BPM.wav",
+      "Path": "Media/1019931530.wem",
+      "CachePath": "62/{62DE93F0-F55A-390A-C08B-3498DD58B16F}.wem"
+     }
+    ],
     "Events": [
      {
       "Id": "1730191412",
       "Name": "Boss_Old",
       "ObjectPath": "\\Events\\Music\\Boss_Old",
       "GUID": "{62D8C136-BC1D-43EB-B012-0D3A55CB685D}",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0",
-      "ActionSetState": [
+      "DurationType": "Infinite",
+      "SwitchContainers": [
        {
-        "GroupId": "2831509153",
-        "Id": "3630028968",
-        "Name": "Phase2",
-        "ObjectPath": "\\States\\Default Work Unit\\Boss_States_Old\\Phase2",
-        "GUID": "{DEDBF804-0DC8-46AA-A61E-80A1EBD721AF}"
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "2831509153",
+         "Id": "3630028968",
+         "GUID": "{DEDBF804-0DC8-46AA-A61E-80A1EBD721AF}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "583356784"
+         }
+        ]
        },
        {
-        "GroupId": "2831509153",
-        "Id": "3630028969",
-        "Name": "Phase3",
-        "ObjectPath": "\\States\\Default Work Unit\\Boss_States_Old\\Phase3",
-        "GUID": "{1B055634-18B4-468B-AE26-04CE32523CC6}"
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "2831509153",
+         "Id": "3630028969",
+         "GUID": "{1B055634-18B4-468B-AE26-04CE32523CC6}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "17138113"
+         }
+        ]
        },
        {
-        "GroupId": "2831509153",
-        "Id": "3630028971",
-        "Name": "Phase1",
-        "ObjectPath": "\\States\\Default Work Unit\\Boss_States_Old\\Phase1",
-        "GUID": "{F3DEE3DD-7258-4EB4-A925-69E5327FF311}"
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "2831509153",
+         "Id": "3972193662",
+         "GUID": "{363F4410-D7B9-4445-A763-88D9AD5C4E97}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "1019931530"
+         }
+        ]
        },
        {
-        "GroupId": "2831509153",
-        "Id": "3972193662",
-        "Name": "Boss_killed",
-        "ObjectPath": "\\States\\Default Work Unit\\Boss_States_Old\\Boss_killed",
-        "GUID": "{363F4410-D7B9-4445-A763-88D9AD5C4E97}"
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "2831509153",
+         "Id": "3630028971",
+         "GUID": "{F3DEE3DD-7258-4EB4-A925-69E5327FF311}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "751266702"
+         }
+        ]
        }
       ]
      }
@@ -98,6 +157,6 @@
     ]
    }
   ],
-  "FileHash": "{4A78F63F-8964-D2BA-77BF-62F000304163}"
+  "FileHash": "{EDD4DEC6-9A5B-04A2-F0DD-97AF54F5AC49}"
  }
 }

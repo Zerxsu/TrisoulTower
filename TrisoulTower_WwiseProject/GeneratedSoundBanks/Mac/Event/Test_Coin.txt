@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	4213119059	Test_Coin			\Default Work Unit\Test_Coin	
+

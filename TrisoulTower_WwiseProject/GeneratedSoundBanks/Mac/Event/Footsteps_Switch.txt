@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3140091853	Footsteps_Switch			\Default Work Unit\Footsteps_Switch	
+

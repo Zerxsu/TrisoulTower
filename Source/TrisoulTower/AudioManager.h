@@ -22,16 +22,8 @@ public:
 
 	// Plays sound effect
 	UFUNCTION(BlueprintCallable, Category = "Audio")
-	void PlaySFX(UAkAudioEvent* SoundEffect, AActor* ActorSource);
-
-	// Plays music track
-	UFUNCTION(BlueprintCallable, Category = "Audio")
-	void PlayMusic(UAkAudioEvent* Music);
-
-	// Stops the current music playing
-	UFUNCTION(BlueprintCallable, Category = "Audio")
-	void StopMusic();
-
+	void SetEvent(UAkAudioEvent* SoundEffect, AActor* ActorSource);
+	
 	// Sets states from Wwise project
 	UFUNCTION(BlueprintCallable, Category = "Audio")
 	void SetState(UAkStateValue const* StateName);

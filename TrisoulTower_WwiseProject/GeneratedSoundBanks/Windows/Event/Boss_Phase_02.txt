@@ -1,0 +1,12 @@
+Event	ID	Name			Wwise Object Path	Notes
+	4241444035	Boss_Phase_02			\Music\Boss_Phase_02	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	3922696681	Boss_Phase_2			\Default Work Unit\Boss_Phase_2	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Boss_Phase_2			
+	930712164	Off	Boss_Phase_2			
+	1651971902	On	Boss_Phase_2			
+	2607556080	Menu	Boss_Phase_2			
+

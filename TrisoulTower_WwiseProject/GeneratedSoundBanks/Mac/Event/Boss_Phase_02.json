@@ -1,0 +1,103 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "4241444035",
+    "Type": "Event",
+    "GUID": "{7A12C794-40FC-4459-85F5-8F870CC748A7}",
+    "Language": "SFX",
+    "Hash": "{88C187FD-F634-51FE-768C-D08652761710}",
+    "ObjectPath": "Boss_Phase_02",
+    "ShortName": "Boss_Phase_02",
+    "Path": "Event/Boss_Phase_02.bnk",
+    "Media": [
+     {
+      "Id": "583356784",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Phase2_TrisoulFinalBoss_150BPM_Reverb.wav",
+      "Path": "Media/583356784.wem",
+      "CachePath": "C9/{C99857E6-C00C-20EB-2818-3D5DF8AF0890}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "4241444035",
+      "Name": "Boss_Phase_02",
+      "ObjectPath": "\\Events\\Music\\Boss_Phase_02",
+      "GUID": "{7A12C794-40FC-4459-85F5-8F870CC748A7}",
+      "DurationType": "Infinite",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "3922696681",
+         "Id": "2607556080",
+         "GUID": "{3567A4FE-EB64-407F-924A-EBAE1F5D5A17}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "583356784"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "3922696681",
+         "Id": "1651971902",
+         "GUID": "{84F0AB82-29BE-4156-BD55-584655523416}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "583356784"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "3922696681",
+      "Name": "Boss_Phase_2",
+      "ObjectPath": "\\States\\Default Work Unit\\Boss_Phase_2",
+      "GUID": "{525D8CC0-4965-495B-93F4-6AA0A0A38684}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Boss_Phase_2\\None",
+        "GUID": "{177A9A2E-0811-4EB2-AFEC-99E14ECAC12F}"
+       },
+       {
+        "Id": "930712164",
+        "Name": "Off",
+        "ObjectPath": "\\States\\Default Work Unit\\Boss_Phase_2\\Off",
+        "GUID": "{9D2452FF-D539-4C9E-A689-9DDF8FD5DAC7}"
+       },
+       {
+        "Id": "1651971902",
+        "Name": "On",
+        "ObjectPath": "\\States\\Default Work Unit\\Boss_Phase_2\\On",
+        "GUID": "{84F0AB82-29BE-4156-BD55-584655523416}"
+       },
+       {
+        "Id": "2607556080",
+        "Name": "Menu",
+        "ObjectPath": "\\States\\Default Work Unit\\Boss_Phase_2\\Menu",
+        "GUID": "{3567A4FE-EB64-407F-924A-EBAE1F5D5A17}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{ADF02406-FD5B-E78D-321F-62E12640FE09}"
+ }
+}

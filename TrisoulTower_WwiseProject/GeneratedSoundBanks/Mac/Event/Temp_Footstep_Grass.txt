@@ -1,0 +1,11 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2237897111	Temp_Footstep_Grass			\Default Work Unit\Temp_Footstep_Grass	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	3140091853	Footsteps_Switch			\Default Work Unit\Footsteps_Switch	
+
+Switch	ID	Name	Switch Group			Notes
+	7365553	Footsteps_Grass	Footsteps_Switch			
+	307640020	Footsteps_Stone	Footsteps_Switch			
+	1565032450	Footsteps_Dirt	Footsteps_Switch			
+
