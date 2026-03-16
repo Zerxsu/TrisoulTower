@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "283784785",
+    "Type": "Event",
+    "GUID": "{83B730DB-CE3A-4FCE-A462-557A7D682EC6}",
+    "Language": "SFX",
+    "Hash": "{7E9C8EC9-EE83-0586-4E0F-BC458C5AB800}",
+    "ObjectPath": "Fire_Ult",
+    "ShortName": "Fire_Ult",
+    "Path": "Event/Fire_Ult.bnk",
+    "Media": [
+     {
+      "Id": "552394354",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Fire_Ult.wav",
+      "Path": "Media/552394354.wem",
+      "CachePath": "98/{9862321E-2E65-E079-9CBA-27EE62AC34E7}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "283784785",
+      "Name": "Fire_Ult",
+      "ObjectPath": "\\Events\\Default Work Unit\\Fire_Ult",
+      "GUID": "{83B730DB-CE3A-4FCE-A462-557A7D682EC6}",
+      "DurationType": "OneShot",
+      "DurationMin": "7.5674605",
+      "DurationMax": "7.5674605",
+      "MediaRefs": [
+       {
+        "Id": "552394354"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{BA623408-8220-8F74-5741-3AEA6EDB7485}"
+ }
+}

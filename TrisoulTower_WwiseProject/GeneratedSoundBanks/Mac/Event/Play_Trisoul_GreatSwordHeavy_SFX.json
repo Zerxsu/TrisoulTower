@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2851442826",
+    "Type": "Event",
+    "GUID": "{2022514D-9A6E-45F0-A239-E6889C2D5300}",
+    "Language": "SFX",
+    "Hash": "{AFC5EA4D-6652-E2E6-C977-472E18D4F202}",
+    "ObjectPath": "Play_Trisoul_GreatSwordHeavy_SFX",
+    "ShortName": "Play_Trisoul_GreatSwordHeavy_SFX",
+    "Path": "Event/Play_Trisoul_GreatSwordHeavy_SFX.bnk",
+    "Media": [
+     {
+      "Id": "573375227",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Trisoul_GreatSwordHeavy_SFX.wav",
+      "Path": "Media/573375227.wem",
+      "CachePath": "AD/{AD926C20-591B-C357-08C9-10DF5D1DC08B}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2851442826",
+      "Name": "Play_Trisoul_GreatSwordHeavy_SFX",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Trisoul_GreatSwordHeavy_SFX",
+      "GUID": "{2022514D-9A6E-45F0-A239-E6889C2D5300}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.9570521",
+      "DurationMax": "1.9570521",
+      "MediaRefs": [
+       {
+        "Id": "573375227"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{A6830BD8-2026-B3F7-5754-CD8D557F8EDD}"
+ }
+}

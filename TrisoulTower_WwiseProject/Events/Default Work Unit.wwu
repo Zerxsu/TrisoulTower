@@ -250,6 +250,50 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Fire_Ult" ID="{83B730DB-CE3A-4FCE-A462-557A7D682EC6}">
+					<ChildrenList>
+						<Action Name="" ID="{7FC13E92-9B15-4CB7-9B1C-5F2B04FBD21C}" ShortID="834769319">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Fire_Ult" ID="{19153D37-ADC1-4F22-8420-4882167467A7}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="GroundSlamAttack" ID="{F286ADB7-032E-4616-9CD7-9DBEE8D3D03F}">
+					<ChildrenList>
+						<Action Name="" ID="{D78DBBB0-ED9A-49F8-AD9E-1BDD802BA4B4}" ShortID="828506981">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GroundSlamAttack" ID="{F9C4B6DF-47E2-48C6-BC81-A65FCBCEC890}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Trisoul_GreatSwordHeavy_SFX" ID="{2022514D-9A6E-45F0-A239-E6889C2D5300}">
+					<ChildrenList>
+						<Action Name="" ID="{87C1D9F2-86CF-4BB6-8DE3-B7C8FAF37D74}" ShortID="90595349">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Trisoul_GreatSwordHeavy_SFX" ID="{1DC88630-7264-4404-B9B7-BB5BE245EFA5}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Trisoul_GreatSwordULT_SFX" ID="{B1981C26-1A12-4DCC-823D-F57B1062AC10}">
+					<ChildrenList>
+						<Action Name="" ID="{63DFAFDC-4D05-4F9B-9D9E-8F5BD612C76A}" ShortID="350657412">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Trisoul_GreatSwordULT_SFX" ID="{E169D8D7-470F-41A3-BBC9-00ABD6FBF559}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

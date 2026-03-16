@@ -1155,6 +1155,94 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<Sound Name="Fire_Ult" ID="{19153D37-ADC1-4F22-8420-4882167467A7}" ShortID="958255052">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Fire_Ult" ID="{3B2D5E1F-D08C-4DD2-86D4-FA3F5AAD7763}">
+							<Language>SFX</Language>
+							<AudioFile>Fire_Ult.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="552394354"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Fire_Ult" ID="{3B2D5E1F-D08C-4DD2-86D4-FA3F5AAD7763}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="GroundSlamAttack" ID="{F9C4B6DF-47E2-48C6-BC81-A65FCBCEC890}" ShortID="999669893">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Trisoul_GroundSlamAttack_SFX" ID="{297110B0-4A76-414D-9278-AFF024107F80}">
+							<Language>SFX</Language>
+							<AudioFile>Trisoul_GroundSlamAttack_SFX.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="1020704666"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Trisoul_GroundSlamAttack_SFX" ID="{297110B0-4A76-414D-9278-AFF024107F80}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Trisoul_GreatSwordHeavy_SFX" ID="{1DC88630-7264-4404-B9B7-BB5BE245EFA5}" ShortID="536626718">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Trisoul_GreatSwordHeavy_SFX" ID="{02031891-23F0-4B37-B30A-A81DBEA1C6A6}">
+							<Language>SFX</Language>
+							<AudioFile>Trisoul_GreatSwordHeavy_SFX.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="573375227"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Trisoul_GreatSwordHeavy_SFX" ID="{02031891-23F0-4B37-B30A-A81DBEA1C6A6}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Trisoul_GreatSwordULT_SFX" ID="{E169D8D7-470F-41A3-BBC9-00ABD6FBF559}" ShortID="661353402">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Trisoul_GreatSwordULT_SFX" ID="{AAD0381B-8D5D-48D6-B0A6-C1D813F6D35C}">
+							<Language>SFX</Language>
+							<AudioFile>Trisoul_GreatSwordULT_SFX.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="931863211"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Trisoul_GreatSwordULT_SFX" ID="{AAD0381B-8D5D-48D6-B0A6-C1D813F6D35C}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

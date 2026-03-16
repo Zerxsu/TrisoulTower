@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1536668206	Play_Trisoul_GreatSwordULT_SFX			\Default Work Unit\Play_Trisoul_GreatSwordULT_SFX	
+
