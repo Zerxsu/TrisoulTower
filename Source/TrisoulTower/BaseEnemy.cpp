@@ -85,7 +85,7 @@ void ABaseEnemy::Tick(float DeltaTime)
 
 			FVector Dir;//Direction to next point
 
-			if (!NavPath) return;
+			if (!NavPath || NavPath->GetPathPoints().Num() <= 1) return;
 			
 			Dir = NavPath->GetPathPointLocation(1).Position - GetActorLocation();
 			Dir.Normalize();
@@ -414,6 +414,7 @@ void ABaseEnemy::TakeAttack_Implementation(float damage, bool parry) {
 
 	if (parry || Vulnerable) {
 		Vulnerable = false;
+		damage *= 2.0f;
 		stunTime += 2.5f;
 		isAttacking = false;
 		isAtTarget = false;
