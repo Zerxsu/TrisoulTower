@@ -58,10 +58,6 @@ void ABaseEnemy::Tick(float DeltaTime)
 
 	if (!isAtTarget && stunTime <= 0 && NavPath != nullptr) {//If path is unfinished
 		
-		//if (NavPath->GetLength() <= TargetDist) bool m = true;
-		//if (CanSeeTarget()) bool m = false;
-		
-		//if ((NavPath->GetLength() <= TargetDist && CanSeeTarget()) || IsAtTarget()) {
 		if (IsAtTarget()) {
 			ReachedTarget();
 			isMoving = false;
@@ -149,22 +145,11 @@ void ABaseEnemy::FindTarget()
 	if (TargetType == ETargetType::Near) {//TargetType == ETargetType::Direct || 
 
 		FVector Separation = (GetActorLocation() - PlayerActor->GetActorLocation()).GetSafeNormal();
-		//DebugPoint(PlayerActor->GetActorLocation() + Separation, FColor::Green);
 		Separation *= TargetDist;
 		Separation.Z = GetActorLocation().Z;
-		//DebugPoint(PlayerActor->GetActorLocation() + Separation, FColor::Blue);
 		SetDestination(PlayerActor->GetActorLocation() + Separation, true);
 
-		/*
-		if (FVector::Distance(GetActorLocation(), PlayerActor->GetActorLocation()) <= TargetDist * 0.75) {
-			FVector Separation = (PlayerActor->GetActorLocation() - GetActorLocation()).GetSafeNormal();
-			Separation *= TargetDist;
-			Separation.Z = 0;
-			SetDestination(PlayerActor->GetActorLocation() + Separation, true);
-		} else {
-			SetDestination(PlayerActor->GetActorLocation(), true);
-		}
-		*/
+
 		
 	} else if (TargetType == ETargetType::Front)
 	{
@@ -309,24 +294,6 @@ void ABaseEnemy::ReachedTarget() {
 	LookAtPlayer.Roll = GetActorRotation().Roll;
 	SetActorRotation(LookAtPlayer);
 
-
-	//FColor aer = FColor::Cyan;
-	//if (pointAtPlayer) aer = FColor::Magenta;
-
-	/*
-	DrawDebugSphere(
-		GetWorld(),
-		Destination,
-		32.0f,
-		8,
-		aer,
-		false,
-		5.0f,
-		0, // Depth priority
-		2.0f
-	);
-	*/
-
 	//Check of target is at the right position
 	if (!isAttacking && (pointAtPlayer || IsAtTarget())) StartAttack();
 	//else if (TargetType == ETargetType::Direct) needPoint = true;
@@ -357,13 +324,7 @@ bool ABaseEnemy::CanSeeTarget() {
         5.f 
     );
 
-	if (hit.ImpactPoint == Destination || hit.GetActor() == PlayerActor) {
-
-		//FString DebugMessage = FString::Printf(TEXT("Sees Player"));
-		//GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Green, DebugMessage);
-
-		return true;
-	}
+	if (hit.ImpactPoint == Destination || hit.GetActor() == PlayerActor) return true;
 
 	return false;
 }
@@ -371,18 +332,12 @@ bool ABaseEnemy::CanSeeTarget() {
 void ABaseEnemy::StartAttack() {
 	isAttacking = true;
 
-	//FString DebugMessage = FString::Printf(TEXT("StartAttack"));
-	//GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Green, DebugMessage);
-
 }
 
 void ABaseEnemy::EndAttack() {
 	isAttacking = false;
 
 	if (IsAtTarget() && TargetType == ETargetType::Direct) needPoint = true;
-
-	//FString DebugMessage = FString::Printf(TEXT("EndAttack"));
-	//GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Purple, DebugMessage);
 
 }
 
@@ -430,7 +385,6 @@ void ABaseEnemy::TakeAttack_Implementation(float damage, bool parry) {
 
 		FString DebugMessage = FString::Printf(TEXT("Dead"));
 		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, DebugMessage);
-		//Destroy();
 	}
 
 }

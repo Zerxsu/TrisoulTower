@@ -31,11 +31,6 @@ void UAIGroupManager::BeginPlay()
 	TArray<FVector2D> Keys;
 	Points.GetKeys(Keys);
 
-	//Print Points
-	//for (int i = 0; i < Points.Num(); i++) {
-	//	UE_LOG(LogTemp, Warning, TEXT("Point %d: %s"), i, *Keys[i].ToString());
-	//}
-
 
 }
 
@@ -95,9 +90,6 @@ void UAIGroupManager::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 			}
 		}
 
-		//FString DebugMessage = FString::Printf(TEXT("Ring %d: %d"), checkLevel, inRing);
-    	//GEngine->AddOnScreenDebugMessage(-1, 0, FColor::Cyan, DebugMessage);
-
 		if (inRing >= ringMax) {
 			ringLevel++;
 			ringMax *= 2;
@@ -130,9 +122,6 @@ void UAIGroupManager::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 		}
 	}
 
-	//FString DebugMessagee = FString::Printf(TEXT("Unassigned: %d"), LostEnemies.Num());
-    //GEngine->AddOnScreenDebugMessage(-1, 0, FColor::Cyan, DebugMessagee);
-
 	//Assign all the unassigned guys
 	for (AActor* enemyActor : LostEnemies) {
 		//UE_LOG(LogTemp, Warning, TEXT("Enemy: %s"), *enemyActor->GetName());
@@ -159,23 +148,7 @@ void UAIGroupManager::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 		if (!Points[Keys[i]].isValid) maroo = FColor::Red;
 		else if (Points[Keys[i]].priority >= 2) {
 			maroo = FColor::Blue;
-			//maroo.B = 1.0f - (0.1f * ((float)Points[Keys[i]].priority));
-			//maroo.B = ((Points[Keys[i]].priority - 1) / FMath::Clamp(checkLevel - 1, 1, checkLevel + 1));
 		}
-
-		/*
-		DrawDebugSphere(
-			GetWorld(),
-			aer,
-			24.0f,
-			12,
-			maroo,
-			false,
-			0.0,
-			0,
-			2.0f
-		);
-		*/
 
 		//Update the target location of each enemy relative to the player
 		FNavPoint* check_point = &Points[Keys[i]];
@@ -294,15 +267,6 @@ void UAIGroupManager::AssignPoint(ABaseEnemy* ai, int minRing)
 }
 
 void UAIGroupManager::TradePoint(FVector2D at) {
-
-	//Right now before check point, the assigned AIGuy is made null
-	//This is because otherwise, every point ends up with the same AIGuy
-	//This causes errors when trying to trade points
-	//The system needs to:
-	//		reassign ai points after they attack
-	//		allow trading points with nothing
-	//		make sure guys from further rings move in
-	//		maybe
 
 	int prio = Points[at].priority;
 
