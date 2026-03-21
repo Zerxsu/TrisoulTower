@@ -135,7 +135,7 @@ void ACharacterController::Dash()
 
 void ACharacterController::ToggleWalk()
 {
-	if (CurrentWalkSpeed == WalkSpeed)
+	/*if (CurrentWalkSpeed == WalkSpeed)
 	{
 		CurrentWalkSpeed = JogSpeed;
 	}
@@ -144,7 +144,7 @@ void ACharacterController::ToggleWalk()
 		CurrentWalkSpeed = WalkSpeed;
 	}
 
-	GetCharacterMovement()->MaxWalkSpeed = CurrentWalkSpeed;
+	GetCharacterMovement()->MaxWalkSpeed = CurrentWalkSpeed;*/
 }
 
 void ACharacterController::ParryPressed()
