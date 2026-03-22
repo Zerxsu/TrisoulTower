@@ -1149,6 +1149,10 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="Trisoul_Parry_New" ID="{23ADF7AD-3558-4B67-8E5F-E540506EA2F8}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.146312377711429"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>Trisoul_Parry_New.wav</AudioFile>
 									<MediaIDList>
