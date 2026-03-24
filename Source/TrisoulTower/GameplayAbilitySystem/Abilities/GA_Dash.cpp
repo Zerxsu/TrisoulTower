@@ -12,6 +12,7 @@ UGA_Dash::UGA_Dash()
 	AbilityTags.AddTag(FGameplayTag::RequestGameplayTag(FName("GameplayAbility.Movement.Dash")));
 	CancelAbilitiesWithTag.AddTag(FGameplayTag::RequestGameplayTag(FName("GameplayAbility.Combat.LightAttack")));
 	CancelAbilitiesWithTag.AddTag(FGameplayTag::RequestGameplayTag(FName("GameplayAbility.Combat.HeavyAttack")));
+	CancelAbilitiesWithTag.AddTag(FGameplayTag::RequestGameplayTag(FName("GameplayAbility.Combat.Parry")));
 	BlockAbilitiesWithTag.AddTag(FGameplayTag::RequestGameplayTag(FName("GameplayAbility.Combat.LightAttack")));
 	BlockAbilitiesWithTag.AddTag(FGameplayTag::RequestGameplayTag(FName("GameplayAbility.Combat.HeavyAttack")));
 

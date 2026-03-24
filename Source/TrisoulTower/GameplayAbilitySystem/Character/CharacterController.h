@@ -88,6 +88,9 @@ public:
 	bool bCanEquipWeapon;
 
 	UPROPERTY(BlueprintReadWrite, Category = "PlayerController|Variables")
+	bool bPreventWeaponSwap;
+
+	UPROPERTY(BlueprintReadWrite, Category = "PlayerController|Variables")
 	TArray<AActor*> EnemiesHit;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|Variables")

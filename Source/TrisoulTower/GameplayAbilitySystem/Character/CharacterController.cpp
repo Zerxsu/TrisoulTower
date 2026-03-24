@@ -71,6 +71,8 @@ void ACharacterController::PossessedBy(AController* NewController)
 
 void ACharacterController::Move(const FInputActionValue& Value)
 {
+	if (bIsDead) return;
+	
 	const FVector2D MovementValue = Value.Get<FVector2D>();
 
 	// sets player movement speed to jog speed after input is released
@@ -115,7 +117,7 @@ void ACharacterController::Look(const FInputActionValue& Value)
 
 void ACharacterController::StartJump()
 {
-	if (bCanMove)
+	if (bCanMove && !bIsDead)
 		Jump();
 }
 
@@ -125,7 +127,7 @@ void ACharacterController::Dash()
 	
 	// starts sprint
 	GetCharacterMovement()->MaxWalkSpeed = SprintSpeed;
-
+	
 	// sets default walk speed to jogging after input release
 	CurrentWalkSpeed = SprintSpeed;
 	
