@@ -48,6 +48,8 @@ struct FCamEvent
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (EditCondition = "Event == EEventType::MoveActor", EditConditionHides))
     FTransform EndTransform;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (EditCondition = "Event == EEventType::CallEvent", EditConditionHides))
+    FString EventName;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (EditCondition = "Event == EEventType::FadeInOut || Event == EEventType::Wait", EditConditionHides))
     FColor FadeColour = FColor(0, 0, 0, 255);
