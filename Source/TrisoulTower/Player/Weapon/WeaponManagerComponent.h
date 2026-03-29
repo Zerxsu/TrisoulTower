@@ -22,6 +22,9 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	TSubclassOf<AWeapon_Base> GetCurrentEquippedWeaponClass();
+
+	UFUNCTION(BlueprintCallable, BlueprintPure)
+	bool IsWeaponEquipped();
 	
 	UFUNCTION()
 	void UnequipWeapon();
@@ -41,6 +44,9 @@ private:
 
 	UPROPERTY()
 	AWeapon_Base* EquippedWeapon;
+
+	UPROPERTY()
+	bool bIsWeaponEquipped;
 
 	UPROPERTY()
 	TSubclassOf<AWeapon_Base> CurrentEquippedWeaponClass;

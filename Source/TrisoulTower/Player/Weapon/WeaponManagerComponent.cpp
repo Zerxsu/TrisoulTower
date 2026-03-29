@@ -62,6 +62,8 @@ void UWeaponManagerComponent::EquipWeapon(TSubclassOf<AWeapon_Base> WeaponToEqui
 
 	// sets current equipped weapon
 	CurrentEquippedWeaponClass = WeaponToEquip;
+
+	bIsWeaponEquipped = true;
 }
 
 TSubclassOf<AWeapon_Base> UWeaponManagerComponent::GetCurrentEquippedWeaponClass()
@@ -69,10 +71,17 @@ TSubclassOf<AWeapon_Base> UWeaponManagerComponent::GetCurrentEquippedWeaponClass
 	return CurrentEquippedWeaponClass;
 }
 
+bool UWeaponManagerComponent::IsWeaponEquipped()
+{
+	return bIsWeaponEquipped;
+}
+
 void UWeaponManagerComponent::UnequipWeapon()
 {
 	if (!CharacterRef || !EquippedWeapon) return;
 
+	bIsWeaponEquipped = false;
+	
 	// destroy weapon
 	EquippedWeapon->Destroy();
 	EquippedWeapon = nullptr;
@@ -82,7 +91,6 @@ void UWeaponManagerComponent::UnequipWeapon()
 	
 	// remove abilities
 	CharacterRef->RemoveAbilities(GrantedAbilities);
-
 	CharacterRef->AbilitySystemComponent->ClearAbility(ParrySpecHandle);
 	CharacterRef->AbilitySystemComponent->ClearAbility(GroundSlamSpecHandle);
 }
