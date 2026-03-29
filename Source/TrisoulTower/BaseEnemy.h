@@ -32,11 +32,15 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Behaviour")
 	bool needPoint = false;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
+	float invulnerable = 0.0f;
+
 	float stunTime = 0.0f;
 
 	FNavigationPath* NavPath;
 
 	USkeletalMeshComponent* Body;
+	
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Animation")
 	bool isMoving = false;
@@ -141,6 +145,8 @@ protected:
 	float Health = 100.0f;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
 	bool Vulnerable = false;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
+	float BossDamage = 10.0f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Behaviour")
 	bool IsTheBoss = false;

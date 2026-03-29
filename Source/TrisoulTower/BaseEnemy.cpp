@@ -50,6 +50,7 @@ void ABaseEnemy::Tick(float DeltaTime)
 	if (Disable) return;
 
 	if (stunTime > 0) stunTime -= DeltaTime;
+	if (invulnerable > 0) invulnerable -= DeltaTime;
 
 	if (!isAttacking && stunTime <= 0) {
 		FindTarget();
@@ -279,7 +280,7 @@ TArray<FVector> ABaseEnemy::GetPath(){
 
 bool ABaseEnemy::IsAtTarget() {
 	if (TargetType == ETargetType::Near && FVector::Distance(GetActorLocation(), PlayerActor->GetActorLocation()) <= TargetDist * 0.75) return false;
-	return FVector::Distance(GetActorLocation(), PlayerActor->GetActorLocation()) <= TargetDist;
+	return FVector::Distance(GetActorLocation(), PlayerActor->GetActorLocation()) <= TargetDist + 8;
 }
 
 void ABaseEnemy::ReachedTarget() {
@@ -331,7 +332,6 @@ bool ABaseEnemy::CanSeeTarget() {
 
 void ABaseEnemy::StartAttack() {
 	isAttacking = true;
-
 }
 
 void ABaseEnemy::EndAttack() {
@@ -349,6 +349,8 @@ void ABaseEnemy::RunAttack_Implementation() {
 
 void ABaseEnemy::TakeAttack_Implementation(float damage, bool parry) {
 
+	if (invulnerable > 0) return;
+
 	FVector thisForward = GetActorForwardVector();
 	thisForward.Z = 0;
 	thisForward.Normalize();
@@ -361,8 +363,8 @@ void ABaseEnemy::TakeAttack_Implementation(float damage, bool parry) {
 	damageDot += 1.5f;
 	damageDot /= 2.0f;
 
-	FString DotMessage = FString::Printf(TEXT("Dawt %f"), damageDot);
-    GEngine->AddOnScreenDebugMessage(-1, 4.0f, FColor::Yellow, DotMessage);
+	//FString DotMessage = FString::Printf(TEXT("Dawt %f"), damageDot);
+    //GEngine->AddOnScreenDebugMessage(-1, 4.0f, FColor::Yellow, DotMessage);
 
 	lastDamage = damage * damageDot;
 	RunDamage();
@@ -383,8 +385,8 @@ void ABaseEnemy::TakeAttack_Implementation(float damage, bool parry) {
 		isDead = true;
 		Disable = true;
 
-		FString DebugMessage = FString::Printf(TEXT("Dead"));
-		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, DebugMessage);
+		//FString DebugMessage = FString::Printf(TEXT("Dead"));
+		//GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, DebugMessage);
 	}
 
 }
