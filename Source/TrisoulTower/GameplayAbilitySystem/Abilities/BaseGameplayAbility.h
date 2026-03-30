@@ -15,5 +15,5 @@ public:
 	UTexture2D* AbilityIcon;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category="Ability UI")
-	FLinearColor AbilityColor = FLinearColor::White;
+	FLinearColor CooldownSliderColor = FLinearColor::White;
 };
