@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{F32D6267-AA97-4EA8-B95A-AB6DE9119456}",
     "Language": "SFX",
-    "Hash": "{2301A20B-E3D8-C097-F0AE-BBC39DC5FF8D}",
+    "Hash": "{9F4BC33E-6D0A-C48D-4402-780A3BF91753}",
     "ObjectPath": "Parry",
     "ShortName": "Parry",
     "Path": "Event/Parry.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{1600F486-E52C-3C84-BC70-1CDCBC7178A7}"
+  "FileHash": "{080618D8-94F3-4074-916F-2B356F42BC61}"
  }
 }

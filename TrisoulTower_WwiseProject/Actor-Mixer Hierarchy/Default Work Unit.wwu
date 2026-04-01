@@ -1125,7 +1125,7 @@
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-7</Value>
+								<Value>-19</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -1177,6 +1177,10 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="Fire_Ult" ID="{3B2D5E1F-D08C-4DD2-86D4-FA3F5AAD7763}">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.322729934664334"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>Fire_Ult.wav</AudioFile>
 							<MediaIDList>
@@ -1514,6 +1518,13 @@
 					</ChildrenList>
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="EnemyHit" ID="{C8F498A1-9DFC-4C10-A80B-D2614F9101D3}" ShortID="11965782">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-12</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
