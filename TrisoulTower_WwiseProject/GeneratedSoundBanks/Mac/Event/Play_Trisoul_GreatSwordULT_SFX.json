@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{B1981C26-1A12-4DCC-823D-F57B1062AC10}",
     "Language": "SFX",
-    "Hash": "{BB4F0CE0-67A5-8792-E602-4AAC0476C258}",
+    "Hash": "{9C91E497-DF25-9900-C745-BA73DCCF5FEC}",
     "ObjectPath": "Play_Trisoul_GreatSwordULT_SFX",
     "ShortName": "Play_Trisoul_GreatSwordULT_SFX",
     "Path": "Event/Play_Trisoul_GreatSwordULT_SFX.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{274C0169-8327-B16D-D384-7622C93D5D22}"
+  "FileHash": "{5B668A77-7FA2-2CEF-CCDA-F9690F32C8BA}"
  }
 }

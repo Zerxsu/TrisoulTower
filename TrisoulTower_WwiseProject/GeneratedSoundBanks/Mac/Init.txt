@@ -43,8 +43,15 @@ State	ID	Name	State Group			Notes
 	1651971902	On	Boss_Killed			
 	2607556080	Menu	Boss_Killed			
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1127857866	Music_Slider			\Default Work Unit\Music_Slider	
+	2486326433	Master_slider			\Default Work Unit\Master_slider	
+	4140634290	SFX_Slider			\Default Work Unit\SFX_Slider	
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	493417818	Music Audio Bus			\Default Work Unit\Master Audio Bus\Music Audio Bus	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	4084199202	SFX Audio Bus			\Default Work Unit\Master Audio Bus\SFX Audio Bus	
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

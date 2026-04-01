@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{10B27301-EB16-413B-8D06-080E99ACCE73}",
     "Language": "SFX",
-    "Hash": "{A003E137-6B9B-8FEE-DD10-95F1D51959C0}",
+    "Hash": "{FD086EBE-61CD-7C1D-5D62-24460B6EC2B5}",
     "ObjectPath": "Ice_Swing",
     "ShortName": "Ice_Swing",
     "Path": "Event/Ice_Swing.bnk",
@@ -91,6 +91,6 @@
     ]
    }
   ],
-  "FileHash": "{79DD1FF6-D1A0-2724-433D-7C1DEC1EB104}"
+  "FileHash": "{C68CD78E-DCB9-9CD8-309A-CE94272BEC23}"
  }
 }

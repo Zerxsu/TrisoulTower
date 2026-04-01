@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{5295FE5C-2ACE-48E7-BE37-DDA590848F1B}",
     "Language": "SFX",
-    "Hash": "{59B710D8-6D3E-350C-83D3-19A9789071FD}",
+    "Hash": "{4DED9E5C-E3D0-C778-0601-887D3FAE5BF4}",
     "ObjectPath": "Play_Final_Boss_SpinATK_2SFX",
     "ShortName": "Play_Final_Boss_SpinATK_2SFX",
     "Path": "Event/Play_Final_Boss_SpinATK_2SFX.bnk",
@@ -22,7 +22,7 @@
       "Location": "Loose",
       "ShortName": "Final_Boss_SpinATK_2SFX.wav",
       "Path": "Media/813230988.wem",
-      "CachePath": "A2/{A2C11337-3B2E-AA30-5C09-808737F68382}.wem"
+      "CachePath": "75/{754FBCC3-D5A3-BD08-916E-8CA48A0798FB}.wem"
      }
     ],
     "Events": [
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{34FC8BA8-A450-0BF9-0BF0-3B554E49E513}"
+  "FileHash": "{16A6858E-F072-1E4A-7B62-8FD3337403C7}"
  }
 }

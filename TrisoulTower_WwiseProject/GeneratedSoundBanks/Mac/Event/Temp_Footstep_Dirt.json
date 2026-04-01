@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{1387C31B-B990-425C-86EB-CD00A57446A4}",
     "Language": "SFX",
-    "Hash": "{01100545-EBC6-2CFF-6569-972B11394345}",
+    "Hash": "{9EB6A724-E743-5873-06C5-9551A94975D4}",
     "ObjectPath": "Temp_Footstep_Dirt",
     "ShortName": "Temp_Footstep_Dirt",
     "Path": "Event/Temp_Footstep_Dirt.bnk",
@@ -167,6 +167,6 @@
     ]
    }
   ],
-  "FileHash": "{436A5F7F-B037-B0F3-45E6-3133601E6A3F}"
+  "FileHash": "{14145566-87DE-338C-2BCC-38939FC80F2F}"
  }
 }

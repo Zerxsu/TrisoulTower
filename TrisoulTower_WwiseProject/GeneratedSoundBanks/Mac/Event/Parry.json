@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{F32D6267-AA97-4EA8-B95A-AB6DE9119456}",
     "Language": "SFX",
-    "Hash": "{E102054D-1FA6-DD71-D772-D44671039282}",
+    "Hash": "{2301A20B-E3D8-C097-F0AE-BBC39DC5FF8D}",
     "ObjectPath": "Parry",
     "ShortName": "Parry",
     "Path": "Event/Parry.bnk",
@@ -22,7 +22,7 @@
       "Location": "Loose",
       "ShortName": "Trisoul_Parry_New.wav",
       "Path": "Media/103884579.wem",
-      "CachePath": "54/{54B5CE56-2AA7-FE10-5470-5F7915D3E294}.wem"
+      "CachePath": "09/{0986F7DB-225F-A2CD-C8BE-C7DBE0B2FEE0}.wem"
      }
     ],
     "Events": [
@@ -32,8 +32,8 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Parry",
       "GUID": "{F32D6267-AA97-4EA8-B95A-AB6DE9119456}",
       "DurationType": "OneShot",
-      "DurationMin": "2.6082993",
-      "DurationMax": "2.6082993",
+      "DurationMin": "2.461987",
+      "DurationMax": "2.461987",
       "MediaRefs": [
        {
         "Id": "103884579"
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{716F27EF-BAF5-45AF-16AD-02CC2150D05C}"
+  "FileHash": "{1600F486-E52C-3C84-BC70-1CDCBC7178A7}"
  }
 }

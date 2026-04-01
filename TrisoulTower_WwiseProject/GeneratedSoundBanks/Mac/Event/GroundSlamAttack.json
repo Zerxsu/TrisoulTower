@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{F286ADB7-032E-4616-9CD7-9DBEE8D3D03F}",
     "Language": "SFX",
-    "Hash": "{087B5B7E-4A3D-7827-283C-69CEE3D85742}",
+    "Hash": "{F598794D-775E-667B-F875-362174488A5D}",
     "ObjectPath": "GroundSlamAttack",
     "ShortName": "GroundSlamAttack",
     "Path": "Event/GroundSlamAttack.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{289E11C1-69AD-3E78-B709-EE3E3B87D777}"
+  "FileHash": "{852780D6-9A12-1F59-393A-EF66151DDE58}"
  }
 }

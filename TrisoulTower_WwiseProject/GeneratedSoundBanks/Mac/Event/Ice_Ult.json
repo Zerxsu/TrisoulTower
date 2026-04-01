@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{6395A6B7-C116-46CA-838A-02C63CECB546}",
     "Language": "SFX",
-    "Hash": "{EB02FE89-A221-6C89-129B-BD0A48BDD62B}",
+    "Hash": "{FF8B0CFD-F616-6B48-E6DA-628D05895B3A}",
     "ObjectPath": "Ice_Ult",
     "ShortName": "Ice_Ult",
     "Path": "Event/Ice_Ult.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{8AF2BB7D-F6A8-EC92-49B2-CDC2318E59F4}"
+  "FileHash": "{CAF90511-60E7-D054-8323-2A3D5245FFF6}"
  }
 }

@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{89695F28-EB23-499A-91C2-048A872FE949}" SchemaVersion="123">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{89695F28-EB23-499A-91C2-048A872FE949}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{89695F28-EB23-499A-91C2-048A872FE949}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Master_slider" ID="{EC184F0F-C333-4C15-86FF-41492C757A27}">
+					<PropertyList>
+						<Property Name="Min" Type="Real64" Value="50"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="SFX_Slider" ID="{176836B7-466E-40BB-9902-98E65198333E}">
+					<PropertyList>
+						<Property Name="Min" Type="Real64" Value="50"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Music_Slider" ID="{C0BEA9A1-DFFA-4796-AC30-1C0A6CB8F978}">
+					<PropertyList>
+						<Property Name="Min" Type="Real64" Value="50"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

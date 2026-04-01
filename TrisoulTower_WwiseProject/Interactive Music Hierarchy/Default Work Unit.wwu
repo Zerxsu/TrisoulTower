@@ -856,7 +856,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+							<ObjectRef Name="Music Audio Bus" ID="{B954D48E-4A62-4AC3-8B53-6A497A61682E}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
 						</Reference>
 						<Reference Name="TransitionRoot">
 							<Custom>
@@ -927,6 +927,11 @@
 								<MusicSegment Name="Title_Screen_Song" ID="{BD7D8207-E88F-4803-9A60-3CE77B351912}" ShortID="430976607">
 									<PropertyList>
 										<Property Name="EndPosition" Type="Real64" Value="233142.857142857"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1105,7 +1110,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+							<ObjectRef Name="Music Audio Bus" ID="{B954D48E-4A62-4AC3-8B53-6A497A61682E}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
 						</Reference>
 						<Reference Name="TransitionRoot">
 							<Custom>
@@ -1175,6 +1180,11 @@
 										<Property Name="EndPosition" Type="Real64" Value="46344.8299319728"/>
 										<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
 										<Property Name="Tempo" Type="Real64" Value="145"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-24</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1567,7 +1577,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+							<ObjectRef Name="Music Audio Bus" ID="{B954D48E-4A62-4AC3-8B53-6A497A61682E}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
 						</Reference>
 						<Reference Name="TransitionRoot">
 							<Custom>
@@ -1635,6 +1645,11 @@
 								<MusicSegment Name="Training_Song" ID="{5E815F62-8484-4BCB-AC92-7EE787104E0B}" ShortID="34808467">
 									<PropertyList>
 										<Property Name="EndPosition" Type="Real64" Value="58000"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1756,6 +1771,39 @@
 									</ObjectLists>
 								</MusicSegment>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Training_Grounds" ID="{D448BE74-CFBD-4F67-925C-8A251BACC1C6}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="On" ID="{D4A99181-347D-402E-89F2-BC977644A80A}"/>
+										<CustomState Name="" ID="{02C7D512-50A0-4CB2-8987-9A3FAC813702}" ShortID="776580370"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Menu" ID="{7F38D79F-7045-46C2-86EF-31739EFD08A6}"/>
+										<CustomState Name="" ID="{61A272A8-2183-46A5-AB17-6E8211A52567}" ShortID="480502692">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-5"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="None" ID="{CBEB319F-0308-4D7A-B76C-73729BAEE3B9}"/>
+										<CustomState Name="" ID="{54CA79EE-4062-4835-A9F7-B673F7690D94}" ShortID="702247463"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Off" ID="{23D16A19-B4E2-4FF1-98AF-3D852FB64D37}"/>
+										<CustomState Name="" ID="{58E84FB3-4F6B-41A8-A9D9-D5469752BE54}" ShortID="389522817">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 						</MusicPlaylistContainer>
 					</ChildrenList>
 					<ObjectLists>
@@ -1844,7 +1892,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+							<ObjectRef Name="Music Audio Bus" ID="{B954D48E-4A62-4AC3-8B53-6A497A61682E}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
 						</Reference>
 						<Reference Name="TransitionRoot">
 							<Custom>
@@ -1912,6 +1960,11 @@
 								<MusicSegment Name="FinalHit_TrisoulFinalBoss_150BPM" ID="{E788B04F-D909-490A-9B87-59D43578938E}" ShortID="459921514">
 									<PropertyList>
 										<Property Name="EndPosition" Type="Real64" Value="17616.6666666667"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1996,6 +2049,35 @@
 									</ObjectLists>
 								</MusicSegment>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Boss_Killed" ID="{9CC0AA6D-2DCE-4578-8C22-02FDA2E5CD85}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="On" ID="{3EABCDFA-5160-42EC-9BA6-D0986F243BC0}"/>
+										<CustomState Name="" ID="{A143D963-55E2-42D1-A75C-7ACE5B21A9D4}" ShortID="804204463"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Menu" ID="{1B202597-AE69-4445-9CC2-B5251DAEA36A}"/>
+										<CustomState Name="" ID="{B9257D2A-CF8E-42FD-BB3E-A58DCF83C3DC}" ShortID="3968094">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-5"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Off" ID="{8E46BA58-9F8A-4C98-A8FD-DD38C485507D}"/>
+										<CustomState Name="" ID="{1CB45007-2B74-4E81-89F1-BF06BE498F1E}" ShortID="682536738"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="None" ID="{EC83388A-1AE7-4E70-B6DC-8C28E164F20A}"/>
+										<CustomState Name="" ID="{FCD55F3F-1615-4801-839A-CCE5011304BC}" ShortID="113351815"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 						</MusicPlaylistContainer>
 					</ChildrenList>
 					<ObjectLists>
@@ -2079,7 +2161,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+							<ObjectRef Name="Music Audio Bus" ID="{B954D48E-4A62-4AC3-8B53-6A497A61682E}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
 						</Reference>
 						<Reference Name="TransitionRoot">
 							<Custom>
@@ -2147,6 +2229,11 @@
 								<MusicSegment Name="Phase1_TrisoulFinalBoss_150BPM" ID="{AAEFFFDF-C3C3-4DA5-910A-5688504BCCDD}" ShortID="388057503">
 									<PropertyList>
 										<Property Name="EndPosition" Type="Real64" Value="131229.166666667"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -2355,7 +2442,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+							<ObjectRef Name="Music Audio Bus" ID="{B954D48E-4A62-4AC3-8B53-6A497A61682E}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
 						</Reference>
 						<Reference Name="TransitionRoot">
 							<Custom>
@@ -2423,6 +2510,11 @@
 								<MusicSegment Name="Phase2_TrisoulFinalBoss_150BPM_Reverb" ID="{9F25F2C9-1F29-4821-BFEC-6F204A7F5FE1}" ShortID="113616246">
 									<PropertyList>
 										<Property Name="EndPosition" Type="Real64" Value="148800"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -2522,7 +2614,7 @@
 										<StateRef Name="Menu" ID="{3567A4FE-EB64-407F-924A-EBAE1F5D5A17}"/>
 										<CustomState Name="" ID="{128F1449-6854-4695-AA6A-77F05F0D7E35}" ShortID="40619741">
 											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-17"/>
+												<Property Name="Volume" Type="Real64" Value="-10"/>
 											</PropertyList>
 										</CustomState>
 									</CustomState>
@@ -2631,7 +2723,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+							<ObjectRef Name="Music Audio Bus" ID="{B954D48E-4A62-4AC3-8B53-6A497A61682E}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
 						</Reference>
 						<Reference Name="TransitionRoot">
 							<Custom>
@@ -2699,6 +2791,11 @@
 								<MusicSegment Name="song" ID="{F5F93D59-C64C-4AB7-A9B4-A06EA2C0A0D8}" ShortID="911858265">
 									<PropertyList>
 										<Property Name="EndPosition" Type="Real64" Value="348800"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-12</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -2814,7 +2911,7 @@
 										<StateRef Name="Menu" ID="{EFB51D94-39C6-4859-8640-ABCB3C015E37}"/>
 										<CustomState Name="" ID="{99BE2792-8FF3-4F86-ADE0-CCE5E9BDF9BF}" ShortID="575261154">
 											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-15"/>
+												<Property Name="Volume" Type="Real64" Value="-10"/>
 											</PropertyList>
 										</CustomState>
 									</CustomState>

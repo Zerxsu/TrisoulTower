@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{FC401FC9-866D-4452-81D3-B66AB0DC4DDF}",
     "Language": "SFX",
-    "Hash": "{D51DC756-8180-CD38-D511-C00F0D9432DF}",
+    "Hash": "{B00CE2CB-7757-60C0-F3D5-448E4CD02A08}",
     "ObjectPath": "Footsteps",
     "ShortName": "Footsteps",
     "Path": "Event/Footsteps.bnk",
@@ -354,6 +354,6 @@
     ]
    }
   ],
-  "FileHash": "{6173D721-412D-AD5A-C216-15BB5BBA735C}"
+  "FileHash": "{73D52C92-D0DE-10BD-ADA8-72DDE68D5A87}"
  }
 }

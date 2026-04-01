@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{ABC18279-2C80-4126-9827-2D2B589E4A6F}",
     "Language": "SFX",
-    "Hash": "{0F066421-4A29-62FC-F75C-BA1104676AA6}",
+    "Hash": "{8110B36A-AF8F-66A7-AB6B-DB7083340323}",
     "ObjectPath": "Grass_Swing",
     "ShortName": "Grass_Swing",
     "Path": "Event/Grass_Swing.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{3FDDABB7-5E72-2B63-46A4-E071B4B5F58F}"
+  "FileHash": "{CD34A902-8801-7549-6F03-09F2CC66641F}"
  }
 }

@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{62F21751-CA89-46D8-857F-6F4CFA4DB19E}",
     "Language": "SFX",
-    "Hash": "{15958D77-92DD-DD94-58F0-26E9C4BD9819}",
+    "Hash": "{D9E44AFA-D453-AEB6-5CC3-C0353402AA8D}",
     "ObjectPath": "Boss_Phase_03",
     "ShortName": "Boss_Phase_03",
     "Path": "Event/Boss_Phase_03.bnk",
@@ -98,6 +98,6 @@
     ]
    }
   ],
-  "FileHash": "{A690626D-E39F-2FEC-CDBC-DAC61322BB42}"
+  "FileHash": "{A4C1CA5F-9F44-AD5E-ACA5-71CAC693C415}"
  }
 }

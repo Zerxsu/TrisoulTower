@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{58F891FE-97A1-43BE-BD9A-44588CF18D34}",
     "Language": "SFX",
-    "Hash": "{70B89733-E656-58A2-7BF3-D04B52090D16}",
+    "Hash": "{2DF01D45-A5BB-6A22-125E-2557872079DF}",
     "ObjectPath": "Temp_Footstep_Grass",
     "ShortName": "Temp_Footstep_Grass",
     "Path": "Event/Temp_Footstep_Grass.bnk",
@@ -167,6 +167,6 @@
     ]
    }
   ],
-  "FileHash": "{3E127B86-026A-04AE-150D-93354F416705}"
+  "FileHash": "{35E9DFBF-B1CC-88B1-61ED-DBC88EF06139}"
  }
 }

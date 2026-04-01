@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{9897AEDF-BC65-4A93-B476-7C354D572BB8}",
     "Language": "SFX",
-    "Hash": "{82169F9F-4BB4-62D4-FA2F-0ABB03B3D307}",
+    "Hash": "{85671929-D1DF-29FE-9AC8-1052CE609475}",
     "ObjectPath": "Flame_Swing",
     "ShortName": "Flame_Swing",
     "Path": "Event/Flame_Swing.bnk",
@@ -55,6 +55,6 @@
     ]
    }
   ],
-  "FileHash": "{D77B1F38-42A0-6C23-1A99-B51B640B5376}"
+  "FileHash": "{96B56970-C7B2-46B9-13A6-BBFDD533438C}"
  }
 }

@@ -9,6 +9,158 @@
 							<ObjectRef Name="System" ID="{C25BF7B9-246F-48FE-B45D-C10C86746062}" WorkUnitID="{1CA5DAC3-6D86-432B-9443-160201C2C0DB}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Music Audio Bus" ID="{B954D48E-4A62-4AC3-8B53-6A497A61682E}">
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Training_Grounds" ID="{D448BE74-CFBD-4F67-925C-8A251BACC1C6}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="On" ID="{D4A99181-347D-402E-89F2-BC977644A80A}"/>
+										<CustomState Name="" ID="{7C57985C-58AC-4166-AE78-711EC1F4ADA0}" ShortID="114331048"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Menu" ID="{7F38D79F-7045-46C2-86EF-31739EFD08A6}"/>
+										<CustomState Name="" ID="{79C7E7AC-A1C8-4217-9BE1-E3ACDD23825B}" ShortID="872516195">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="-9"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="None" ID="{CBEB319F-0308-4D7A-B76C-73729BAEE3B9}"/>
+										<CustomState Name="" ID="{F493FAB2-1C77-4707-AE25-64BA38D40C6C}" ShortID="144200016"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Off" ID="{23D16A19-B4E2-4FF1-98AF-3D852FB64D37}"/>
+										<CustomState Name="" ID="{63BFB471-09A5-47F4-9D03-2F88567AE673}" ShortID="380027351"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{B88D0B36-BEC7-4AD5-B033-F46EB4341D46}" ShortID="572761260">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Music_Slider" ID="{C0BEA9A1-DFFA-4796-AC30-1C0A6CB8F978}" WorkUnitID="{89695F28-EB23-499A-91C2-048A872FE949}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{787A7F8E-17D5-4E23-948E-905278866FA6}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>50</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</Bus>
+						<Bus Name="SFX Audio Bus" ID="{E2450F5E-B8CD-461D-80DE-91322792B0BA}">
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{02BE5633-3C9D-464D-908F-2E5E289C7558}" ShortID="185764726">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="SFX_Slider" ID="{176836B7-466E-40BB-9902-98E65198333E}" WorkUnitID="{89695F28-EB23-499A-91C2-048A872FE949}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{9ACCD6D9-4A53-4FD5-A835-CDE415E4A7C3}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>50</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</Bus>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{BB3B52D8-AC1C-4C1D-BB08-0CAEEA1DBF99}" ShortID="930122732">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="Master_slider" ID="{EC184F0F-C333-4C15-86FF-41492C757A27}" WorkUnitID="{89695F28-EB23-499A-91C2-048A872FE949}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{5C8DF1E8-3577-4664-B862-8D72302F9BB0}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>50</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

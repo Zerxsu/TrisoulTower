@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{5A7E3E81-8E0A-479A-B349-4FC9E587C2FE}",
     "Language": "SFX",
-    "Hash": "{CDBE1C21-A668-59D3-4D6F-4F195FB6EE9A}",
+    "Hash": "{BFAA0392-4509-E2E4-CBFB-84992260F7A6}",
     "ObjectPath": "Play_Trisoul_EnemyDeathSFX",
     "ShortName": "Play_Trisoul_EnemyDeathSFX",
     "Path": "Event/Play_Trisoul_EnemyDeathSFX.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{4AA4C01D-921E-E60D-E400-5680E3C9C693}"
+  "FileHash": "{16A02495-1376-F270-EF0A-ABF04402A2DE}"
  }
 }

@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{D4B6CC9A-BFF4-4931-AA16-DDE6332E698D}",
     "Language": "SFX",
-    "Hash": "{64BA749A-945E-2E81-1280-6C394A9F091D}",
+    "Hash": "{AE1B7B7A-4473-30C8-B99A-6AE14E582159}",
     "ObjectPath": "Dash",
     "ShortName": "Dash",
     "Path": "Event/Dash.bnk",
@@ -91,6 +91,6 @@
     ]
    }
   ],
-  "FileHash": "{67196948-74C7-14CA-4710-4F28D9D0F318}"
+  "FileHash": "{C295F024-D8BF-836E-F234-3A0813AEDA40}"
  }
 }

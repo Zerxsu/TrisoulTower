@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{EF683622-76C8-43A6-96C2-AD6BC2E10255}",
     "Language": "SFX",
-    "Hash": "{05C8986B-00A4-DFC5-614B-4044348DD461}",
+    "Hash": "{1D90CB19-B165-9187-99DF-83E577BA0448}",
     "ObjectPath": "Ice_Heavy",
     "ShortName": "Ice_Heavy",
     "Path": "Event/Ice_Heavy.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{E5E494AC-8B1E-FC82-AADC-2725E796E98A}"
+  "FileHash": "{6277708F-9005-6BB4-6ED4-553F3EEDF9BD}"
  }
 }

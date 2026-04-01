@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{126B7563-E066-48AC-AC77-26C269AFA7F8}",
     "Language": "SFX",
-    "Hash": "{BE53474F-0C25-550B-C39B-091013FA3CAE}",
+    "Hash": "{0B660F5E-2EA6-221B-7286-7E46DEB41168}",
     "ObjectPath": "Play_EnemyHit",
     "ShortName": "Play_EnemyHit",
     "Path": "Event/Play_EnemyHit.bnk",
@@ -67,6 +67,6 @@
     ]
    }
   ],
-  "FileHash": "{3E7282F6-33C1-C60D-4F8D-460E70DE448D}"
+  "FileHash": "{A5468FE5-6440-2E6B-0A0E-DF97E0C3EEF1}"
  }
 }

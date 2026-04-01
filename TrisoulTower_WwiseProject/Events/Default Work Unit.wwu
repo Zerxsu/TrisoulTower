@@ -310,7 +310,7 @@
 						<Action Name="" ID="{40C6EB24-E45D-48D0-ADFA-4AA8DFA2C41B}" ShortID="769530251">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Final_Boss_GroundSlamATK_SFX " ID="{DF52B3F4-3E9C-4092-88D0-639E2B65CBE9}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+									<ObjectRef Name="Final_Boss_GroundSlamATK_SFX" ID="{DF52B3F4-3E9C-4092-88D0-639E2B65CBE9}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -371,6 +371,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="volume sliders" ID="{2B592D2F-9AE7-41FD-A65C-8C461A86AFF9}" ShortID="584519821"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

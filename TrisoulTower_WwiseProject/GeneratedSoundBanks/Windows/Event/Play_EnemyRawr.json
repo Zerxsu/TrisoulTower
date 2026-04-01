@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{23F5B3CA-DA39-49C0-B0F1-D2F7552EA6D3}",
     "Language": "SFX",
-    "Hash": "{2345FA88-B0D4-96D3-D8E9-9C2B2C6595E5}",
+    "Hash": "{4872C76A-6FF2-496E-E3D8-86EC9C3D1A57}",
     "ObjectPath": "Play_EnemyRawr",
     "ShortName": "Play_EnemyRawr",
     "Path": "Event/Play_EnemyRawr.bnk",
@@ -79,6 +79,6 @@
     ]
    }
   ],
-  "FileHash": "{A3BA9182-87AD-7724-4EE7-DDC414C66C95}"
+  "FileHash": "{492455A6-8DEF-B006-5362-61152FCC3F1D}"
  }
 }

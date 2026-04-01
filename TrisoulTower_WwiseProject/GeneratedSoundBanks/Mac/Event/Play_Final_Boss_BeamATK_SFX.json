@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{350791F3-6509-4F8B-91D8-1AB411284A4D}",
     "Language": "SFX",
-    "Hash": "{D922671F-1689-DAE1-F4CD-19D0C5AE76F8}",
+    "Hash": "{FA4D6A92-1CBD-DFDF-0150-21B0A67A93F0}",
     "ObjectPath": "Play_Final_Boss_BeamATK_SFX",
     "ShortName": "Play_Final_Boss_BeamATK_SFX",
     "Path": "Event/Play_Final_Boss_BeamATK_SFX.bnk",
@@ -22,7 +22,7 @@
       "Location": "Loose",
       "ShortName": "Final_Boss_BeamATK_SFX.wav",
       "Path": "Media/813581973.wem",
-      "CachePath": "72/{72C32D6A-D719-F41E-5D41-C4BA93CD2505}.wem"
+      "CachePath": "73/{73D3C895-1C32-65AB-9B1A-CBB8E543E8A4}.wem"
      }
     ],
     "Events": [
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{6DB0064B-C576-E1FD-EB9D-7700B14CCB64}"
+  "FileHash": "{1FDE453F-969C-16EA-4676-F6EB799D8B37}"
  }
 }

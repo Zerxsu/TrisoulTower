@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{B61520C7-D2CB-4E32-9CBF-4733D077E066}",
     "Language": "SFX",
-    "Hash": "{29414E63-8EC1-8EBD-74BF-313A503929B9}",
+    "Hash": "{28BE410E-9344-99C7-CF49-3FF21E77B132}",
     "ObjectPath": "Play_Final_Boss_SwingsATK_SFX",
     "ShortName": "Play_Final_Boss_SwingsATK_SFX",
     "Path": "Event/Play_Final_Boss_SwingsATK_SFX.bnk",
@@ -22,7 +22,7 @@
       "Location": "Loose",
       "ShortName": "Final_Boss_SwingsATK_SFX.wav",
       "Path": "Media/764028079.wem",
-      "CachePath": "D2/{D2A989FF-63FA-58DB-85EB-82C67C7039BD}.wem"
+      "CachePath": "0D/{0D484BD0-165B-47F1-1C9B-1F8E4C8EC971}.wem"
      }
     ],
     "Events": [
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{14F09BAC-C725-3217-E991-994FD0D5FFF3}"
+  "FileHash": "{CCA615A3-911F-4144-780B-B2E34003A4C3}"
  }
 }
