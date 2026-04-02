@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2602487272",
+    "Type": "Event",
+    "GUID": "{4871CB76-7CAB-499C-B2AC-8F5E91CE0002}",
+    "Language": "SFX",
+    "Hash": "{4A6223CF-0EB0-F24E-891F-08419311ECD7}",
+    "ObjectPath": "Grass_Equip",
+    "ShortName": "Grass_Equip",
+    "Path": "Event/Grass_Equip.bnk",
+    "Media": [
+     {
+      "Id": "1037208111",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "grassswap.wav",
+      "Path": "Media/1037208111.wem",
+      "CachePath": "38/{38526DA4-7FDB-0E8C-EB02-535CF4C50283}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2602487272",
+      "Name": "Grass_Equip",
+      "ObjectPath": "\\Events\\Default Work Unit\\Grass_Equip",
+      "GUID": "{4871CB76-7CAB-499C-B2AC-8F5E91CE0002}",
+      "DurationType": "OneShot",
+      "DurationMin": "3",
+      "DurationMax": "3",
+      "MediaRefs": [
+       {
+        "Id": "1037208111"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{A78B8A4B-6F0B-3DBE-C30B-8F74C10BC605}"
+ }
+}

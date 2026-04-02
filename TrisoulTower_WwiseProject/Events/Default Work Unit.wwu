@@ -371,7 +371,61 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Folder Name="volume sliders" ID="{2B592D2F-9AE7-41FD-A65C-8C461A86AFF9}" ShortID="584519821"/>
+				<Event Name="Ice_Equip" ID="{039440FB-6093-4780-8137-16A8775A98FF}">
+					<ChildrenList>
+						<Action Name="" ID="{A9CD1C81-9507-4463-9163-ED95832D12DD}" ShortID="819625780">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TrisoulChamber_IceEquip_SFX" ID="{B5B3D4A9-3A17-4DF8-B920-F7E978F8E1ED}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Fire_Equip" ID="{E81B1C57-BD6D-4FDF-88DF-4F5A22F2521A}">
+					<ChildrenList>
+						<Action Name="" ID="{2BC0D09E-20E4-492E-BC4F-C68B79735761}" ShortID="450847021">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="fireequip" ID="{FF5CA37F-3BBD-48C9-BE94-D65A6ECF66B8}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Ui_Hover" ID="{DF60A0FD-F551-44AE-9FB3-06DB82D12198}">
+					<ChildrenList>
+						<Action Name="" ID="{98089841-55E2-4CDB-AB01-39605533F65C}" ShortID="616592291">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Select-SFX" ID="{0030AA4C-9CDD-4B6A-899F-365855680357}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Ui_Click" ID="{5F7B499A-1F57-4478-A13F-6E9C1BAC878E}">
+					<ChildrenList>
+						<Action Name="" ID="{0E4E5B7B-70A0-4304-81AD-0D6EBAA59E0C}" ShortID="702155931">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ui click" ID="{6BDF896E-13F8-4173-A645-5FDF7632F97F}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Grass_Equip" ID="{4871CB76-7CAB-499C-B2AC-8F5E91CE0002}">
+					<ChildrenList>
+						<Action Name="" ID="{31C0631D-3EC5-460D-9947-06582C5051C5}" ShortID="218932856">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="grassswap" ID="{19730D2E-7A63-4800-BC10-EF91FFA53558}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

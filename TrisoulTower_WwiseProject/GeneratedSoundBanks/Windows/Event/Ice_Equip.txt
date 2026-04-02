@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	807627995	Ice_Equip			\Default Work Unit\Ice_Equip	
+

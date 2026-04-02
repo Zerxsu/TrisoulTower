@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2249769530	Ui_Click			\Default Work Unit\Ui_Click	
+

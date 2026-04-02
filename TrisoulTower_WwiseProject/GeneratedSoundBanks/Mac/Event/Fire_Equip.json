@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1667937880",
+    "Type": "Event",
+    "GUID": "{E81B1C57-BD6D-4FDF-88DF-4F5A22F2521A}",
+    "Language": "SFX",
+    "Hash": "{7EF38FD1-506B-39D9-CA7B-3D981F2B5B05}",
+    "ObjectPath": "Fire_Equip",
+    "ShortName": "Fire_Equip",
+    "Path": "Event/Fire_Equip.bnk",
+    "Media": [
+     {
+      "Id": "155158783",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "fireequip.wav",
+      "Path": "Media/155158783.wem",
+      "CachePath": "ED/{EDFEF0C8-45A1-7267-3243-A862F497ED06}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1667937880",
+      "Name": "Fire_Equip",
+      "ObjectPath": "\\Events\\Default Work Unit\\Fire_Equip",
+      "GUID": "{E81B1C57-BD6D-4FDF-88DF-4F5A22F2521A}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.8870522",
+      "DurationMax": "1.8870522",
+      "MediaRefs": [
+       {
+        "Id": "155158783"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{13B3AF70-E175-AFA0-9B5F-1E6F148F7456}"
+ }
+}

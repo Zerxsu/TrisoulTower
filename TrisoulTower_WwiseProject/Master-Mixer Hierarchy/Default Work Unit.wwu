@@ -44,7 +44,7 @@
 								<ObjectList Name="RTPC">
 									<Reference>
 										<Local>
-											<RTPC Name="" ID="{B88D0B36-BEC7-4AD5-B033-F46EB4341D46}" ShortID="572761260">
+											<RTPC Name="" ID="{75EB0B01-BE5F-4A2D-832A-3379474F39A6}" ShortID="424534584">
 												<PropertyList>
 													<Property Name="PropertyName" Type="string" Value="BusVolume"/>
 												</PropertyList>
@@ -54,19 +54,19 @@
 													</Reference>
 													<Reference Name="Curve">
 														<Custom>
-															<Curve Name="" ID="{787A7F8E-17D5-4E23-948E-905278866FA6}">
+															<Curve Name="" ID="{9EE24733-C992-4747-B7A1-FD94455E47A4}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="3"/>
 																</PropertyList>
 																<PointList>
 																	<Point>
-																		<XPos>50</XPos>
+																		<XPos>0</XPos>
 																		<YPos>-200</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
 																		<XPos>100</XPos>
-																		<YPos>0</YPos>
+																		<YPos>0.05541</YPos>
 																		<Flags>37</Flags>
 																	</Point>
 																</PointList>
@@ -101,13 +101,13 @@
 																</PropertyList>
 																<PointList>
 																	<Point>
-																		<XPos>50</XPos>
+																		<XPos>0</XPos>
 																		<YPos>-200</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
 																		<XPos>100</XPos>
-																		<YPos>0</YPos>
+																		<YPos>-9E-05</YPos>
 																		<Flags>37</Flags>
 																	</Point>
 																</PointList>
@@ -126,7 +126,7 @@
 						<ObjectList Name="RTPC">
 							<Reference>
 								<Local>
-									<RTPC Name="" ID="{BB3B52D8-AC1C-4C1D-BB08-0CAEEA1DBF99}" ShortID="930122732">
+									<RTPC Name="" ID="{C412DFFF-ABB5-4790-B899-1D8DCDCB668D}" ShortID="853455380">
 										<PropertyList>
 											<Property Name="PropertyName" Type="string" Value="BusVolume"/>
 										</PropertyList>
@@ -136,19 +136,19 @@
 											</Reference>
 											<Reference Name="Curve">
 												<Custom>
-													<Curve Name="" ID="{5C8DF1E8-3577-4664-B862-8D72302F9BB0}">
+													<Curve Name="" ID="{E17D3246-5E65-4857-9E76-9E3FF53AD5DF}">
 														<PropertyList>
 															<Property Name="Flags" Type="int32" Value="3"/>
 														</PropertyList>
 														<PointList>
 															<Point>
-																<XPos>50</XPos>
+																<XPos>0</XPos>
 																<YPos>-200</YPos>
 																<Flags>5</Flags>
 															</Point>
 															<Point>
 																<XPos>100</XPos>
-																<YPos>0</YPos>
+																<YPos>-9E-05</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>

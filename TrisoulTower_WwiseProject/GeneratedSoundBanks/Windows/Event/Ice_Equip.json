@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "807627995",
+    "Type": "Event",
+    "GUID": "{039440FB-6093-4780-8137-16A8775A98FF}",
+    "Language": "SFX",
+    "Hash": "{410C7795-B89B-7C09-E17F-91A348E66B13}",
+    "ObjectPath": "Ice_Equip",
+    "ShortName": "Ice_Equip",
+    "Path": "Event/Ice_Equip.bnk",
+    "Media": [
+     {
+      "Id": "299931756",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "TrisoulChamber_IceEquip_SFX.wav",
+      "Path": "Media/299931756.wem",
+      "CachePath": "97/{978BBEE5-82BB-B88A-4C53-D63CFB7558DB}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "807627995",
+      "Name": "Ice_Equip",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ice_Equip",
+      "GUID": "{039440FB-6093-4780-8137-16A8775A98FF}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.7496145",
+      "DurationMax": "1.7496145",
+      "MediaRefs": [
+       {
+        "Id": "299931756"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{D9D9349E-CA04-D93E-7E2F-8DF4A6BEF573}"
+ }
+}
