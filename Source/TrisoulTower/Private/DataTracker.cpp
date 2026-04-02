@@ -9,7 +9,7 @@
 TArray<FString> UDataTracker::LoadData() {
     TArray<FString> FileText = {};
 
-    FString FilePath = FPaths::ProjectSavedDir() + fileName;
+    FString FilePath = FPaths::ProjectDir() + fileName;
     if (!FFileHelper::LoadFileToStringArray(FileText, *FilePath)) {
         SaveData(FileText);
     }
@@ -27,8 +27,7 @@ void UDataTracker::SaveData(TArray<FString> SaveText) {
         newData += data;
     }
 
-    FString SavePath = FPaths::ProjectSavedDir() + fileName;
+    FString SavePath = FPaths::ProjectDir() + fileName;
     FFileHelper::SaveStringToFile(newData, *SavePath);
-
 
 }
