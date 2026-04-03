@@ -369,16 +369,19 @@ void ABaseEnemy::TakeAttack_Implementation(float damage, bool parry) {
 	lastDamage = damage * damageDot;
 	RunDamage();
 
+	takeHit = true;
+	stunTime += 0.5f;
+
 	if (parry || Vulnerable) {
 		Vulnerable = false;
 		damage *= 2.0f;
-		stunTime += 2.5f;
+		stunTime += 1.5f;
 		isAttacking = false;
 		isAtTarget = false;
-		takeHit = true;
 		if (TargetType == ETargetType::Direct) needPoint = true;
 	}
 
+	
 	Health -= damage;
 	if (Health <= 0) {
 
