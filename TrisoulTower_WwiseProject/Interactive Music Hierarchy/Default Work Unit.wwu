@@ -929,7 +929,7 @@
 										<Property Name="EndPosition" Type="Real64" Value="233142.857142857"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-6</Value>
+												<Value>-2</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1182,7 +1182,7 @@
 										<Property Name="Tempo" Type="Real64" Value="145"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-24</Value>
+												<Value>-18</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1647,7 +1647,7 @@
 										<Property Name="EndPosition" Type="Real64" Value="58000"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-10</Value>
+												<Value>-5</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1962,7 +1962,7 @@
 										<Property Name="EndPosition" Type="Real64" Value="17616.6666666667"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-8</Value>
+												<Value>-3</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2231,7 +2231,7 @@
 										<Property Name="EndPosition" Type="Real64" Value="131229.166666667"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-10</Value>
+												<Value>-5</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2512,7 +2512,7 @@
 										<Property Name="EndPosition" Type="Real64" Value="148800"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-9</Value>
+												<Value>-4</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2793,7 +2793,7 @@
 										<Property Name="EndPosition" Type="Real64" Value="348800"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-12</Value>
+												<Value>-6</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>

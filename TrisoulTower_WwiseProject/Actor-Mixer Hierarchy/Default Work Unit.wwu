@@ -3,7 +3,7 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}" PersistMode="Standalone">
 			<ChildrenList>
-				<Sound Name="Test_Coin" ID="{23CD2E6B-7571-4329-9732-A856960C6506}" ShortID="807441032">
+				<Sound Name="Test_Coin_" ID="{23CD2E6B-7571-4329-9732-A856960C6506}" ShortID="807441032">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
@@ -30,7 +30,7 @@
 						<ActiveSource Name="coin" ID="{C5D7260F-26F7-42F4-A8E8-C324FAFDD4D8}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="Test_Gem" ID="{A4D568D9-C611-4F1B-AB8E-F01560A79DAF}" ShortID="1007238592">
+				<Sound Name="Test_Gem_" ID="{A4D568D9-C611-4F1B-AB8E-F01560A79DAF}" ShortID="1007238592">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
@@ -57,7 +57,7 @@
 						<ActiveSource Name="gem collect" ID="{B6ACFCEB-859A-4290-A2F6-944E3B3D462E}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<RandomSequenceContainer Name="Dash" ID="{67AF976C-89ED-468E-B890-7ADEB701391F}" ShortID="240482993">
+				<RandomSequenceContainer Name="Player_Dash" ID="{67AF976C-89ED-468E-B890-7ADEB701391F}" ShortID="240482993">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
@@ -179,7 +179,7 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
-				<SwitchContainer Name="Footsteps" ID="{6C527826-5506-4E62-B1FD-F72EA5E0D18B}" ShortID="1060552808">
+				<SwitchContainer Name="Player_Footsteps" ID="{6C527826-5506-4E62-B1FD-F72EA5E0D18B}" ShortID="1060552808">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
@@ -757,7 +757,7 @@
 						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
-				<RandomSequenceContainer Name="Jump" ID="{CC2E2676-4C09-4BAD-8790-6E5BA5FFA03A}" ShortID="642288663">
+				<RandomSequenceContainer Name="Player_Jump" ID="{CC2E2676-4C09-4BAD-8790-6E5BA5FFA03A}" ShortID="642288663">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
@@ -791,7 +791,7 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
-				<Sound Name="ui" ID="{DF349B53-FD67-4D3A-99CB-8A9CEA0A10B9}" ShortID="460131563">
+				<Sound Name="ui_" ID="{DF349B53-FD67-4D3A-99CB-8A9CEA0A10B9}" ShortID="460131563">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
@@ -870,6 +870,24 @@
 					</ChildrenList>
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="Grass_Swing" ID="{A00651A3-E1EB-4058-8136-A5BF6E5F421D}" ShortID="69985908">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>-200</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{6AF3C5C3-0500-4EC0-AC4A-E4A916B4B562}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="178"/>
+											<Property Name="Min" Type="Real64" Value="-200"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
@@ -879,11 +897,11 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="grassswing" ID="{6DF7F064-DF05-496E-B574-5C1D0C760151}" ShortID="628720579">
+						<Sound Name="grass_swing" ID="{9562DA78-E439-413F-98E7-2435F33C8A21}" ShortID="975157784">
 							<PropertyList>
-								<Property Name="Volume" Type="Real64">
+								<Property Name="Weight" Type="Real64">
 									<ValueList>
-										<Value>7</Value>
+										<Value>100</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -896,16 +914,16 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="grassswing" ID="{2D964BF0-312A-4AD4-AB9B-3A9D6C287584}">
+								<AudioFileSource Name="grass_swing" ID="{A04F49A9-0352-45C4-AB1D-D10481CB31EA}">
 									<Language>SFX</Language>
-									<AudioFile>grassswing.wav</AudioFile>
+									<AudioFile>grass_swing.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="106905870"/>
+										<MediaID ID="992761205"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="grassswing" ID="{2D964BF0-312A-4AD4-AB9B-3A9D6C287584}" Platform="Linked"/>
+								<ActiveSource Name="grass_swing" ID="{A04F49A9-0352-45C4-AB1D-D10481CB31EA}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
@@ -1121,7 +1139,7 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
-				<RandomSequenceContainer Name="Parry" ID="{97E6FA8A-56EF-4FFF-AF74-696896C5DD8D}" ShortID="894986771">
+				<RandomSequenceContainer Name="Player_Parry" ID="{97E6FA8A-56EF-4FFF-AF74-696896C5DD8D}" ShortID="894986771">
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -1166,230 +1184,7 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
-				<Sound Name="Fire_Ult" ID="{19153D37-ADC1-4F22-8420-4882167467A7}" ShortID="958255052">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="SFX Audio Bus" ID="{E2450F5E-B8CD-461D-80DE-91322792B0BA}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Fire_Ult" ID="{3B2D5E1F-D08C-4DD2-86D4-FA3F5AAD7763}">
-							<PropertyList>
-								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-								<Property Name="TrimBegin" Type="Real64" Value="0.556430921835058"/>
-							</PropertyList>
-							<Language>SFX</Language>
-							<AudioFile>Fire_Ult.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="552394354"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Fire_Ult" ID="{3B2D5E1F-D08C-4DD2-86D4-FA3F5AAD7763}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="GroundSlamAttack" ID="{F9C4B6DF-47E2-48C6-BC81-A65FCBCEC890}" ShortID="999669893">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="SFX Audio Bus" ID="{E2450F5E-B8CD-461D-80DE-91322792B0BA}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Trisoul_GroundSlamAttack_SFX" ID="{297110B0-4A76-414D-9278-AFF024107F80}">
-							<Language>SFX</Language>
-							<AudioFile>Trisoul_GroundSlamAttack_SFX.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="1020704666"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Trisoul_GroundSlamAttack_SFX" ID="{297110B0-4A76-414D-9278-AFF024107F80}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Trisoul_GreatSwordHeavy_SFX" ID="{1DC88630-7264-4404-B9B7-BB5BE245EFA5}" ShortID="536626718">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="SFX Audio Bus" ID="{E2450F5E-B8CD-461D-80DE-91322792B0BA}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Trisoul_GreatSwordHeavy_SFX" ID="{02031891-23F0-4B37-B30A-A81DBEA1C6A6}">
-							<Language>SFX</Language>
-							<AudioFile>Trisoul_GreatSwordHeavy_SFX.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="573375227"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Trisoul_GreatSwordHeavy_SFX" ID="{02031891-23F0-4B37-B30A-A81DBEA1C6A6}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Trisoul_GreatSwordULT_SFX" ID="{E169D8D7-470F-41A3-BBC9-00ABD6FBF559}" ShortID="661353402">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="SFX Audio Bus" ID="{E2450F5E-B8CD-461D-80DE-91322792B0BA}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Trisoul_GreatSwordULT_SFX" ID="{AAD0381B-8D5D-48D6-B0A6-C1D813F6D35C}">
-							<Language>SFX</Language>
-							<AudioFile>Trisoul_GreatSwordULT_SFX.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="931863211"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Trisoul_GreatSwordULT_SFX" ID="{AAD0381B-8D5D-48D6-B0A6-C1D813F6D35C}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Final_Boss_SpinATK_2SFX" ID="{106D9380-CE66-4715-89D9-F762BAA73040}" ShortID="1013399159">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="SFX Audio Bus" ID="{E2450F5E-B8CD-461D-80DE-91322792B0BA}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Final_Boss_SpinATK_2SFX" ID="{C24B8F38-23FA-427E-A05B-E0751B096718}">
-							<PropertyList>
-								<Property Name="LoopBegin" Type="Real64" Value="1.23605150214592"/>
-								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-								<Property Name="TrimBegin" Type="Real64" Value="1.23605150214592"/>
-							</PropertyList>
-							<Language>SFX</Language>
-							<AudioFile>Final_Boss_SpinATK_2SFX.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="813230988"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Final_Boss_SpinATK_2SFX" ID="{C24B8F38-23FA-427E-A05B-E0751B096718}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Final_Boss_BeamATK_SFX" ID="{F2260B60-DF27-4BAA-BD5D-D7C2F96D8E58}" ShortID="702637876">
-					<PropertyList>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>12</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="SFX Audio Bus" ID="{E2450F5E-B8CD-461D-80DE-91322792B0BA}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Final_Boss_BeamATK_SFX" ID="{84928364-47EF-4D19-91B6-7B4A2466BC57}">
-							<PropertyList>
-								<Property Name="FadeOutDuration" Type="Real64" Value="1.0457274706873"/>
-								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-								<Property Name="TrimEnd" Type="Real64" Value="3.5572608340405"/>
-							</PropertyList>
-							<Language>SFX</Language>
-							<AudioFile>Final_Boss_BeamATK_SFX.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="813581973"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Final_Boss_BeamATK_SFX" ID="{84928364-47EF-4D19-91B6-7B4A2466BC57}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Final_Boss_GroundSlamATK_SFX" ID="{DF52B3F4-3E9C-4092-88D0-639E2B65CBE9}" ShortID="624006671">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="SFX Audio Bus" ID="{E2450F5E-B8CD-461D-80DE-91322792B0BA}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Final_Boss_GroundSlamATK_SFX" ID="{04895BE3-3492-4746-99B7-954435D4AAF3}">
-							<Language>SFX</Language>
-							<AudioFile>Final_Boss_GroundSlamATK_SFX .wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="665076793"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Final_Boss_GroundSlamATK_SFX" ID="{04895BE3-3492-4746-99B7-954435D4AAF3}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Final_Boss_SwingsATK_SFX" ID="{4FD73647-2A85-461C-952E-3D9AD82917CC}" ShortID="171857553">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="SFX Audio Bus" ID="{E2450F5E-B8CD-461D-80DE-91322792B0BA}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Final_Boss_SwingsATK_SFX" ID="{912A3B80-64C5-45C0-991C-DC19F2D26597}">
-							<PropertyList>
-								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-								<Property Name="TrimBegin" Type="Real64" Value="1.68188503781101"/>
-							</PropertyList>
-							<Language>SFX</Language>
-							<AudioFile>Final_Boss_SwingsATK_SFX.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="764028079"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Final_Boss_SwingsATK_SFX" ID="{912A3B80-64C5-45C0-991C-DC19F2D26597}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Trisoul_EnemyDeathSFX" ID="{DF335E45-4EEF-4C40-86E3-B4FE832D0258}" ShortID="252683572">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="SFX Audio Bus" ID="{E2450F5E-B8CD-461D-80DE-91322792B0BA}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Trisoul_EnemyDeathSFX" ID="{33105A64-7EE3-453E-AA5B-7F4DF7B883D0}">
-							<Language>SFX</Language>
-							<AudioFile>Trisoul_EnemyDeathSFX.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="787261566"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Trisoul_EnemyDeathSFX" ID="{33105A64-7EE3-453E-AA5B-7F4DF7B883D0}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<RandomSequenceContainer Name="EnemyRawr" ID="{11629A92-3DC1-4369-9F2C-382C1CEE7B3F}" ShortID="480164914">
+				<RandomSequenceContainer Name="Enemy_Spawn" ID="{11629A92-3DC1-4369-9F2C-382C1CEE7B3F}" ShortID="480164914">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
@@ -1517,7 +1312,7 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
-				<RandomSequenceContainer Name="EnemyHit" ID="{C8F498A1-9DFC-4C10-A80B-D2614F9101D3}" ShortID="11965782">
+				<RandomSequenceContainer Name="Enemy_Hit" ID="{C8F498A1-9DFC-4C10-A80B-D2614F9101D3}" ShortID="11965782">
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -1609,7 +1404,7 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
-				<Sound Name="fireequip" ID="{FF5CA37F-3BBD-48C9-BE94-D65A6ECF66B8}" ShortID="896832954">
+				<RandomSequenceContainer Name="Boss_Beam" ID="{3178D327-56D0-48CA-A544-DF3F23BA0B21}" ShortID="215859403">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
@@ -1619,19 +1414,43 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="fireequip" ID="{95BD67CE-D839-4B52-BFEE-C612C7E36E94}">
-							<Language>SFX</Language>
-							<AudioFile>fireequip.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="155158783"/>
-							</MediaIDList>
-						</AudioFileSource>
+						<Sound Name="Boss_Beam" ID="{F2260B60-DF27-4BAA-BD5D-D7C2F96D8E58}" ShortID="702637876">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Audio Bus" ID="{E2450F5E-B8CD-461D-80DE-91322792B0BA}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Final_Boss_BeamATK_SFX" ID="{84928364-47EF-4D19-91B6-7B4A2466BC57}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.0457274706873"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="3.5572608340405"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Final_Boss_BeamATK_SFX.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="813581973"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Final_Boss_BeamATK_SFX" ID="{84928364-47EF-4D19-91B6-7B4A2466BC57}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="fireequip" ID="{95BD67CE-D839-4B52-BFEE-C612C7E36E94}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="TrisoulChamber_IceEquip_SFX" ID="{B5B3D4A9-3A17-4DF8-B920-F7E978F8E1ED}" ShortID="628565215">
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Boss_Slam" ID="{E60DAC0B-2CB8-4526-AED3-D03B4D810224}" ShortID="320961113">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
@@ -1641,19 +1460,31 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="TrisoulChamber_IceEquip_SFX" ID="{D6D2822D-048D-48DD-93C7-1FD1A93F7759}">
-							<Language>SFX</Language>
-							<AudioFile>TrisoulChamber_IceEquip_SFX.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="299931756"/>
-							</MediaIDList>
-						</AudioFileSource>
+						<Sound Name="Boss_Slam" ID="{DF52B3F4-3E9C-4092-88D0-639E2B65CBE9}" ShortID="624006671">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Audio Bus" ID="{E2450F5E-B8CD-461D-80DE-91322792B0BA}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Final_Boss_GroundSlamATK_SFX" ID="{04895BE3-3492-4746-99B7-954435D4AAF3}">
+									<Language>SFX</Language>
+									<AudioFile>Final_Boss_GroundSlamATK_SFX .wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="665076793"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Final_Boss_GroundSlamATK_SFX" ID="{04895BE3-3492-4746-99B7-954435D4AAF3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="TrisoulChamber_IceEquip_SFX" ID="{D6D2822D-048D-48DD-93C7-1FD1A93F7759}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Select-SFX" ID="{0030AA4C-9CDD-4B6A-899F-365855680357}" ShortID="524182752">
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Boss_Spin" ID="{2AC36DBD-4A22-43CD-8405-51D29AB02E3D}" ShortID="201266920">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
@@ -1663,19 +1494,36 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="Select-SFX" ID="{AFC0F0D6-8460-4CCB-9FC7-7CD7C4C7DDBF}">
-							<Language>SFX</Language>
-							<AudioFile>Select-SFX.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="434288036"/>
-							</MediaIDList>
-						</AudioFileSource>
+						<Sound Name="Boss_Spin" ID="{106D9380-CE66-4715-89D9-F762BAA73040}" ShortID="1013399159">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Audio Bus" ID="{E2450F5E-B8CD-461D-80DE-91322792B0BA}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Final_Boss_SpinATK_2SFX" ID="{C24B8F38-23FA-427E-A05B-E0751B096718}">
+									<PropertyList>
+										<Property Name="LoopBegin" Type="Real64" Value="1.23605150214592"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="1.23605150214592"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Final_Boss_SpinATK_2SFX.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="813230988"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Final_Boss_SpinATK_2SFX" ID="{C24B8F38-23FA-427E-A05B-E0751B096718}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Select-SFX" ID="{AFC0F0D6-8460-4CCB-9FC7-7CD7C4C7DDBF}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="ui click" ID="{6BDF896E-13F8-4173-A645-5FDF7632F97F}" ShortID="737728711">
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Boss_Swing" ID="{84D565F2-32C5-4872-886E-CFF6EE16A515}" ShortID="259482191">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
@@ -1685,19 +1533,35 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="ui click" ID="{16A8C8AB-47EE-4D24-BA0A-0CF662A3EF07}">
-							<Language>SFX</Language>
-							<AudioFile>ui click.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="686706791"/>
-							</MediaIDList>
-						</AudioFileSource>
+						<Sound Name="Boss_Swing" ID="{4FD73647-2A85-461C-952E-3D9AD82917CC}" ShortID="171857553">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Audio Bus" ID="{E2450F5E-B8CD-461D-80DE-91322792B0BA}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Final_Boss_SwingsATK_SFX" ID="{912A3B80-64C5-45C0-991C-DC19F2D26597}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="1.68188503781101"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Final_Boss_SwingsATK_SFX.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="764028079"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Final_Boss_SwingsATK_SFX" ID="{912A3B80-64C5-45C0-991C-DC19F2D26597}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="ui click" ID="{16A8C8AB-47EE-4D24-BA0A-0CF662A3EF07}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="grassswap" ID="{19730D2E-7A63-4800-BC10-EF91FFA53558}" ShortID="164680572">
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Enemy_Death" ID="{318C22C1-2609-4D8F-992F-81C99E9AD4DA}" ShortID="613950079">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
@@ -1707,18 +1571,340 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="grassswap" ID="{3EB89208-0443-45D4-B6AF-46DF919E03ED}">
-							<Language>SFX</Language>
-							<AudioFile>grassswap.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="1037208111"/>
-							</MediaIDList>
-						</AudioFileSource>
+						<Sound Name="Enemy_Death" ID="{DF335E45-4EEF-4C40-86E3-B4FE832D0258}" ShortID="252683572">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Audio Bus" ID="{E2450F5E-B8CD-461D-80DE-91322792B0BA}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Trisoul_EnemyDeathSFX" ID="{33105A64-7EE3-453E-AA5B-7F4DF7B883D0}">
+									<Language>SFX</Language>
+									<AudioFile>Trisoul_EnemyDeathSFX.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="787261566"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Trisoul_EnemyDeathSFX" ID="{33105A64-7EE3-453E-AA5B-7F4DF7B883D0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="grassswap" ID="{3EB89208-0443-45D4-B6AF-46DF919E03ED}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Fire_Equip" ID="{3F40CC08-AE3D-427F-8A54-454D3FB937EA}" ShortID="353658623">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Fire_Equip" ID="{FF5CA37F-3BBD-48C9-BE94-D65A6ECF66B8}" ShortID="896832954">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="fireequip" ID="{95BD67CE-D839-4B52-BFEE-C612C7E36E94}">
+									<Language>SFX</Language>
+									<AudioFile>fireequip.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="155158783"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="fireequip" ID="{95BD67CE-D839-4B52-BFEE-C612C7E36E94}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Fire_Heavy" ID="{D84D4282-107D-4D1C-87AD-3F3F6EEB8988}" ShortID="636585887">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Fire_Heavy" ID="{F9C4B6DF-47E2-48C6-BC81-A65FCBCEC890}" ShortID="999669893">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Audio Bus" ID="{E2450F5E-B8CD-461D-80DE-91322792B0BA}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Trisoul_GroundSlamAttack_SFX" ID="{297110B0-4A76-414D-9278-AFF024107F80}">
+									<Language>SFX</Language>
+									<AudioFile>Trisoul_GroundSlamAttack_SFX.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1020704666"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Trisoul_GroundSlamAttack_SFX" ID="{297110B0-4A76-414D-9278-AFF024107F80}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Fire_Ult" ID="{44A41150-B497-49ED-88E5-98F3D3CD478A}" ShortID="287805240">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Fire_Ult" ID="{19153D37-ADC1-4F22-8420-4882167467A7}" ShortID="958255052">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Audio Bus" ID="{E2450F5E-B8CD-461D-80DE-91322792B0BA}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Fire_Ult" ID="{3B2D5E1F-D08C-4DD2-86D4-FA3F5AAD7763}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.556430921835058"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Fire_Ult.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="552394354"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Fire_Ult" ID="{3B2D5E1F-D08C-4DD2-86D4-FA3F5AAD7763}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Grass_Heavy" ID="{BDC81CD0-2F4C-4235-90F8-BDC430B6FA1D}" ShortID="740611462">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Grass_Heavy" ID="{1DC88630-7264-4404-B9B7-BB5BE245EFA5}" ShortID="536626718">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Audio Bus" ID="{E2450F5E-B8CD-461D-80DE-91322792B0BA}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Trisoul_GreatSwordHeavy_SFX" ID="{02031891-23F0-4B37-B30A-A81DBEA1C6A6}">
+									<Language>SFX</Language>
+									<AudioFile>Trisoul_GreatSwordHeavy_SFX.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="573375227"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Trisoul_GreatSwordHeavy_SFX" ID="{02031891-23F0-4B37-B30A-A81DBEA1C6A6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Grass_Swap" ID="{CFDCFCCB-8D01-4680-9AC6-287B4A22C8E0}" ShortID="362064155">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Grass_Swap" ID="{19730D2E-7A63-4800-BC10-EF91FFA53558}" ShortID="164680572">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="grassswap" ID="{3EB89208-0443-45D4-B6AF-46DF919E03ED}">
+									<Language>SFX</Language>
+									<AudioFile>grassswap.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1037208111"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="grassswap" ID="{3EB89208-0443-45D4-B6AF-46DF919E03ED}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Grass_Ult" ID="{B26EE416-B678-4D3F-A6BF-5D66E7978D17}" ShortID="237770565">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Grass_Ult" ID="{E169D8D7-470F-41A3-BBC9-00ABD6FBF559}" ShortID="661353402">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Audio Bus" ID="{E2450F5E-B8CD-461D-80DE-91322792B0BA}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Trisoul_GreatSwordULT_SFX" ID="{AAD0381B-8D5D-48D6-B0A6-C1D813F6D35C}">
+									<Language>SFX</Language>
+									<AudioFile>Trisoul_GreatSwordULT_SFX.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="931863211"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Trisoul_GreatSwordULT_SFX" ID="{AAD0381B-8D5D-48D6-B0A6-C1D813F6D35C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Ice_Equip" ID="{3CFEE670-1973-4152-AEE3-00D38EA4A67D}" ShortID="474441123">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Ice_Equip" ID="{B5B3D4A9-3A17-4DF8-B920-F7E978F8E1ED}" ShortID="628565215">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="TrisoulChamber_IceEquip_SFX" ID="{D6D2822D-048D-48DD-93C7-1FD1A93F7759}">
+									<Language>SFX</Language>
+									<AudioFile>TrisoulChamber_IceEquip_SFX.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="299931756"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="TrisoulChamber_IceEquip_SFX" ID="{D6D2822D-048D-48DD-93C7-1FD1A93F7759}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Ui_Confirm" ID="{B31A6EDE-19B4-48E1-B94B-B965F3BF1395}" ShortID="549806621">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Ui_Confirm" ID="{6BDF896E-13F8-4173-A645-5FDF7632F97F}" ShortID="737728711">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ui click" ID="{16A8C8AB-47EE-4D24-BA0A-0CF662A3EF07}">
+									<Language>SFX</Language>
+									<AudioFile>ui click.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="686706791"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ui click" ID="{16A8C8AB-47EE-4D24-BA0A-0CF662A3EF07}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Ui_Hover" ID="{C4C0EBBB-EA6D-473B-8D58-40402F9326F0}" ShortID="800759727">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Ui_Hover" ID="{0030AA4C-9CDD-4B6A-899F-365855680357}" ShortID="524182752">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Select-SFX" ID="{AFC0F0D6-8460-4CCB-9FC7-7CD7C4C7DDBF}">
+									<Language>SFX</Language>
+									<AudioFile>Select-SFX.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="434288036"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Select-SFX" ID="{AFC0F0D6-8460-4CCB-9FC7-7CD7C4C7DDBF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
