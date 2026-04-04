@@ -78,3 +78,4 @@ DerivedDataCache/*
 .idea/
 # making sure wwise plugin files are included
 !Plugins/WwiseSoundEngine/ThirdParty/**
+GameData.txt
