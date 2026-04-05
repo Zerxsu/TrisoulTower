@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{9897AEDF-BC65-4A93-B476-7C354D572BB8}",
     "Language": "SFX",
-    "Hash": "{0E5B5494-D6C5-6B08-A916-1ED56A5C6AC7}",
+    "Hash": "{439C375D-0553-BB52-C3D4-7B78C4D9331E}",
     "ObjectPath": "Fire_Swing",
     "ShortName": "Fire_Swing",
     "Path": "Event/Fire_Swing.bnk",
@@ -55,6 +55,6 @@
     ]
    }
   ],
-  "FileHash": "{63C20F22-718B-2984-DDF4-8C39F06B9A5A}"
+  "FileHash": "{53B45D5A-2A96-2B96-CBF6-FD039FF70CA4}"
  }
 }

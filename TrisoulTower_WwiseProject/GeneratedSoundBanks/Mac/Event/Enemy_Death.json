@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{5A7E3E81-8E0A-479A-B349-4FC9E587C2FE}",
     "Language": "SFX",
-    "Hash": "{A0AC918C-2083-A00E-9435-EDF435F9C6B2}",
+    "Hash": "{04C20194-B897-C610-98D7-AB2A340A62E2}",
     "ObjectPath": "Enemy_Death",
     "ShortName": "Enemy_Death",
     "Path": "Event/Enemy_Death.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{01F17AC4-FC37-8434-56CE-44003BE8028D}"
+  "FileHash": "{879C404C-4C8B-B96D-024B-2B8C5591E568}"
  }
 }
