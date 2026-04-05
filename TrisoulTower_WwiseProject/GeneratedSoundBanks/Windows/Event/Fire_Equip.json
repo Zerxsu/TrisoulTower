@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{E81B1C57-BD6D-4FDF-88DF-4F5A22F2521A}",
     "Language": "SFX",
-    "Hash": "{7EF38FD1-506B-39D9-CA7B-3D981F2B5B05}",
+    "Hash": "{CAC69527-166E-05A5-F40C-617E082E3892}",
     "ObjectPath": "Fire_Equip",
     "ShortName": "Fire_Equip",
     "Path": "Event/Fire_Equip.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{79496086-62D3-7024-B35F-35FC84ED9BB9}"
+  "FileHash": "{CE0AB2F2-C0CE-1E32-80B6-D88F788B362A}"
  }
 }

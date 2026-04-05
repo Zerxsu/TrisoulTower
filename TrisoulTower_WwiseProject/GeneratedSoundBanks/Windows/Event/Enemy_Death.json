@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1205999388",
+    "Type": "Event",
+    "GUID": "{5A7E3E81-8E0A-479A-B349-4FC9E587C2FE}",
+    "Language": "SFX",
+    "Hash": "{A0AC918C-2083-A00E-9435-EDF435F9C6B2}",
+    "ObjectPath": "Enemy_Death",
+    "ShortName": "Enemy_Death",
+    "Path": "Event/Enemy_Death.bnk",
+    "Media": [
+     {
+      "Id": "787261566",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Trisoul_EnemyDeathSFX.wav",
+      "Path": "Media/787261566.wem",
+      "CachePath": "4E/{4EEFF420-F7F9-832A-D72B-6F0DF2DAC462}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1205999388",
+      "Name": "Enemy_Death",
+      "ObjectPath": "\\Events\\Default Work Unit\\Enemy_Death",
+      "GUID": "{5A7E3E81-8E0A-479A-B349-4FC9E587C2FE}",
+      "DurationType": "OneShot",
+      "DurationMin": "3.0312924",
+      "DurationMax": "3.0312924",
+      "MediaRefs": [
+       {
+        "Id": "787261566"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{AB995C6E-BFD0-DB10-D18B-EA97C79216B1}"
+ }
+}

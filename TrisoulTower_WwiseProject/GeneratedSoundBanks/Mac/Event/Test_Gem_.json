@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1088611276",
+    "Type": "Event",
+    "GUID": "{866B64A4-761C-4EAA-A96A-A0D450EC4099}",
+    "Language": "SFX",
+    "Hash": "{7E3331D1-A08D-03D4-A573-8F70936C7879}",
+    "ObjectPath": "Test_Gem_",
+    "ShortName": "Test_Gem_",
+    "Path": "Event/Test_Gem_.bnk",
+    "Media": [
+     {
+      "Id": "339665840",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "gem collect.wav",
+      "Path": "Media/339665840.wem",
+      "CachePath": "5D/{5D9F5425-752F-A90E-9169-24DAB07696A7}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1088611276",
+      "Name": "Test_Gem_",
+      "ObjectPath": "\\Events\\Default Work Unit\\Test_Gem_",
+      "GUID": "{866B64A4-761C-4EAA-A96A-A0D450EC4099}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.0180209",
+      "DurationMax": "2.0180209",
+      "MediaRefs": [
+       {
+        "Id": "339665840"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{0371F7D3-4295-D80A-ABAD-CEEA2E369E8F}"
+ }
+}

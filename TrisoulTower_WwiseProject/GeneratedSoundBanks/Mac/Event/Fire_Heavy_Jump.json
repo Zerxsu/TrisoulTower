@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2855717088",
+    "Type": "Event",
+    "GUID": "{C9C6FD56-EFE7-4C14-9A00-C47CE826F918}",
+    "Language": "SFX",
+    "Hash": "{C4D96CA8-A3DD-527F-9B0C-66024DDE4FB5}",
+    "ObjectPath": "Fire_Heavy_Jump",
+    "ShortName": "Fire_Heavy_Jump",
+    "Path": "Event/Fire_Heavy_Jump.bnk",
+    "Media": [
+     {
+      "Id": "912084941",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "fireheavyjump.wav",
+      "Path": "Media/912084941.wem",
+      "CachePath": "8E/{8EC8B7A8-5E13-65C6-4A80-E73BE8F82E26}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2855717088",
+      "Name": "Fire_Heavy_Jump",
+      "ObjectPath": "\\Events\\Default Work Unit\\Fire_Heavy_Jump",
+      "GUID": "{C9C6FD56-EFE7-4C14-9A00-C47CE826F918}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.75",
+      "DurationMax": "0.75",
+      "MediaRefs": [
+       {
+        "Id": "912084941"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{E5739223-4084-2607-9ABE-9AFF925A7728}"
+ }
+}

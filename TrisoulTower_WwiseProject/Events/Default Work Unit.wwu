@@ -426,6 +426,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Fire_Heavy_Jump" ID="{C9C6FD56-EFE7-4C14-9A00-C47CE826F918}">
+					<ChildrenList>
+						<Action Name="" ID="{0C35F1CA-115B-49B8-8F08-3EA145DBF638}" ShortID="52560635">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Fire_Heavy_Jump" ID="{B7246CBE-C56F-4BE3-BF9B-694E95747D10}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

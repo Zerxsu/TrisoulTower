@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2045292529",
+    "Type": "Event",
+    "GUID": "{F286ADB7-032E-4616-9CD7-9DBEE8D3D03F}",
+    "Language": "SFX",
+    "Hash": "{AFE9CA03-4CC9-F358-5A02-C7F8C77B4F15}",
+    "ObjectPath": "Fire_Heavy",
+    "ShortName": "Fire_Heavy",
+    "Path": "Event/Fire_Heavy.bnk",
+    "Media": [
+     {
+      "Id": "1020704666",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Trisoul_GroundSlamAttack_SFX.wav",
+      "Path": "Media/1020704666.wem",
+      "CachePath": "F0/{F04025D7-D7B2-99B9-89D5-CB7D77206938}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2045292529",
+      "Name": "Fire_Heavy",
+      "ObjectPath": "\\Events\\Default Work Unit\\Fire_Heavy",
+      "GUID": "{F286ADB7-032E-4616-9CD7-9DBEE8D3D03F}",
+      "DurationType": "OneShot",
+      "DurationMin": "6.83483",
+      "DurationMax": "6.83483",
+      "MediaRefs": [
+       {
+        "Id": "1020704666"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{5FBB7632-330A-FEE2-E691-F9C1843C6BBF}"
+ }
+}

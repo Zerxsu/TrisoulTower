@@ -1,3 +1,0 @@
-Event	ID	Name			Wwise Object Path	Notes
-	2980602427	Play_Final_Boss_GroundSlamATK_SFX			\Default Work Unit\Play_Final_Boss_GroundSlamATK_SFX	
-

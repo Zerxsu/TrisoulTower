@@ -1,0 +1,72 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1010055213",
+    "Type": "Event",
+    "GUID": "{126B7563-E066-48AC-AC77-26C269AFA7F8}",
+    "Language": "SFX",
+    "Hash": "{FFC6EC32-0D19-C6B1-5CBD-3F17002D8EAA}",
+    "ObjectPath": "Enemy_Hit",
+    "ShortName": "Enemy_Hit",
+    "Path": "Event/Enemy_Hit.bnk",
+    "Media": [
+     {
+      "Id": "688772262",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Trisoul_EnemyHitSFX (1).wav",
+      "Path": "Media/688772262.wem",
+      "CachePath": "A9/{A9307772-998E-A5F6-DF66-6B8A2C837565}.wem"
+     },
+     {
+      "Id": "765553353",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Trisoul_EnemyHitSFX (2).wav",
+      "Path": "Media/765553353.wem",
+      "CachePath": "99/{99F89009-7B46-2499-CDC9-CB8B8765E0C3}.wem"
+     },
+     {
+      "Id": "955923115",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Trisoul_EnemyHitSFX.wav",
+      "Path": "Media/955923115.wem",
+      "CachePath": "51/{516B4AA1-1416-004D-71F6-EF3832288371}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1010055213",
+      "Name": "Enemy_Hit",
+      "ObjectPath": "\\Events\\Default Work Unit\\Enemy_Hit",
+      "GUID": "{126B7563-E066-48AC-AC77-26C269AFA7F8}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.2250113",
+      "DurationMax": "1.6308844",
+      "MediaRefs": [
+       {
+        "Id": "688772262"
+       },
+       {
+        "Id": "765553353"
+       },
+       {
+        "Id": "955923115"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{B8079E92-3B7A-B915-0C6E-D5ED0F4423AA}"
+ }
+}

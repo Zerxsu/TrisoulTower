@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1205999388	Enemy_Death			\Default Work Unit\Enemy_Death	
+

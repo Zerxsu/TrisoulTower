@@ -1,0 +1,84 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1526102535",
+    "Type": "Event",
+    "GUID": "{23F5B3CA-DA39-49C0-B0F1-D2F7552EA6D3}",
+    "Language": "SFX",
+    "Hash": "{220BE387-2C07-7E82-2645-D83C4070569A}",
+    "ObjectPath": "Enemy_Spawn",
+    "ShortName": "Enemy_Spawn",
+    "Path": "Event/Enemy_Spawn.bnk",
+    "Media": [
+     {
+      "Id": "587950122",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Trisoul_Tier1_Enemy_Rawr_1.wav",
+      "Path": "Media/587950122.wem",
+      "CachePath": "85/{85B29203-9508-0E02-9DDB-10BF3FEF3493}.wem"
+     },
+     {
+      "Id": "745060714",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Trisoul_Tier1_Enemy_Rawr_4.wav",
+      "Path": "Media/745060714.wem",
+      "CachePath": "07/{077F9069-BD94-BE32-2257-BC950604D66E}.wem"
+     },
+     {
+      "Id": "854705372",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Trisoul_Tier1_Enemy_Rawr_2.wav",
+      "Path": "Media/854705372.wem",
+      "CachePath": "57/{57D09618-D9E3-4888-720E-4390FC57DEAC}.wem"
+     },
+     {
+      "Id": "1054760149",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Trisoul_Tier1_Enemy_Rawr_3.wav",
+      "Path": "Media/1054760149.wem",
+      "CachePath": "0E/{0E7A3DDE-5125-183B-F39B-AA1F95544D39}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1526102535",
+      "Name": "Enemy_Spawn",
+      "ObjectPath": "\\Events\\Default Work Unit\\Enemy_Spawn",
+      "GUID": "{23F5B3CA-DA39-49C0-B0F1-D2F7552EA6D3}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.9008164",
+      "DurationMax": "3.4216328",
+      "MediaRefs": [
+       {
+        "Id": "587950122"
+       },
+       {
+        "Id": "745060714"
+       },
+       {
+        "Id": "854705372"
+       },
+       {
+        "Id": "1054760149"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{6FA0F47A-EF0F-7E79-26FD-7A142EDB15B3}"
+ }
+}

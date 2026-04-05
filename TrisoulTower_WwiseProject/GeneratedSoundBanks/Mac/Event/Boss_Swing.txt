@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	4193670737	Boss_Swing			\Default Work Unit\Boss_Swing	
+

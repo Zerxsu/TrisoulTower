@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3638804198	Fire_Swing			\Default Work Unit\Fire_Swing	
+

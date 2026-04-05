@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "4193670737",
+    "Type": "Event",
+    "GUID": "{B61520C7-D2CB-4E32-9CBF-4733D077E066}",
+    "Language": "SFX",
+    "Hash": "{591EC672-ECF3-13E2-72E0-9C5EBB04B734}",
+    "ObjectPath": "Boss_Swing",
+    "ShortName": "Boss_Swing",
+    "Path": "Event/Boss_Swing.bnk",
+    "Media": [
+     {
+      "Id": "764028079",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Final_Boss_SwingsATK_SFX.wav",
+      "Path": "Media/764028079.wem",
+      "CachePath": "0D/{0D484BD0-165B-47F1-1C9B-1F8E4C8EC971}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "4193670737",
+      "Name": "Boss_Swing",
+      "ObjectPath": "\\Events\\Default Work Unit\\Boss_Swing",
+      "GUID": "{B61520C7-D2CB-4E32-9CBF-4733D077E066}",
+      "DurationType": "OneShot",
+      "DurationMin": "3.6863236",
+      "DurationMax": "3.6863236",
+      "MediaRefs": [
+       {
+        "Id": "764028079"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{0F1C95FA-B939-9DA2-277F-D81D10D8747F}"
+ }
+}

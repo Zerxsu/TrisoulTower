@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2248237834	Boss_Slam			\Default Work Unit\Boss_Slam	
+

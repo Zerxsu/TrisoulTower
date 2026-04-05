@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2598616001",
+    "Type": "Event",
+    "GUID": "{B1981C26-1A12-4DCC-823D-F57B1062AC10}",
+    "Language": "SFX",
+    "Hash": "{EA4FFADC-257E-EDF1-E9FA-23284A484867}",
+    "ObjectPath": "Grass_Ult",
+    "ShortName": "Grass_Ult",
+    "Path": "Event/Grass_Ult.bnk",
+    "Media": [
+     {
+      "Id": "931863211",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Trisoul_GreatSwordULT_SFX.wav",
+      "Path": "Media/931863211.wem",
+      "CachePath": "EA/{EADE9997-33EC-78F3-58B4-A7F50C16489D}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2598616001",
+      "Name": "Grass_Ult",
+      "ObjectPath": "\\Events\\Default Work Unit\\Grass_Ult",
+      "GUID": "{B1981C26-1A12-4DCC-823D-F57B1062AC10}",
+      "DurationType": "OneShot",
+      "DurationMin": "4.1249886",
+      "DurationMax": "4.1249886",
+      "MediaRefs": [
+       {
+        "Id": "931863211"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{B2A38DF4-FFD8-900C-2834-300050D0EF71}"
+ }
+}

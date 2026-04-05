@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2248237834",
+    "Type": "Event",
+    "GUID": "{49D2038C-B82B-4E64-A55D-CA31207855BD}",
+    "Language": "SFX",
+    "Hash": "{ED548FEE-8ACE-7C54-84BC-A9306B85D158}",
+    "ObjectPath": "Boss_Slam",
+    "ShortName": "Boss_Slam",
+    "Path": "Event/Boss_Slam.bnk",
+    "Media": [
+     {
+      "Id": "665076793",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Final_Boss_GroundSlamATK_SFX .wav",
+      "Path": "Media/665076793.wem",
+      "CachePath": "69/{69A283CA-E3E9-D859-5E0F-4B0EC724AD10}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2248237834",
+      "Name": "Boss_Slam",
+      "ObjectPath": "\\Events\\Default Work Unit\\Boss_Slam",
+      "GUID": "{49D2038C-B82B-4E64-A55D-CA31207855BD}",
+      "DurationType": "OneShot",
+      "DurationMin": "6.5",
+      "DurationMax": "6.5",
+      "MediaRefs": [
+       {
+        "Id": "665076793"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{75C15A69-FDB7-2EBE-793F-C8D13C32CA55}"
+ }
+}

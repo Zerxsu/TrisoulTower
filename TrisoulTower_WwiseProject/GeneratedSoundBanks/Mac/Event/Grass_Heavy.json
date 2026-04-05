@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "869785441",
+    "Type": "Event",
+    "GUID": "{2022514D-9A6E-45F0-A239-E6889C2D5300}",
+    "Language": "SFX",
+    "Hash": "{034DEAA4-17A4-1487-097E-FD049C640FFB}",
+    "ObjectPath": "Grass_Heavy",
+    "ShortName": "Grass_Heavy",
+    "Path": "Event/Grass_Heavy.bnk",
+    "Media": [
+     {
+      "Id": "571770738",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "grassheavy.wav",
+      "Path": "Media/571770738.wem",
+      "CachePath": "34/{34E3F0C6-53A2-4574-5FB3-4B4EF9FC9AFB}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "869785441",
+      "Name": "Grass_Heavy",
+      "ObjectPath": "\\Events\\Default Work Unit\\Grass_Heavy",
+      "GUID": "{2022514D-9A6E-45F0-A239-E6889C2D5300}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.5",
+      "DurationMax": "1.5",
+      "MediaRefs": [
+       {
+        "Id": "571770738"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{E17E5AE8-77DC-93BD-C339-4A4E116B9384}"
+ }
+}
