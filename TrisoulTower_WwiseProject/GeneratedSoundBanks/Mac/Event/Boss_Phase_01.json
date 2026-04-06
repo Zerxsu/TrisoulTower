@@ -10,11 +10,20 @@
     "Type": "Event",
     "GUID": "{FCEB802B-08C2-4632-927A-AA158F6A15A1}",
     "Language": "SFX",
-    "Hash": "{FBAE1547-9036-0F6D-9CD2-806B0013A73E}",
+    "Hash": "{134D4811-C2F6-7A38-C063-A94E4FA0ECA0}",
     "ObjectPath": "Boss_Phase_01",
     "ShortName": "Boss_Phase_01",
     "Path": "Event/Boss_Phase_01.bnk",
     "Media": [
+     {
+      "Id": "269247965",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Phase1_Intro2_TrisoulFinalBoss.wav",
+      "Path": "Media/269247965.wem",
+      "CachePath": "D8/{D851A29D-FADE-B726-046A-B1C3CF3EF0CC}.wem"
+     },
      {
       "Id": "751266702",
       "Language": "SFX",
@@ -42,6 +51,9 @@
         },
         "MediaRefs": [
          {
+          "Id": "269247965"
+         },
+         {
           "Id": "751266702"
          }
         ]
@@ -54,6 +66,9 @@
          "GUID": "{BE908002-2633-479E-BC74-2F47FB1B1B76}"
         },
         "MediaRefs": [
+         {
+          "Id": "269247965"
+         },
          {
           "Id": "751266702"
          }
@@ -98,6 +113,6 @@
     ]
    }
   ],
-  "FileHash": "{D9677D93-1CBA-06CD-42EF-46CF6FBDD3C8}"
+  "FileHash": "{78D3D17D-2BD7-62F2-6276-61D2DB11E304}"
  }
 }

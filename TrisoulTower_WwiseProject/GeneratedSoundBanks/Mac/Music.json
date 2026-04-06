@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{03DC8F4B-44C3-4833-8039-D75C2C00E6D3}",
     "Language": "SFX",
-    "Hash": "{1B2CB240-39D8-3484-3A4E-362F2E874ECE}",
+    "Hash": "{FCCDD7EA-8593-66AD-8A1A-FA933B20BC53}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Music",
     "ShortName": "Music",
     "Path": "Music.bnk",
@@ -30,6 +30,14 @@
       "Location": "Memory",
       "ShortName": "TrisoulTitleScreen_70BPM_DMin2.wav",
       "CachePath": "7E/{7E9B945F-A807-4641-32D8-140354791B0B}.wem"
+     },
+     {
+      "Id": "269247965",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Phase1_Intro2_TrisoulFinalBoss.wav",
+      "CachePath": "D8/{D851A29D-FADE-B726-046A-B1C3CF3EF0CC}.wem"
      },
      {
       "Id": "459624906",
@@ -97,6 +105,9 @@
         },
         "MediaRefs": [
          {
+          "Id": "738341883"
+         },
+         {
           "Id": "1019931530"
          }
         ]
@@ -109,6 +120,9 @@
          "GUID": "{3EABCDFA-5160-42EC-9BA6-D0986F243BC0}"
         },
         "MediaRefs": [
+         {
+          "Id": "738341883"
+         },
          {
           "Id": "1019931530"
          }
@@ -369,6 +383,6 @@
     ]
    }
   ],
-  "FileHash": "{99B40CC1-969E-F65D-0A17-DBB83CF55007}"
+  "FileHash": "{98187960-1119-E016-60BD-2E3B5B3AD9C4}"
  }
 }

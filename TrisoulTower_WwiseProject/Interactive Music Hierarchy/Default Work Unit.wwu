@@ -1936,6 +1936,23 @@
 														</Reference>
 													</ReferenceList>
 												</MusicPlaylistItem>
+												<MusicPlaylistItem Name="" ID="{6ECDA9F8-BFF8-412D-B2EA-7678BBC9C98B}" ShortID="541784004">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="0"/>
+													</PropertyList>
+													<ChildrenList>
+														<MusicPlaylistItem Name="" ID="{76F9F71B-1255-48B1-87DE-DD24254C97AC}" ShortID="919176673">
+															<PropertyList>
+																<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Segment">
+																	<ObjectRef Name="Tower" ID="{2D6D90DC-B75F-40E9-929D-7B6E4521A038}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+																</Reference>
+															</ReferenceList>
+														</MusicPlaylistItem>
+													</ChildrenList>
+												</MusicPlaylistItem>
 											</ChildrenList>
 										</MusicPlaylistItem>
 									</Custom>
@@ -1950,6 +1967,30 @@
 												<MusicTransition Name="Transition" ID="{93A4F575-9829-42F7-9F2C-4E5ACF8DF326}">
 													<TransitionInfo/>
 												</MusicTransition>
+												<MusicTransition Name="Transition" ID="{CCD9AE3D-C9D0-4EAC-991F-7106DE181E34}">
+													<PropertyList>
+														<Property Name="DestinationContextType" Type="int16" Value="2"/>
+														<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+														<Property Name="SourceContextType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="DestinationContextObject">
+															<ObjectRef Name="Tower" ID="{2D6D90DC-B75F-40E9-929D-7B6E4521A038}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+														</Reference>
+														<Reference Name="SourceContextObject">
+															<ObjectRef Name="FinalHit_TrisoulFinalBoss_150BPM" ID="{E788B04F-D909-490A-9B87-59D43578938E}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+														</Reference>
+													</ReferenceList>
+													<TransitionInfo>
+														<DestinationFadeIn>
+															<MusicFade Name="Destination Fade-in" ID="{38106B6A-E43F-4623-B73A-4F14D6D47007}">
+																<PropertyList>
+																	<Property Name="FadeTime" Type="Real64" Value="3.7"/>
+																</PropertyList>
+															</MusicFade>
+														</DestinationFadeIn>
+													</TransitionInfo>
+												</MusicTransition>
 											</ChildrenList>
 											<TransitionInfo/>
 										</MusicTransition>
@@ -1962,7 +2003,7 @@
 										<Property Name="EndPosition" Type="Real64" Value="17616.6666666667"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>2</Value>
+												<Value>4</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2041,6 +2082,134 @@
 														<PropertyList>
 															<Property Name="CueType" Type="int16" Value="1"/>
 															<Property Name="TimeMs" Type="Real64" Value="17616.6666666667"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+								<MusicSegment Name="Tower" ID="{2D6D90DC-B75F-40E9-929D-7B6E4521A038}" ShortID="512050033">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="46344.8299319728"/>
+										<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+										<Property Name="Tempo" Type="Real64" Value="145"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Trisoul_TowerTheme_Default_145bpm" ID="{83061CD9-3328-48C4-9144-3375E9260E66}" ShortID="917647551">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{6530F597-2D6D-421E-88F3-167FA68500CE}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Trisoul_TowerTheme_Default_145bpm" ID="{2F8D379E-E5A3-4426-9044-5F6FB2ABD247}">
+													<Language>SFX</Language>
+													<AudioFile>Trisoul_TowerTheme_Default_145bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="738341883"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Tower_Theme" ID="{B5F6643A-357F-41BB-B5B3-DC756079A30D}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="None" ID="{2EA2A999-CCE6-40E5-85F7-D859D5A78257}"/>
+														<CustomState Name="" ID="{60904EB8-3F57-4E9B-B23C-750091E2C407}" ShortID="117356679"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Off" ID="{6DE4D22C-BD7F-4402-9A3F-245B07C80326}"/>
+														<CustomState Name="" ID="{A14786D4-F0A6-4469-8832-DFB841FB9219}" ShortID="281446593">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Fighting" ID="{00C52401-B4FA-4511-A245-B401A0360DAE}"/>
+														<CustomState Name="" ID="{47CA380B-682B-43BB-8B0A-0DF7F50B7D31}" ShortID="497883343"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Menu" ID="{6170DB93-79A9-47B2-90E4-D53A867292C0}"/>
+														<CustomState Name="" ID="{60D4D199-9559-4D44-A88C-9E28DF292501}" ShortID="774615709"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Exploring" ID="{7E25F7AE-4495-4DA5-9596-AE2B915761A6}"/>
+														<CustomState Name="" ID="{8AB63F34-36BA-4F49-8AF1-1AE64ED80133}" ShortID="1066873145"/>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{19181451-520E-4207-87B6-D4BB8810A1CD}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Trisoul_TowerTheme_Default_145bpm" ID="{37884ADA-A1CF-4CCA-BBE6-0A0FD1621147}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="46344.8299319728"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Trisoul_TowerTheme_Default_145bpm" ID="{2F8D379E-E5A3-4426-9044-5F6FB2ABD247}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{EBCC5424-F9E0-419F-AD73-0A242FCD742F}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{EFE88FDB-1723-44AB-AA41-FB0F669B8D14}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="46344.8299319728"/>
 														</PropertyList>
 													</MusicCue>
 												</Local>
@@ -2195,13 +2364,13 @@
 												<Property Name="LoopCount" Type="int16" Value="0"/>
 											</PropertyList>
 											<ChildrenList>
-												<MusicPlaylistItem Name="" ID="{2643E603-CF3F-470E-9967-64ECF15AA0BA}" ShortID="262998175">
+												<MusicPlaylistItem Name="" ID="{06908C00-573F-4161-92EA-9AD0AF16B3B8}" ShortID="500445817">
 													<PropertyList>
 														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Segment">
-															<ObjectRef Name="Phase1_TrisoulFinalBoss_150BPM" ID="{AAEFFFDF-C3C3-4DA5-910A-5688504BCCDD}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+															<ObjectRef Name="Phase1_Intro2_TrisoulFinalBoss" ID="{0639CD68-0D99-436C-8D9D-6589CF27AA91}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
 														</Reference>
 													</ReferenceList>
 												</MusicPlaylistItem>
@@ -2282,7 +2451,7 @@
 																					<PropertyList>
 																						<Property Name="EndTrimOffset" Type="Real64" Value="131229.166666667"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
-																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="6549.97603511809"/>
 																					</PropertyList>
 																					<AudioSourceRef Name="Phase1_TrisoulFinalBoss_150BPM" ID="{C90728EA-547A-49CA-939A-5343FD6AE2BF}"/>
 																				</MusicClip>
@@ -2314,6 +2483,101 @@
 														<PropertyList>
 															<Property Name="CueType" Type="int16" Value="1"/>
 															<Property Name="TimeMs" Type="Real64" Value="128000"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+								<MusicSegment Name="Phase1_Intro2_TrisoulFinalBoss" ID="{0639CD68-0D99-436C-8D9D-6589CF27AA91}" ShortID="388575861">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="102400"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Phase1_Intro2_TrisoulFinalBoss" ID="{8E29C1F1-A5EC-4FA7-93E1-C8ECE0BD6B4D}" ShortID="194751447">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{35BF5DF4-8B28-43C3-B25D-8FCABA301BF1}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Phase1_Intro2_TrisoulFinalBoss" ID="{112053A1-A8E2-4FB0-BEAE-694F602AF2A5}">
+													<Language>SFX</Language>
+													<AudioFile>Phase1_Intro2_TrisoulFinalBoss.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="269247965"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{E4A91CA0-BFE4-4A65-AF34-8F6CB7AE2C89}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Phase1_Intro2_TrisoulFinalBoss" ID="{49F283F4-F6DA-4027-A260-C6409D740789}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="76800"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="3027.30842798674"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Phase1_Intro2_TrisoulFinalBoss" ID="{112053A1-A8E2-4FB0-BEAE-694F602AF2A5}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{9145D661-03C9-48E1-A80A-9E4CD30491CB}">
+														<PropertyList>
+															<Property Name="TimeMs" Type="Real64" Value="25600"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{D5748FCF-2E15-4841-9512-B0FB04F5049B}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="76800"/>
 														</PropertyList>
 													</MusicCue>
 												</Local>
