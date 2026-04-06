@@ -1225,7 +1225,7 @@
 					<PropertyList>
 						<Property Name="MaxSoundPerInstance" Type="int16">
 							<ValueList>
-								<Value>3</Value>
+								<Value>1</Value>
 							</ValueList>
 						</Property>
 						<Property Name="UseMaxSoundPerInstance" Type="bool">
@@ -1249,6 +1249,18 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="Trisoul_Parry_New" ID="{D66427C6-3F82-4E0D-9EC7-87627AFB6376}" ShortID="49377043">
+							<PropertyList>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
@@ -1262,7 +1274,7 @@
 									<PropertyList>
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 										<Property Name="TrimBegin" Type="Real64" Value="0.146312377711429"/>
-										<Property Name="TrimEnd" Type="Real64" Value="0.932083474732055"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.84498821411194"/>
 									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>Trisoul_Parry_New.wav</AudioFile>
