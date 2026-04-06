@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{C9C6FD56-EFE7-4C14-9A00-C47CE826F918}",
     "Language": "SFX",
-    "Hash": "{C4D96CA8-A3DD-527F-9B0C-66024DDE4FB5}",
+    "Hash": "{18F1B8CD-0301-1BA6-26AA-E71AAB267EC0}",
     "ObjectPath": "Fire_Heavy_Jump",
     "ShortName": "Fire_Heavy_Jump",
     "Path": "Event/Fire_Heavy_Jump.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{E5739223-4084-2607-9ABE-9AFF925A7728}"
+  "FileHash": "{43957ABE-689D-9F30-4C76-F268F0E7797A}"
  }
 }

@@ -10,55 +10,46 @@
     "Type": "Event",
     "GUID": "{10B27301-EB16-413B-8D06-080E99ACCE73}",
     "Language": "SFX",
-    "Hash": "{8256D4BB-AB6B-BDB5-BF6D-8C8D1EDD0BBC}",
+    "Hash": "{1AE7D83A-7AA8-4C6C-B70E-4310442C781D}",
     "ObjectPath": "Ice_Swing",
     "ShortName": "Ice_Swing",
     "Path": "Event/Ice_Swing.bnk",
     "Media": [
      {
-      "Id": "130090519",
+      "Id": "116781957",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "Trisoul_IceSwordSFX_1.wav",
-      "Path": "Media/130090519.wem",
-      "CachePath": "59/{59008954-09BD-2868-C10C-4460CD407C90}.wem"
+      "ShortName": "Track7_Trisoul_IceSwordSFX_2wav.wav",
+      "Path": "Media/116781957.wem",
+      "CachePath": "70/{70FEF7A5-A976-D275-FD39-8310F7902DBE}.wem"
      },
      {
-      "Id": "268808089",
+      "Id": "306964977",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "Trisoul_IceSwordSFX_4.wav",
-      "Path": "Media/268808089.wem",
-      "CachePath": "E5/{E5E77A6A-8257-0D5C-F28D-DCC56A9A9C35}.wem"
+      "ShortName": "Track8_Trisoul_IceSwordSFX_3wav.wav",
+      "Path": "Media/306964977.wem",
+      "CachePath": "30/{30F6A447-FC0B-C252-4852-E238ECB80EBD}.wem"
      },
      {
-      "Id": "503112752",
+      "Id": "655212117",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "Trisoul_IceSwordSFX_5.wav",
-      "Path": "Media/503112752.wem",
-      "CachePath": "71/{713A9572-004C-5E08-CEAD-D38B34A445E5}.wem"
+      "ShortName": "Track9_Trisoul_IceSwordSFX_5wav.wav",
+      "Path": "Media/655212117.wem",
+      "CachePath": "8F/{8FD9BA99-D676-4273-9635-2CEE033D82F1}.wem"
      },
      {
-      "Id": "581681659",
+      "Id": "1061824366",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "Trisoul_IceSwordSFX_2.wav",
-      "Path": "Media/581681659.wem",
-      "CachePath": "29/{294D11BB-5592-75E3-0F1C-0B44B730E6DB}.wem"
-     },
-     {
-      "Id": "775962090",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "Trisoul_IceSwordSFX_3.wav",
-      "Path": "Media/775962090.wem",
-      "CachePath": "12/{12659197-9C4F-9201-70B6-9AE4BDC4BFB3}.wem"
+      "ShortName": "Track6_Trisoul_IceSwordSFX_4wav.wav",
+      "Path": "Media/1061824366.wem",
+      "CachePath": "D4/{D4771574-A769-2E97-84F2-CE8FE4FA3BBE}.wem"
      }
     ],
     "Events": [
@@ -68,29 +59,26 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Ice_Swing",
       "GUID": "{10B27301-EB16-413B-8D06-080E99ACCE73}",
       "DurationType": "OneShot",
-      "DurationMin": "1.8565834",
-      "DurationMax": "1.8565834",
+      "DurationMin": "1.856576",
+      "DurationMax": "1.856576",
       "MediaRefs": [
        {
-        "Id": "130090519"
+        "Id": "116781957"
        },
        {
-        "Id": "268808089"
+        "Id": "306964977"
        },
        {
-        "Id": "503112752"
+        "Id": "655212117"
        },
        {
-        "Id": "581681659"
-       },
-       {
-        "Id": "775962090"
+        "Id": "1061824366"
        }
       ]
      }
     ]
    }
   ],
-  "FileHash": "{71C97FDB-DD1C-19B8-24BC-BAFE6C65275F}"
+  "FileHash": "{72F5E983-140D-CAE9-F99E-AB816AE15CFB}"
  }
 }

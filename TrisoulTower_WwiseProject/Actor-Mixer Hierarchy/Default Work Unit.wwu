@@ -998,6 +998,35 @@
 								<ActiveSource Name="grass_swing" ID="{A04F49A9-0352-45C4-AB1D-D10481CB31EA}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="grass_swing1" ID="{D1D3D5EF-8D37-4231-9D36-C5CED980B166}" ShortID="344402435">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="grass_swing1" ID="{6898BBA6-35DD-473A-9820-19AFC948FCF5}">
+									<Language>SFX</Language>
+									<AudioFile>grass_swing1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="350456358"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="grass_swing1" ID="{6898BBA6-35DD-473A-9820-19AFC948FCF5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="Ice_Swing" ID="{E00E960D-1211-49E2-B02B-312D0CE4629F}" ShortID="947189261">
@@ -1012,11 +1041,6 @@
 								<Value>True</Value>
 							</ValueList>
 						</Property>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>4</Value>
-							</ValueList>
-						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -1027,7 +1051,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="Trisoul_IceSwordSFX_1" ID="{7D0B59DC-EEC8-481B-B000-C70A580B8217}" ShortID="254083731">
+						<Sound Name="Track6_Trisoul_IceSwordSFX_4wav" ID="{5A627AA0-AE6C-4FE3-BFAC-977363A21898}" ShortID="539272359">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
@@ -1037,19 +1061,19 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Trisoul_IceSwordSFX_1" ID="{F26CF379-A250-4AE4-89E2-3B75228CCF91}">
+								<AudioFileSource Name="Track6_Trisoul_IceSwordSFX_4wav" ID="{0CA216B3-DABD-430A-B99E-DF5992E89D95}">
 									<Language>SFX</Language>
-									<AudioFile>Trisoul_IceSwordSFX_1.wav</AudioFile>
+									<AudioFile>Track6_Trisoul_IceSwordSFX_4wav.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="130090519"/>
+										<MediaID ID="1061824366"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Trisoul_IceSwordSFX_1" ID="{F26CF379-A250-4AE4-89E2-3B75228CCF91}" Platform="Linked"/>
+								<ActiveSource Name="Track6_Trisoul_IceSwordSFX_4wav" ID="{0CA216B3-DABD-430A-B99E-DF5992E89D95}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Trisoul_IceSwordSFX_2" ID="{C9BD38BC-C396-47E5-AD6D-11141B7DD348}" ShortID="516188780">
+						<Sound Name="Track7_Trisoul_IceSwordSFX_2wav" ID="{64222199-7A43-4CEE-8613-4E5744E6F19F}" ShortID="832525248">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
@@ -1059,19 +1083,19 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Trisoul_IceSwordSFX_2" ID="{3F43849A-68CA-4C18-9D0A-F9FD673D5081}">
+								<AudioFileSource Name="Track7_Trisoul_IceSwordSFX_2wav" ID="{5BA74FC2-4BFE-49D3-A074-0ADD40324ED7}">
 									<Language>SFX</Language>
-									<AudioFile>Trisoul_IceSwordSFX_2.wav</AudioFile>
+									<AudioFile>Track7_Trisoul_IceSwordSFX_2wav.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="581681659"/>
+										<MediaID ID="116781957"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Trisoul_IceSwordSFX_2" ID="{3F43849A-68CA-4C18-9D0A-F9FD673D5081}" Platform="Linked"/>
+								<ActiveSource Name="Track7_Trisoul_IceSwordSFX_2wav" ID="{5BA74FC2-4BFE-49D3-A074-0ADD40324ED7}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Trisoul_IceSwordSFX_3" ID="{B794C42E-4EC8-435D-97FD-3C5809F81AED}" ShortID="929967051">
+						<Sound Name="Track9_Trisoul_IceSwordSFX_5wav" ID="{160A22FD-A459-4368-A687-6FFF34F50F4E}" ShortID="464306538">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
@@ -1081,19 +1105,19 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Trisoul_IceSwordSFX_3" ID="{C0D15CE1-0FD3-4B99-A762-3FD645AD4817}">
+								<AudioFileSource Name="Track9_Trisoul_IceSwordSFX_5wav" ID="{542DAAD6-6954-4669-8A38-6B729C32835B}">
 									<Language>SFX</Language>
-									<AudioFile>Trisoul_IceSwordSFX_3.wav</AudioFile>
+									<AudioFile>Track9_Trisoul_IceSwordSFX_5wav.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="775962090"/>
+										<MediaID ID="655212117"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Trisoul_IceSwordSFX_3" ID="{C0D15CE1-0FD3-4B99-A762-3FD645AD4817}" Platform="Linked"/>
+								<ActiveSource Name="Track9_Trisoul_IceSwordSFX_5wav" ID="{542DAAD6-6954-4669-8A38-6B729C32835B}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Trisoul_IceSwordSFX_4" ID="{E795BBD1-9FCD-4741-851A-006E592959A4}" ShortID="963950684">
+						<Sound Name="Track8_Trisoul_IceSwordSFX_3wav" ID="{00449AD2-DE89-4340-BDBF-A91F04E8609D}" ShortID="771520061">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
@@ -1103,38 +1127,16 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Trisoul_IceSwordSFX_4" ID="{42CB994F-90DB-4332-BAFA-5B17E16E7E32}">
+								<AudioFileSource Name="Track8_Trisoul_IceSwordSFX_3wav" ID="{3C9DB399-3657-4F40-9835-50D8992BB645}">
 									<Language>SFX</Language>
-									<AudioFile>Trisoul_IceSwordSFX_4.wav</AudioFile>
+									<AudioFile>Track8_Trisoul_IceSwordSFX_3wav.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="268808089"/>
+										<MediaID ID="306964977"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Trisoul_IceSwordSFX_4" ID="{42CB994F-90DB-4332-BAFA-5B17E16E7E32}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Trisoul_IceSwordSFX_5" ID="{79D1CDAF-6E47-4610-BBD1-89D7A45E5187}" ShortID="597622514">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Trisoul_IceSwordSFX_5" ID="{BFD96373-0FC4-48A7-BA02-7C749C777CE9}">
-									<Language>SFX</Language>
-									<AudioFile>Trisoul_IceSwordSFX_5.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="503112752"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Trisoul_IceSwordSFX_5" ID="{BFD96373-0FC4-48A7-BA02-7C749C777CE9}" Platform="Linked"/>
+								<ActiveSource Name="Track8_Trisoul_IceSwordSFX_3wav" ID="{3C9DB399-3657-4F40-9835-50D8992BB645}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
@@ -1223,6 +1225,9 @@
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="Player_Parry" ID="{97E6FA8A-56EF-4FFF-AF74-696896C5DD8D}" ShortID="894986771">
 					<PropertyList>
+						<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+						<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 						<Property Name="MaxSoundPerInstance" Type="int16">
 							<ValueList>
 								<Value>1</Value>
@@ -1250,6 +1255,7 @@
 					<ChildrenList>
 						<Sound Name="Trisoul_Parry_New" ID="{D66427C6-3F82-4E0D-9EC7-87627AFB6376}" ShortID="49377043">
 							<PropertyList>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
 										<Value>1</Value>
@@ -1301,6 +1307,11 @@
 					<ChildrenList>
 						<Sound Name="Trisoul_Tier1_Enemy_Rawr_2" ID="{18E2B42D-0B8C-41CF-B6AA-E548DD8669FF}" ShortID="3197744">
 							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-1</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Weight" Type="Real64">
 									<ValueList>
 										<Value>25</Value>
@@ -1359,6 +1370,11 @@
 						</Sound>
 						<Sound Name="Trisoul_Tier1_Enemy_Rawr_3" ID="{DCBD7B2D-33F8-4D34-8858-EE710026E3A6}" ShortID="193915107">
 							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-1</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Weight" Type="Real64">
 									<ValueList>
 										<Value>25</Value>
@@ -1388,6 +1404,11 @@
 						</Sound>
 						<Sound Name="Trisoul_Tier1_Enemy_Rawr_1" ID="{974EAC3F-A8EF-477B-BD7A-ACD90BAE22FF}" ShortID="564929427">
 							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Weight" Type="Real64">
 									<ValueList>
 										<Value>25</Value>
@@ -1671,7 +1692,7 @@
 						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 						<Property Name="MaxSoundPerInstance" Type="int16">
 							<ValueList>
-								<Value>2</Value>
+								<Value>1</Value>
 							</ValueList>
 						</Property>
 						<Property Name="UseMaxSoundPerInstance" Type="bool">
@@ -1749,6 +1770,7 @@
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="Fire_Heavy" ID="{D84D4282-107D-4D1C-87AD-3F3F6EEB8988}" ShortID="636585887">
 					<PropertyList>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 						<Property Name="MaxSoundPerInstance" Type="int16">
 							<ValueList>
 								<Value>1</Value>
@@ -2058,6 +2080,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="fireheavyjump" ID="{0F828E93-B2E7-48C9-93B0-9E3A836D2CF1}" ShortID="697211776">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>

@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{F286ADB7-032E-4616-9CD7-9DBEE8D3D03F}",
     "Language": "SFX",
-    "Hash": "{2F213D78-CCEB-CB97-A8AB-81642372E2E7}",
+    "Hash": "{B87F35FF-5A3C-2841-2423-B78A282E3EA6}",
     "ObjectPath": "Fire_Heavy",
     "ShortName": "Fire_Heavy",
     "Path": "Event/Fire_Heavy.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{FB44CBEC-7917-BAF2-CDC9-B95F977CC081}"
+  "FileHash": "{6C82B44F-8B0A-FC97-B481-EF51B0B2D05D}"
  }
 }

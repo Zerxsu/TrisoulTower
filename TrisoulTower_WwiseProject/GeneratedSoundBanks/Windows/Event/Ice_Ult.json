@@ -10,11 +10,20 @@
     "Type": "Event",
     "GUID": "{6395A6B7-C116-46CA-838A-02C63CECB546}",
     "Language": "SFX",
-    "Hash": "{FF8B0CFD-F616-6B48-E6DA-628D05895B3A}",
+    "Hash": "{C01641F3-2ADC-2E5A-C169-4E821B1028FA}",
     "ObjectPath": "Ice_Ult",
     "ShortName": "Ice_Ult",
     "Path": "Event/Ice_Ult.bnk",
     "Media": [
+     {
+      "Id": "897637669",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Track5_Trisoul_IceULT_SFXwav.wav",
+      "Path": "Media/897637669.wem",
+      "CachePath": "F6/{F68A8DF6-E686-5402-FDD0-39A9432A9631}.wem"
+     },
      {
       "Id": "1062226183",
       "Language": "SFX",
@@ -32,9 +41,12 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Ice_Ult",
       "GUID": "{6395A6B7-C116-46CA-838A-02C63CECB546}",
       "DurationType": "OneShot",
-      "DurationMin": "4.042653",
+      "DurationMin": "4.04263",
       "DurationMax": "4.042653",
       "MediaRefs": [
+       {
+        "Id": "897637669"
+       },
        {
         "Id": "1062226183"
        }
@@ -43,6 +55,6 @@
     ]
    }
   ],
-  "FileHash": "{177671B4-E397-982C-F346-82EB34A7A032}"
+  "FileHash": "{1DC1C124-A099-D7C6-6E9E-77DF8637BF13}"
  }
 }
