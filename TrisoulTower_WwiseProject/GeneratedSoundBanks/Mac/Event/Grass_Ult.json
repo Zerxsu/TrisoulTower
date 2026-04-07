@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{B1981C26-1A12-4DCC-823D-F57B1062AC10}",
     "Language": "SFX",
-    "Hash": "{EA4FFADC-257E-EDF1-E9FA-23284A484867}",
+    "Hash": "{424F7E62-0FF7-211E-8E0E-442ECD61720C}",
     "ObjectPath": "Grass_Ult",
     "ShortName": "Grass_Ult",
     "Path": "Event/Grass_Ult.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{B2A38DF4-FFD8-900C-2834-300050D0EF71}"
+  "FileHash": "{F4A1FF39-6079-3EC6-2E97-1A749343AFAA}"
  }
 }

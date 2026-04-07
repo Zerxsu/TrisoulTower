@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{5F7B499A-1F57-4478-A13F-6E9C1BAC878E}",
     "Language": "SFX",
-    "Hash": "{9EA0FCE0-EB36-3F73-25F1-D5A8B4FC9109}",
+    "Hash": "{A840D1D9-F29A-C3D6-FBEE-E98BCF7DDE29}",
     "ObjectPath": "Ui_Click",
     "ShortName": "Ui_Click",
     "Path": "Event/Ui_Click.bnk",
@@ -25,6 +25,18 @@
       "CachePath": "82/{8220B9C2-F0CE-5592-C78C-7D35CA9D25DA}.wem"
      }
     ],
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "3701691487",
+       "Name": "Hall_Large_Bright",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Halls\\Hall_Large_Bright",
+       "GUID": "{CB602948-2D1D-4977-A8D5-378184293E80}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      }
+     ]
+    },
     "Events": [
      {
       "Id": "2249769530",
@@ -38,11 +50,18 @@
        {
         "Id": "686706791"
        }
-      ]
+      ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "3701691487"
+        }
+       ]
+      }
      }
     ]
    }
   ],
-  "FileHash": "{58F684CA-D02A-74F9-0676-D3D7BBE88436}"
+  "FileHash": "{0BE59D9D-878C-416A-52C1-4B6068207998}"
  }
 }

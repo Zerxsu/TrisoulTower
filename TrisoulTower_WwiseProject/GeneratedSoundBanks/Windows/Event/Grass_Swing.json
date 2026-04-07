@@ -10,11 +10,20 @@
     "Type": "Event",
     "GUID": "{ABC18279-2C80-4126-9827-2D2B589E4A6F}",
     "Language": "SFX",
-    "Hash": "{5F4F3D4E-D97F-6A39-A9B9-AE3666A8E360}",
+    "Hash": "{16051458-25B8-5371-EE97-BC022D9E10F4}",
     "ObjectPath": "Grass_Swing",
     "ShortName": "Grass_Swing",
     "Path": "Event/Grass_Swing.bnk",
     "Media": [
+     {
+      "Id": "309916594",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "grass_swing4.wav",
+      "Path": "Media/309916594.wem",
+      "CachePath": "B4/{B46C6B86-13D0-FC05-6714-B7B5FEFD76B3}.wem"
+     },
      {
       "Id": "350456358",
       "Language": "SFX",
@@ -23,6 +32,24 @@
       "ShortName": "grass_swing1.wav",
       "Path": "Media/350456358.wem",
       "CachePath": "6A/{6AF7A29A-BF75-AAD1-8B69-567836607E61}.wem"
+     },
+     {
+      "Id": "364520510",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "grass_swing5.wav",
+      "Path": "Media/364520510.wem",
+      "CachePath": "0F/{0FB10737-1E09-9F69-FDF0-2D09537EB5B6}.wem"
+     },
+     {
+      "Id": "504733488",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "grass_swing2.wav",
+      "Path": "Media/504733488.wem",
+      "CachePath": "4E/{4E76DD05-399E-E8EF-B2AF-F5904CFC2C2D}.wem"
      },
      {
       "Id": "992761205",
@@ -42,10 +69,19 @@
       "GUID": "{ABC18279-2C80-4126-9827-2D2B589E4A6F}",
       "DurationType": "OneShot",
       "DurationMin": "1.3864871",
-      "DurationMax": "1.7248062",
+      "DurationMax": "3.351333",
       "MediaRefs": [
        {
+        "Id": "309916594"
+       },
+       {
         "Id": "350456358"
+       },
+       {
+        "Id": "364520510"
+       },
+       {
+        "Id": "504733488"
        },
        {
         "Id": "992761205"
@@ -55,6 +91,6 @@
     ]
    }
   ],
-  "FileHash": "{DA2076B9-25E2-FA63-128A-AEB09E2A159F}"
+  "FileHash": "{BD0881B7-1CC4-93B8-0FAE-C77EDB5DD692}"
  }
 }

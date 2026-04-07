@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{DF60A0FD-F551-44AE-9FB3-06DB82D12198}",
     "Language": "SFX",
-    "Hash": "{E4D705A6-226F-7257-44F8-33ED48E362A7}",
+    "Hash": "{4BBB404C-4FE7-8BC0-205C-A69F22A74398}",
     "ObjectPath": "Ui_Hover",
     "ShortName": "Ui_Hover",
     "Path": "Event/Ui_Hover.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{DFE72B80-FECD-F010-B1BA-CA8457959AF7}"
+  "FileHash": "{EEFB5F01-1D66-FA96-EDB6-8957C1FD11FF}"
  }
 }

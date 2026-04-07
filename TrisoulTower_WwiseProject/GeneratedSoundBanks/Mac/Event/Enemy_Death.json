@@ -10,11 +10,38 @@
     "Type": "Event",
     "GUID": "{5A7E3E81-8E0A-479A-B349-4FC9E587C2FE}",
     "Language": "SFX",
-    "Hash": "{A3852EF5-84BC-FBC6-540F-39F5B6E5582F}",
+    "Hash": "{7512229C-A75E-40CB-D857-140A7313FD6C}",
     "ObjectPath": "Enemy_Death",
     "ShortName": "Enemy_Death",
     "Path": "Event/Enemy_Death.bnk",
     "Media": [
+     {
+      "Id": "365176676",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Trisoul_Tier1_EnemyDeath_4.wav",
+      "Path": "Media/365176676.wem",
+      "CachePath": "38/{38171D9A-DBE3-3A97-D218-DA8DD88C4C1F}.wem"
+     },
+     {
+      "Id": "562318365",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Trisoul_Tier1_EnemyDeath_3.wav",
+      "Path": "Media/562318365.wem",
+      "CachePath": "C4/{C4F49864-F406-B54C-6022-32EAB9C5C398}.wem"
+     },
+     {
+      "Id": "664897127",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Trisoul_Tier1_EnemyDeath_2.wav",
+      "Path": "Media/664897127.wem",
+      "CachePath": "B5/{B5FA2F29-771E-B8ED-4A56-7AE57AA89290}.wem"
+     },
      {
       "Id": "787261566",
       "Language": "SFX",
@@ -32,9 +59,18 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Enemy_Death",
       "GUID": "{5A7E3E81-8E0A-479A-B349-4FC9E587C2FE}",
       "DurationType": "OneShot",
-      "DurationMin": "3.0312924",
+      "DurationMin": "2.3108842",
       "DurationMax": "3.0312924",
       "MediaRefs": [
+       {
+        "Id": "365176676"
+       },
+       {
+        "Id": "562318365"
+       },
+       {
+        "Id": "664897127"
+       },
        {
         "Id": "787261566"
        }
@@ -43,6 +79,6 @@
     ]
    }
   ],
-  "FileHash": "{CF5B3F88-8C1B-B381-71B0-840B0581ABD9}"
+  "FileHash": "{6FC66AF5-C32A-6AEF-99C3-F5DBDDB5FD49}"
  }
 }

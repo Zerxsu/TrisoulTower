@@ -420,7 +420,7 @@
 						<Action Name="" ID="{31C0631D-3EC5-460D-9947-06582C5051C5}" ShortID="218932856">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Grass_Swap" ID="{CFDCFCCB-8D01-4680-9AC6-287B4A22C8E0}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+									<ObjectRef Name="Grass_Equip" ID="{CFDCFCCB-8D01-4680-9AC6-287B4A22C8E0}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

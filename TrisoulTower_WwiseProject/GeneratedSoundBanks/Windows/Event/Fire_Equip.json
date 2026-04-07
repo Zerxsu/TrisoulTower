@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{E81B1C57-BD6D-4FDF-88DF-4F5A22F2521A}",
     "Language": "SFX",
-    "Hash": "{CAC69527-166E-05A5-F40C-617E082E3892}",
+    "Hash": "{35AA9101-BC84-74B4-6C69-854365F0C5F5}",
     "ObjectPath": "Fire_Equip",
     "ShortName": "Fire_Equip",
     "Path": "Event/Fire_Equip.bnk",
@@ -23,6 +23,15 @@
       "ShortName": "fireequip.wav",
       "Path": "Media/155158783.wem",
       "CachePath": "ED/{EDFEF0C8-45A1-7267-3243-A862F497ED06}.wem"
+     },
+     {
+      "Id": "906874920",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "fireequip2.wav",
+      "Path": "Media/906874920.wem",
+      "CachePath": "2C/{2C2835AE-DD05-DBC6-997B-C9CB42F5BF1E}.wem"
      }
     ],
     "Events": [
@@ -37,12 +46,15 @@
       "MediaRefs": [
        {
         "Id": "155158783"
+       },
+       {
+        "Id": "906874920"
        }
       ]
      }
     ]
    }
   ],
-  "FileHash": "{CE0AB2F2-C0CE-1E32-80B6-D88F788B362A}"
+  "FileHash": "{D77AE1A8-30B8-20AF-B2E3-E0815F26EF58}"
  }
 }

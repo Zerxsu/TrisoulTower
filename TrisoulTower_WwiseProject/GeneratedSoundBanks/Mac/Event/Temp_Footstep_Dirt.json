@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{1387C31B-B990-425C-86EB-CD00A57446A4}",
     "Language": "SFX",
-    "Hash": "{9EB6A724-E743-5873-06C5-9551A94975D4}",
+    "Hash": "{41E6D4B6-1302-9C10-F0C1-86D20C56AE80}",
     "ObjectPath": "Temp_Footstep_Dirt",
     "ShortName": "Temp_Footstep_Dirt",
     "Path": "Event/Temp_Footstep_Dirt.bnk",
@@ -22,7 +22,7 @@
       "Location": "Loose",
       "ShortName": "d9.wav",
       "Path": "Media/191188656.wem",
-      "CachePath": "34/{3425E7A9-FEF6-0F8E-9E08-BA507389ED43}.wem"
+      "CachePath": "47/{4755B8A9-3A11-0168-05B0-13D0469AC837}.wem"
      },
      {
       "Id": "192694640",
@@ -31,7 +31,7 @@
       "Location": "Loose",
       "ShortName": "d4.wav",
       "Path": "Media/192694640.wem",
-      "CachePath": "9B/{9BC50B68-4DEA-F9FA-4A02-C73AB7792A9A}.wem"
+      "CachePath": "1E/{1E2EC495-1612-2DDF-818D-0CC736F1CD19}.wem"
      },
      {
       "Id": "472524586",
@@ -40,7 +40,7 @@
       "Location": "Loose",
       "ShortName": "d2.wav",
       "Path": "Media/472524586.wem",
-      "CachePath": "20/{2030C485-2EAB-04D6-BB6F-CD1F85162588}.wem"
+      "CachePath": "31/{316B09A2-6DD4-1DF7-3C58-559F9C8EAA95}.wem"
      },
      {
       "Id": "515924223",
@@ -49,7 +49,7 @@
       "Location": "Loose",
       "ShortName": "d1.wav",
       "Path": "Media/515924223.wem",
-      "CachePath": "D4/{D49A92FD-251E-7BBB-AD27-E4F228987ACE}.wem"
+      "CachePath": "28/{284FFBA7-B092-7E3A-CBA6-CDCA9637F560}.wem"
      },
      {
       "Id": "737500400",
@@ -58,7 +58,7 @@
       "Location": "Loose",
       "ShortName": "d6.wav",
       "Path": "Media/737500400.wem",
-      "CachePath": "8D/{8D9C4CCC-127C-E239-0124-C93968E3F217}.wem"
+      "CachePath": "3B/{3BFE9E3F-A83F-33E8-CD8D-4C4D82A60699}.wem"
      },
      {
       "Id": "741010699",
@@ -67,7 +67,7 @@
       "Location": "Loose",
       "ShortName": "d5.wav",
       "Path": "Media/741010699.wem",
-      "CachePath": "48/{48CE7D0F-4948-8D7A-B3A6-769C7D5E6A6A}.wem"
+      "CachePath": "B0/{B048623F-94C6-D288-7184-0723B1F83808}.wem"
      },
      {
       "Id": "857216331",
@@ -76,7 +76,7 @@
       "Location": "Loose",
       "ShortName": "d7.wav",
       "Path": "Media/857216331.wem",
-      "CachePath": "EA/{EAD5AFAB-5232-1F9D-0D14-B02BFF7AC054}.wem"
+      "CachePath": "1A/{1AF20387-0313-BF79-FE9C-2CFED63BB0A3}.wem"
      },
      {
       "Id": "975007778",
@@ -85,7 +85,7 @@
       "Location": "Loose",
       "ShortName": "d3.wav",
       "Path": "Media/975007778.wem",
-      "CachePath": "44/{440BE812-6827-6003-BB7F-30A3507A32B9}.wem"
+      "CachePath": "24/{24C51D27-D663-F35F-C991-CE6F233AE143}.wem"
      },
      {
       "Id": "992116950",
@@ -94,7 +94,7 @@
       "Location": "Loose",
       "ShortName": "d8.wav",
       "Path": "Media/992116950.wem",
-      "CachePath": "BA/{BAF81401-DC61-8DC7-7B66-3FBD38FD4391}.wem"
+      "CachePath": "77/{77E77477-FEDD-A112-009F-0EC45E487102}.wem"
      }
     ],
     "Events": [
@@ -104,8 +104,8 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Temp_Footstep_Dirt",
       "GUID": "{1387C31B-B990-425C-86EB-CD00A57446A4}",
       "DurationType": "OneShot",
-      "DurationMin": "0.2852154",
-      "DurationMax": "0.3655102",
+      "DurationMin": "0.676058",
+      "DurationMax": "0.88388693",
       "MediaRefs": [
        {
         "Id": "191188656"
@@ -167,6 +167,6 @@
     ]
    }
   ],
-  "FileHash": "{14145566-87DE-338C-2BCC-38939FC80F2F}"
+  "FileHash": "{37B0AF5C-5060-DE89-3F2B-2F8DF9AE3CBB}"
  }
 }

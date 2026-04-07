@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{EF683622-76C8-43A6-96C2-AD6BC2E10255}",
     "Language": "SFX",
-    "Hash": "{1D90CB19-B165-9187-99DF-83E577BA0448}",
+    "Hash": "{D47CF9F7-CF85-0CA0-C32A-AAF820B77FB8}",
     "ObjectPath": "Ice_Heavy",
     "ShortName": "Ice_Heavy",
     "Path": "Event/Ice_Heavy.bnk",
@@ -23,6 +23,15 @@
       "ShortName": "Trisoul_IceHeavy_SFX.wav",
       "Path": "Media/546966444.wem",
       "CachePath": "51/{51B01BF7-0BD5-1F1D-54EB-F0873A89907C}.wem"
+     },
+     {
+      "Id": "687754309",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Trisoul_IceHeave_SFX_2.wav",
+      "Path": "Media/687754309.wem",
+      "CachePath": "4B/{4B631744-E8F0-C0BC-789D-14001B40329A}.wem"
      }
     ],
     "Events": [
@@ -37,12 +46,15 @@
       "MediaRefs": [
        {
         "Id": "546966444"
+       },
+       {
+        "Id": "687754309"
        }
       ]
      }
     ]
    }
   ],
-  "FileHash": "{12C0A475-C836-E6B6-4696-F4D431D7CBA6}"
+  "FileHash": "{9169678C-A09A-15FA-7934-EE3DD32F7DDC}"
  }
 }

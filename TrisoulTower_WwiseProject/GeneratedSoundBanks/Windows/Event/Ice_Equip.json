@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{039440FB-6093-4780-8137-16A8775A98FF}",
     "Language": "SFX",
-    "Hash": "{FB35414B-B114-0F91-265F-46EA09C9596C}",
+    "Hash": "{69DED938-A6AD-7776-C687-51EE9574FF2F}",
     "ObjectPath": "Ice_Equip",
     "ShortName": "Ice_Equip",
     "Path": "Event/Ice_Equip.bnk",
@@ -23,6 +23,15 @@
       "ShortName": "TrisoulChamber_IceEquip_SFX.wav",
       "Path": "Media/299931756.wem",
       "CachePath": "97/{978BBEE5-82BB-B88A-4C53-D63CFB7558DB}.wem"
+     },
+     {
+      "Id": "561394751",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Ice_Equip_2.wav",
+      "Path": "Media/561394751.wem",
+      "CachePath": "62/{62A344E7-2C65-0423-38B8-06DC8247A188}.wem"
      }
     ],
     "Events": [
@@ -32,17 +41,20 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Ice_Equip",
       "GUID": "{039440FB-6093-4780-8137-16A8775A98FF}",
       "DurationType": "OneShot",
-      "DurationMin": "1.7496145",
+      "DurationMin": "1.7429252",
       "DurationMax": "1.7496145",
       "MediaRefs": [
        {
         "Id": "299931756"
+       },
+       {
+        "Id": "561394751"
        }
       ]
      }
     ]
    }
   ],
-  "FileHash": "{A5201C29-A9DD-9DEE-451A-05DC01DC9195}"
+  "FileHash": "{64B99605-6AD4-2ABD-71C0-BA1B3BBAB86B}"
  }
 }
