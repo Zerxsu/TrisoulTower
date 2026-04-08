@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{C47628A3-620A-40F5-82C5-B6EDC7A9A11D}",
     "Language": "SFX",
-    "Hash": "{06EE53AB-82EB-FA7B-F9A9-5929EDFEC99D}",
+    "Hash": "{C23E83B0-898F-6C61-F84C-638E15F90F8E}",
     "ObjectPath": "Enemy_Magic_Hit",
     "ShortName": "Enemy_Magic_Hit",
     "Path": "Event/Enemy_Magic_Hit.bnk",
@@ -22,7 +22,7 @@
       "Location": "Loose",
       "ShortName": "magic test.wav",
       "Path": "Media/24447179.wem",
-      "CachePath": "E3/{E3738470-2303-F72F-7E01-11D591D1DBDE}.wem"
+      "CachePath": "01/{016D3F1E-A665-B789-288B-309E6D267BD3}.wem"
      }
     ],
     "Events": [
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{D72929ED-67C5-531F-8CB9-C9532CF49E51}"
+  "FileHash": "{805A2E84-E7A1-4CA7-1107-5BEE63745613}"
  }
 }

@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{2022514D-9A6E-45F0-A239-E6889C2D5300}",
     "Language": "SFX",
-    "Hash": "{FE5D3D59-0EF9-ED95-5292-A1CA8E8FA784}",
+    "Hash": "{81F693B9-051D-C487-6A03-6DE5BA5752F3}",
     "ObjectPath": "Grass_Heavy",
     "ShortName": "Grass_Heavy",
     "Path": "Event/Grass_Heavy.bnk",
@@ -31,7 +31,7 @@
       "Location": "Loose",
       "ShortName": "grass_heavy1.wav",
       "Path": "Media/710448082.wem",
-      "CachePath": "12/{12E431DD-E7B1-7252-23CA-7FEB6E76A4FD}.wem"
+      "CachePath": "C0/{C025B3C8-B395-7B0A-74F5-C38B0E91838D}.wem"
      }
     ],
     "Events": [
@@ -55,6 +55,6 @@
     ]
    }
   ],
-  "FileHash": "{849D573C-9855-90B6-443D-6BDDF04847C7}"
+  "FileHash": "{B71CB4F9-A19E-7A36-FADE-1E0C2F3F99ED}"
  }
 }
