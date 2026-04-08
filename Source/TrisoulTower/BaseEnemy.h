@@ -140,6 +140,8 @@ protected:
 	float ReactTime = 0.6f;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
 	float ReactTimer = 0.0f;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+	bool StopForAttack = true;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
 	float Health = 100.0f;

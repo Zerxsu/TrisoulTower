@@ -57,11 +57,11 @@ void ABaseEnemy::Tick(float DeltaTime)
 		ReactTimer -= FMath::FRand() * DeltaTime;
 	}
 
-	if (!isAtTarget && stunTime <= 0 && NavPath != nullptr) {//If path is unfinished
+	if ((!isAtTarget || !StopForAttack) && stunTime <= 0 && NavPath != nullptr) {//If path is unfinished
 		
 		if (IsAtTarget()) {
 			ReachedTarget();
-			isMoving = false;
+			if (StopForAttack) isMoving = false;
 		}
 		else 
 		{
