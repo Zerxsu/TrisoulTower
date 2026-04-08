@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{2D94C62F-EFBC-45EF-A1FE-60CD365B0917}",
     "Language": "SFX",
-    "Hash": "{70CB2F0E-F03F-BE05-EA59-28864C1E1D2B}",
+    "Hash": "{DDCAFAA1-B354-07D5-0C9C-299BC08C9DBA}",
     "ObjectPath": "Temp_Footstep_Stone",
     "ShortName": "Temp_Footstep_Stone",
     "Path": "Event/Temp_Footstep_Stone.bnk",
@@ -22,7 +22,7 @@
       "Location": "Loose",
       "ShortName": "3.wav",
       "Path": "Media/43543017.wem",
-      "CachePath": "16/{16634AB8-E58E-2A72-1A3A-376476B32E4C}.wem"
+      "CachePath": "7A/{7A32EF7C-91C8-347A-4309-AED03AD4B3C9}.wem"
      },
      {
       "Id": "280011596",
@@ -31,7 +31,7 @@
       "Location": "Loose",
       "ShortName": "4.wav",
       "Path": "Media/280011596.wem",
-      "CachePath": "8D/{8D4C8574-58C5-96D8-5739-109413621DF0}.wem"
+      "CachePath": "32/{3208C296-37B3-837B-2AEA-D481FC772F41}.wem"
      },
      {
       "Id": "417369681",
@@ -40,7 +40,7 @@
       "Location": "Loose",
       "ShortName": "3-001.wav",
       "Path": "Media/417369681.wem",
-      "CachePath": "C8/{C8339F3E-A177-8CC9-E2CC-9D0A27E3CFC0}.wem"
+      "CachePath": "34/{34A3862B-1A7E-B602-B151-B1B37BF6A395}.wem"
      },
      {
       "Id": "432955184",
@@ -49,7 +49,7 @@
       "Location": "Loose",
       "ShortName": "2-001.wav",
       "Path": "Media/432955184.wem",
-      "CachePath": "B0/{B02CAF93-A930-3E43-3442-FDE53BB4F4CA}.wem"
+      "CachePath": "93/{93890F3B-6571-C2D7-9731-3446DB1EB288}.wem"
      },
      {
       "Id": "453555857",
@@ -58,7 +58,7 @@
       "Location": "Loose",
       "ShortName": "4-001.wav",
       "Path": "Media/453555857.wem",
-      "CachePath": "08/{0848F5FD-CAF2-ECD4-9C08-45103F934F89}.wem"
+      "CachePath": "2B/{2B741CC0-2FBD-7D3D-6E53-2E6FB7E30BBE}.wem"
      },
      {
       "Id": "484718981",
@@ -76,7 +76,7 @@
       "Location": "Loose",
       "ShortName": "2.wav",
       "Path": "Media/541031516.wem",
-      "CachePath": "3C/{3CBFB39F-DC45-0B11-1EB0-B584F0E81FE6}.wem"
+      "CachePath": "28/{2868DF9D-FFC2-41F1-9913-F2CDB9AA78FF}.wem"
      },
      {
       "Id": "695643349",
@@ -155,6 +155,6 @@
     ]
    }
   ],
-  "FileHash": "{45C4E7FF-CA39-4522-8292-939629E055FB}"
+  "FileHash": "{F85965FC-CB60-8AF1-3267-EF85318C7E96}"
  }
 }

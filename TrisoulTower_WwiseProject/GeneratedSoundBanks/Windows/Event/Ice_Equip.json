@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{039440FB-6093-4780-8137-16A8775A98FF}",
     "Language": "SFX",
-    "Hash": "{69DED938-A6AD-7776-C687-51EE9574FF2F}",
+    "Hash": "{A9A9464E-56FF-0FA8-E898-F887E05F081C}",
     "ObjectPath": "Ice_Equip",
     "ShortName": "Ice_Equip",
     "Path": "Event/Ice_Equip.bnk",
@@ -55,6 +55,6 @@
     ]
    }
   ],
-  "FileHash": "{64B99605-6AD4-2ABD-71C0-BA1B3BBAB86B}"
+  "FileHash": "{32AB9A3B-B79A-C0EE-1D89-912238763F6D}"
  }
 }

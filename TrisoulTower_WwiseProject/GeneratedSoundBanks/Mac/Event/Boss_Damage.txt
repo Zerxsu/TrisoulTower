@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2713247166	Boss_Damage			\Default Work Unit\Boss_Damage	
+

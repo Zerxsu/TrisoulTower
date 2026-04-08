@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1935979060",
+    "Type": "Event",
+    "GUID": "{46FAE202-6B20-4B65-A9E0-B0FB42C7837D}",
+    "Language": "SFX",
+    "Hash": "{87831B2B-725D-3E13-90C2-BAC52A59D78C}",
+    "ObjectPath": "Ui_Go",
+    "ShortName": "Ui_Go",
+    "Path": "Event/Ui_Go.bnk",
+    "Media": [
+     {
+      "Id": "96818973",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Ui_go.wav",
+      "Path": "Media/96818973.wem",
+      "CachePath": "3D/{3D48A6F9-5A74-61C2-CDF5-B8ECC43D34A8}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1935979060",
+      "Name": "Ui_Go",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ui_Go",
+      "GUID": "{46FAE202-6B20-4B65-A9E0-B0FB42C7837D}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.75",
+      "DurationMax": "0.75",
+      "MediaRefs": [
+       {
+        "Id": "96818973"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{377B041E-37C7-295E-8386-E0E79DA8D89F}"
+ }
+}

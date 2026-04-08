@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{5F7B499A-1F57-4478-A13F-6E9C1BAC878E}",
     "Language": "SFX",
-    "Hash": "{A840D1D9-F29A-C3D6-FBEE-E98BCF7DDE29}",
+    "Hash": "{8225195A-5610-4858-EC5A-9B6008C22656}",
     "ObjectPath": "Ui_Click",
     "ShortName": "Ui_Click",
     "Path": "Event/Ui_Click.bnk",
@@ -62,6 +62,6 @@
     ]
    }
   ],
-  "FileHash": "{ED3D6EB1-2591-C217-EA37-16FE71055020}"
+  "FileHash": "{A334E723-F1D2-C332-2AF2-EEC20DECDC43}"
  }
 }

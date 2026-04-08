@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{ABC18279-2C80-4126-9827-2D2B589E4A6F}",
     "Language": "SFX",
-    "Hash": "{16051458-25B8-5371-EE97-BC022D9E10F4}",
+    "Hash": "{06DC40D3-08E4-D6D5-B275-38A3E29D6D21}",
     "ObjectPath": "Grass_Swing",
     "ShortName": "Grass_Swing",
     "Path": "Event/Grass_Swing.bnk",
@@ -50,15 +50,6 @@
       "ShortName": "grass_swing2.wav",
       "Path": "Media/504733488.wem",
       "CachePath": "4E/{4E76DD05-399E-E8EF-B2AF-F5904CFC2C2D}.wem"
-     },
-     {
-      "Id": "992761205",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "grass_swing.wav",
-      "Path": "Media/992761205.wem",
-      "CachePath": "7C/{7C45F81D-A64C-120C-9672-E290F167C288}.wem"
      }
     ],
     "Events": [
@@ -82,15 +73,12 @@
        },
        {
         "Id": "504733488"
-       },
-       {
-        "Id": "992761205"
        }
       ]
      }
     ]
    }
   ],
-  "FileHash": "{8D3DAC6E-9DB7-D21A-D0D6-72921B655C3A}"
+  "FileHash": "{EDD1D3DF-AC9C-79F8-7F36-3CFEBD83D999}"
  }
 }

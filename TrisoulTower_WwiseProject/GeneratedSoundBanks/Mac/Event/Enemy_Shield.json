@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3262939977",
+    "Type": "Event",
+    "GUID": "{07549015-D1BA-4FDE-9527-6B7AAE8D58C8}",
+    "Language": "SFX",
+    "Hash": "{49BFBD92-8D0F-EFBF-063F-342D0CFC384E}",
+    "ObjectPath": "Enemy_Shield",
+    "ShortName": "Enemy_Shield",
+    "Path": "Event/Enemy_Shield.bnk",
+    "Media": [
+     {
+      "Id": "659669781",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Enemy_2_Skill.wav",
+      "Path": "Media/659669781.wem",
+      "CachePath": "97/{973D7C05-8804-04B4-33E5-210D58D0F971}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3262939977",
+      "Name": "Enemy_Shield",
+      "ObjectPath": "\\Events\\Default Work Unit\\Enemy_Shield",
+      "GUID": "{07549015-D1BA-4FDE-9527-6B7AAE8D58C8}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.25",
+      "DurationMax": "2.25",
+      "MediaRefs": [
+       {
+        "Id": "659669781"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{65A192C5-E183-7E45-A370-F01AFF0401E4}"
+ }
+}

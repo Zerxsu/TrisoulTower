@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3296343126",
+    "Type": "Event",
+    "GUID": "{EDD34124-FD84-4B09-ABF0-9B1087F42BAA}",
+    "Language": "SFX",
+    "Hash": "{B5150DEE-1F09-7DEE-B43E-490F7542A019}",
+    "ObjectPath": "Grass_Parry",
+    "ShortName": "Grass_Parry",
+    "Path": "Event/Grass_Parry.bnk",
+    "Media": [
+     {
+      "Id": "969783770",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "slash 1-001.wav",
+      "Path": "Media/969783770.wem",
+      "CachePath": "8F/{8F0CC7A4-B8E7-9FDD-4E2C-F8FD94DDCE65}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3296343126",
+      "Name": "Grass_Parry",
+      "ObjectPath": "\\Events\\Default Work Unit\\Grass_Parry",
+      "GUID": "{EDD34124-FD84-4B09-ABF0-9B1087F42BAA}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.555669",
+      "DurationMax": "1.555669",
+      "MediaRefs": [
+       {
+        "Id": "969783770"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{3913A323-697D-409B-76CD-3859A9121B12}"
+ }
+}

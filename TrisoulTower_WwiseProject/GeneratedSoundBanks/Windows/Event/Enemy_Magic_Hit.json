@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "946978181",
+    "Type": "Event",
+    "GUID": "{C47628A3-620A-40F5-82C5-B6EDC7A9A11D}",
+    "Language": "SFX",
+    "Hash": "{77D6F886-7BE7-243E-AC37-00BE5DDDD1F8}",
+    "ObjectPath": "Enemy_Magic_Hit",
+    "ShortName": "Enemy_Magic_Hit",
+    "Path": "Event/Enemy_Magic_Hit.bnk",
+    "Media": [
+     {
+      "Id": "24447179",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "magic test.wav",
+      "Path": "Media/24447179.wem",
+      "CachePath": "E3/{E3738470-2303-F72F-7E01-11D591D1DBDE}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "946978181",
+      "Name": "Enemy_Magic_Hit",
+      "ObjectPath": "\\Events\\Default Work Unit\\Enemy_Magic_Hit",
+      "GUID": "{C47628A3-620A-40F5-82C5-B6EDC7A9A11D}",
+      "DurationType": "OneShot",
+      "DurationMin": "3.082653",
+      "DurationMax": "3.082653",
+      "MediaRefs": [
+       {
+        "Id": "24447179"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{72BD9B60-38AF-EA5B-1F17-DA7859B705DF}"
+ }
+}

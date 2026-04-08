@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{037ED957-C90F-47A1-A677-D6B89338C1DA}" SchemaVersion="123">
 	<MixingSessions>
-		<WorkUnit Name="Default Work Unit" ID="{037ED957-C90F-47A1-A677-D6B89338C1DA}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{037ED957-C90F-47A1-A677-D6B89338C1DA}" PersistMode="Standalone">
+			<ChildrenList>
+				<MixingSession Name="fire" ID="{0BE80A1A-F6D2-43A4-B3B9-BB36EF648E7B}">
+					<ObjectList>
+						<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+						<ObjectRef Name="SFX Audio Bus" ID="{E2450F5E-B8CD-461D-80DE-91322792B0BA}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+						<ObjectRef Name="Grass_Equip" ID="{CFDCFCCB-8D01-4680-9AC6-287B4A22C8E0}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+						<ObjectRef Name="Grass_Heavy" ID="{BDC81CD0-2F4C-4235-90F8-BDC430B6FA1D}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+						<ObjectRef Name="Grass_Swing" ID="{A00651A3-E1EB-4058-8136-A5BF6E5F421D}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+						<ObjectRef Name="Grass_Ult" ID="{B26EE416-B678-4D3F-A6BF-5D66E7978D17}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+						<ObjectRef Name="Fire_Ult" ID="{44A41150-B497-49ED-88E5-98F3D3CD478A}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+						<ObjectRef Name="Fire_Swing" ID="{7566F685-6B6D-49EF-B747-7C0D8EFDA6AD}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+						<ObjectRef Name="Ice_Swing" ID="{E00E960D-1211-49E2-B02B-312D0CE4629F}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+					</ObjectList>
+				</MixingSession>
+			</ChildrenList>
+		</WorkUnit>
 	</MixingSessions>
 </WwiseDocument>

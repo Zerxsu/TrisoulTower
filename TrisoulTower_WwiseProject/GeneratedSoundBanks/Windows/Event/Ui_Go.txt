@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1935979060	Ui_Go			\Default Work Unit\Ui_Go	
+

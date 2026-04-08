@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{F32D6267-AA97-4EA8-B95A-AB6DE9119456}",
     "Language": "SFX",
-    "Hash": "{D74AB188-FE3B-3649-355B-1216A00EC8BA}",
+    "Hash": "{68DAED91-54B2-D3F8-1035-25675DAD8ECC}",
     "ObjectPath": "Player_Parry",
     "ShortName": "Player_Parry",
     "Path": "Event/Player_Parry.bnk",
@@ -23,6 +23,33 @@
       "ShortName": "Trisoul_Parry_New.wav",
       "Path": "Media/103884579.wem",
       "CachePath": "DD/{DD65952F-7540-BE5D-7275-99C9CA2655F8}.wem"
+     },
+     {
+      "Id": "410123365",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Trisoul_Parry_3.wav",
+      "Path": "Media/410123365.wem",
+      "CachePath": "49/{497396E3-0CF3-A530-C2E3-60E69BBBA777}.wem"
+     },
+     {
+      "Id": "464079399",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Trisoul_Parry_4.wav",
+      "Path": "Media/464079399.wem",
+      "CachePath": "02/{02721679-D47E-7409-D0FC-E515305659C2}.wem"
+     },
+     {
+      "Id": "1054410887",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Trisoul_Parry_2.wav",
+      "Path": "Media/1054410887.wem",
+      "CachePath": "A1/{A11EA55F-BFED-F18D-04E5-B4E8B7FCF4C4}.wem"
      }
     ],
     "Events": [
@@ -33,16 +60,25 @@
       "GUID": "{F32D6267-AA97-4EA8-B95A-AB6DE9119456}",
       "DurationType": "OneShot",
       "DurationMin": "1.6986759",
-      "DurationMax": "1.6986759",
+      "DurationMax": "2.8980951",
       "MediaRefs": [
        {
         "Id": "103884579"
+       },
+       {
+        "Id": "410123365"
+       },
+       {
+        "Id": "464079399"
+       },
+       {
+        "Id": "1054410887"
        }
       ]
      }
     ]
    }
   ],
-  "FileHash": "{6E7EDC7B-531C-C491-2E43-788B3958486D}"
+  "FileHash": "{4F34366C-C872-ABF8-56C9-6335712DA753}"
  }
 }

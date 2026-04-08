@@ -409,7 +409,7 @@
 						<Action Name="" ID="{0E4E5B7B-70A0-4304-81AD-0D6EBAA59E0C}" ShortID="702155931">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Ui_Confirm" ID="{B31A6EDE-19B4-48E1-B94B-B965F3BF1395}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+									<ObjectRef Name="Ui_Start" ID="{B31A6EDE-19B4-48E1-B94B-B965F3BF1395}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -432,6 +432,72 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Fire_Heavy_Jump" ID="{B7246CBE-C56F-4BE3-BF9B-694E95747D10}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Enemy_Magic_Hit" ID="{C47628A3-620A-40F5-82C5-B6EDC7A9A11D}">
+					<ChildrenList>
+						<Action Name="" ID="{E5E49E6F-B52B-4A47-B725-CF4FBC31BC01}" ShortID="859851213">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Enemy_Magic_Hit" ID="{D879F4BF-6421-4F9A-954D-A2D6227C30C9}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Ui_Back" ID="{BA47E44C-11BA-4F59-BA1E-E40B3A56BBE8}">
+					<ChildrenList>
+						<Action Name="" ID="{52170F87-6C35-453A-85A1-A97856EF9DC0}" ShortID="836353309">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ui_Back" ID="{622DBBBA-51C8-4193-A871-324157B990FC}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Ui_Go" ID="{46FAE202-6B20-4B65-A9E0-B0FB42C7837D}">
+					<ChildrenList>
+						<Action Name="" ID="{A799F150-F2CD-4C67-A9B9-CC0FDAE00143}" ShortID="566297045">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ui_Go" ID="{95803C1E-8F55-4C58-9B1F-C702EF4CFE43}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Boss_Damage" ID="{5DFD3936-8D34-41CA-8205-01160B981759}">
+					<ChildrenList>
+						<Action Name="" ID="{E2C909D5-1E8B-4873-9BF4-B32D1BD8FEFC}" ShortID="1064869976">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Boss_Damage" ID="{5AB1ADE4-559D-4B27-A70F-13BEC0B1AB88}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Enemy_Shield" ID="{07549015-D1BA-4FDE-9527-6B7AAE8D58C8}">
+					<ChildrenList>
+						<Action Name="" ID="{C3FEC66B-E58C-4138-B139-F6B8768DA139}" ShortID="330717326">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Enemy_Shield" ID="{3A24F4A2-0083-4BE0-B7FE-0803CD0AE1B9}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Grass_Parry" ID="{EDD34124-FD84-4B09-ABF0-9B1087F42BAA}">
+					<ChildrenList>
+						<Action Name="" ID="{8733CDE3-1955-44AE-95D8-9070A2BEFD7C}" ShortID="364031718">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Grass_Parry" ID="{31D0FDFE-31DE-49CA-98CC-D2A6F95E5B15}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

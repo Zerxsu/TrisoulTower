@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{23F5B3CA-DA39-49C0-B0F1-D2F7552EA6D3}",
     "Language": "SFX",
-    "Hash": "{1AA8C3F9-CD80-9B26-DC4D-809147DA51B9}",
+    "Hash": "{54A39765-71B5-5B68-5444-DE627C6400FC}",
     "ObjectPath": "Enemy_Spawn",
     "ShortName": "Enemy_Spawn",
     "Path": "Event/Enemy_Spawn.bnk",
@@ -79,6 +79,6 @@
     ]
    }
   ],
-  "FileHash": "{7CC97EB1-692B-8565-4E04-EEC3A4ED292F}"
+  "FileHash": "{64C12807-045A-A044-8FEE-CCC102737245}"
  }
 }

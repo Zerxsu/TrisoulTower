@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{83B730DB-CE3A-4FCE-A462-557A7D682EC6}",
     "Language": "SFX",
-    "Hash": "{2FE2AB10-28D1-98E7-3CA7-FAE3BCC53B97}",
+    "Hash": "{447571B4-1A5D-DB56-2ECD-A902E8D48D05}",
     "ObjectPath": "Fire_Ult",
     "ShortName": "Fire_Ult",
     "Path": "Event/Fire_Ult.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{41EA3C83-2626-EA29-1255-C5D1D01525CF}"
+  "FileHash": "{A32EE1B3-9590-1BF9-B176-B53A4D236C23}"
  }
 }

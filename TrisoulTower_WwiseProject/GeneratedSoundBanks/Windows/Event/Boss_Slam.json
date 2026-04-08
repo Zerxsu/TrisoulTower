@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{49D2038C-B82B-4E64-A55D-CA31207855BD}",
     "Language": "SFX",
-    "Hash": "{ED548FEE-8ACE-7C54-84BC-A9306B85D158}",
+    "Hash": "{E0F14008-4340-C220-AC12-F1A119F985C4}",
     "ObjectPath": "Boss_Slam",
     "ShortName": "Boss_Slam",
     "Path": "Event/Boss_Slam.bnk",
@@ -22,7 +22,7 @@
       "Location": "Loose",
       "ShortName": "Final_Boss_GroundSlamATK_SFX .wav",
       "Path": "Media/665076793.wem",
-      "CachePath": "69/{69A283CA-E3E9-D859-5E0F-4B0EC724AD10}.wem"
+      "CachePath": "96/{962A7AD3-0D92-EBFF-0CC3-6EE0AEBFF8AF}.wem"
      }
     ],
     "Events": [
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{75C15A69-FDB7-2EBE-793F-C8D13C32CA55}"
+  "FileHash": "{DDA5CF02-D016-1C50-5A2E-554B878F5878}"
  }
 }

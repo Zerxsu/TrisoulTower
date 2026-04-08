@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{58F891FE-97A1-43BE-BD9A-44588CF18D34}",
     "Language": "SFX",
-    "Hash": "{D48F9977-466E-B6C0-725F-41D26D02D5E6}",
+    "Hash": "{DA70868D-E855-0FE9-B0A5-916F584CBF9D}",
     "ObjectPath": "Temp_Footstep_Grass",
     "ShortName": "Temp_Footstep_Grass",
     "Path": "Event/Temp_Footstep_Grass.bnk",
@@ -22,7 +22,7 @@
       "Location": "Loose",
       "ShortName": "g8.wav",
       "Path": "Media/141411593.wem",
-      "CachePath": "7A/{7AC119A9-C6AF-B41C-F5B5-8303BB52AD23}.wem"
+      "CachePath": "25/{259FB25A-0A70-3A0A-55BD-CF0D04DD867C}.wem"
      },
      {
       "Id": "563396420",
@@ -40,7 +40,7 @@
       "Location": "Loose",
       "ShortName": "g5.wav",
       "Path": "Media/590461207.wem",
-      "CachePath": "4A/{4A635EF6-A477-4024-7363-0A03E7B682E6}.wem"
+      "CachePath": "A2/{A2375C3E-74D9-81D2-32D4-7221B6C4C2D2}.wem"
      },
      {
       "Id": "614895121",
@@ -67,7 +67,7 @@
       "Location": "Loose",
       "ShortName": "g3.wav",
       "Path": "Media/703086839.wem",
-      "CachePath": "94/{9469CD0B-CA5D-2BFE-68B7-DA5A88F3F570}.wem"
+      "CachePath": "21/{2140C592-03F9-5AB7-21A4-4CF39DA69A81}.wem"
      },
      {
       "Id": "914263271",
@@ -76,7 +76,7 @@
       "Location": "Loose",
       "ShortName": "g4.wav",
       "Path": "Media/914263271.wem",
-      "CachePath": "A6/{A63D3065-26EA-79A6-8E2D-495A372C7669}.wem"
+      "CachePath": "96/{96A8E830-CEC4-97C6-FE4D-A231AA9ADD8D}.wem"
      },
      {
       "Id": "1008733411",
@@ -155,6 +155,6 @@
     ]
    }
   ],
-  "FileHash": "{C4AF3E4D-FDD7-9322-5364-D4A2487FEDCB}"
+  "FileHash": "{4C28B8F6-65FC-4133-6254-6466D2EB388B}"
  }
 }

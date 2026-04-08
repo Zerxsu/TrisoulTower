@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{350791F3-6509-4F8B-91D8-1AB411284A4D}",
     "Language": "SFX",
-    "Hash": "{3B90DBBE-F48C-ABF9-D879-33D774203E54}",
+    "Hash": "{BC069678-A3A5-6FA0-5631-047DE6069471}",
     "ObjectPath": "Boss_Beam",
     "ShortName": "Boss_Beam",
     "Path": "Event/Boss_Beam.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{9886437B-D7BE-2352-9A32-60846CE08CF3}"
+  "FileHash": "{965A63D5-CEFF-9B45-A546-F91A117E1845}"
  }
 }

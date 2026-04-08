@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2713247166",
+    "Type": "Event",
+    "GUID": "{5DFD3936-8D34-41CA-8205-01160B981759}",
+    "Language": "SFX",
+    "Hash": "{43B5A7AD-68DB-B59F-3A18-036CBAC45EE0}",
+    "ObjectPath": "Boss_Damage",
+    "ShortName": "Boss_Damage",
+    "Path": "Event/Boss_Damage.bnk",
+    "Media": [
+     {
+      "Id": "803049247",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "ui.wav",
+      "Path": "Media/803049247.wem",
+      "CachePath": "B0/{B03D14ED-5EC8-938D-9C43-CC3839CB69C5}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2713247166",
+      "Name": "Boss_Damage",
+      "ObjectPath": "\\Events\\Default Work Unit\\Boss_Damage",
+      "GUID": "{5DFD3936-8D34-41CA-8205-01160B981759}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.21913832",
+      "DurationMax": "0.21913832",
+      "MediaRefs": [
+       {
+        "Id": "803049247"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{1EF83839-5529-3AA8-7550-B35DA3CC5614}"
+ }
+}

@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{1387C31B-B990-425C-86EB-CD00A57446A4}",
     "Language": "SFX",
-    "Hash": "{41E6D4B6-1302-9C10-F0C1-86D20C56AE80}",
+    "Hash": "{542D2D92-B446-4E39-4F04-949FB5659AB1}",
     "ObjectPath": "Temp_Footstep_Dirt",
     "ShortName": "Temp_Footstep_Dirt",
     "Path": "Event/Temp_Footstep_Dirt.bnk",
@@ -22,7 +22,7 @@
       "Location": "Loose",
       "ShortName": "d9.wav",
       "Path": "Media/191188656.wem",
-      "CachePath": "47/{4755B8A9-3A11-0168-05B0-13D0469AC837}.wem"
+      "CachePath": "7B/{7B8F0998-E25E-4FFF-6467-F7A63C9D1303}.wem"
      },
      {
       "Id": "192694640",
@@ -40,7 +40,7 @@
       "Location": "Loose",
       "ShortName": "d2.wav",
       "Path": "Media/472524586.wem",
-      "CachePath": "31/{316B09A2-6DD4-1DF7-3C58-559F9C8EAA95}.wem"
+      "CachePath": "79/{79383D1F-107B-D925-0FD4-1DC09AAC03B9}.wem"
      },
      {
       "Id": "515924223",
@@ -167,6 +167,6 @@
     ]
    }
   ],
-  "FileHash": "{00D42AB4-B4B7-1088-4F29-B53C214135B5}"
+  "FileHash": "{A27A845D-72DF-D56B-1991-18EE8D02F262}"
  }
 }
