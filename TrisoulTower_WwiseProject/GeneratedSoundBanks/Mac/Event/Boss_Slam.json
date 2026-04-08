@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{49D2038C-B82B-4E64-A55D-CA31207855BD}",
     "Language": "SFX",
-    "Hash": "{E0F14008-4340-C220-AC12-F1A119F985C4}",
+    "Hash": "{30A3D180-17E3-8FD1-7C49-C8F256C87109}",
     "ObjectPath": "Boss_Slam",
     "ShortName": "Boss_Slam",
     "Path": "Event/Boss_Slam.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{0753853E-7FD6-2681-2D73-1C2CDDDFF7AF}"
+  "FileHash": "{EEA27160-099C-59FF-CE8D-6FB5B39A26CE}"
  }
 }

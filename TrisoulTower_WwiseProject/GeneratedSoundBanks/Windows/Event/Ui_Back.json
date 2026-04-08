@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{BA47E44C-11BA-4F59-BA1E-E40B3A56BBE8}",
     "Language": "SFX",
-    "Hash": "{5F1006ED-21FF-F414-C13D-B3D3D350D26B}",
+    "Hash": "{F47E07AA-325B-6F72-09A0-2A5C692CA165}",
     "ObjectPath": "Ui_Back",
     "ShortName": "Ui_Back",
     "Path": "Event/Ui_Back.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{9FD2F687-89FC-2351-BA81-A41BB88A8510}"
+  "FileHash": "{664B46E3-61AE-F4A6-6A08-4716EF183D86}"
  }
 }

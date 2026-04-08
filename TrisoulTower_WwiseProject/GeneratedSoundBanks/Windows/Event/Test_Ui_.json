@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{61786EAA-61B0-4C2A-B4F0-91AB313419D3}",
     "Language": "SFX",
-    "Hash": "{6B302D25-6C60-EDF8-68BA-08F61398A965}",
+    "Hash": "{B7E7F2F9-F61C-0E42-B447-D4C0BAB2B0A5}",
     "ObjectPath": "Test_Ui_",
     "ShortName": "Test_Ui_",
     "Path": "Event/Test_Ui_.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{9DF8ED00-144B-6BD0-02D2-28607FC44591}"
+  "FileHash": "{AB1837E0-F3A4-8F88-F584-78E9A68370AB}"
  }
 }

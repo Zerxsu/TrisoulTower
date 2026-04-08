@@ -1,0 +1,67 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1375156070",
+    "Type": "Event",
+    "GUID": "{561385B4-DC9D-4A55-9803-25B0C8BC68F6}",
+    "Language": "SFX",
+    "Hash": "{854FA7AA-6649-84DD-487A-228B90D2EA68}",
+    "ObjectPath": "Fire_Parry",
+    "ShortName": "Fire_Parry",
+    "Path": "Event/Fire_Parry.bnk",
+    "Media": [
+     {
+      "Id": "969783770",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "slash 1-001.wav",
+      "Path": "Media/969783770.wem",
+      "CachePath": "8F/{8F0CC7A4-B8E7-9FDD-4E2C-F8FD94DDCE65}.wem"
+     }
+    ],
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "1237275451",
+       "Name": "Octave_Up",
+       "ObjectPath": "\\Effects\\Factory Effects\\Pitch Shifter\\Harmonize\\Octave_Up",
+       "GUID": "{A98F423C-EC97-49D8-8698-445CE91F24B7}",
+       "LibName": "Wwise Pitch Shifter",
+       "LibId": "8912899"
+      }
+     ]
+    },
+    "Events": [
+     {
+      "Id": "1375156070",
+      "Name": "Fire_Parry",
+      "ObjectPath": "\\Events\\Default Work Unit\\Fire_Parry",
+      "GUID": "{561385B4-DC9D-4A55-9803-25B0C8BC68F6}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.555669",
+      "DurationMax": "1.555669",
+      "MediaRefs": [
+       {
+        "Id": "969783770"
+       }
+      ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "1237275451"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "FileHash": "{329346E4-56C6-7245-970D-377AD227F9DB}"
+ }
+}

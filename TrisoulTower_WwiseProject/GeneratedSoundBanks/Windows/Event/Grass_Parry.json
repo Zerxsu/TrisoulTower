@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{EDD34124-FD84-4B09-ABF0-9B1087F42BAA}",
     "Language": "SFX",
-    "Hash": "{B5150DEE-1F09-7DEE-B43E-490F7542A019}",
+    "Hash": "{658F94C6-3420-C0E3-5A40-9F3EF1DCC4F6}",
     "ObjectPath": "Grass_Parry",
     "ShortName": "Grass_Parry",
     "Path": "Event/Grass_Parry.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{C30D7484-4D8C-1366-2135-31F0DF9779D2}"
+  "FileHash": "{C1094CE4-BD1F-5BB8-949B-4BBEBFC40DB4}"
  }
 }

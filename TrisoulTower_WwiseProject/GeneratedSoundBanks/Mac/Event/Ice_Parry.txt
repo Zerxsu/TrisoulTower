@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3889913073	Ice_Parry			\Default Work Unit\Ice_Parry	
+
+Effect plug-ins	ID	Name	Type				Notes
+	1237275451	Octave_Up	Wwise Pitch Shifter			
+

@@ -503,6 +503,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Fire_Parry" ID="{561385B4-DC9D-4A55-9803-25B0C8BC68F6}">
+					<ChildrenList>
+						<Action Name="" ID="{C5D821FA-4180-49AF-9933-2D7DB74AE179}" ShortID="726077869">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Fire_Parry" ID="{13B8745F-998A-4AAA-B561-DD07C3369E73}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Ice_Parry" ID="{794BC01A-B489-4C58-ACF6-3F4F158D13D4}">
+					<ChildrenList>
+						<Action Name="" ID="{4F5F39F1-4B36-414A-9EF6-DF40D7C06FF6}" ShortID="814375771">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ice_Parry" ID="{B8704599-00D2-4DE6-B67C-629FFEE8DCAB}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

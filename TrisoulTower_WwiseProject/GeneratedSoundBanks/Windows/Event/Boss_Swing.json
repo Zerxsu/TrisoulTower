@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{B61520C7-D2CB-4E32-9CBF-4733D077E066}",
     "Language": "SFX",
-    "Hash": "{591EC672-ECF3-13E2-72E0-9C5EBB04B734}",
+    "Hash": "{7F30FCAF-88BC-710F-F6A3-563633BDFD96}",
     "ObjectPath": "Boss_Swing",
     "ShortName": "Boss_Swing",
     "Path": "Event/Boss_Swing.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{52482444-2CCD-4BBE-E8E1-85E0C2E06FCD}"
+  "FileHash": "{D9392573-4CDA-6CE3-BF69-766DC7EA455F}"
  }
 }

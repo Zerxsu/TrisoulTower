@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{07549015-D1BA-4FDE-9527-6B7AAE8D58C8}",
     "Language": "SFX",
-    "Hash": "{49BFBD92-8D0F-EFBF-063F-342D0CFC384E}",
+    "Hash": "{B6B862B6-5E6C-32CB-3E4F-304CD917C5A7}",
     "ObjectPath": "Enemy_Shield",
     "ShortName": "Enemy_Shield",
     "Path": "Event/Enemy_Shield.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{65A192C5-E183-7E45-A370-F01AFF0401E4}"
+  "FileHash": "{B7931D67-0AF8-5812-CEE4-9F82D4F6731C}"
  }
 }

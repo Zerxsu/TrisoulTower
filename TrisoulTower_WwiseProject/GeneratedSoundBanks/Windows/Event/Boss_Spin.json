@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{5295FE5C-2ACE-48E7-BE37-DDA590848F1B}",
     "Language": "SFX",
-    "Hash": "{1044BADC-6490-121C-0F65-3ABC120CEF95}",
+    "Hash": "{B218CDA9-77AE-4679-2440-F13125E2F566}",
     "ObjectPath": "Boss_Spin",
     "ShortName": "Boss_Spin",
     "Path": "Event/Boss_Spin.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{9D398A76-56FE-0298-F1DF-B9609C3A3903}"
+  "FileHash": "{C479C185-B239-E103-2533-4A7A29C7C5F9}"
  }
 }

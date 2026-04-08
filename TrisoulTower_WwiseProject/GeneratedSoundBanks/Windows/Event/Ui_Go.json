@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{46FAE202-6B20-4B65-A9E0-B0FB42C7837D}",
     "Language": "SFX",
-    "Hash": "{87831B2B-725D-3E13-90C2-BAC52A59D78C}",
+    "Hash": "{2B4E9E9E-A922-20F6-3C53-E42FEDB16450}",
     "ObjectPath": "Ui_Go",
     "ShortName": "Ui_Go",
     "Path": "Event/Ui_Go.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{EF0459D2-01C0-5C99-AE9B-4A3ABB481227}"
+  "FileHash": "{94D07956-FCE6-167A-AA69-0977DF6BCED4}"
  }
 }

@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{5DFD3936-8D34-41CA-8205-01160B981759}",
     "Language": "SFX",
-    "Hash": "{43B5A7AD-68DB-B59F-3A18-036CBAC45EE0}",
+    "Hash": "{EE3A5BA8-99D7-A663-2157-B501166D5CE2}",
     "ObjectPath": "Boss_Damage",
     "ShortName": "Boss_Damage",
     "Path": "Event/Boss_Damage.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{F6C246C8-637E-7346-9A5A-0A3FB8AF4D34}"
+  "FileHash": "{02A5F8E8-027A-A2D2-94AA-FE47CB964C38}"
  }
 }
