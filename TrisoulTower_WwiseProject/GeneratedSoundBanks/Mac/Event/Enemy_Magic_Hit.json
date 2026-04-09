@@ -10,19 +10,19 @@
     "Type": "Event",
     "GUID": "{C47628A3-620A-40F5-82C5-B6EDC7A9A11D}",
     "Language": "SFX",
-    "Hash": "{732B05E0-9FA6-891F-F34F-4150CFB9705D}",
+    "Hash": "{949F244E-3E51-8043-A129-6381D8B3A9D5}",
     "ObjectPath": "Enemy_Magic_Hit",
     "ShortName": "Enemy_Magic_Hit",
     "Path": "Event/Enemy_Magic_Hit.bnk",
     "Media": [
      {
-      "Id": "24447179",
+      "Id": "423513423",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "magic test.wav",
-      "Path": "Media/24447179.wem",
-      "CachePath": "01/{016D3F1E-A665-B789-288B-309E6D267BD3}.wem"
+      "ShortName": "magic test2.wav",
+      "Path": "Media/423513423.wem",
+      "CachePath": "89/{89DF0097-AA10-767D-8B7D-969456A0CCB9}.wem"
      }
     ],
     "Events": [
@@ -36,13 +36,13 @@
       "DurationMax": "3.082653",
       "MediaRefs": [
        {
-        "Id": "24447179"
+        "Id": "423513423"
        }
       ]
      }
     ]
    }
   ],
-  "FileHash": "{FAB0E484-0DDD-BB38-532D-9CED7D958101}"
+  "FileHash": "{97D54C8A-0D36-F1AC-469E-84889002E3C4}"
  }
 }

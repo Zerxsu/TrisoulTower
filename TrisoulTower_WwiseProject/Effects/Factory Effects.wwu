@@ -188,9 +188,9 @@
 						</Effect>
 						<Effect Name="Brick_Wall_Minus_1dB_Peak_Fast_Release" ID="{2144284E-7ADD-4341-86A4-4E468BEC9A2D}" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
 							<PropertyList>
-								<Property Name="Ratio" Type="Real32" Value="50"/>
+								<Property Name="Ratio" Type="Real32" Value="26.8"/>
 								<Property Name="ReleaseTime" Type="Real32" Value="0.02"/>
-								<Property Name="Threshold" Type="Real32" Value="-1"/>
+								<Property Name="Threshold" Type="Real32" Value="-36"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
@@ -657,7 +657,7 @@
 										<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
 										<Property Name="FilterTypeBand2" Type="int32" Value="3"/>
 										<Property Name="FilterTypeBand3" Type="int32" Value="0"/>
-										<Property Name="FrequencyBand1" Type="Real32" Value="500"/>
+										<Property Name="FrequencyBand1" Type="Real32" Value="267"/>
 										<Property Name="OnOffBand2" Type="bool" Value="False"/>
 									</PropertyList>
 								</Effect>

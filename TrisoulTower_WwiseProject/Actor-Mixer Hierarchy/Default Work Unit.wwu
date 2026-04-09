@@ -1188,26 +1188,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="magic test" ID="{02BDB0A7-29BE-4087-ACAA-E600A4F689C9}" ShortID="853312188">
-									<PropertyList>
-										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
-										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
-										<Property Name="MaxSoundPerInstance" Type="int16">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
-										<Property Name="UseMaxSoundPerInstance" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>7</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
+								<Sound Name="magic test2" ID="{ED6EC433-F244-413D-9A19-FB2376E330B0}" ShortID="289537475">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EDE04661-C308-45A7-A51C-78EA04E32DEA}"/>
@@ -1217,21 +1198,16 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="magic test" ID="{DA20F9CD-190C-44C9-8979-0463D4D2946A}">
-											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="2.16239044526044"/>
-												<Property Name="FadeOutShape" Type="int16" Value="1"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-											</PropertyList>
+										<AudioFileSource Name="magic test2" ID="{7C7B0403-3C8E-4938-B94F-8F8FFCF19D60}">
 											<Language>SFX</Language>
-											<AudioFile>magic test.wav</AudioFile>
+											<AudioFile>magic test2.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="24447179"/>
+												<MediaID ID="423513423"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="magic test" ID="{DA20F9CD-190C-44C9-8979-0463D4D2946A}" Platform="Linked"/>
+										<ActiveSource Name="magic test2" ID="{7C7B0403-3C8E-4938-B94F-8F8FFCF19D60}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
@@ -2858,6 +2834,7 @@
 							<ChildrenList>
 								<RandomSequenceContainer Name="Dirt" ID="{E63F419A-2281-4F28-AC25-8F22B0BFD838}" ShortID="168158494">
 									<PropertyList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -2873,7 +2850,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-1</Value>
+												<Value>7</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3094,9 +3071,25 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{F4928120-D694-40E0-992A-A006E3502D22}" ShortID="844444316">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+																<ObjectRef Name="Brick_Wall_Minus_1dB_Peak_Fast_Release" ID="{2144284E-7ADD-4341-86A4-4E468BEC9A2D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Grass" ID="{8F8A22C3-CFF6-4EC2-ABCC-D4C9BEF84976}" ShortID="1070507903">
 									<PropertyList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -3347,7 +3340,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>7</Value>
+												<Value>12</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3389,6 +3382,11 @@
 										<Sound Name="1" ID="{841F3D8E-ED64-4A9D-B1FE-6E577EA7167D}" ShortID="654031685">
 											<PropertyList>
 												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -3571,6 +3569,21 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{80C79378-F5B4-443B-AD7C-1A2E7FE88B0B}" ShortID="354477609">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+																<ObjectRef Name="Brick_Wall_Minus_1dB_Peak_Fast_Release" ID="{2144284E-7ADD-4341-86A4-4E468BEC9A2D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
 								</RandomSequenceContainer>
 							</ChildrenList>
 							<GroupingInfo>

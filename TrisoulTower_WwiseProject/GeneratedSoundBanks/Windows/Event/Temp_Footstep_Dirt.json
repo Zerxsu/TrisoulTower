@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{1387C31B-B990-425C-86EB-CD00A57446A4}",
     "Language": "SFX",
-    "Hash": "{542D2D92-B446-4E39-4F04-949FB5659AB1}",
+    "Hash": "{BDE39512-AF19-894F-23E4-8A1FC0055C75}",
     "ObjectPath": "Temp_Footstep_Dirt",
     "ShortName": "Temp_Footstep_Dirt",
     "Path": "Event/Temp_Footstep_Dirt.bnk",
@@ -97,6 +97,18 @@
       "CachePath": "77/{77E77477-FEDD-A112-009F-0EC45E487102}.wem"
      }
     ],
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "1459522457",
+       "Name": "Brick_Wall_Minus_1dB_Peak_Fast_Release",
+       "ObjectPath": "\\Effects\\Factory Effects\\Peak Limiter\\Brick_Wall_Minus_1dB_Peak_Fast_Release",
+       "GUID": "{2144284E-7ADD-4341-86A4-4E468BEC9A2D}",
+       "LibName": "Wwise Peak Limiter",
+       "LibId": "7208963"
+      }
+     ]
+    },
     "Events": [
      {
       "Id": "3612189352",
@@ -134,7 +146,14 @@
        {
         "Id": "992116950"
        }
-      ]
+      ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "1459522457"
+        }
+       ]
+      }
      }
     ],
     "SwitchGroups": [
@@ -167,6 +186,6 @@
     ]
    }
   ],
-  "FileHash": "{A27A845D-72DF-D56B-1991-18EE8D02F262}"
+  "FileHash": "{CCC8E970-24B7-D497-E2AE-1F6F3E9CF64E}"
  }
 }
