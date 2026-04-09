@@ -1,3 +1,12 @@
 Event	ID	Name			Wwise Object Path	Notes
 	2713247166	Boss_Damage			\Default Work Unit\Boss_Damage	
 
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	16954181	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Boss\Boss_Damage\New Silence_06\Silence	
+	360511741	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Boss\Boss_Damage\New Silence\Silence	
+	405918409	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Boss\Boss_Damage\New Silence_02\Silence	
+	512957241	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Boss\Boss_Damage\New Silence_05\Silence	
+	692163255	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Boss\Boss_Damage\New Silence_01\Silence	
+	773954110	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Boss\Boss_Damage\New Silence_04\Silence	
+	793825638	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Boss\Boss_Damage\New Silence_03\Silence	
+

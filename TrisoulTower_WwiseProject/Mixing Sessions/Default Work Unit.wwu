@@ -16,6 +16,14 @@
 						<ObjectRef Name="Ice_Swing" ID="{E00E960D-1211-49E2-B02B-312D0CE4629F}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
 					</ObjectList>
 				</MixingSession>
+				<MixingSession Name="New Mixing Session" ID="{D8C1056E-E580-42A5-B4B8-69A827BDE72D}">
+					<ObjectList>
+						<ObjectRef Name="Boss_Phase_3" ID="{A0F11F7D-E9CB-45CD-9492-FA80D1E2820B}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+						<ObjectRef Name="Boss_Killed" ID="{BC0257B7-8CD2-4605-AEBE-73DDDD777008}" WorkUnitID="{3AEA9494-AE97-42B8-9DE5-15D1AAB19CCB}"/>
+						<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+						<ObjectRef Name="Music Audio Bus" ID="{B954D48E-4A62-4AC3-8B53-6A497A61682E}" WorkUnitID="{39F4F521-01F5-46E8-83D9-AFB797DC278B}"/>
+					</ObjectList>
+				</MixingSession>
 			</ChildrenList>
 		</WorkUnit>
 	</MixingSessions>

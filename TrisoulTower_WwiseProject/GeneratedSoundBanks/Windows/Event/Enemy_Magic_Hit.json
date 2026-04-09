@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{C47628A3-620A-40F5-82C5-B6EDC7A9A11D}",
     "Language": "SFX",
-    "Hash": "{C23E83B0-898F-6C61-F84C-638E15F90F8E}",
+    "Hash": "{732B05E0-9FA6-891F-F34F-4150CFB9705D}",
     "ObjectPath": "Enemy_Magic_Hit",
     "ShortName": "Enemy_Magic_Hit",
     "Path": "Event/Enemy_Magic_Hit.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{0C6C9581-3C64-4940-4A60-77C9BB8D3B15}"
+  "FileHash": "{970BDC8D-1C3F-72D3-E7A7-9A76D8F80731}"
  }
 }

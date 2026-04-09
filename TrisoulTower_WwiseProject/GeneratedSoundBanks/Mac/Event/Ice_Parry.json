@@ -10,33 +10,30 @@
     "Type": "Event",
     "GUID": "{794BC01A-B489-4C58-ACF6-3F4F158D13D4}",
     "Language": "SFX",
-    "Hash": "{2FB4783C-3121-1EBE-6170-A9EAFA7CE23C}",
+    "Hash": "{76451C66-F38D-257B-71BD-85DD5765A33C}",
     "ObjectPath": "Ice_Parry",
     "ShortName": "Ice_Parry",
     "Path": "Event/Ice_Parry.bnk",
     "Media": [
      {
-      "Id": "969783770",
+      "Id": "734569107",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "slash 1-001.wav",
-      "Path": "Media/969783770.wem",
-      "CachePath": "8F/{8F0CC7A4-B8E7-9FDD-4E2C-F8FD94DDCE65}.wem"
+      "ShortName": "ice-001.wav",
+      "Path": "Media/734569107.wem",
+      "CachePath": "F0/{F0457A27-3D94-F8B5-59F5-544B02C3A2B4}.wem"
+     },
+     {
+      "Id": "934754005",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "ice.wav",
+      "Path": "Media/934754005.wem",
+      "CachePath": "3F/{3FF337BB-CC32-6095-EE1D-F8C476488425}.wem"
      }
     ],
-    "Plugins": {
-     "ShareSets": [
-      {
-       "Id": "1237275451",
-       "Name": "Octave_Up",
-       "ObjectPath": "\\Effects\\Factory Effects\\Pitch Shifter\\Harmonize\\Octave_Up",
-       "GUID": "{A98F423C-EC97-49D8-8698-445CE91F24B7}",
-       "LibName": "Wwise Pitch Shifter",
-       "LibId": "8912899"
-      }
-     ]
-    },
     "Events": [
      {
       "Id": "3889913073",
@@ -48,20 +45,16 @@
       "DurationMax": "1.555669",
       "MediaRefs": [
        {
-        "Id": "969783770"
+        "Id": "734569107"
+       },
+       {
+        "Id": "934754005"
        }
-      ],
-      "PluginRefs": {
-       "ShareSets": [
-        {
-         "Id": "1237275451"
-        }
-       ]
-      }
+      ]
      }
     ]
    }
   ],
-  "FileHash": "{A1E9C679-CFDA-7E5A-3044-DAE3D2EBDEAD}"
+  "FileHash": "{3E071B92-4EBA-2C37-2C40-5DD222112F24}"
  }
 }

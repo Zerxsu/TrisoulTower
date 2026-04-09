@@ -173,17 +173,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Test_Ui_" ID="{61786EAA-61B0-4C2A-B4F0-91AB313419D3}">
-					<ChildrenList>
-						<Action Name="" ID="{5F4F894D-4596-4CFD-AE58-70CDEC8F70E3}" ShortID="477190429">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="ui_" ID="{DF349B53-FD67-4D3A-99CB-8A9CEA0A10B9}" WorkUnitID="{B9C9948F-C4D8-465A-9E5C-9359D8738496}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Fire_Swing" ID="{9897AEDF-BC65-4A93-B476-7C354D572BB8}">
 					<ChildrenList>
 						<Action Name="" ID="{0FABBE36-5EF1-417A-938D-3A0F4F403966}" ShortID="117973951">

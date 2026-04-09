@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{62D8C136-BC1D-43EB-B012-0D3A55CB685D}",
     "Language": "SFX",
-    "Hash": "{16C54A80-F089-6C78-F9BB-DBDDEE443C6E}",
+    "Hash": "{5AE981BF-F349-369E-334B-EADCCC2F1018}",
     "ObjectPath": "Boss_Old",
     "ShortName": "Boss_Old",
     "Path": "Event/Boss_Old.bnk",
@@ -157,6 +157,6 @@
     ]
    }
   ],
-  "FileHash": "{BEDDC0CB-7C71-D783-76AB-D5D629AF5D3A}"
+  "FileHash": "{14DD9200-E07A-0F7A-8B4B-6E0DEDC289DC}"
  }
 }

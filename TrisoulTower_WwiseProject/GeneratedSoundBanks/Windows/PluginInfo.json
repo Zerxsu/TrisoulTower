@@ -4,18 +4,18 @@
   "BasePlatform": "Windows",
   "PluginLibs": [
    {
+    "LibName": "Wwise Silence",
+    "LibId": "6619138",
+    "Type": "Source",
+    "DLL": "AkSilenceGenerator",
+    "StaticLib": "AkSilenceSource"
+   },
+   {
     "LibName": "Wwise RoomVerb",
     "LibId": "7733251",
     "Type": "Effect",
     "DLL": "AkRoomVerb",
     "StaticLib": "AkRoomVerbFX"
-   },
-   {
-    "LibName": "Wwise Pitch Shifter",
-    "LibId": "8912899",
-    "Type": "Effect",
-    "DLL": "AkPitchShifter",
-    "StaticLib": "AkPitchShifterFX"
    },
    {
     "LibName": "System",
@@ -28,6 +28,6 @@
     "Type": "AudioDevice"
    }
   ],
-  "FileHash": "{30F34B97-E9E1-4A68-234C-81CA19DC1CBC}"
+  "FileHash": "{8ADE3114-4BC6-16E2-44D8-539BD5111B3E}"
  }
 }

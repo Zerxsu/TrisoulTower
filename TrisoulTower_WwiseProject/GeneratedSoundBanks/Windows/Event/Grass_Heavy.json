@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{2022514D-9A6E-45F0-A239-E6889C2D5300}",
     "Language": "SFX",
-    "Hash": "{81F693B9-051D-C487-6A03-6DE5BA5752F3}",
+    "Hash": "{63374356-C55B-2353-1E98-BF0B614948E1}",
     "ObjectPath": "Grass_Heavy",
     "ShortName": "Grass_Heavy",
     "Path": "Event/Grass_Heavy.bnk",
@@ -55,6 +55,6 @@
     ]
    }
   ],
-  "FileHash": "{B71CB4F9-A19E-7A36-FADE-1E0C2F3F99ED}"
+  "FileHash": "{6AE1AAE1-8E1A-5C49-77B5-CE3D6DC25705}"
  }
 }

@@ -4,18 +4,18 @@
   "BasePlatform": "Mac",
   "PluginLibs": [
    {
+    "LibName": "Wwise Silence",
+    "LibId": "6619138",
+    "Type": "Source",
+    "DLL": "AkSilenceGenerator",
+    "StaticLib": "AkSilenceSource"
+   },
+   {
     "LibName": "Wwise RoomVerb",
     "LibId": "7733251",
     "Type": "Effect",
     "DLL": "AkRoomVerb",
     "StaticLib": "AkRoomVerbFX"
-   },
-   {
-    "LibName": "Wwise Pitch Shifter",
-    "LibId": "8912899",
-    "Type": "Effect",
-    "DLL": "AkPitchShifter",
-    "StaticLib": "AkPitchShifterFX"
    },
    {
     "LibName": "System",
@@ -28,6 +28,6 @@
     "Type": "AudioDevice"
    }
   ],
-  "FileHash": "{34FD40B2-6242-E4E8-9CCF-DA0BD94FDFEB}"
+  "FileHash": "{EB67CC8A-1619-3B31-3FBF-EFFB795FF0B9}"
  }
 }

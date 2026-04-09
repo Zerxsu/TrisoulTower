@@ -10,33 +10,30 @@
     "Type": "Event",
     "GUID": "{561385B4-DC9D-4A55-9803-25B0C8BC68F6}",
     "Language": "SFX",
-    "Hash": "{854FA7AA-6649-84DD-487A-228B90D2EA68}",
+    "Hash": "{E5AEFD8A-1392-6075-6D85-C0A00C6BA9F7}",
     "ObjectPath": "Fire_Parry",
     "ShortName": "Fire_Parry",
     "Path": "Event/Fire_Parry.bnk",
     "Media": [
      {
-      "Id": "969783770",
+      "Id": "13468096",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "slash 1-001.wav",
-      "Path": "Media/969783770.wem",
-      "CachePath": "8F/{8F0CC7A4-B8E7-9FDD-4E2C-F8FD94DDCE65}.wem"
+      "ShortName": "fire-001.wav",
+      "Path": "Media/13468096.wem",
+      "CachePath": "5B/{5B88F8E4-1D1C-B729-B9D4-B9325CA9C679}.wem"
+     },
+     {
+      "Id": "924815878",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "fire.wav",
+      "Path": "Media/924815878.wem",
+      "CachePath": "F9/{F94168CD-90A3-72EC-1988-840550374287}.wem"
      }
     ],
-    "Plugins": {
-     "ShareSets": [
-      {
-       "Id": "1237275451",
-       "Name": "Octave_Up",
-       "ObjectPath": "\\Effects\\Factory Effects\\Pitch Shifter\\Harmonize\\Octave_Up",
-       "GUID": "{A98F423C-EC97-49D8-8698-445CE91F24B7}",
-       "LibName": "Wwise Pitch Shifter",
-       "LibId": "8912899"
-      }
-     ]
-    },
     "Events": [
      {
       "Id": "1375156070",
@@ -44,24 +41,20 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Fire_Parry",
       "GUID": "{561385B4-DC9D-4A55-9803-25B0C8BC68F6}",
       "DurationType": "OneShot",
-      "DurationMin": "1.555669",
-      "DurationMax": "1.555669",
+      "DurationMin": "1.8870522",
+      "DurationMax": "1.8870522",
       "MediaRefs": [
        {
-        "Id": "969783770"
+        "Id": "13468096"
+       },
+       {
+        "Id": "924815878"
        }
-      ],
-      "PluginRefs": {
-       "ShareSets": [
-        {
-         "Id": "1237275451"
-        }
-       ]
-      }
+      ]
      }
     ]
    }
   ],
-  "FileHash": "{329346E4-56C6-7245-970D-377AD227F9DB}"
+  "FileHash": "{5DAF21E3-99A8-27EE-B7B9-D6381DE12CA2}"
  }
 }

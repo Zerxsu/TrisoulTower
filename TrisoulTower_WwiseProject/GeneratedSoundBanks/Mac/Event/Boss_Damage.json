@@ -10,21 +10,99 @@
     "Type": "Event",
     "GUID": "{5DFD3936-8D34-41CA-8205-01160B981759}",
     "Language": "SFX",
-    "Hash": "{EE3A5BA8-99D7-A663-2157-B501166D5CE2}",
+    "Hash": "{E1C2036F-1287-F29C-63AB-B9BBFB651931}",
     "ObjectPath": "Boss_Damage",
     "ShortName": "Boss_Damage",
     "Path": "Event/Boss_Damage.bnk",
     "Media": [
      {
-      "Id": "803049247",
+      "Id": "394105483",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "ui.wav",
-      "Path": "Media/803049247.wem",
-      "CachePath": "B0/{B03D14ED-5EC8-938D-9C43-CC3839CB69C5}.wem"
+      "ShortName": "Enemy_Hurt_3.wav",
+      "Path": "Media/394105483.wem",
+      "CachePath": "C8/{C8A44E80-4DF0-F893-D6C8-49CE1D7E65A4}.wem"
+     },
+     {
+      "Id": "497032706",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Enemy_Hurt_2.wav",
+      "Path": "Media/497032706.wem",
+      "CachePath": "97/{976D687F-1210-CBFE-B843-1FFF2B464E7C}.wem"
+     },
+     {
+      "Id": "631706079",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Enemy_Hurt_1.wav",
+      "Path": "Media/631706079.wem",
+      "CachePath": "66/{66451C8A-1E34-EC82-56F1-48D724E0882C}.wem"
      }
     ],
+    "Plugins": {
+     "Custom": [
+      {
+       "Id": "16954181",
+       "Name": "Silence",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\Boss\\Boss_Damage\\New Silence_06\\Silence",
+       "GUID": "{BCAA1EFC-4088-4251-BBBD-5F2F776DF85A}",
+       "LibName": "Wwise Silence",
+       "LibId": "6619138"
+      },
+      {
+       "Id": "360511741",
+       "Name": "Silence",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\Boss\\Boss_Damage\\New Silence\\Silence",
+       "GUID": "{175E9466-3FB9-4C13-B35E-6823134B2790}",
+       "LibName": "Wwise Silence",
+       "LibId": "6619138"
+      },
+      {
+       "Id": "405918409",
+       "Name": "Silence",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\Boss\\Boss_Damage\\New Silence_02\\Silence",
+       "GUID": "{0FB01DDF-FAC2-40E2-A657-27828517FE86}",
+       "LibName": "Wwise Silence",
+       "LibId": "6619138"
+      },
+      {
+       "Id": "512957241",
+       "Name": "Silence",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\Boss\\Boss_Damage\\New Silence_05\\Silence",
+       "GUID": "{687C97E2-89AC-4744-BEC2-C559FE47339E}",
+       "LibName": "Wwise Silence",
+       "LibId": "6619138"
+      },
+      {
+       "Id": "692163255",
+       "Name": "Silence",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\Boss\\Boss_Damage\\New Silence_01\\Silence",
+       "GUID": "{FE389814-83A7-4ACD-91B9-07AF29DF6328}",
+       "LibName": "Wwise Silence",
+       "LibId": "6619138"
+      },
+      {
+       "Id": "773954110",
+       "Name": "Silence",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\Boss\\Boss_Damage\\New Silence_04\\Silence",
+       "GUID": "{3DC8082C-0958-45CD-A2E5-FF4DC9059341}",
+       "LibName": "Wwise Silence",
+       "LibId": "6619138"
+      },
+      {
+       "Id": "793825638",
+       "Name": "Silence",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\Boss\\Boss_Damage\\New Silence_03\\Silence",
+       "GUID": "{1701AEA0-BF11-4D91-9BE9-C0A2E1512D2B}",
+       "LibName": "Wwise Silence",
+       "LibId": "6619138"
+      }
+     ]
+    },
     "Events": [
      {
       "Id": "2713247166",
@@ -32,17 +110,48 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Boss_Damage",
       "GUID": "{5DFD3936-8D34-41CA-8205-01160B981759}",
       "DurationType": "OneShot",
-      "DurationMin": "0.21913832",
-      "DurationMax": "0.21913832",
+      "DurationMin": "1",
+      "DurationMax": "1.7316327",
       "MediaRefs": [
        {
-        "Id": "803049247"
+        "Id": "394105483"
+       },
+       {
+        "Id": "497032706"
+       },
+       {
+        "Id": "631706079"
        }
-      ]
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "16954181"
+        },
+        {
+         "Id": "360511741"
+        },
+        {
+         "Id": "405918409"
+        },
+        {
+         "Id": "512957241"
+        },
+        {
+         "Id": "692163255"
+        },
+        {
+         "Id": "773954110"
+        },
+        {
+         "Id": "793825638"
+        }
+       ]
+      }
      }
     ]
    }
   ],
-  "FileHash": "{02A5F8E8-027A-A2D2-94AA-FE47CB964C38}"
+  "FileHash": "{336F68EB-B3A3-3DA0-72EA-329019D63762}"
  }
 }
