@@ -102,6 +102,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|Variables")
 	float SprintSpeed = 700.f;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerController|Variables")
+	float CameraSensitivityMultiplier = 1.0f;
+
 	UPROPERTY(BlueprintReadWrite, Category = "PlayerController|Variables")
 	bool bCanDash;
 

@@ -110,8 +110,8 @@ void ACharacterController::Look(const FInputActionValue& Value)
 
 	if (Controller)
 	{
-		AddControllerYawInput(LookValue.X);
-		AddControllerPitchInput(LookValue.Y);
+		AddControllerYawInput(LookValue.X * CameraSensitivityMultiplier);
+		AddControllerPitchInput(LookValue.Y * CameraSensitivityMultiplier);
 	}
 }
 
